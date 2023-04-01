@@ -2,6 +2,8 @@ AnVIL
 BIPOC
 Bloomberg
 Bookdown
+chatbots
+ChatGPT
 Coursera
 css
 Datatrail
@@ -24,10 +26,12 @@ Markua
 mentorship
 NCI
 NHGRI
+OpenAI's
 ottrpal
 Pandoc
 UE
 UE5
 reproducibility
+rmarkdown
 underserved
 www
