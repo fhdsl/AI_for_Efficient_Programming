@@ -1,5 +1,5 @@
 ---
-title: "Course Name"
+title: "Using AI for Software"
 date: "`r format(Sys.time(), '%B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
