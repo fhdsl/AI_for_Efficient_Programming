@@ -11,10 +11,9 @@ Despite these worries, the widespread adoption of AI bots is ushering in a new e
 
 Ultimately, while the future of software development is unclear, there is much to be optimistic about in this brave new world. The advancements in AI and chatbot technology present an opportunity for programmers to work alongside algorithms to create innovative solutions that were previously unimaginable. As with any technological revolution, there will be challenges, but it is up to us to work together to ensure that we use these tools ethically and responsibly, and to create a future that benefits everyone.
 
+## AI will provide new opportunities for software developers
+
 We do not believe AI chatbots will replace software developers. An AI is only as good as the training data behind it and the human using it. We _do_ think the roles programmers play in software development are changing, and some of the skills needed to work in this new world are slightly different from the ones programmers needed before. Rather than being solely focused on programming syntax, programmers may need to develop a more refined ability to construct queries that enable AI bots to create the desired workflows. Other critical skills, such as debugging, troubleshooting, and documentation, will remain valuable, and can be enhanced through the use of AI. Moreover, AI creates new opportunities and niches for tasks that were previously difficult, time-consuming, or impossible. As a result, this is an exciting time for those working in programming, as they have the potential to explore new and innovative solutions. 
-
-We used AI bots to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human using it to make sure that AI is used properly and transparently.
-
 
 ::: {.reflection}
 
@@ -28,6 +27,34 @@ Furthermore, programming is not just about writing code - it also involves under
 
 While ChatGPT can be used to automate certain aspects of software development, it cannot replace the creativity, problem-solving skills, and domain expertise of human software developers and programmers."
 :::
+
+## AI Oath of Ethics
+
+Coming soon!
+
+from chatGPT:
+
+1. Respect human rights: AI should be developed and used in a way that respects the human rights of individuals and groups. This includes the right to privacy, freedom of expression, and non-discrimination.
+
+1. Fairness: AI should be designed to be fair and impartial. Developers should avoid creating AI that reinforces or amplifies existing biases or inequalities.
+
+1. Transparency: The development and use of AI should be transparent. Individuals and organizations should be able to understand how AI systems make decisions, and how they use and protect data.
+
+1. Accountability: Individuals and organizations responsible for developing and using AI should be accountable for its impact. They should take responsibility for any negative outcomes resulting from the use of AI and take steps to address them.
+
+1. Safety and security: AI should be developed and used in a way that ensures safety and security for individuals and society as a whole.
+
+1. Consent: Individuals should be informed and give their consent before their data is used in AI systems. They should also have the right to withdraw their consent at any time.
+
+1. Continuous monitoring and evaluation: AI systems should be continuously monitored and evaluated to ensure that they are achieving their intended goals and that they are not causing harm.
+
+By following these ethical guidelines, individuals and organizations can ensure that AI is developed and used in a way that is fair, transparent, and beneficial to society as a whole.
+
+## About this book
+
+We used AI bots to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human using it to make sure that AI is used properly and transparently.
+
+
 
 ```{r}
 devtools::session_info()
