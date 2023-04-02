@@ -30,7 +30,7 @@ While ChatGPT can be used to automate certain aspects of software development, i
 
 ## AI Oath of Ethics
 
-Coming soon!
+Our first duty when using AI is to avoid causing harm. 
 
 from chatGPT:
 
