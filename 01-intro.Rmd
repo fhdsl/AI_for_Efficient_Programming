@@ -11,7 +11,7 @@ Despite these worries, the widespread adoption of AI bots is ushering in a new e
 
 Ultimately, while the future of software development is unclear, there is much to be optimistic about in this brave new world. The advancements in AI and chatbot technology present an opportunity for programmers to work alongside algorithms to create innovative solutions that were previously unimaginable. As with any technological revolution, there will be challenges, but it is up to us to work together to ensure that we use these tools ethically and responsibly, and to create a future that benefits everyone.
 
-## AI will provide new opportunities for software developers
+## AI provides new opportunities
 
 We do not believe AI chatbots will replace software developers. An AI is only as good as the training data behind it and the human using it. We _do_ think the roles programmers play in software development are changing, and some of the skills needed to work in this new world are slightly different from the ones programmers needed before. Rather than being solely focused on programming syntax, programmers may need to develop a more refined ability to construct queries that enable AI bots to create the desired workflows. Other critical skills, such as debugging, troubleshooting, and documentation, will remain valuable, and can be enhanced through the use of AI. Moreover, AI creates new opportunities and niches for tasks that were previously difficult, time-consuming, or impossible. As a result, this is an exciting time for those working in programming, as they have the potential to explore new and innovative solutions. 
 
@@ -28,7 +28,7 @@ Furthermore, programming is not just about writing code - it also involves under
 While ChatGPT can be used to automate certain aspects of software development, it cannot replace the creativity, problem-solving skills, and domain expertise of human software developers and programmers."
 :::
 
-## AI Oath of Ethics
+## AI code of ethics
 
 Our first duty when using AI is to avoid causing harm. 
 
