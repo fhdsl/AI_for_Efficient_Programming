@@ -52,7 +52,7 @@ By following these ethical guidelines, individuals and organizations can ensure 
 
 ## About this book
 
-We used AI bots to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human using it to make sure that AI is used properly and transparently.
+We used AI bots to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human behind it to make sure that AI is used properly and transparently.
 
 
 
