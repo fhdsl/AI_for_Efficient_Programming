@@ -34,11 +34,9 @@ While ChatGPT can be used to automate certain aspects of software development, i
 
 ## AI code of ethics
 
-Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. We must always be aware of the potential for harm and deliberately take steps to mitigate it. 
+Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. _Intentional harm_ is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. _Inadvertent harm_ is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss.
 
-_Intentional harm_ is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. _Inadvertent harm_ is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss.
-
-It is important for programmers to be aware of the potential for harm and to take steps to mitigate it. This includes things like:
+We must always be aware of the potential for harm and deliberately take steps to mitigate it. This includes things like:
 
 **Be aware of the potential for bias.** AI systems are trained on data, and that data can reflect the biases of the people who collected it. Programmers should be aware of the potential for bias in their data and take steps to mitigate it.
 
