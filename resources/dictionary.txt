@@ -3,6 +3,8 @@ BIPOC
 Bloomberg
 Bookdown
 chatbot
+chatbots
+ChatGPT
 codebase
 codebases
 Coursera
