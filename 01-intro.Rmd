@@ -34,25 +34,21 @@ While ChatGPT can be used to automate certain aspects of software development, i
 
 ## AI code of ethics
 
-Our first duty when using AI is to avoid causing harm. 
+Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. We must always be aware of the potential for harm and deliberately take steps to mitigate it. 
 
-from chatGPT:
+_Intentional harm_ is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. _Inadvertent harm_ is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss.
 
-1. Respect human rights: AI should be developed and used in a way that respects the human rights of individuals and groups. This includes the right to privacy, freedom of expression, and non-discrimination.
+It is important for programmers to be aware of the potential for harm and to take steps to mitigate it. This includes things like:
 
-1. Fairness: AI should be designed to be fair and impartial. Developers should avoid creating AI that reinforces or amplifies existing biases or inequalities.
+**Be aware of the potential for bias.** AI systems are trained on data, and that data can reflect the biases of the people who collected it. Programmers should be aware of the potential for bias in their data and take steps to mitigate it.
 
-1. Transparency: The development and use of AI should be transparent. Individuals and organizations should be able to understand how AI systems make decisions, and how they use and protect data.
+**Be transparent about your work.** Share information about your code, data, and algorithms. This will help others to understand how your work works and to identify any potential problems.
 
-1. Accountability: Individuals and organizations responsible for developing and using AI should be accountable for its impact. They should take responsibility for any negative outcomes resulting from the use of AI and take steps to address them.
+**Be accountable for your work.** Take responsibility for the consequences of your code. Be willing to make changes if necessary.
 
-1. Safety and security: AI should be developed and used in a way that ensures safety and security for individuals and society as a whole.
+**Participate in discussions about AI ethics.** There are many online and in-person communities where you can discuss the ethical implications of AI with other people.
 
-1. Consent: Individuals should be informed and give their consent before their data is used in AI systems. They should also have the right to withdraw their consent at any time.
-
-1. Continuous monitoring and evaluation: AI systems should be continuously monitored and evaluated to ensure that they are achieving their intended goals and that they are not causing harm.
-
-By following these ethical guidelines, individuals and organizations can ensure that AI is developed and used in a way that is fair, transparent, and beneficial to society as a whole.
+**Advocate for ethical AI.** Speak up when you see AI being used in a way that you believe is unethical. Support organizations that are working to promote ethical AI.
 
 ## About this book
 
