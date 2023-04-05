@@ -2,6 +2,9 @@ AnVIL
 BIPOC
 Bloomberg
 Bookdown
+chatbot
+codebase
+codebases
 Coursera
 css
 Datatrail
@@ -26,6 +29,7 @@ NCI
 NHGRI
 ottrpal
 Pandoc
+tidyverse
 UE
 UE5
 reproducibility
