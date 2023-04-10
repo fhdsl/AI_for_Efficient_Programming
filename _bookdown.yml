@@ -2,7 +2,8 @@ book_filename: "Course_Name"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/OTTR_Template/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd"]
+            "01-intro.Rmd",
+            "02-writing_code.Rmd"]
 new_session: yes
 delete_merged_file: true
 language:
