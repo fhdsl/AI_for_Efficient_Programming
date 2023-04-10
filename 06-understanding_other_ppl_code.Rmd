@@ -212,7 +212,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 Recently, we used an AI chatbot to explain regex in a tricky bit of code from a larger program written more than 5 years ago.
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "We used ChatGPT to explain a regex example in older code"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147eea86c5_0_0")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147eea86c5_0_4")
+```
 ```
 :::
 
