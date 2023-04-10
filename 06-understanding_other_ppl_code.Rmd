@@ -43,6 +43,8 @@ Overall, using AI language models to understand code can help developers work mo
 
 ## Example One: Using AI to summarize code
 
+For the next two sections, we'll use Google's AI chatbot Bard. As always, feel free to use your favorite chatbot - all of them can provide help!
+
 Let's start with a relatively simple code using the R programming language.
 
 ```
@@ -71,9 +73,16 @@ ggplot(diamonds_summary, aes(x = mean_price, y = sd_price)) +
 
 If you are familiar with R, you might be able to understand what this code does with little effort. However, if you don't know R, you're relatively new to R, or you're just having a bad day, understanding what this bit of code can take a great deal more energy and time. AI language bots can ease that burden.
 
-We asked Bard to explain the purpose of this code, and got this response:
+We first ask Bard to explain the purpose of this code.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the R code  does"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_5")
+```
 
-"The code you provided is an example of how to use the R programming language to analyze data. The code first loads the tidyverse package, which provides a set of tools for data wrangling and analysis. It then loads the diamonds dataset, which contains information about 53,940 diamonds. The code then selects the carat, cut, color, clarity, depth, table, and price variables from the dataset. It then filters the dataset to only include diamonds with a price greater than 5000. It then bins the carat values into 0.2 carat bins. It then summarizes the data by grouping it by carat bin, cut, color, and clarity, and then calculating the mean and standard deviation of the price for each group. Finally, it creates a plot of the mean price versus the standard deviation of the price, with the cut, color, and clarity as factors. The plot shows that the mean price increases with carat size, and that the standard deviation of the price is higher for diamonds with lower clarity."
+You can always ask for clarification if you need more information.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard gives more detail about the example R code"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_52")
+```
+
 
 Great! Now we know a couple of things:
 
@@ -88,15 +97,76 @@ Great! Now we know a couple of things:
 1. Finally, the code plots the mean prices against the grouping variables.
 
 
-Okay, but maybe don't know what the tidyverse is. We can ask Bard to explain:
+Okay, but maybe don't know what the tidyverse is. We can ask Bard to explain that as well.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the tidyverse"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_11")
+```
 
-"The tidyverse is a collection of packages for the R programming language that are designed to make data analysis easier and more efficient. The tidyverse packages share a common design philosophy, which is based on the idea of tidy data. Tidy data is data that is stored in a tabular format, with each row representing a data point and each column representing a variable."
+You might then want to know a little about the diamonds dataset; we can ask Bard to tell us more about that, too.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard describes the diamonds dataset from R"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_15")
+```
 
-You might then want to know a little about the diamonds dataset, so you ask Bard to tell you more about it.
+
+AI can also be used to explain details within the code itself. Maybe you're reading through the code and you come across a section that just doesn't make sense - like, perhaps, the `diamonds_binned` command. Bard might be able to offer an explanation.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the diamond_binned object is"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_18")
+```
+
 
 ## Example Two: Using AI to understand legacy code
 
-As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps created 
+As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps of understanding, especially when the code isn't annotated well or at all.
+
+Let's look at example code that might have been written in the 1990s.
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int main() {
+  int fd = connect_to_database("seattle_temperature.db");
+  int n_temperatures = retrieve_temperatures(fd);
+    
+  int sfd = connect_to_database("seattle_smog.db");
+  int n_smog_measures = retrieve_smog_measures(sfd);
+
+  int n_combined_data = n_temperatures + n_smog_measures;
+  int combined_data[n_combined_data];
+
+  for (int i = 0; i < n_temperatures; i++) {
+    combined_data[i] = retrieve_temperature(fd, i);
+  }
+
+  for (int i = 0; i < n_smog_measures; i++) {
+    combined_data[n_temperatures + i] = retrieve_smog_measure(sfd, i);
+  }
+  close_database(fd);
+  close_database(sfd);
+
+  double slope = 0.0;
+  double y_intercept = 0.0;
+  for (int i = 0; i < n_combined_data; i++) {
+    slope += (combined_data[i + n_temperatures] - y_intercept) * (combined_data[i] - y_intercept);
+    y_intercept += (combined_data[i + n_temperatures] - y_intercept);
+  }
+ 
+  slope /= n_combined_data;
+  y_intercept /= n_combined_data;
+
+  printf("The slope is %lf and the y-intercept is %lf.\n", slope, y_intercept);
+
+  return 0;
+}
+```
+
+A good first step when facing unknown code is to find out what language it's in. You may already recognize it, but if you don't, AI can help.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard tells you the second example is written in C"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_24")
+```
+
 
 ::: {.reflection}
 
@@ -107,10 +177,162 @@ Not all AI chatbots will explain how they determine the language of code. If you
 :::
 
 
+When dealing with legacy code, you might want to understand how the previous programmer chose to structure their code.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard details the structure of the code"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_27")
+```
+
+Don't be afraid to query further. For example, you might be curious why a particular code structure was chosen.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains why a code structure was used"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_40")
+```
+
+One of the major strengths of using AI to understand code is that you can ask a chatbot to explain both the overall purpose of the code as well as specific snippets. The example code contains loops. Let's explore what a particular loop is doing.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what a for loop is doing"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_43")
+```
+
+
+In another loop in our example code, we might want to know why two variables are included.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the purpose of two of the variables"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_30")
+```
+
+
+Finally, we can ask Bard if variables in the original code are even necessary, or if they can be dropped entirely.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains whether included variables in the code are necessary"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_33")
+```
+
 
 ## Hands-On Exercise
 
-**Note**: This code is just an example and does not reflect any code used by governments or social security administrations. This code was written strictly for educational purposes.
+Now it's your turn to try. Let's say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what's going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.
+
+**Note**: This code is just an example and was written strictly for educational purposes.
+
+```
+use ode_solvers::{Euler, OdeMethod};
+use plotters::prelude::*;
+use std::fs::File;
+
+
+const N: f64 = 1000000.0;  
+const I0: f64 = 10.0;  
+const R0: f64 = 0.0;   
+const S0: f64 = N - I0 - R0;  
+const BETA: f64 = 0.3;  
+const GAMMA: f64 = 0.1;  
+
+fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {
+    let s = y[0];
+    let i = y[1];
+    let r = y[2];
+    let dsdt = -BETA * s * i / N - v * s;
+    let didt = BETA * s * i / N - GAMMA * i;
+    let drdt = GAMMA * i + v * s;
+    vec![dsdt, didt, drdt]
+}
+
+fn main() {
+
+    let mut solver = Euler::new(sir_model);
+    solver.set_initial_condition(&[S0, I0, R0]);
+
+
+    let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
+    root.fill(&WHITE).unwrap();
+    let mut chart = ChartBuilder::on(&root)
+        .caption("SIR model with vaccination", ("sans-serif", 40))
+        .set_label_area_size(LabelAreaPosition::Left, 60)
+        .set_label_area_size(LabelAreaPosition::Bottom, 40)
+        .build_cartesian_2d(0.0..100.0, 0.0..N)
+        .unwrap();
+
+    let mut data1 = vec![];
+    for _ in 0..1000 {
+        let y = solver.integrate(0.1, 0.0);
+        data1.push((solver.time(), y[0], y[1], y[2]));
+    }
+
+
+    let vaccination_rate = 0.1;   
+    let vaccination_coverage = 0.5;   
+    let vaccinated = vaccination_coverage * N;   
+    let mut data2 = vec![];
+    for i in 0..1000 {
+        let t = i as f64 * 0.1;
+        let v = if t >= 50.0 && t < 150.0 {vaccinated * vaccination_rate} else {0.0};
+        let y = solver.integrate(0.1, v);
+        data2.push((solver.time(), y[0], y[1], y[2]));
+    }
+
+
+    chart
+        .configure_mesh()
+        .x_labels(10)
+        .y_labels(10)
+        .disable_x_mesh()
+        .disable_y_mesh()
+        .draw()
+        .unwrap();
+    chart
+        .draw_series(LineSeries::new(
+            data1.iter().map(|d|
+```
+
+**QUESTIONS:**
+
+1. What language is the code written in?
+
+1. What are two clues that tell you the language?
+
+1. What is the overall task this code does?
+
+1. What is a new feature you could add to the code?
+
+1. How could you add that feature?
+
+1. What does this bit of code do?
+
+```
+ let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
+```
+
+1. Why would a progammer set up a section of code like this?
+
+```
+fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {
+    let s = y[0];
+    let i = y[1];
+    let r = y[2];
+    let dsdt = -BETA * s * i / N - v * s;
+    let didt = BETA * s * i / N - GAMMA * i;
+    let drdt = GAMMA * i + v * s;
+    vec![dsdt, didt, drdt]
+}
+```
+
+1. How are these variables initialized?
+
+```
+let s = y[0];
+let i = y[1];
+let r = y[2];
+```
+
+1. What are some other variables that could be added to this command to customize the output?
+
+```
+  chart
+        .configure_mesh()
+        .x_labels(10)
+        .y_labels(10)
+        .disable_x_mesh()
+        .disable_y_mesh()
+        .draw()
+        .unwrap();
+```
 
 
 ```{r}
