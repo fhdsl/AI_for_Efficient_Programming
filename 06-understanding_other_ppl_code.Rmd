@@ -210,6 +210,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 **Example from DaSL's own work**
 
 Recently, we used an AI chatbot to explain regex in a tricky bit of code from a larger program written more than 5 years ago.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "We used ChatGPT to explain a regex example in older code"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147eea86c5_0_0")
 ```
@@ -310,7 +311,7 @@ fn main() {
  let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
 ```
 
-1. Why would a progammer set up a section of code like this?
+7. Why would a progammer set up a section of code like this?
 
 ```
 fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {
@@ -324,7 +325,7 @@ fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {
 }
 ```
 
-1. How are these variables initialized?
+8. How are these variables initialized?
 
 ```
 let s = y[0];
@@ -332,7 +333,7 @@ let i = y[1];
 let r = y[2];
 ```
 
-1. What are some other variables that could be added to this command to customize the output?
+9. What are some other variables that could be added to this command to customize the output?
 
 ```
   chart
