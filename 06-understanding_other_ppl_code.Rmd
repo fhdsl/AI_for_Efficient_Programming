@@ -205,6 +205,17 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ```
 
 
+::: {.reflection}
+
+**Example from DaSL's own work**
+
+Recently, we used an AI chatbot to explain regex in a tricky bit of code from a larger program written more than 5 years ago.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "We used ChatGPT to explain a regex example in older code"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147eea86c5_0_0")
+```
+:::
+
+
 ## Hands-On Exercise
 
 Now it's your turn to try. Let's say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what's going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.
