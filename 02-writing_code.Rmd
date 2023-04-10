@@ -29,7 +29,7 @@ The rise of AI technologies is transforming software development  and changing t
 Ethics of using ChatGPT to write code.
 :::
 
-##Benefits of using AI for writing code
+##Benefits of using AI
 
 ##Selecting a Language: 
 Choose a programming language that the participants are not familiar with, but is widely used and has a straightforward syntax. Some good options could be Ruby, Swift, or Kotlin.
