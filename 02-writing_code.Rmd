@@ -1,0 +1,45 @@
+
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+
+# Writing Code
+
+In today's digitally-driven world, coding has become an essential skill. It is used to create websites, mobile applications, and sophisticated software systems. Contrary to popular belief, coding is not only for those who possess an innate talent for programming. With the right resources and a willingness to learn, anyone can become proficient in coding.
+
+Practice is crucial to mastering the art of coding, and those who are willing to commit themselves to the learning process can achieve great results. Writing code can also be a rewarding and fulfilling hobby. Creating your own software, building a website, or automating a task can be immensely satisfying, and can provide a sense of accomplishment and pride.
+
+Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.
+
+Ultimately, the ability to write code is a valuable asset in today's job market, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
+
+
+##Using AI to write code
+
+AI-powered programming tools and technologies are revolutionizing the way we approach software development. AI can be used to generate code snippets, which can save developers significant amounts of time and increase productivity. This is because AI can analyze existing code and learn from it to generate code that is similar to what a human programmer might write, but in a fraction of the time. Additionally, AI makes it possible for people to write code in languages with which they are only slightly familiar.
+
+AI can also provide guidance and suggestions for human programmers. For example, an AI-powered code editor might suggest more efficient algorithms or highlight potential errors in real-time. This can help reduce the number of bugs and errors in code, leading to better performance and a more efficient development process.
+
+One of the most promising aspects of AI-powered programming is its potential to make programming more accessible to a wider range of people. With AI-generated code and automated programming tools, individuals who are not experienced developers can still create software solutions. This has the potential to democratize programming and lead to new innovations from a wider range of people.
+
+The rise of AI technologies is transforming software development  and changing the skills required for writing code. Rather than simply memorizing syntax, developers need to focus on developing their creativity, intuition, and problem-solving skills. Additionally, programmers must also hone their abilities in architecture design and project management, as these skills are becoming increasingly important in the modern software development landscape.
+
+:::{.reflection}
+Ethics of using ChatGPT to write code.
+:::
+
+##Benefits of using AI for writing code
+
+##Selecting a Language: 
+Choose a programming language that the participants are not familiar with, but is widely used and has a straightforward syntax. Some good options could be Ruby, Swift, or Kotlin.
+
+##Prompt Generation: 
+Create a set of prompts that will be used to guide participants in writing code in the selected language. These prompts should be specific enough to provide guidance, but open-ended enough to allow participants to exercise their creativity and problem-solving skills. For the example(s), walk participants through the process of interacting with ChatGPT and provide tips on how to refine their queries to get the best results.
+
+
+
+```{r}
+devtools::session_info()
+```
+
