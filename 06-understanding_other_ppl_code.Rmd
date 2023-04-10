@@ -13,7 +13,7 @@ _"It's like having a paired programmer explain things to you."_
 
 AI offers various ways to help programmers understand code written by others. Firstly, AI tools can analyze the codebase and provide insights into its structure, complexity, and potential defects. This analysis can identify parts of the code that may be challenging to understand, maintain or improve. Based on the analysis, the AI tools may also make recommendations on how to enhance the codebase for better functionality and readability.
 
-Secondly, AI tools can assist in summarizing large codebases, which can be challenging to comprehend in detail. Such codebases may have multiple files, functions, and classes, which could take a considerable amount of time to read and understand thoroughly. With the help of AI, programmers can get a high-level overview of the codebase without going through it line by line. This approach can save considerable time and effort, especially when dealing with complex codebases.
+Secondly, AI tools can assist in summarizing large codebases, which can be challenging to comprehend in detail. Such codebases may have multiple files, functions, and classes, which could take a considerable amount of time to read and understand thoroughly. With the help of AI, programmers can get a high-level overview of the codebase without going through it line by line. This approach can save substantial time and effort, especially when dealing with complex codebases.
 
 Finally, AI can help programmers to understand the comments and documentation written by other developers. These insights can help programmers to understand the code's purpose and the assumptions and limitations of the codebase. AI can achieve this by analyzing the natural language used in the comments and documentation, and providing a more accurate interpretation and understanding of what the original developer intended.
 
@@ -41,7 +41,7 @@ While anyone can learn to understand code written by someone else, using AI lang
 
 Overall, using AI language models to understand code can help developers work more efficiently, make fewer mistakes, and gain valuable insights into the code they're working on. As AI technology continues to improve, it's likely that these tools will become even more powerful and widely used in the software development industry, helping developers to build better software more quickly and easily.
 
-## Exercise One: Using AI to summarize code
+## Example One: Using AI to summarize code
 
 Let's start with a relatively simple code using the R programming language.
 
@@ -92,10 +92,25 @@ Okay, but maybe don't know what the tidyverse is. We can ask Bard to explain:
 
 "The tidyverse is a collection of packages for the R programming language that are designed to make data analysis easier and more efficient. The tidyverse packages share a common design philosophy, which is based on the idea of tidy data. Tidy data is data that is stored in a tabular format, with each row representing a data point and each column representing a variable."
 
-You might 
+You might then want to know a little about the diamonds dataset, so you ask Bard to tell you more about it.
 
-## Exercise Two: Using AI to understand code
+## Example Two: Using AI to understand legacy code
 
+As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps created 
+
+::: {.reflection}
+
+**AI QUERY TIPS**
+
+Not all AI chatbots will explain how they determine the language of code. If yours doesn't, you can ask "How do you know this code was written in [stated language]?" to learn more.
+
+:::
+
+
+
+## Hands-On Exercise
+
+**Note**: This code is just an example and does not reflect any code used by governments or social security administrations. This code was written strictly for educational purposes.
 
 
 ```{r}
