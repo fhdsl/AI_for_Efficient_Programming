@@ -184,6 +184,7 @@ Not all AI chatbots will explain how they determine the language of code. If you
 
 When dealing with legacy code, you might want to understand how the previous programmer chose to structure their code.
 
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard details the structure of the code"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_27")
 ```
