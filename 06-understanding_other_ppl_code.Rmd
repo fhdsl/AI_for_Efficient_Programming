@@ -191,6 +191,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 Don't be afraid to query further. For example, you might be curious why a particular code structure was chosen.
 
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains why a code structure was used"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_40")
 ```
