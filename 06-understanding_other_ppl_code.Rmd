@@ -16,7 +16,7 @@ Secondly, AI tools can assist in summarizing large codebases, which can be chall
 
 Finally, AI can help programmers to understand the comments and documentation written by other developers. These insights can help programmers to understand the code's purpose and the assumptions and limitations of the codebase. AI can achieve this by analyzing the natural language used in the comments and documentation, and providing a more accurate interpretation and understanding of what the original developer intended.
 
-::: {.reflection}
+::: {.ethics}
 
 **Ethical Considerations**
 
@@ -42,7 +42,7 @@ Overall, using AI language models to understand code can help developers work mo
 
 ## Example One: Using AI to summarize code
 
-For the next two sections, we'll use Google's AI chatbot Bard. As always, feel free to use your favorite chatbot - all of them can provide help!
+For the next two sections, we'll use Google's AI chatbot [Bard](https://bard.google.com/). As always, feel free to use your favorite chatbot - all of them can provide help!
 
 Let's start with a relatively simple code using the R programming language.
 
@@ -73,11 +73,13 @@ ggplot(diamonds_summary, aes(x = mean_price, y = sd_price)) +
 If you are familiar with R, you might be able to understand what this code does with little effort. However, if you don't know R, you're relatively new to R, or you're just having a bad day, understanding what this bit of code can take a great deal more energy and time. AI language bots can ease that burden.
 
 We first ask Bard to explain the purpose of this code.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the R code  does"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_5")
 ```
 
 You can always ask for clarification if you need more information.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard gives more detail about the example R code"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_52")
 ```
@@ -103,12 +105,14 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ```
 
 You might then want to know a little about the diamonds dataset; we can ask Bard to tell us more about that, too.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard describes the diamonds dataset from R"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_15")
 ```
 
 
 AI can also be used to explain details within the code itself. Maybe you're reading through the code and you come across a section that just doesn't make sense - like, perhaps, the `diamonds_binned` command. Bard might be able to offer an explanation.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the diamond_binned object is"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_18")
 ```
@@ -162,7 +166,8 @@ int main() {
 }
 ```
 
-A good first step when facing unknown code is to find out what language it's in. You may already recognize it, but if you don't, AI can help.
+A good first step when facing unknown code is to find out what language it's in. You may already recognize it, but if you don't, AI can help. It's as simple as asking Bard to identify the coding language.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard tells you the second example is written in C"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_24")
 ```
@@ -178,28 +183,33 @@ Not all AI chatbots will explain how they determine the language of code. If you
 
 
 When dealing with legacy code, you might want to understand how the previous programmer chose to structure their code.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard details the structure of the code"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_27")
 ```
 
 Don't be afraid to query further. For example, you might be curious why a particular code structure was chosen.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains why a code structure was used"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_40")
 ```
 
 One of the major strengths of using AI to understand code is that you can ask a chatbot to explain both the overall purpose of the code as well as specific snippets. The example code contains loops. Let's explore what a particular loop is doing.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what a for loop is doing"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_43")
 ```
 
 
 In another loop in our example code, we might want to know why two variables are included.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the purpose of two of the variables"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_30")
 ```
 
 
 Finally, we can ask Bard if variables in the original code are even necessary, or if they can be dropped entirely.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains whether included variables in the code are necessary"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_33")
 ```
