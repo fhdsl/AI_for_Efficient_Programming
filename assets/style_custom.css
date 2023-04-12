@@ -21,13 +21,10 @@ div.query{
   padding: 1em;
   margin: 1em 0;
   padding-left: 100px;
-  min-height: 120px;
+  min-height: 80px;
   background-repeat: no-repeat;
-}
-
-div.query{
-  background-size: 90px;
-  background-position: 15px center;
+  background-size: 60px;
+  background-position: 10px center;
   background-color: #e5f8fa;
   background-image: url("../assets/box_images/query.png");
   border: 4px #e5f8fa;
