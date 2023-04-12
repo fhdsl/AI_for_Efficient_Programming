@@ -1,0 +1,354 @@
+# Understanding Unfamiliar Code
+
+As a programmer, you will frequently encounter situations where you need to read and understand code written by other developers. This could be because you are collaborating on a project, you have taken over maintenance of an existing codebase, or you are learning new syntax or skills that require reading example codes. Comprehending code written by someone else is a distinct skill from being able to write your own code, and it takes practice to become proficient at it.
+
+When reading unfamiliar code, you need to be able to decipher the logic, understand the programming language syntax and semantics, and make sense of the naming conventions and architecture of the code. Furthermore, you may need to understand the context in which the code was written and any assumptions made by the original developer. All of these factors can make the process of understanding code written by someone else challenging.
+
+That said, learning how to read and understand code written by someone else is a valuable skill that can help you be a more effective programmer. By being able to read and comprehend unfamiliar code, you can contribute to projects more quickly, diagnose and fix bugs more effectively, and learn new programming techniques and best practices. As with any skill, the more you practice reading and understanding code written by others, the more comfortable and proficient you will become at it.
+
+## Using AI to understand code
+
+_"It's like having a paired programmer explain things to you."_ 
+
+AI offers various ways to help programmers understand code written by others. Firstly, AI tools can analyze the codebase and provide insights into its structure, complexity, and potential defects. This analysis can identify parts of the code that may be challenging to understand, maintain or improve. Based on the analysis, the AI tools may also make recommendations on how to enhance the codebase for better functionality and readability.
+
+Secondly, AI tools can assist in summarizing large codebases, which can be challenging to comprehend in detail. Such codebases may have multiple files, functions, and classes, which could take a considerable amount of time to read and understand thoroughly. With the help of AI, programmers can get a high-level overview of the codebase without going through it line by line. This approach can save substantial time and effort, especially when dealing with complex codebases.
+
+Finally, AI can help programmers to understand the comments and documentation written by other developers. These insights can help programmers to understand the code's purpose and the assumptions and limitations of the codebase. AI can achieve this by analyzing the natural language used in the comments and documentation, and providing a more accurate interpretation and understanding of what the original developer intended.
+
+::: {.reflection}
+
+**Ethical Considerations**
+
+AI language models like ChatGPT, Bard, and others have the ability to summarize code and offer valuable insights into its workings. However, it's important to consider the ethics of using AI to summarize code that someone else has written. Several factors come into play, such as the intended purpose of the summary, the ownership of the code, and the potential impact of the summary. Specifically, it's important to take into account who owns the code, the reason for summarizing the code, and whether the code contains any sensitive or personal information.
+
+If the reason for summarizing the code is for educational or research purposes, and the code is either publicly available or the owner has granted explicit permission for its use, then it's likely ethical to use AI to summarize the code. However, if the summary is intended for commercial purposes or could potentially infringe upon the owner's intellectual property rights, it may be unethical to use AI to summarize the code without obtaining the owner's consent. Additionally, if the code contains confidential or personal information, using AI to summarize it could raise privacy concerns. In such cases, obtaining explicit consent from the owner and implementing appropriate measures to ensure that the summary does not reveal any confidential information may be necessary.
+
+Overall, the ethics of using AI to summarize code someone else wrote depend on the specific circumstances and should be carefully considered before proceeding. It is important to respect the intellectual property rights and privacy of the owner and ensure that the summary is used in a responsible and ethical manner.
+
+::: 
+
+## Benefits of using AI
+
+While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages. These benefits include:
+
+**Increased efficiency**: AI language models can quickly analyze large amounts of code and provide a summary of its functionality, which can save developers a significant amount of time compared to manually analyzing the code line-by-line. By automating this process, developers can devote more time to other important tasks, such as debugging, testing, and improving the code.
+
+**Error reduction**: AI language models can help to identify errors and inconsistencies in the code, which can be particularly helpful when working with complex or large-scale projects. By catching these issues early, developers can avoid potential bugs and glitches down the line, ultimately leading to a more efficient and effective codebase.
+
+**Understanding design decisions**: AI language models can offer developers valuable insights into the design decisions and implementation details of code. This can be especially helpful when working with older or legacy code, or when collaborating with other developers on a project. By gaining a deeper understanding of the codebase, developers can make better-informed decisions when it comes to adding new features, improving existing functionality, or fixing bugs. For instance, understanding how a particular piece of code works and why it was implemented a certain way can help developers identify potential issues and find more effective solutions. This can ultimately lead to a more efficient and effective codebase, resulting in a better end-user experience.
+
+Overall, using AI language models to understand code can help developers work more efficiently, make fewer mistakes, and gain valuable insights into the code they're working on. As AI technology continues to improve, it's likely that these tools will become even more powerful and widely used in the software development industry, helping developers to build better software more quickly and easily.
+
+## Example One: Using AI to summarize code
+
+For the next two sections, we'll use Google's AI chatbot Bard. As always, feel free to use your favorite chatbot - all of them can provide help!
+
+Let's start with a relatively simple code using the R programming language.
+
+```
+library(tidyverse)
+
+diamonds <- ggplot2::diamonds
+
+diamonds_selected <- diamonds %>%
+  select(carat, cut, color, clarity, depth, table, price)
+
+diamonds_filtered <- diamonds_selected %>%
+  filter(price > 5000)
+
+diamonds_binned <- diamonds_filtered %>%
+  mutate(carat_bins = cut_width(carat, width = 0.2))
+
+diamonds_summary <- diamonds_binned %>%
+  group_by(carat_bins, cut, color, clarity) %>%
+  summarize(mean_price = mean(price), sd_price = sd(price))
+
+ggplot(diamonds_summary, aes(x = mean_price, y = sd_price)) +
+  geom_point() +
+  facet_grid(cut ~ color + clarity) +
+  labs(x = "Mean Price", y = "Standard Deviation of Price")
+```
+
+If you are familiar with R, you might be able to understand what this code does with little effort. However, if you don't know R, you're relatively new to R, or you're just having a bad day, understanding what this bit of code can take a great deal more energy and time. AI language bots can ease that burden.
+
+We first ask Bard to explain the purpose of this code.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the R code  does"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_5")
+```
+
+You can always ask for clarification if you need more information.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard gives more detail about the example R code"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_52")
+```
+
+
+Great! Now we know a couple of things:
+
+1. This bit of code uses the tidyverse package.
+
+1. We're also using the diamonds dataset.
+
+1. After the dataset is loaded, the dataset is filtered by price.
+
+1. The diamonds in the filtered dataset are grouped by carat, cut, color, and clarity, after which the mean and standard deviation of the price for each group is calculated.
+
+1. Finally, the code plots the mean prices against the grouping variables.
+
+
+Okay, but maybe don't know what the tidyverse is. We can ask Bard to explain that as well.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the tidyverse"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_11")
+```
+
+You might then want to know a little about the diamonds dataset; we can ask Bard to tell us more about that, too.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard describes the diamonds dataset from R"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_15")
+```
+
+
+AI can also be used to explain details within the code itself. Maybe you're reading through the code and you come across a section that just doesn't make sense - like, perhaps, the `diamonds_binned` command. Bard might be able to offer an explanation.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the diamond_binned object is"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_18")
+```
+
+
+## Example Two: Using AI to understand legacy code
+
+As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps of understanding, especially when the code isn't annotated well or at all.
+
+Let's look at example code that might have been written in the 1990s.
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int main() {
+  int fd = connect_to_database("seattle_temperature.db");
+  int n_temperatures = retrieve_temperatures(fd);
+    
+  int sfd = connect_to_database("seattle_smog.db");
+  int n_smog_measures = retrieve_smog_measures(sfd);
+
+  int n_combined_data = n_temperatures + n_smog_measures;
+  int combined_data[n_combined_data];
+
+  for (int i = 0; i < n_temperatures; i++) {
+    combined_data[i] = retrieve_temperature(fd, i);
+  }
+
+  for (int i = 0; i < n_smog_measures; i++) {
+    combined_data[n_temperatures + i] = retrieve_smog_measure(sfd, i);
+  }
+  close_database(fd);
+  close_database(sfd);
+
+  double slope = 0.0;
+  double y_intercept = 0.0;
+  for (int i = 0; i < n_combined_data; i++) {
+    slope += (combined_data[i + n_temperatures] - y_intercept) * (combined_data[i] - y_intercept);
+    y_intercept += (combined_data[i + n_temperatures] - y_intercept);
+  }
+ 
+  slope /= n_combined_data;
+  y_intercept /= n_combined_data;
+
+  printf("The slope is %lf and the y-intercept is %lf.\n", slope, y_intercept);
+
+  return 0;
+}
+```
+
+A good first step when facing unknown code is to find out what language it's in. You may already recognize it, but if you don't, AI can help.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard tells you the second example is written in C"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_24")
+```
+
+
+::: {.reflection}
+
+**AI QUERY TIPS**
+
+Not all AI chatbots will explain how they determine the language of code. If yours doesn't, you can ask "How do you know this code was written in [stated language]?" to learn more.
+
+:::
+
+
+When dealing with legacy code, you might want to understand how the previous programmer chose to structure their code.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard details the structure of the code"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_27")
+```
+
+Don't be afraid to query further. For example, you might be curious why a particular code structure was chosen.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains why a code structure was used"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_40")
+```
+
+One of the major strengths of using AI to understand code is that you can ask a chatbot to explain both the overall purpose of the code as well as specific snippets. The example code contains loops. Let's explore what a particular loop is doing.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what a for loop is doing"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_43")
+```
+
+
+In another loop in our example code, we might want to know why two variables are included.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the purpose of two of the variables"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_30")
+```
+
+
+Finally, we can ask Bard if variables in the original code are even necessary, or if they can be dropped entirely.
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains whether included variables in the code are necessary"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_33")
+```
+
+
+::: {.reflection}
+
+**Example from DaSL's own work**
+
+Recently, we used an AI chatbot to explain regex in a tricky bit of code from a larger program written more than 5 years ago.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "We used ChatGPT to explain a regex example in older code"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147eea86c5_0_4")
+```
+
+:::
+
+
+## Hands-On Exercise
+
+Now it's your turn to try. Let's say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what's going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.
+
+**Note**: This code is just an example and was written strictly for educational purposes.
+
+```
+use ode_solvers::{Euler, OdeMethod};
+use plotters::prelude::*;
+use std::fs::File;
+
+
+const N: f64 = 1000000.0;  
+const I0: f64 = 10.0;  
+const R0: f64 = 0.0;   
+const S0: f64 = N - I0 - R0;  
+const BETA: f64 = 0.3;  
+const GAMMA: f64 = 0.1;  
+
+fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {
+    let s = y[0];
+    let i = y[1];
+    let r = y[2];
+    let dsdt = -BETA * s * i / N - v * s;
+    let didt = BETA * s * i / N - GAMMA * i;
+    let drdt = GAMMA * i + v * s;
+    vec![dsdt, didt, drdt]
+}
+
+fn main() {
+
+    let mut solver = Euler::new(sir_model);
+    solver.set_initial_condition(&[S0, I0, R0]);
+
+
+    let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
+    root.fill(&WHITE).unwrap();
+    let mut chart = ChartBuilder::on(&root)
+        .caption("SIR model with vaccination", ("sans-serif", 40))
+        .set_label_area_size(LabelAreaPosition::Left, 60)
+        .set_label_area_size(LabelAreaPosition::Bottom, 40)
+        .build_cartesian_2d(0.0..100.0, 0.0..N)
+        .unwrap();
+
+    let mut data1 = vec![];
+    for _ in 0..1000 {
+        let y = solver.integrate(0.1, 0.0);
+        data1.push((solver.time(), y[0], y[1], y[2]));
+    }
+
+
+    let vaccination_rate = 0.1;   
+    let vaccination_coverage = 0.5;   
+    let vaccinated = vaccination_coverage * N;   
+    let mut data2 = vec![];
+    for i in 0..1000 {
+        let t = i as f64 * 0.1;
+        let v = if t >= 50.0 && t < 150.0 {vaccinated * vaccination_rate} else {0.0};
+        let y = solver.integrate(0.1, v);
+        data2.push((solver.time(), y[0], y[1], y[2]));
+    }
+
+
+    chart
+        .configure_mesh()
+        .x_labels(10)
+        .y_labels(10)
+        .disable_x_mesh()
+        .disable_y_mesh()
+        .draw()
+        .unwrap();
+    chart
+        .draw_series(LineSeries::new(
+            data1.iter().map(|d|
+```
+
+**QUESTIONS:**
+
+1. What language is the code written in?
+
+1. What are two clues that tell you the language?
+
+1. What is the overall task this code does?
+
+1. What is a new feature you could add to the code?
+
+1. How could you add that feature?
+
+1. What does this bit of code do?
+
+```
+ let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
+```
+
+7. Why would a progammer set up a section of code like this?
+
+```
+fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {
+    let s = y[0];
+    let i = y[1];
+    let r = y[2];
+    let dsdt = -BETA * s * i / N - v * s;
+    let didt = BETA * s * i / N - GAMMA * i;
+    let drdt = GAMMA * i + v * s;
+    vec![dsdt, didt, drdt]
+}
+```
+
+8. How are these variables initialized?
+
+```
+let s = y[0];
+let i = y[1];
+let r = y[2];
+```
+
+9. What are some other variables that could be added to this command to customize the output?
+
+```
+  chart
+        .configure_mesh()
+        .x_labels(10)
+        .y_labels(10)
+        .disable_x_mesh()
+        .disable_y_mesh()
+        .draw()
+        .unwrap();
+```
+
+
+```{r}
+devtools::session_info()
+```
+
