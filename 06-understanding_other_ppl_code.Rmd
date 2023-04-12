@@ -98,6 +98,7 @@ Great! Now we know a couple of things:
 
 
 Okay, but maybe don't know what the tidyverse is. We can ask Bard to explain that as well.
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the tidyverse"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_11")
 ```
