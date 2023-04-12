@@ -1,4 +1,5 @@
 available-course-formats
+testing-query-css
 introduction
 ai-provides-new-opportunities
 ai-code-of-ethics
