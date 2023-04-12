@@ -1,0 +1,32 @@
+
+.hero-image-container {
+  height: 100px;
+}
+
+.page-inner {
+  padding-top: 60px !important;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h1,
+.book .book-body .page-wrapper .page-inner section.normal h2,
+.book .book-body .page-wrapper .page-inner section.normal h3,
+.book .book-body .page-wrapper .page-inner section.normal h4,
+.book .book-body .page-wrapper .page-inner section.normal h5,
+.book .book-body .page-wrapper .page-inner section.normal h6 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div.query{
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 100px;
+  min-height: 80px;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 10px center;
+  background-color: #e5f8fa;
+  background-image: url("../assets/box_images/query.png");
+  border: 4px #e5f8fa;
+  border-style: solid;
+}
