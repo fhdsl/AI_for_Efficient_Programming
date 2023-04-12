@@ -4,7 +4,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Writing Code
+# Writing (and Debugging) Code
 
 In today's digitally-driven world, coding has become an essential skill. It is used to create websites, mobile applications, and sophisticated software systems. Contrary to popular belief, coding is not only for those who possess an innate talent for programming. With the right resources and a willingness to learn, anyone can become proficient in coding.
 
@@ -12,10 +12,10 @@ Practice is crucial to mastering the art of coding, and those who are willing to
 
 Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.
 
-Ultimately, the ability to write code is a valuable asset in today's job market, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
+Ultimately, the ability to write code is a valuable asset in today's world, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
 
 
-##Using AI to write code
+## Using AI to write code
 
 AI-powered programming tools and technologies are revolutionizing the way we approach software development. AI can be used to generate code snippets, which can save developers significant amounts of time and increase productivity. This is because AI can analyze existing code and learn from it to generate code that is similar to what a human programmer might write, but in a fraction of the time. Additionally, AI makes it possible for people to write code in languages with which they are only slightly familiar.
 
@@ -26,15 +26,37 @@ One of the most promising aspects of AI-powered programming is its potential to 
 The rise of AI technologies is transforming software development  and changing the skills required for writing code. Rather than simply memorizing syntax, developers need to focus on developing their creativity, intuition, and problem-solving skills. Additionally, programmers must also hone their abilities in architecture design and project management, as these skills are becoming increasingly important in the modern software development landscape.
 
 :::{.reflection}
-Ethics of using ChatGPT to write code.
+The use of artificial intelligence (AI) in coding has raised a number of ethical concerns. One of the biggest concerns is the potential for AI to create biased or harmful code. AI systems are trained on data, and if the data used to train the system is biased, the resulting code could also be biased. This could lead to discrimination against certain groups of people, such as those with certain ethnic or cultural backgrounds, genders, or ages.
+
+Another major concern is the use of AI to generate malicious code. For instance, AI could be used to create code that spreads malware or hacks into computer systems. This could cause severe damage to individuals and organizations, including data breaches and financial losses.
+
+When AI systems are trained on data, they may also learn and incorporate code from that data. This means that AI-generated code could potentially infringe on the copyright of the original author of the code. For example, if an AI system is trained on a GitHub repository that contains code written by a human programmer, the AI system could generate code that is identical to or similar to the code in the GitHub repository. If the AI system then uses this code without permission from the original author, this could constitute copyright infringement.
+
+Similarly, AI systems could potentially infringe on intellectual property rights by using code that is protected by trademarks or patents. For example, if an AI system is trained on a training manual that contains code that is protected by a trademark, the AI system could generate code that is identical to or similar to the code in the training manual. If the AI system then uses this code without permission from the trademark owner, this could constitute trademark infringement.
+
+There is also a risk that AI-generated code could be unintelligible to humans. This could make it difficult to understand how the code works and could make it hard to identify and fix any issues that may arise. This could result in negative consequences, such as system crashes or security breaches, that could have been avoided if the code had been written by a human programmer.
+
+**It is essential to address these ethical concerns and ensure that the use of AI in coding is done in a responsible and transparent manner.** This could be done through ensuring the quality of the data used to train AI systems, promoting transparency in AI-generated code, and implementing safeguards against the creation of harmful or biased code. By doing so, we can harness the potential of AI to improve and transform the way we write and optimize code while maintaining ethical standards.
+
+**As a programmer using AI, it is up to you to be responsible for what you create.** You must rigorously test any code you write and also take care that you are only using code that you're authorized to use. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).
+
+Here are some additional tips for using AI responsibly in coding:
+
+*Be aware of the potential biases in the data that is used to train AI systems.
+
+*Make sure that you understand the code that you are using, even if it was generated by AI.
+
+*Be careful about what code you share publicly, as it could be used for malicious purposes.
+
+*Obtain permission from the copyright holders of any code that you use to train the AI system. Only use code that is in the public domain or that has been licensed for use by the AI system's owner.
+
+*Cite any GitHub repositories or training manuals you might use in your code
 :::
 
-##Benefits of using AI
-
-##Selecting a Language: 
+## Selecting a Language: 
 Choose a programming language that the participants are not familiar with, but is widely used and has a straightforward syntax. Some good options could be Ruby, Swift, or Kotlin.
 
-##Prompt Generation: 
+## Prompt Generation: 
 Create a set of prompts that will be used to guide participants in writing code in the selected language. These prompts should be specific enough to provide guidance, but open-ended enough to allow participants to exercise their creativity and problem-solving skills. For the example(s), walk participants through the process of interacting with ChatGPT and provide tips on how to refine their queries to get the best results.
 
 
