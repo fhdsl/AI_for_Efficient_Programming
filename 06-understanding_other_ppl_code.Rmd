@@ -80,6 +80,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 You can always ask for clarification if you need more information.
 
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard gives more detail about the example R code"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_52")
 ```
