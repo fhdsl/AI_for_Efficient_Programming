@@ -562,26 +562,3 @@ a.anchor:hover {
   font-size: .85em;
   color: #193a5c;
 }
-
-/* AnVIL style */
-/* Things above this comment should be identical to OTTR_Template style.css */
-/* Things below this comment are AnVIL customizations */
-
-.hero-image-container {
-  height: 100px;
-}
-
-.page-inner {
-  padding-top: 60px !important;
-}
-
-.book .book-body .page-wrapper .page-inner section.normal h1,
-.book .book-body .page-wrapper .page-inner section.normal h2,
-.book .book-body .page-wrapper .page-inner section.normal h3,
-.book .book-body .page-wrapper .page-inner section.normal h4,
-.book .book-body .page-wrapper .page-inner section.normal h5,
-.book .book-body .page-wrapper .page-inner section.normal h6 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
