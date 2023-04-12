@@ -1,6 +1,6 @@
 ---
-title: "Course Name"
-date: "January, 2023"
+title: "Using AI for Software"
+date: "April, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
