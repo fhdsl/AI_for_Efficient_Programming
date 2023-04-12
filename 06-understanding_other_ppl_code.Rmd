@@ -114,6 +114,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 AI can also be used to explain details within the code itself. Maybe you're reading through the code and you come across a section that just doesn't make sense - like, perhaps, the `diamonds_binned` command. Bard might be able to offer an explanation.
 
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the diamond_binned object is"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_18")
 ```
