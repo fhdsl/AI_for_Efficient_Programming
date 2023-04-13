@@ -3,7 +3,7 @@ chapter_name: "Chapter "
 repo: https://github.com/fhdsl/AI_for_software
 rmd_files: ["index.Rmd",
             "01-intro.Rmd",
-            "02-writing_code.Rmd"
+            "02-writing_code.Rmd",
             "03-refactoring.Rmd",
             "06-understanding_other_ppl_code.Rmd"]
 new_session: yes
