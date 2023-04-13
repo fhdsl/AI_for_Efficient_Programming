@@ -21,7 +21,7 @@ AI refactoring is also faster and more accurate than manual refactoring. This is
 
 ## Example - Correcting Syntax
 
-Programming languages operate using their established set of rules. For example, [python](https://en.wikipedia.org/wiki/Python_(programming_language)) uses indentation to define code blocks. However, when you shift between development environments, indentation and line breaks can sometimes be affected, causing major headaches! 
+Programming languages operate using their established set of rules. For example, [Python](https://www.python.org/) uses indentation to define code blocks. However, when you shift between development environments, indentation and line breaks can sometimes be affected, causing major headaches! 
 
 Let's say we run the following code:
 
@@ -55,7 +55,7 @@ IndentationError: unexpected indent
 
 ```
 
-Let's ask ChatGPT to refactor.
+Let's ask ChatGPT to clean things up.
 
 :::{.query}
 "Can you assist me with correcting the formatting and indentation issues in my Python code?"
