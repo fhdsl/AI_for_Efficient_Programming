@@ -8,7 +8,7 @@ ottrpal::set_knitr_image_path()
 
 In today's digitally-driven world, coding has become an essential skill. It is used to create websites, mobile applications, and sophisticated software systems. Contrary to popular belief, coding is not only for those who possess an innate talent for programming. With the right resources and a willingness to learn, anyone can become proficient in coding.
 
-Practice is crucial to mastering the art of coding, and those who are willing to commit themselves to the learning process can achieve great results. Writing code can also be a rewarding and fulfilling hobby. Creating your own software, building a website, or automating a task can be immensely satisfying, and can provide a sense of accomplishment and pride.
+Practice is crucial to mastering the art of coding, and those who are willing to commit themselves to the learning process can achieve great results. Writing code can also be a rewarding and fulfilling hobby, too. Creating your own software, building a website, or automating a task can be immensely satisfying, and can provide a sense of accomplishment and pride.
 
 Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.
 
