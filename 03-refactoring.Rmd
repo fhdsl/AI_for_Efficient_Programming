@@ -8,13 +8,17 @@ ottrpal::set_knitr_image_path()
 ```
 
 
-# Code Refactoring
+# Refactoring Code
 
 [Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) is the process of improving the quality of underlying code without changing its functionality. In other words, it's a way of cleaning up and optimizing code so that it's easier to maintain and more efficient. This often involves making small changes to the code, such as renaming variables or functions, reorganizing code blocks, or simplifying complex expressions. Refactoring is an essential practice in software development and helps to ensure that the codebase remains manageable and adaptable as requirements and business needs change over time.
 
 Code refactoring helps to reduce [technical debt](https://en.wikipedia.org/wiki/Technical_debt), which is the accumulation of development work that needs to be done in the future as a result of taking shortcuts or using less than optimal solutions. Refactoring can help to identify potential issues and bugs before they cause problems, resulting in more stable software. Finally, refactoring code to be more readable and less verbose can create fewer headaches for you in the future.
 
 To understand why code refactoring is important, imagine trying to cook in a disorganized and cluttered kitchen. You might be a fantastic cook, but you are spending more time searching for utensils and ingredients, and the quality of the meal could suffer as a result. Similarly, code that is disorganized and cluttered can be difficult to work with and can result in lower-quality software. Refactoring is like cleaning and organizing the kitchen - it makes the process of cooking (or coding) smoother and more efficient.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_26")
+```
 
 ## AI in Code Refactoring
 
