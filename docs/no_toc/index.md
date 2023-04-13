@@ -1,6 +1,6 @@
 ---
-title: "Course Name"
-date: "January, 2023"
+title: "Using AI for Software"
+date: "April, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -8,9 +8,6 @@ biblio-style: apalike
 link-citations: yes
 description: "Description about Course/Book."
 favicon: assets/dasl_favicon.ico
-output:
-    bookdown::word_document2:
-      toc: true
 ---
 
 # About this Course {-}
@@ -24,3 +21,9 @@ This course is available in multiple formats which allows you to take it in the 
 - This course can be taken for [free certification through Leanpub](LINK HERE).
 - This course can be taken on [Coursera for certification here](LINK HERE) (but it is not available for free on Coursera).
 - Our courses are open source, you can find the [source material for this course on GitHub](LINK HERE).
+
+### Testing query css
+
+:::{.query}
+something here
+:::
