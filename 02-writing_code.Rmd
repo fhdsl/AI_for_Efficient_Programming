@@ -116,11 +116,11 @@ Kotlin is a relatively new language that is designed to be more concise and expr
 
 Used for iOS and macOS app development, Swift is known for its strict syntax and steep learning curve.
 
-*C#*
+**C#**
 
 Often used for Windows desktop applications, web applications, and video games, C# can be challenging due to its more complex syntax and strict type system.
 
-*C++*
+**C++**
 
 A powerful language often used for developing high-performance applications and operating systems, C++ can be challenging to learn due to its complexity and the need to manage memory manually.
 
