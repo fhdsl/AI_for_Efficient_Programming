@@ -19,7 +19,7 @@ However, AI has significant potential to help with code refactoring. AI can use 
 
 AI refactoring is also faster and more accurate than manual refactoring. This is particularly useful for large-scale software projects with massive codebases, where manual code review and refactoring can be an enormous task. In the next sections, we'll take a look at some examples of using AI to refactor code.
 
-## Example - Correcting Syntax
+## Example One: Correcting Syntax
 
 Programming languages operate using their established set of rules. For example, [Python](https://www.python.org/) uses indentation to define code blocks. However, when you shift between development environments, indentation and line breaks can sometimes be affected, causing major headaches! 
 
@@ -46,16 +46,16 @@ main()
 
 We'll get the following error because our indentation is off:
 
+:::{.warning}
 ```
 File "my_script.py", line 3
     return result
     ^
 IndentationError: unexpected indent
-
-
 ```
+:::
 
-Let's ask ChatGPT to clean things up.
+Let's ask [ChatGPT](https://chat.openai.com) to clean things up.
 
 :::{.query}
 "Can you assist me with correcting the formatting and indentation issues in my Python code?"
@@ -90,13 +90,42 @@ Sum: 11
 Product: 30
 ```
 
-Much better! This can be quite handy when you can't immediately see what is wrong with the formatting. 
+Much better! This can be quite handy when you can't immediately see what is wrong with the formatting or if you are working with a large codebase. 
 
-<!-- Need to fill in below -->
+## Example Two: Syntax Convention
 
-1. Syntax analysis
-2. Semantic analysis
-3. Structural analysis
+Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the [R programming language](https://www.r-project.org/), there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the `<-` operator should be used. Single and double quotes can be used for character types interchangably.
+
+Let's say we have the following code:
+
+```
+a <- "apple"
+b = 'banana'
+"carrot" -> c
+```
+
+```
+> c
+[1] "carrot"
+```
+
+This code will not produce any errors, but it doesn't follow typical R convention. Let's ask ChatGPT to clean things up.
+
+:::{.query}
+"Can you help me reformat my R code to follow accepted style conventions?"
+:::
+
+```
+a <- "apple"
+b <- "banana"
+c <- "carrot"
+```
+
+Much better! This will make more sense when you share the code with other programmers.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "AI can help clean up code to match commonly followed conventions by users."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_10")
+```
 
 ## Code optimization
 
