@@ -1,7 +1,11 @@
 
 ```{r, include = FALSE}
+#install.packages("reticulate")
+library(reticulate)
 ottrpal::set_knitr_image_path()
+use_python("/usr/bin/python3")
 ```
+
 
 # Code Refactoring
 
@@ -25,7 +29,7 @@ Programming languages operate using their established set of rules. For example,
 
 Let's say we run the following code:
 
-```{python eval=FALSE}
+```{python error = TRUE, python.reticulate = TRUE}
 def calculate_sum(a,b):
  result = a + b
   return result
@@ -59,7 +63,7 @@ Let's ask [ChatGPT](https://chat.openai.com) to clean things up.
 "Can you assist me with correcting the formatting and indentation issues in my Python code?"
 :::
 
-```{python eval=FALSE}
+```{python python.reticulate = TRUE}
 def calculate_sum(a, b):
     result = a + b
     return result
@@ -131,7 +135,7 @@ The DRY (Don't Repeat Yourself) programming tenet is essential to good software.
 
 Let's take the following Python code:
 
-```{python eval=FALSE}
+```{python python.reticulate = TRUE}
 def print_greetings():
     print("Hello, Alice!")
     print("Hello, Bob!")
@@ -148,7 +152,7 @@ Notice how repetitive this code is? `print()` and the string `"Hello, "` appear 
 "Could you please refactor my Python code to make it more DRY (Don't Repeat Yourself)?"
 :::
 
-```{python eval=FALSE}
+```{python}
 def print_greeting(name):
     print(f"Hello, {name}!")
 
@@ -162,7 +166,7 @@ print_greetings()
 
 Now let's imagine our software lead has asked us to change the greeting to Spanish. Notice how we only have to make a small change to the second line of code:
 
-```{python eval=FALSE}
+```{python eval = TRUE, python.reticulate = TRUE}
 def print_greeting(name):
     print(f"¡Hola, {name}!")
 
