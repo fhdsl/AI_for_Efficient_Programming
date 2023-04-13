@@ -1,6 +1,5 @@
 Anthropic
 AnVIL
-Anthropic
 BIPOC
 BitMapBackend
 Bloomberg
