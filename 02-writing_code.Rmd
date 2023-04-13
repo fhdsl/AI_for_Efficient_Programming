@@ -84,7 +84,7 @@ Get feedback from others. Ask other people to review your code and give you feed
 
 Selecting a language in which to develop software is an important first step. You might choose a language based on:
 
-* Your pre-existing knowledge or experience with the language
+* Your preexisting knowledge or experience with the language
 * A specific use case where the language is commonly used
 * The language(s) your colleagues or coworkers use
 
