@@ -25,7 +25,7 @@ Programming languages operate using their established set of rules. For example,
 
 Let's say we run the following code:
 
-```
+```{python eval=FALSE}
 def calculate_sum(a,b):
  result = a + b
   return result
@@ -46,14 +46,12 @@ main()
 
 We'll get the following error because our indentation is off:
 
-:::{.warning}
 ```
 File "my_script.py", line 3
     return result
     ^
 IndentationError: unexpected indent
 ```
-:::
 
 Let's ask [ChatGPT](https://chat.openai.com) to clean things up.
 
@@ -61,7 +59,7 @@ Let's ask [ChatGPT](https://chat.openai.com) to clean things up.
 "Can you assist me with correcting the formatting and indentation issues in my Python code?"
 :::
 
-```
+```{python eval=FALSE}
 def calculate_sum(a, b):
     result = a + b
     return result
@@ -94,11 +92,11 @@ Much better! This can be quite handy when you can't immediately see what is wron
 
 ## Example Two: Syntax Convention
 
-Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the [R programming language](https://www.r-project.org/), there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the `<-` operator should be used. Single and double quotes can be used for character types interchangably.
+Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the [R programming language](https://www.r-project.org/), there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the `<-` operator should be used. Single and double quotes can be used for character types interchangably, but it's generally a good idea to stick with one or the other.
 
 Let's say we have the following code:
 
-```
+```{r eval=FALSE}
 a <- "apple"
 b = 'banana'
 "carrot" -> c
@@ -115,7 +113,7 @@ This code will not produce any errors, but it doesn't follow typical R conventio
 "Can you help me reformat my R code to follow accepted style conventions?"
 :::
 
-```
+```{r eval=FALSE}
 a <- "apple"
 b <- "banana"
 c <- "carrot"
@@ -126,6 +124,57 @@ Much better! This will make more sense when you share the code with other progra
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "AI can help clean up code to match commonly followed conventions by users."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_10")
 ```
+
+## Example Three: Staying DRY
+
+The DRY (Don't Repeat Yourself) programming tenet is essential to good software. By avoiding repetition in code, we can reduce the amount of duplicate code we need to write and maintain. If we need to change the functionality of a certain piece of code, we have to make the same change in multiple places, which can be time-consuming and error-prone.
+
+Let's take the following Python code:
+
+```{python eval=FALSE}
+def print_greetings():
+    print("Hello, Alice!")
+    print("Hello, Bob!")
+    print("Hello, Carol!")
+    print("Hello, David!")
+    print("Hello, Eve!")
+
+print_greetings()
+```
+
+Notice how repetitive this code is? `print()` and the string `"Hello, "` appear five times. We can improve this!
+
+:::{.query}
+"Could you please refactor my Python code to make it more DRY (Don't Repeat Yourself)?"
+:::
+
+```{python eval=FALSE}
+def print_greeting(name):
+    print(f"Hello, {name}!")
+
+def print_greetings():
+    names = ["Alice", "Bob", "Carol", "David", "Eve"]
+    for name in names:
+        print_greeting(name)
+
+print_greetings()
+```
+
+Now let's imagine our software lead has asked us to change the greeting to Spanish. Notice how we only have to make a small change to the second line of code:
+
+```{python eval=FALSE}
+def print_greeting(name):
+    print(f"¡Hola, {name}!")
+
+def print_greetings():
+    names = ["Alice", "Bob", "Carol", "David", "Eve"]
+    for name in names:
+        print_greeting(name)
+
+print_greetings()
+```
+
+Much easier.
 
 ## Code optimization
 
