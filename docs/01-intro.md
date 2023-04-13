@@ -46,9 +46,19 @@ We must always be aware of the potential for harm and deliberately take steps to
 
 **Advocate for ethical AI.** Speak up when you see AI being used in a way that you believe is unethical. Support organizations that are working to promote ethical AI.
 
+## The AI chatbots
+
+Although humans have been interacting with AI chatbots for years, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest in them. We will use a variety of chatbots as examples throughout this course. Some AIs will be better suited for your particular tasks, and it is too early to judge which of the technologies will end up dominating the industry. We encourage you to test multiple AI platforms to find the ones that best fit your needs, and the use of a particular AI in each chapter should not be taken as an endorsement by us.
+
+[ChatGPT](https://chat.openai.com/) is OpenAI's large language model based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to understand and generate human-like responses to text-based conversations. You will need to create an account before using it.
+
+[Bard](https://bard.google.com/) is Google's large language model, also known as a conversational AI or chatbot trained to be informative and comprehensive. It is trained on a massive amount of text data and is able to communicate and generate human-like text in response to a wide range of prompts and questions. You will need to join the waiting list before getting access, although in our experience the wait time is short.
+
+[Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and [Ehang's](https://www.ehang.com/) AI platform, which was created to interface with their Dragonfly drone. Poe also gives you access to ChatGPT.
+
 ## About this book
 
-We used AI bots to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human behind it to make sure that AI is used properly and transparently.
+We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human behind it to make sure that AI is used properly and transparently.
 
 
 
@@ -68,12 +78,13 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-04-05                  
+##  date     2023-04-13                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
 ##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
 ##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
+##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
 ##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
 ##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
 ##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
@@ -89,6 +100,8 @@ devtools::session_info()
 ##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
 ##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
 ##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
+##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
+##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
 ##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
 ##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
 ##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
@@ -107,6 +120,7 @@ devtools::session_info()
 ##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
 ##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
 ##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
+##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
 ##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
 ##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
 ##  stringr       1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
