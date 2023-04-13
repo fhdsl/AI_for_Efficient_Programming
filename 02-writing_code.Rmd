@@ -53,6 +53,33 @@ Here are some additional tips for using AI responsibly in coding:
 *Cite any GitHub repositories or training manuals you might use in your code
 :::
 
+## The Basics
+
+Using AI to write code is as much of an art as writing your own code. You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.
+
+Following a few rules and suggestions will make your experience much more enjoyable and productive.
+
+*Be clear about your goals. What do you want the AI to do? Be as specific as possible.
+
+*Start with a simple task. Don't try to do too much too soon. Start with a simple task and then gradually work your way up to more complex tasks.
+
+*Provide enough data. The more data you can give the AI, the better it will be able to learn and perform the task you want it to do.
+
+*Be patient. Training an AI can take time. Don't expect it to be perfect right away.
+
+Test your results. Make sure the AI is actually doing what you want it to do.
+
+Be ethical. Use AI responsibly and ethically. Don't use it for malicious purposes.
+
+Here are some additional tips for writing code with AI:
+
+Use a variety of data. The more variety of data you can give the AI, the better it will be able to learn and perform the task you want it to do.
+
+Use a variety of AI models. There are many different AI models available. Experiment with different models to see which one works best for your task.
+
+Get feedback from others. Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.
+
+
 ## Selecting a Language: 
 Choose a programming language that the participants are not familiar with, but is widely used and has a straightforward syntax. Some good options could be Ruby, Swift, or Kotlin.
 
