@@ -326,7 +326,7 @@ fn main() {
  let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
 ```
 
-7. Why would a progammer set up a section of code like this?
+7. Why would a programmer set up a section of code like this?
 
 ```
 fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {

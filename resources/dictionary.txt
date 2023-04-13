@@ -1,3 +1,4 @@
+Anthropic
 AnVIL
 BIPOC
 BitMapBackend
@@ -11,6 +12,8 @@ codebases
 const
 Coursera
 css
+DALL
+DaSL's
 Datatrail
 DataTrail
 didt
@@ -18,6 +21,7 @@ Dockerfile
 Dockerhub
 dsdt
 dropdown
+Ehang's
 favicon
 fn
 fs
@@ -25,6 +29,7 @@ GDSCN
 GitHub
 Github
 GH
+GPT
 impactful
 ITCR
 itcrtraining
@@ -40,6 +45,8 @@ OpenAI's
 ottrpal
 Pandoc
 png
+Pre
+Quora's
 tidyverse
 UE
 UE5
