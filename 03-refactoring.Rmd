@@ -89,9 +89,11 @@ if __name__ == '__main__':
 
 Much better! This can be quite handy when you can't immediately see what is wrong with the formatting or if you are working with a large codebase. 
 
-## Example Two: Syntax Convention
+## Example Two: Styling and Convention
 
 Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the [R programming language](https://www.r-project.org/), there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the `<-` operator should be used. Single and double quotes can be used for character types interchangeably, but it's generally a good idea to stick with one or the other.
+
+### Commonly Accepted Convention
 
 Let's say we have the following code:
 
@@ -125,6 +127,35 @@ Much better! This code will now look more familiar to other R programmers.
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "AI can help clean up code to match commonly followed conventions by users."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_10")
 ```
+
+### Visual Styling
+
+Some languages are flexible about line breaks, indentation, and spacing among code blocks. If you're rapidly developing, things can get messy pretty quickly. Many development environments, for example RStudio and PyCharm, have the ability to format your code for you without changing any of the code itself. However, you can also get AI to do this according to your own preferences.
+
+```{r}
+d <- c(rep(a,5),rep(b,5),rep(c,5),paste(a,b,c),paste(c,b,a))
+```
+
+This code is pretty hard to read. Let's see if AI can do better.
+
+:::{.query}
+"Can you space out this R code to make it more readable?"
+:::
+
+:::{.ai_response}
+Sure! Here's the same code with added spacing for improved readability:
+
+```{r}
+d <- c(rep(a, 5), 
+       rep(b, 5), 
+       rep(c, 5), 
+       paste(a, b, c), 
+       paste(c, b, a))
+```
+
+:::
+
+Better! It's easier to interpret because only one action is being taken on each step. By spacing out the code and breaking it into multiple lines, it becomes easier for the human eye to scan for structure, logic, errors, and/or inconsistencies.
 
 ## Example Three: Staying DRY
 
@@ -270,6 +301,107 @@ if __name__ == '__main__':
 :::
 
 In this version, the `calculate_sum` function is simplified to take default arguments for a and b. This means the `default_values` function is no longer necessary. The a and b variables are also removed from `main`, as they are no longer needed. Much better and easier to look at overall.
+
+## Example Five: Making Code Readable
+
+Usually, our first goal as programmers is to get the response we need from the code. Readability might be the last thing on our minds. Luckily, AI can help with this. Let's imagine we whipped up this code pretty quickly. It is tough to read, and it could definitely be improved.
+
+```{r}
+for(term in c("good","bad","ugly")){
+  print(c(rep(term,3),paste("really",stringr::str_to_upper(term))))
+}
+```
+
+Let's see if AI can do better.
+
+:::{.query}
+"Can you help me clean up this R code so it is more readable?"
+:::
+
+:::{.ai_response}
+Sure! Here's a more readable version of the code:
+
+```{r warning=FALSE}
+library(stringr)
+
+for(term in c("good", "bad", "ugly")) {
+  print(c(rep(term, 3), paste("really", str_to_upper(term))))
+}
+```
+
+I added whitespace around operators and after commas for better readability. I also loaded the stringr package explicitly using `library()` to make the code more self-contained.
+:::
+
+This is a good start, but not much has changed. Let's try again. On ChatGPT, we can click "Regenerate Response".
+
+:::{.ai_response}
+Here's a cleaned-up version of the R code that is more readable:
+
+```{r warning=FALSE}
+library(stringr)
+
+terms <- c("good", "bad", "ugly")
+
+for (term in terms) {
+  rep_term <- rep(term, 3)
+  upper_term <- str_to_upper(term)
+  really_upper_term <- paste("really", upper_term)
+  result <- c(rep_term, really_upper_term)
+  print(result)
+}
+```
+
+I've stored the repeated term and the uppercased term in separate variables to make the code more readable. I've also separated the construction of the "really" phrase from the uppercased term to make it clearer what's happening. Finally, I've used whitespace and indentation to make the structure of the code more apparent.
+
+:::
+
+Better! While the code takes up a greater number of lines, it's easier to interpret because only one action is being taken on each step.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_111")
+```
+
+## Example Six: Keep it Brief
+
+As we learned above, following the DRY principle and removing dead code can make your code easier to interpret, maintain, and debug. However, sometimes the issue is the functions themselves. No one has perfect knowledge of everything in their programming language. AI can help us determine if there are any more efficient sets of functions that do the same thing. Here is some code that plays with the "CO2" dataset in R:
+
+```{r}
+library(datasets)
+
+for (type in unique(CO2$Type)) {
+  dat_subset <- CO2[CO2$Type == type, ]
+  for (plant in unique(dat_subset$Plant)) {
+    dat_subset_2 <- dat_subset[dat_subset$Plant == plant, ]
+    print(paste(dat_subset_2$Plant[1], round(mean(dat_subset_2$uptake), 1)))
+  }
+}
+```
+
+Let's see if AI has any ideas for making it more concise.
+
+:::{.query}
+"Can you make this code more concise?"
+:::
+
+:::{.ai_response}
+Here's a more concise version using `dplyr` package in R:
+
+```{r warning=FALSE, message=FALSE}
+library(dplyr)
+
+CO2 %>%
+  group_by(Type, Plant) %>%
+  summarize(mean_uptake = mean(uptake))
+```
+
+This code groups the CO2 dataset by Type and Plant, calculates the mean uptake for each group using summarize, and then prints the resulting data frame. The code is shorter and more concise because it uses the `dplyr` package, which has built-in functions for data manipulation and summarization.
+:::
+
+Refactoring the code to be more concise using `dplyr` makes it easier to read and understand the steps involved in the data manipulation. It also reduces the number of nested loops and intermediate variables, making the code more efficient and reducing the chance of errors. Ultimately, it is your job as a programmer to use your best judgment on the fine balance between brevity and readability, as the best solution is not always this obvious.
+
+:::{.notice}
+Remember that you can regenerate the AI's response if you want more options.
+:::
 
 ## Code optimization
 

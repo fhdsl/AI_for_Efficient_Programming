@@ -49,7 +49,10 @@ ottrpal
 Pandoc
 png
 Pre
+PyCharm
 Quora's
+RStudio
+summarization
 tidyverse
 UE
 UE5
@@ -58,4 +61,5 @@ Vec
 reproducibility
 rmarkdown
 underserved
+uppercased
 www
