@@ -7,7 +7,6 @@ use_python("/usr/bin/python3")
 ottrpal::set_knitr_image_path()
 ```
 
-
 # Refactoring Code
 
 [Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) is the process of improving the quality of underlying code without changing its functionality. In other words, it's a way of cleaning up and optimizing code so that it's easier to maintain and more efficient. This often involves making small changes to the code, such as renaming variables or functions, reorganizing code blocks, or simplifying complex expressions. Refactoring is an essential practice in software development and helps to ensure that the codebase remains manageable and adaptable as requirements and business needs change over time.
@@ -152,7 +151,7 @@ def print_greetings():
 print_greetings()
 ```
 
-Now let's imagine our software lead has asked us to change the greeting to Spanish. Notice how we only have to make a small change to the second line of code:
+Now let's imagine your software lead has asked us to change the greeting to Spanish. Notice how we only have to make a small change to the second line of code:
 
 ```{python eval = TRUE, python.reticulate = TRUE}
 def print_greeting(name):
@@ -168,10 +167,91 @@ print_greetings()
 
 Much easier.
 
+## Example Four: Keeping Code Alive
+
+During software development, code is often changing rapidly. It's common to end up with functions or variables you don't need anymore. It's best practice to remove "dead" code from your codebase: it's distracting and can make maintenance more challenging. Programmers should resist the urge to hang on to unused code in the expectation that they might need it one day. Version control, such as provided by git and GitHub, let you keep a record of old code without cluttering your final version.
+
+Let's take a look at some Python code with some dead code:
+
+```{python eval = TRUE, python.reticulate = TRUE}
+def default_values():
+    a = 5
+    b = 6
+    return a, b
+
+def calculate_sum(a, b):
+    result = a + b
+    return result
+
+def calculate_product(x, y):
+    return x * y
+  
+def simulate_data():
+    a, b = default_values()
+    dat = calculate_sum(a, b) + calculate_sum(a, b)
+    return dat
+
+def main():
+    a = 5
+    b = 6
+    a, b = default_values()
+    sum_result = calculate_sum(a, b)
+    print("Sum:", sum_result)
+
+if __name__ == '__main__':
+    main()
+```
+
+Some of these functions aren't used in the final step, typically defined in python as the `main()` function. Let's ask AI to remove them.
+
+:::{.query}
+"I need help with eliminating unused functions in my Python script."
+:::
+
+```{python eval = TRUE, python.reticulate = TRUE}
+def default_values():
+    a = 5
+    b = 6
+    return a, b
+
+def calculate_sum(a, b):
+    result = a + b
+    return result
+
+def main():
+    a = 5
+    b = 6
+    a, b = default_values()
+    sum_result = calculate_sum(a, b)
+    print("Sum:", sum_result)
+
+if __name__ == '__main__':
+    main()
+```
+
+Great! Now our code is much more manageable. This code only includes the necessary functions needed to run the `main()` function. We can go a step further!
+
+:::{.query}
+"Can you help me refactor my python code to make it more concise?"
+:::
+
+```{python eval = TRUE, python.reticulate = TRUE}
+def calculate_sum(a=5, b=6):
+    return a + b
+
+def main():
+    sum_result = calculate_sum()
+    print("Sum:", sum_result)
+
+if __name__ == '__main__':
+    main()
+```
+
+In this version, the `calculate_sum` function is simplified to take default arguments for a and b. This means the `default_values` function is no longer necessary. The a and b variables are also removed from `main`, as they are no longer needed. Much better and easier to look at overall.
+
 ## Code optimization
 
-1. Optimization of loops
-2. Dead code elimination
+loops!
 
 ## Case studies / examples in industry (if any)
 
