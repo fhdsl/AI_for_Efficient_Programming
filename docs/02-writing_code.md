@@ -62,7 +62,7 @@ The first rule about using AI is to remember that **it cannot read your mind**. 
 
 * _Be patient._ Querying an AI can take time. Don't expect it to be perfect right away.
 
-The second rule about using AI is to **test everything**. You are responsible for the code that AI generates, even if you didn't write it yourself. AI can be biased, just like humans, and this could lead to suboptimal development. There is a concern that AI may focus development on areas that optimize certain metrics but not overall quality, effectiveness, or user needs. Human judgment is still needed to ensure that AI is used in a responsible and ethical way.
+The second rule about using AI is to **test everything**. You are responsible for the code that AI generates, even if you didn't write it yourself. AI can be biased, just like humans, and this could lead to sub optimal development. There is a concern that AI may focus development on areas that optimize certain metrics but not overall quality, effectiveness, or user needs. Human judgment is still needed to ensure that AI is used in a responsible and ethical way.
 
 * _Test your results._ Make sure the AI is actually doing what you want it to do. AI systems are trained on data, and if the data is not representative of the real world, the AI system may not be able to generate code that works correctly. It is important to test the code to make sure that it is working as intended and that it is producing the desired results. Inadequate testing could lead to low quality, buggy code. Since AI generated code would be highly automated, it requires strong testing procedures and safety oversight to ensure it meets standards before deployment. 
 
