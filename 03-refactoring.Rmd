@@ -95,6 +95,8 @@ a <- "apple"
 b = 'banana'
 "carrot" -> c
 
+a
+b
 c
 ```
 
