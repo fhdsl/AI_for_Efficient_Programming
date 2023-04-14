@@ -13,9 +13,13 @@ prompt-generation
 refactoring-code
 ai-in-code-refactoring
 example-one-correcting-syntax
-example-two-syntax-convention
+example-two-styling-and-convention
+commonly-accepted-convention
+visual-styling
 example-three-staying-dry
 example-four-keeping-code-alive
+example-five-making-code-readable
+example-six-keep-it-brief
 code-optimization
 case-studies-examples-in-industry-if-any
 common-mistakes-edge-cases-things-to-watch-out-for
