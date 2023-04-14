@@ -1,3 +1,4 @@
+ai
 Anthropic
 AnVIL
 BIPOC
@@ -22,6 +23,7 @@ Dockerhub
 dsdt
 dropdown
 Ehang's
+else's
 favicon
 fn
 fs
