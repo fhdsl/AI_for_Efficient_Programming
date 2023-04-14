@@ -95,9 +95,7 @@ a <- "apple"
 b = 'banana'
 "carrot" -> c
 
-a
-b
-c
+c(a, b, c)
 ```
 
 This code does not produce any errors, but it doesn't follow typical R convention. Let's ask ChatGPT to clean things up.
