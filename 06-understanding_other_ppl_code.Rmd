@@ -2,19 +2,21 @@
 
 As a programmer, you will frequently encounter situations where you need to read and understand code written by other developers. This could be because you are collaborating on a project, you have taken over maintenance of an existing codebase, or you are learning new syntax or skills that require reading example codes. Comprehending code written by someone else is a distinct skill from being able to write your own code, and it takes practice to become proficient at it.
 
-When reading unfamiliar code, you need to be able to decipher the logic, understand the programming language syntax and semantics, and make sense of the naming conventions and architecture of the code. Furthermore, you may need to understand the context in which the code was written and any assumptions made by the original developer. All of these factors can make the process of understanding code written by someone else challenging.
+Reading unfamiliar code is like exploring an unfamiliar city without a map or a guide. Just like in a new city, you may not know where to start or how to navigate the codebase. You may encounter unfamiliar syntax, functions, and libraries that you have never seen before, just as you might encounter new streets, buildings, and landmarks. At first, you may feel disoriented and overwhelmed, and may need to spend some time getting oriented and familiarizing yourself with the environment. As you explore, you may start to see patterns and similarities, just as you might begin to recognize neighborhoods and landmarks in a new city. You may also encounter dead-ends, confusing intersections, and unexpected detours, just as you might encounter bugs and errors in the code.
 
-That said, learning how to read and understand code written by someone else is a valuable skill that can help you be a more effective programmer. By being able to read and comprehend unfamiliar code, you can contribute to projects more quickly, diagnose and fix bugs more effectively, and learn new programming techniques and best practices. As with any skill, the more you practice reading and understanding code written by others, the more comfortable and proficient you will become at it.
+To make progress in this unfamiliar territory, you may need to rely on a combination of intuition, deduction, and experimentation. You may need to break down the code into smaller pieces, analyze the behavior of each piece, and gradually build up a mental model of how the code works. You may also need to consult documentation, online resources, or other experts who are familiar with the codebase, just as you might ask locals or consult a map in a new city.
+
+In the end, with patience, persistence, and a willingness to learn, you can successfully navigate the unfamiliar code and achieve your goals, just as you can successfully explore a new city and discover its hidden treasures. Learning how to read and understand code written by someone else is a valuable skill that can help you be a more effective programmer. By being able to read and comprehend unfamiliar code, you can contribute to projects more quickly, diagnose and fix bugs more effectively, and learn new programming techniques and best practices. As with any skill, the more you practice reading and understanding code written by others, the more comfortable and proficient you will become at it.
 
 ## Using AI to understand code
 
-_"It's like having a paired programmer explain things to you."_ 
+_"It's like having a paired programmer explain things to you." ~dinosaur cartoon saying Howard's quote?_
 
-AI offers various ways to help programmers understand code written by others. Firstly, AI tools can analyze the codebase and provide insights into its structure, complexity, and potential defects. This analysis can identify parts of the code that may be challenging to understand, maintain or improve. Based on the analysis, the AI tools may also make recommendations on how to enhance the codebase for better functionality and readability.
+While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages. Firstly, AI tools can analyze the codebase and provide insights into its structure, complexity, and potential defects. This analysis can identify parts of the code that may be challenging to understand, maintain or improve. Based on the analysis, the AI tools may also make recommendations on how to enhance the codebase for better functionality and readability.
 
-Secondly, AI tools can assist in summarizing large codebases, which can be challenging to comprehend in detail. Such codebases may have multiple files, functions, and classes, which could take a considerable amount of time to read and understand thoroughly. With the help of AI, programmers can get a high-level overview of the codebase without going through it line by line. This approach can save substantial time and effort, especially when dealing with complex codebases.
+Secondly, AI tools can assist in summarizing large codebases, which can be challenging to comprehend in detail. Such codebases may have multiple files, functions, and classes, which could take a considerable amount of time to read and understand thoroughly. With the help of AI, programmers can get a high-level overview of the codebase without going through it line by line. This approach can save substantial time and effort, especially when dealing with complex codebases. By gaining a deeper understanding of the codebase, developers can make better-informed decisions when it comes to adding new features, improving existing functionality, or fixing bugs. AI language models can also quickly analyze large amounts of code and provide a summary of its functionality, which can save developers a significant amount of time compared to manually analyzing the code line-by-line. By automating this process, developers can devote more time to other important tasks, such as debugging, testing, and improving the code.
 
-Finally, AI can help programmers to understand the comments and documentation written by other developers. These insights can help programmers to understand the code's purpose and the assumptions and limitations of the codebase. AI can achieve this by analyzing the natural language used in the comments and documentation, and providing a more accurate interpretation and understanding of what the original developer intended.
+Finally, AI can help programmers to understand the comments and documentation written by other developers, as well as their design decisions and implementation details of code. These insights can help programmers to understand the code's purpose and the assumptions and limitations of the codebase. As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps of understanding, especially when the code isn't annotated well or at all. This can be especially helpful when working with older or legacy code, or when collaborating with other developers on a project. For instance, understanding how a particular piece of code works and why it was implemented a certain way can help developers identify potential issues and find more effective solutions. 
 
 ::: {.ethics}
 
@@ -28,209 +30,207 @@ Overall, the ethics of using AI to summarize code someone else wrote depend on t
 
 ::: 
 
-## Benefits of using AI
+## Example One: Summarizing Code You Didn't Write
 
-While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages. These benefits include:
-
-**Increased efficiency**: AI language models can quickly analyze large amounts of code and provide a summary of its functionality, which can save developers a significant amount of time compared to manually analyzing the code line-by-line. By automating this process, developers can devote more time to other important tasks, such as debugging, testing, and improving the code.
-
-**Error reduction**: AI language models can help to identify errors and inconsistencies in the code, which can be particularly helpful when working with complex or large-scale projects. By catching these issues early, developers can avoid potential bugs and glitches down the line, ultimately leading to a more efficient and effective codebase.
-
-**Understanding design decisions**: AI language models can offer developers valuable insights into the design decisions and implementation details of code. This can be especially helpful when working with older or legacy code, or when collaborating with other developers on a project. By gaining a deeper understanding of the codebase, developers can make better-informed decisions when it comes to adding new features, improving existing functionality, or fixing bugs. For instance, understanding how a particular piece of code works and why it was implemented a certain way can help developers identify potential issues and find more effective solutions. This can ultimately lead to a more efficient and effective codebase, resulting in a better end-user experience.
-
-Overall, using AI language models to understand code can help developers work more efficiently, make fewer mistakes, and gain valuable insights into the code they're working on. As AI technology continues to improve, it's likely that these tools will become even more powerful and widely used in the software development industry, helping developers to build better software more quickly and easily.
-
-## Example One: Using AI to summarize code
-
-For the next two sections, we'll use Google's AI chatbot [Bard](https://bard.google.com/). As always, feel free to use your favorite chatbot - all of them can provide help!
-
-Let's start with a relatively simple code using the R programming language.
+Here's some simple code using the R programming language, written by an unnamed programmer. If you are familiar with R, you might be able to understand what this code does with little effort. However, if you don't know R, you're relatively new to R, or you're just having a bad day, understanding what this bit of code can take a great deal more energy and time. AI language bots can ease that burden.
 
 ```
 library(tidyverse)
 
-diamonds <- ggplot2::diamonds
+d <- ggplot2::diamonds
 
-diamonds_selected <- diamonds %>%
+d_sel <- d %>%
   select(carat, cut, color, clarity, depth, table, price)
 
-diamonds_filtered <- diamonds_selected %>%
+d_fil <- d_s %>%
   filter(price > 5000)
 
-diamonds_binned <- diamonds_filtered %>%
+d_bin <- d_fil %>%
   mutate(carat_bins = cut_width(carat, width = 0.2))
 
-diamonds_summary <- diamonds_binned %>%
+d_summ <- d_bin %>%
   group_by(carat_bins, cut, color, clarity) %>%
   summarize(mean_price = mean(price), sd_price = sd(price))
 
-ggplot(diamonds_summary, aes(x = mean_price, y = sd_price)) +
+ggplot(d_sum, aes(x = mean_price, y = sd_price)) +
   geom_point() +
   facet_grid(cut ~ color + clarity) +
   labs(x = "Mean Price", y = "Standard Deviation of Price")
 ```
 
-If you are familiar with R, you might be able to understand what this code does with little effort. However, if you don't know R, you're relatively new to R, or you're just having a bad day, understanding what this bit of code can take a great deal more energy and time. AI language bots can ease that burden.
+We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) to explain the purpose of this code.
 
-We first ask Bard to explain the purpose of this code.
+:::{.query}
+"What does this code do?"
+:::
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the R code  does"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_5")
-```
 
 You can always ask for clarification if you need more information.
 
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard gives more detail about the example R code"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_52")
-```
+:::{.query}
+"Can you explain what each step does in detail?"
+:::
+
+You can also ask about both the tidyverse package and the dataset being used.
+
+:::{.query}
+"What is do the tidyverse packages do?"
+:::
+
+:::{.query}
+"Can you tell me more about the diamonds dataset?"
+:::
 
 
-Great! Now we know a couple of things:
+## Example Two: Identifying a Coding Language
 
-1. This bit of code uses the tidyverse package.
+Sometimes you might have to work with legacy code. Legacy code can be difficult to work with, especially if it is written in a language or style that you are not familiar with. There are more than 700 programming languages in use today, so it is impossible for any programmer to know them all. AI can be a helpful tool for identifying the language and version of legacy code, which can make your life just a little easier.
 
-1. We're also using the diamonds dataset.
-
-1. After the dataset is loaded, the dataset is filtered by price.
-
-1. The diamonds in the filtered dataset are grouped by carat, cut, color, and clarity, after which the mean and standard deviation of the price for each group is calculated.
-
-1. Finally, the code plots the mean prices against the grouping variables.
-
-
-Okay, but maybe don't know what the tidyverse is. We can ask Bard to explain that as well.
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the tidyverse"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_11")
-```
-
-You might then want to know a little about the diamonds dataset; we can ask Bard to tell us more about that, too.
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard describes the diamonds dataset from R"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_15")
-```
-
-
-AI can also be used to explain details within the code itself. Maybe you're reading through the code and you come across a section that just doesn't make sense - like, perhaps, the `diamonds_binned` command. Bard might be able to offer an explanation.
-
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what the diamond_binned object is"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_18")
-```
-
-
-## Example Two: Using AI to understand legacy code
-
-As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps of understanding, especially when the code isn't annotated well or at all.
-
-Let's look at example code that might have been written in the 1990s.
+Let's look at example code that might have been written decades ago.
 
 ```
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
+program temperature_smog_analysis;
 
-int main() {
-  int fd = connect_to_database("seattle_temperature.db");
-  int n_temperatures = retrieve_temperatures(fd);
-    
-  int sfd = connect_to_database("seattle_smog.db");
-  int n_smog_measures = retrieve_smog_measures(sfd);
+uses
+  Math;
 
-  int n_combined_data = n_temperatures + n_smog_measures;
-  int combined_data[n_combined_data];
+const
+  n_temperatures = 1000;
+  n_smog_measures = 500;
 
-  for (int i = 0; i < n_temperatures; i++) {
-    combined_data[i] = retrieve_temperature(fd, i);
-  }
+type
+  TemperatureArray = array[0..n_temperatures-1] of integer;
+  SmogArray = array[0..n_smog_measures-1] of integer;
 
-  for (int i = 0; i < n_smog_measures; i++) {
-    combined_data[n_temperatures + i] = retrieve_smog_measure(sfd, i);
-  }
+var
+  temperatures: TemperatureArray;
+  smog_measures: SmogArray;
+  combined_data: array of integer;
+  slope, y_intercept: double;
+  i, j: integer;
+
+function connect_to_database(filename: string): integer;
+begin
+  { implementation of connect_to_database function }
+end;
+
+function retrieve_temperatures(fd: integer): integer;
+begin
+  { implementation of retrieve_temperatures function }
+end;
+
+function retrieve_smog_measures(fd: integer): integer;
+begin
+  { implementation of retrieve_smog_measures function }
+end;
+
+function retrieve_temperature(fd, index: integer): integer;
+begin
+  { implementation of retrieve_temperature function }
+end;
+
+function retrieve_smog_measure(fd, index: integer): integer;
+begin
+  { implementation of retrieve_smog_measure function }
+end;
+
+procedure close_database(fd: integer);
+begin
+  { implementation of close_database function }
+end;
+
+begin
+  SetLength(combined_data, n_temperatures + n_smog_measures);
+
+  fd := connect_to_database('seattle_temperature.db');
+  n_temperatures := retrieve_temperatures(fd);
+
+  sfd := connect_to_database('seattle_smog.db');
+  n_smog_measures := retrieve_smog_measures(sfd);
+
+  for i := 0 to n_temperatures-1 do
+  begin
+    temperatures[i] := retrieve_temperature(fd, i);
+    combined_data[i] := temperatures[i];
+  end;
+
+  for j := 0 to n_smog_measures-1 do
+  begin
+    smog_measures[j] := retrieve_smog_measure(sfd, j);
+    combined_data[j + n_temperatures] := smog_measures[j];
+  end;
+
   close_database(fd);
   close_database(sfd);
 
-  double slope = 0.0;
-  double y_intercept = 0.0;
-  for (int i = 0; i < n_combined_data; i++) {
-    slope += (combined_data[i + n_temperatures] - y_intercept) * (combined_data[i] - y_intercept);
-    y_intercept += (combined_data[i + n_temperatures] - y_intercept);
-  }
- 
-  slope /= n_combined_data;
-  y_intercept /= n_combined_data;
+  slope := 0.0;
+  y_intercept := 0.0;
 
-  printf("The slope is %lf and the y-intercept is %lf.\n", slope, y_intercept);
+  for i := 0 to n_temperatures+n_smog_measures-1 do
+  begin
+    slope := slope + (combined_data[i + n_temperatures] - y_intercept) *
+            (combined_data[i] - y_intercept);
+    y_intercept := y_intercept + (combined_data[i + n_temperatures] - y_intercept);
+  end;
 
-  return 0;
-}
+  slope := slope / (n_temperatures + n_smog_measures);
+  y_intercept := y_intercept / (n_temperatures + n_smog_measures);
+
+  writeln('The slope is ', slope:0:2, ' and the y-intercept is ', y_intercept:0:2, '.');
+
+  readln;
+end.
 ```
 
-A good first step when facing unknown code is to find out what language it's in. You may already recognize it, but if you don't, AI can help. It's as simple as asking Bard to identify the coding language.
+We can ask [Bard](https://bard.google.com/) to take a guess at what the coding language might be.
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard tells you the second example is written in C"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_24")
-```
-
-
-::: {.reflection}
-
-**AI QUERY TIPS**
-
-Not all AI chatbots will explain how they determine the language of code. If yours doesn't, you can ask "How do you know this code was written in [stated language]?" to learn more.
-
+:::{.query}
+"What language is this code written in?"
 :::
 
 
-When dealing with legacy code, you might want to understand how the previous programmer chose to structure their code.
+We can explore further to figure out what indicators tell Bard the language is Pascal.
 
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard details the structure of the code"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_27")
-```
-
-Don't be afraid to query further. For example, you might be curious why a particular code structure was chosen.
-
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains why a code structure was used"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_40")
-```
-
-One of the major strengths of using AI to understand code is that you can ask a chatbot to explain both the overall purpose of the code as well as specific snippets. The example code contains loops. Let's explore what a particular loop is doing.
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains what a for loop is doing"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_43")
-```
-
-
-In another loop in our example code, we might want to know why two variables are included.
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the purpose of two of the variables"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_30")
-```
-
-
-Finally, we can ask Bard if variables in the original code are even necessary, or if they can be dropped entirely.
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains whether included variables in the code are necessary"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147a9c1e91_0_33")
-```
-
-
-::: {.reflection}
-
-**Example from DaSL's own work**
-
-Recently, we used an AI chatbot to explain regex in a tricky bit of code from a larger program written more than 5 years ago.
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "We used ChatGPT to explain a regex example in older code"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g2147eea86c5_0_4")
-```
-
+:::{.query}
+"How do you know this is Pascal?"
 :::
 
+
+It turns out there are multiple versions of Pascal. Since you will presumably need to work with this legacy code, you might want to know which version it is.
+
+:::{.query}
+"What version of Pascal is this?"
+:::
+
+## Example Three: Interpreting Regex
+
+Regex (short for Regular Expressions) is a powerful tool used to describe patterns in text. It's a sequence of characters that define a search pattern. Regular expressions can be a powerful tool for data cleaning, text mining, and data validation. They are widely used in web development, data science, and other fields where text processing is important. They can also be tricky to understand at first because they involve a specific syntax that can be complex.
+
+We can use [ChatGPT](https://chat.openai.com/) to explain regex in a bit of someone else's code.
+
+```
+x = sub(".*presentation/","",x)
+```
+
+:::{.query}
+"What does this do?"
+:::
+
+```
+x = sub("/d/e","/d",x)
+```
+
+:::{.query}
+"What about this?"
+:::
+
+
+## Example Four: Understanding Variables and Functions
+
+## Edge Cases
+
+## Limitations?
 
 ## Hands-On Exercise
 
@@ -283,13 +283,13 @@ fn main() {
     }
 
 
-    let vaccination_rate = 0.1;   
-    let vaccination_coverage = 0.5;   
-    let vaccinated = vaccination_coverage * N;   
+    let vac_rate = 0.1;   
+    let vac_coverage = 0.5;   
+    let vac_num = vac_coverage * N;   
     let mut data2 = vec![];
     for i in 0..1000 {
         let t = i as f64 * 0.1;
-        let v = if t >= 50.0 && t < 150.0 {vaccinated * vaccination_rate} else {0.0};
+        let v = if t >= 50.0 && t < 150.0 {vac_num * vac_rate} else {0.0};
         let y = solver.integrate(0.1, v);
         data2.push((solver.time(), y[0], y[1], y[2]));
     }
@@ -365,4 +365,3 @@ let r = y[2];
 ```{r}
 devtools::session_info()
 ```
-
