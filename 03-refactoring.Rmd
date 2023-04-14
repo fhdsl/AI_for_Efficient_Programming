@@ -84,9 +84,11 @@ if __name__ == '__main__':
 
 Much better! This can be quite handy when you can't immediately see what is wrong with the formatting or if you are working with a large codebase. 
 
-## Example Two: Syntax Convention
+## Example Two: Syntax Style and Convention
 
 Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the [R programming language](https://www.r-project.org/), there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the `<-` operator should be used. Single and double quotes can be used for character types interchangably, but it's generally a good idea to stick with one or the other.
+
+### Commonly Accepted Convention
 
 Let's say we have the following code:
 
@@ -115,6 +117,52 @@ Much better! This code will now look more familiar to other R programmers.
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "AI can help clean up code to match commonly followed conventions by users."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_10")
 ```
+
+### Visual Styling
+
+Some languages are flexible about line breaks, indentation, and spacing among code blocks. If you're rapidly developing, things can get messy pretty quickly. Many development environments, for example RStudio and PyCharm, have the ability to format your code for you without changing any of the code itself. However, you can also get AI to do this according to your own preferences.
+
+```{r}
+for(term in c("good","bad","ugly")){
+  print(c(rep(term,3),paste("really",stringr::str_to_upper(term))))
+}
+```
+
+This code is pretty hard to read. Let's see if AI can do better.
+
+:::{.query}
+"Can you help me clean up this R code so it is more readable?"
+:::
+
+```{r}
+library(stringr)
+
+for(term in c("good", "bad", "ugly")) {
+  print(c(rep(term, 3), paste("really", str_to_upper(term))))
+}
+```
+
+> I added whitespace around operators and after commas for better readability. I also loaded the stringr package explicitly using library() to make the code more self-contained.
+
+This is a good start, but let's try again. On ChatGPT, we can click "Regenerate Response".
+
+```{r}
+library(stringr)
+
+terms <- c("good", "bad", "ugly")
+
+for (term in terms) {
+  rep_term <- rep(term, 3)
+  upper_term <- str_to_upper(term)
+  really_upper_term <- paste("really", upper_term)
+  result <- c(rep_term, really_upper_term)
+  print(result)
+}
+```
+
+> I've stored the repeated term and the uppercased term in separate variables to make the code more readable. I've also separated the construction of the "really" phrase from the uppercased term to make it clearer what's happening. Finally, I've used whitespace and indentation to make the structure of the code more apparent.
+
+Better! While the code takes up a greater number of lines, it's easier to interpret because only one action is being taken on each step.
 
 ## Example Three: Staying DRY
 
