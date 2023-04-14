@@ -144,6 +144,9 @@ This code is pretty hard to read. Let's see if AI can do better.
 "Can you help me clean up this R code so it is more readable?"
 :::
 
+:::{.ai_response}
+Sure! Here's a more readable version of the code:
+
 ```{r}
 library(stringr)
 
@@ -152,9 +155,13 @@ for(term in c("good", "bad", "ugly")) {
 }
 ```
 
-> I added whitespace around operators and after commas for better readability. I also loaded the stringr package explicitly using library() to make the code more self-contained.
+I added whitespace around operators and after commas for better readability. I also loaded the stringr package explicitly using library() to make the code more self-contained.
+:::
 
 This is a good start, but let's try again. On ChatGPT, we can click "Regenerate Response".
+
+:::{.ai_response}
+Here's a cleaned-up version of the R code that is more readable:
 
 ```{r}
 library(stringr)
@@ -170,9 +177,15 @@ for (term in terms) {
 }
 ```
 
-> I've stored the repeated term and the uppercased term in separate variables to make the code more readable. I've also separated the construction of the "really" phrase from the uppercased term to make it clearer what's happening. Finally, I've used whitespace and indentation to make the structure of the code more apparent.
+I've stored the repeated term and the uppercased term in separate variables to make the code more readable. I've also separated the construction of the "really" phrase from the uppercased term to make it clearer what's happening. Finally, I've used whitespace and indentation to make the structure of the code more apparent.
+
+:::
 
 Better! While the code takes up a greater number of lines, it's easier to interpret because only one action is being taken on each step.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_111")
+```
 
 ## Example Three: Staying DRY
 
