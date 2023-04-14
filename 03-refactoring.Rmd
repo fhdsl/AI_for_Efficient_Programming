@@ -91,7 +91,7 @@ Much better! This can be quite handy when you can't immediately see what is wron
 
 ## Example Two: Syntax Style and Convention
 
-Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the [R programming language](https://www.r-project.org/), there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the `<-` operator should be used. Single and double quotes can be used for character types interchangably, but it's generally a good idea to stick with one or the other.
+Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the [R programming language](https://www.r-project.org/), there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the `<-` operator should be used. Single and double quotes can be used for character types interchangeably, but it's generally a good idea to stick with one or the other.
 
 ### Commonly Accepted Convention
 
