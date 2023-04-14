@@ -1,4 +1,6 @@
 1-Introduction.md
 2-Writing-and-Debugging-Code.md
+3-Refactoring-Code.md
+4-Understanding-Unfamiliar-Code.md
 About-this-Course.md
 Appendix.md
