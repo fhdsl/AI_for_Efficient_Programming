@@ -110,7 +110,7 @@ b <- "banana"
 c <- "carrot"
 ```
 
-Much better! This will make more sense when you share the code with other programmers.
+Much better! This code will now look more familiar to other R programmers.
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "AI can help clean up code to match commonly followed conventions by users."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_10")
