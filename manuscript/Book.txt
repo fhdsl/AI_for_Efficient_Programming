@@ -1,2 +1,4 @@
 1-Introduction.md
+2-Writing-and-Debugging-Code.md
 About-this-Course.md
+Appendix.md

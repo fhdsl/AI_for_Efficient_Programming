@@ -30,3 +30,12 @@ div.query{
   border: 4px #e5f8fa;
   border-style: solid;
 }
+
+/* Module chunk shading --------------------------------------------*/
+div.ai_response {
+  padding: 1em;
+  margin: 1em 0;
+  min-height: 120px;
+  background-repeat: no-repeat;
+  background-color: #eff7fe;
+}

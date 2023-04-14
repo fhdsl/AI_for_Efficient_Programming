@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Refactoring Code | Using AI for Software</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Refactoring Code | Using AI for Software" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Refactoring Code | Using AI for Software" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="writing-and-debugging-code.html"/>
+<link rel="next" href="understanding-unfamiliar-code.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/style_custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#available-course-formats"><i class="fa fa-check"></i><b>0.1</b> Available course formats</a>
+<ul>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#testing-query-css"><i class="fa fa-check"></i><b>0.1.1</b> Testing query css</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#ai-provides-new-opportunities"><i class="fa fa-check"></i><b>1.1</b> AI provides new opportunities</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#ai-code-of-ethics"><i class="fa fa-check"></i><b>1.2</b> AI code of ethics</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#the-ai-chatbots"><i class="fa fa-check"></i><b>1.3</b> The AI chatbots</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#about-this-book"><i class="fa fa-check"></i><b>1.4</b> About this book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html"><i class="fa fa-check"></i><b>2</b> Writing and Debugging Code</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html#using-ai-to-write-code"><i class="fa fa-check"></i><b>2.1</b> Using AI to write code</a></li>
+<li class="chapter" data-level="2.2" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html#the-basics"><i class="fa fa-check"></i><b>2.2</b> The Basics</a></li>
+<li class="chapter" data-level="2.3" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html#selecting-a-language"><i class="fa fa-check"></i><b>2.3</b> Selecting a Language:</a></li>
+<li class="chapter" data-level="2.4" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html#prompt-generation"><i class="fa fa-check"></i><b>2.4</b> Prompt Generation:</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="refactoring-code.html"><a href="refactoring-code.html"><i class="fa fa-check"></i><b>3</b> Refactoring Code</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="refactoring-code.html"><a href="refactoring-code.html#ai-in-code-refactoring"><i class="fa fa-check"></i><b>3.1</b> AI in Code Refactoring</a></li>
+<li class="chapter" data-level="3.2" data-path="refactoring-code.html"><a href="refactoring-code.html#example-one-correcting-syntax"><i class="fa fa-check"></i><b>3.2</b> Example One: Correcting Syntax</a></li>
+<li class="chapter" data-level="3.3" data-path="refactoring-code.html"><a href="refactoring-code.html#example-two-syntax-convention"><i class="fa fa-check"></i><b>3.3</b> Example Two: Syntax Convention</a></li>
+<li class="chapter" data-level="3.4" data-path="refactoring-code.html"><a href="refactoring-code.html#example-three-staying-dry"><i class="fa fa-check"></i><b>3.4</b> Example Three: Staying DRY</a></li>
+<li class="chapter" data-level="3.5" data-path="refactoring-code.html"><a href="refactoring-code.html#example-four-keeping-code-alive"><i class="fa fa-check"></i><b>3.5</b> Example Four: Keeping Code Alive</a></li>
+<li class="chapter" data-level="3.6" data-path="refactoring-code.html"><a href="refactoring-code.html#code-optimization"><i class="fa fa-check"></i><b>3.6</b> Code optimization</a></li>
+<li class="chapter" data-level="3.7" data-path="refactoring-code.html"><a href="refactoring-code.html#case-studies-examples-in-industry-if-any"><i class="fa fa-check"></i><b>3.7</b> Case studies / examples in industry (if any)</a></li>
+<li class="chapter" data-level="3.8" data-path="refactoring-code.html"><a href="refactoring-code.html#common-mistakes-edge-cases-things-to-watch-out-for"><i class="fa fa-check"></i><b>3.8</b> Common mistakes / edge cases / things to watch out for</a></li>
+<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-limitations"><i class="fa fa-check"></i><b>3.9</b> Challenges / limitations</a></li>
+<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>3.10</b> Hands-On Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html"><i class="fa fa-check"></i><b>4</b> Understanding Unfamiliar Code</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#using-ai-to-understand-code"><i class="fa fa-check"></i><b>4.1</b> Using AI to understand code</a></li>
+<li class="chapter" data-level="4.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-one-summarizing-code-you-didnt-write"><i class="fa fa-check"></i><b>4.2</b> Example One: Summarizing Code You Didn’t Write</a></li>
+<li class="chapter" data-level="4.3" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-two-identifying-a-coding-language"><i class="fa fa-check"></i><b>4.3</b> Example Two: Identifying a Coding Language</a></li>
+<li class="chapter" data-level="4.4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-three-interpreting-regex"><i class="fa fa-check"></i><b>4.4</b> Example Three: Interpreting Regex</a></li>
+<li class="chapter" data-level="4.5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-four-understanding-variables-and-functions"><i class="fa fa-check"></i><b>4.5</b> Example Four: Understanding Variables and Functions</a></li>
+<li class="chapter" data-level="4.6" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#edge-cases"><i class="fa fa-check"></i><b>4.6</b> Edge Cases</a></li>
+<li class="chapter" data-level="4.7" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#limitations"><i class="fa fa-check"></i><b>4.7</b> Limitations?</a></li>
+<li class="chapter" data-level="4.8" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-1"><i class="fa fa-check"></i><b>4.8</b> Hands-On Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#additional-programming-languages"><i class="fa fa-check"></i>Additional Programming Languages</a></li>
+</ul></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/W6Mg4rzuMK6Yk3Am8"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Using AI for Software</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/dasl_thin_main_image.png">
+</div>
+<div id="refactoring-code" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Refactoring Code</h1>
+<p><a href="https://en.wikipedia.org/wiki/Code_refactoring">Code refactoring</a> is the process of improving the quality of underlying code without changing its functionality. In other words, it’s a way of cleaning up and optimizing code so that it’s easier to maintain and more efficient. This often involves making small changes to the code, such as renaming variables or functions, reorganizing code blocks, or simplifying complex expressions. Refactoring is an essential practice in software development and helps to ensure that the codebase remains manageable and adaptable as requirements and business needs change over time.</p>
+<p>Code refactoring helps to reduce <a href="https://en.wikipedia.org/wiki/Technical_debt">technical debt</a>, which is the accumulation of development work that needs to be done in the future as a result of taking shortcuts or using less than optimal solutions. Refactoring can help to identify potential issues and bugs before they cause problems, resulting in more stable software. Finally, refactoring code to be more readable and less verbose can create fewer headaches for you in the future.</p>
+<p>To understand why code refactoring is important, imagine trying to cook in a disorganized and cluttered kitchen. You might be a fantastic cook, but you are spending more time searching for utensils and ingredients, and the quality of the meal could suffer as a result. Similarly, code that is disorganized and cluttered can be difficult to work with and can result in lower-quality software. Refactoring is like cleaning and organizing the kitchen - it makes the process of cooking (or coding) smoother and more efficient.</p>
+<p><img src="resources/images/03-refactoring_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_26.png" title="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." alt="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." width="100%" style="display: block; margin: auto;" /></p>
+<div id="ai-in-code-refactoring" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> AI in Code Refactoring</h2>
+<p>Code refactoring has historically been done manually by developers. This involves reviewing code and identifying areas that could be improved or optimized, and then making changes to the codebase accordingly. Though important, this is process is time-consuming and labor-intensive, as it requires developers to carefully review every line of code to identify potential issues or areas for improvement. Additionally, manual code refactoring is error-prone, as developers can accidentally introduce bugs or errors into the codebase while making changes.</p>
+<p>However, AI has significant potential to help with code refactoring. AI can use machine learning algorithms to analyze large amounts of code and identify patterns or areas that could be improved. For example, they can identify sections of code that are redundant, overly complex, or difficult to maintain, and suggest changes that could be made to improve the codebase. Machine learning algorithms can also help to identify potential bugs or security issues in the codebase, which can help to improve the overall quality and stability of the software.</p>
+<p>AI refactoring is also faster and more accurate than manual refactoring. This is particularly useful for large-scale software projects with massive codebases, where manual code review and refactoring can be an enormous task. In the next sections, we’ll take a look at some examples of using AI to refactor code.</p>
+</div>
+<div id="example-one-correcting-syntax" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Example One: Correcting Syntax</h2>
+<p>Programming languages operate using their established set of rules. For example, <a href="https://www.python.org/">Python</a> uses indentation to define code blocks. However, when you shift between development environments, indentation and line breaks can sometimes be affected, causing major headaches!</p>
+<p>Let’s say we run the following code:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="refactoring-code.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_sum(a,b):</span>
+<span id="cb5-2"><a href="refactoring-code.html#cb5-2" aria-hidden="true" tabindex="-1"></a> result <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb5-3"><a href="refactoring-code.html#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> result</span>
+<span id="cb5-4"><a href="refactoring-code.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_product(a,b):result <span class="op">=</span> a <span class="op">*</span> b</span>
+<span id="cb5-5"><a href="refactoring-code.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> result</span>
+<span id="cb5-6"><a href="refactoring-code.html#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="refactoring-code.html#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
+<span id="cb5-8"><a href="refactoring-code.html#cb5-8" aria-hidden="true" tabindex="-1"></a>  a<span class="op">=</span><span class="dv">5</span></span>
+<span id="cb5-9"><a href="refactoring-code.html#cb5-9" aria-hidden="true" tabindex="-1"></a> b<span class="op">=</span><span class="dv">6</span></span>
+<span id="cb5-10"><a href="refactoring-code.html#cb5-10" aria-hidden="true" tabindex="-1"></a>sum_result <span class="op">=</span> calculate_sum(a, b)</span>
+<span id="cb5-11"><a href="refactoring-code.html#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Sum:&quot;</span>, sum_result)</span>
+<span id="cb5-12"><a href="refactoring-code.html#cb5-12" aria-hidden="true" tabindex="-1"></a>product_result <span class="op">=</span> calculate_product(a,b)</span>
+<span id="cb5-13"><a href="refactoring-code.html#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Product:&quot;</span>, product_result)</span>
+<span id="cb5-14"><a href="refactoring-code.html#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="refactoring-code.html#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
+<span id="cb5-16"><a href="refactoring-code.html#cb5-16" aria-hidden="true" tabindex="-1"></a>main()</span></code></pre></div>
+<pre><code>## unexpected indent (&lt;string&gt;, line 3)</code></pre>
+<p>We get the error above because our indentation is off. Let’s ask <a href="https://chat.openai.com">ChatGPT</a> to clean things up.</p>
+<div class="query">
+<p>“Can you assist me with correcting the formatting and indentation issues in my Python code?”</p>
+</div>
+<div class="ai_response">
+<p>Of course! Here is the code after correcting the formatting and indentation:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="refactoring-code.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_sum(a, b):</span>
+<span id="cb7-2"><a href="refactoring-code.html#cb7-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb7-3"><a href="refactoring-code.html#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb7-4"><a href="refactoring-code.html#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="refactoring-code.html#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="refactoring-code.html#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_product(a, b):</span>
+<span id="cb7-7"><a href="refactoring-code.html#cb7-7" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> a <span class="op">*</span> b</span>
+<span id="cb7-8"><a href="refactoring-code.html#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb7-9"><a href="refactoring-code.html#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="refactoring-code.html#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="refactoring-code.html#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
+<span id="cb7-12"><a href="refactoring-code.html#cb7-12" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb7-13"><a href="refactoring-code.html#cb7-13" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb7-14"><a href="refactoring-code.html#cb7-14" aria-hidden="true" tabindex="-1"></a>    sum_result <span class="op">=</span> calculate_sum(a, b)</span>
+<span id="cb7-15"><a href="refactoring-code.html#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Sum:&quot;</span>, sum_result)</span>
+<span id="cb7-16"><a href="refactoring-code.html#cb7-16" aria-hidden="true" tabindex="-1"></a>    product_result <span class="op">=</span> calculate_product(a, b)</span>
+<span id="cb7-17"><a href="refactoring-code.html#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Product:&quot;</span>, product_result)</span>
+<span id="cb7-18"><a href="refactoring-code.html#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="refactoring-code.html#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="refactoring-code.html#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
+<span id="cb7-21"><a href="refactoring-code.html#cb7-21" aria-hidden="true" tabindex="-1"></a>    main()</span></code></pre></div>
+<pre><code>## Sum: 11
+## Product: 30</code></pre>
+</div>
+<p>Much better! This can be quite handy when you can’t immediately see what is wrong with the formatting or if you are working with a large codebase.</p>
+</div>
+<div id="example-two-syntax-convention" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Example Two: Syntax Convention</h2>
+<p>Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the <a href="https://www.r-project.org/">R programming language</a>, there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the <code>&lt;-</code> operator should be used. Single and double quotes can be used for character types interchangeably, but it’s generally a good idea to stick with one or the other.</p>
+<p>Let’s say we have the following code:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="refactoring-code.html#cb9-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="st">&quot;apple&quot;</span></span>
+<span id="cb9-2"><a href="refactoring-code.html#cb9-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">=</span> <span class="st">&#39;banana&#39;</span></span>
+<span id="cb9-3"><a href="refactoring-code.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;carrot&quot;</span> <span class="ot">-&gt;</span> c</span>
+<span id="cb9-4"><a href="refactoring-code.html#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="refactoring-code.html#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(a, b, c)</span></code></pre></div>
+<pre><code>## [1] &quot;apple&quot;  &quot;banana&quot; &quot;carrot&quot;</code></pre>
+<p>This code does not produce any errors, but it doesn’t follow typical R convention. Let’s ask ChatGPT to clean things up.</p>
+<div class="query">
+<p>“Can you help me reformat my R code to follow accepted style conventions?”</p>
+</div>
+<div class="ai_response">
+<p>Sure, here’s the cleaned-up R code:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="refactoring-code.html#cb11-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="st">&quot;apple&quot;</span></span>
+<span id="cb11-2"><a href="refactoring-code.html#cb11-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="st">&quot;banana&quot;</span></span>
+<span id="cb11-3"><a href="refactoring-code.html#cb11-3" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="st">&quot;carrot&quot;</span></span></code></pre></div>
+</div>
+<p>Much better! This code will now look more familiar to other R programmers.</p>
+<p><img src="resources/images/03-refactoring_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_10.png" title="AI can help clean up code to match commonly followed conventions by users." alt="AI can help clean up code to match commonly followed conventions by users." width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="example-three-staying-dry" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Example Three: Staying DRY</h2>
+<p>The DRY (Don’t Repeat Yourself) programming tenet is essential to good software. By avoiding repetition in code, we can reduce the amount of duplicate code we need to write and maintain. If we need to change the functionality of a certain piece of code, we have to make the same change in multiple places, which can be time-consuming and error-prone.</p>
+<p>Let’s take the following Python code:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="refactoring-code.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_greetings():</span>
+<span id="cb12-2"><a href="refactoring-code.html#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Hello, Alice!&quot;</span>)</span>
+<span id="cb12-3"><a href="refactoring-code.html#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Hello, Bob!&quot;</span>)</span>
+<span id="cb12-4"><a href="refactoring-code.html#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Hello, Carol!&quot;</span>)</span>
+<span id="cb12-5"><a href="refactoring-code.html#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Hello, David!&quot;</span>)</span>
+<span id="cb12-6"><a href="refactoring-code.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Hello, Eve!&quot;</span>)</span>
+<span id="cb12-7"><a href="refactoring-code.html#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="refactoring-code.html#cb12-8" aria-hidden="true" tabindex="-1"></a>print_greetings()</span></code></pre></div>
+<pre><code>## Hello, Alice!
+## Hello, Bob!
+## Hello, Carol!
+## Hello, David!
+## Hello, Eve!</code></pre>
+<p>Notice how repetitive this code is? <code>print()</code> and the string <code>"Hello, "</code> appear five times. We can improve this!</p>
+<div class="query">
+<p>“Could you please refactor my Python code to make it more DRY?”</p>
+</div>
+<div class="ai_response">
+<p>Sure, here’s a refactored version of your code:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="refactoring-code.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_greeting(name):</span>
+<span id="cb14-2"><a href="refactoring-code.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Hello, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!&quot;</span>)</span>
+<span id="cb14-3"><a href="refactoring-code.html#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="refactoring-code.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_greetings():</span>
+<span id="cb14-5"><a href="refactoring-code.html#cb14-5" aria-hidden="true" tabindex="-1"></a>    names <span class="op">=</span> [<span class="st">&quot;Alice&quot;</span>, <span class="st">&quot;Bob&quot;</span>, <span class="st">&quot;Carol&quot;</span>, <span class="st">&quot;David&quot;</span>, <span class="st">&quot;Eve&quot;</span>]</span>
+<span id="cb14-6"><a href="refactoring-code.html#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> name <span class="kw">in</span> names:</span>
+<span id="cb14-7"><a href="refactoring-code.html#cb14-7" aria-hidden="true" tabindex="-1"></a>        print_greeting(name)</span>
+<span id="cb14-8"><a href="refactoring-code.html#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="refactoring-code.html#cb14-9" aria-hidden="true" tabindex="-1"></a>print_greetings()</span></code></pre></div>
+<pre><code>## Hello, Alice!
+## Hello, Bob!
+## Hello, Carol!
+## Hello, David!
+## Hello, Eve!</code></pre>
+</div>
+<p>Now let’s imagine your software lead has asked us to change the greeting to Spanish. Notice how we only have to change the second line of code:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="refactoring-code.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_greeting(name):</span>
+<span id="cb16-2"><a href="refactoring-code.html#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;¡Hola, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!&quot;</span>)</span>
+<span id="cb16-3"><a href="refactoring-code.html#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="refactoring-code.html#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_greetings():</span>
+<span id="cb16-5"><a href="refactoring-code.html#cb16-5" aria-hidden="true" tabindex="-1"></a>    names <span class="op">=</span> [<span class="st">&quot;Alice&quot;</span>, <span class="st">&quot;Bob&quot;</span>, <span class="st">&quot;Carol&quot;</span>, <span class="st">&quot;David&quot;</span>, <span class="st">&quot;Eve&quot;</span>]</span>
+<span id="cb16-6"><a href="refactoring-code.html#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> name <span class="kw">in</span> names:</span>
+<span id="cb16-7"><a href="refactoring-code.html#cb16-7" aria-hidden="true" tabindex="-1"></a>        print_greeting(name)</span>
+<span id="cb16-8"><a href="refactoring-code.html#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="refactoring-code.html#cb16-9" aria-hidden="true" tabindex="-1"></a>print_greetings()</span></code></pre></div>
+<pre><code>## ¡Hola, Alice!
+## ¡Hola, Bob!
+## ¡Hola, Carol!
+## ¡Hola, David!
+## ¡Hola, Eve!</code></pre>
+<p>Much easier.</p>
+</div>
+<div id="example-four-keeping-code-alive" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Example Four: Keeping Code Alive</h2>
+<p>During software development, code is often changing rapidly. It’s common to end up with functions or variables you don’t need anymore. It’s best practice to remove “dead” code from your codebase: it’s distracting and can make maintenance more challenging. Programmers should resist the urge to hang on to unused code in the expectation that they might need it one day. Version control, such as provided by git and GitHub, let you keep a record of old code without cluttering your final version.</p>
+<p>Let’s take a look at some Python code with some dead code:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="refactoring-code.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> default_values():</span>
+<span id="cb18-2"><a href="refactoring-code.html#cb18-2" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb18-3"><a href="refactoring-code.html#cb18-3" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb18-4"><a href="refactoring-code.html#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a, b</span>
+<span id="cb18-5"><a href="refactoring-code.html#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="refactoring-code.html#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_sum(a, b):</span>
+<span id="cb18-7"><a href="refactoring-code.html#cb18-7" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb18-8"><a href="refactoring-code.html#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb18-9"><a href="refactoring-code.html#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-10"><a href="refactoring-code.html#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_product(x, y):</span>
+<span id="cb18-11"><a href="refactoring-code.html#cb18-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">*</span> y</span>
+<span id="cb18-12"><a href="refactoring-code.html#cb18-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-13"><a href="refactoring-code.html#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate_data():</span>
+<span id="cb18-14"><a href="refactoring-code.html#cb18-14" aria-hidden="true" tabindex="-1"></a>    a, b <span class="op">=</span> default_values()</span>
+<span id="cb18-15"><a href="refactoring-code.html#cb18-15" aria-hidden="true" tabindex="-1"></a>    dat <span class="op">=</span> calculate_sum(a, b) <span class="op">+</span> calculate_sum(a, b)</span>
+<span id="cb18-16"><a href="refactoring-code.html#cb18-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> dat</span>
+<span id="cb18-17"><a href="refactoring-code.html#cb18-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-18"><a href="refactoring-code.html#cb18-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
+<span id="cb18-19"><a href="refactoring-code.html#cb18-19" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb18-20"><a href="refactoring-code.html#cb18-20" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb18-21"><a href="refactoring-code.html#cb18-21" aria-hidden="true" tabindex="-1"></a>    a, b <span class="op">=</span> default_values()</span>
+<span id="cb18-22"><a href="refactoring-code.html#cb18-22" aria-hidden="true" tabindex="-1"></a>    sum_result <span class="op">=</span> calculate_sum(a, b)</span>
+<span id="cb18-23"><a href="refactoring-code.html#cb18-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Sum:&quot;</span>, sum_result)</span>
+<span id="cb18-24"><a href="refactoring-code.html#cb18-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-25"><a href="refactoring-code.html#cb18-25" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
+<span id="cb18-26"><a href="refactoring-code.html#cb18-26" aria-hidden="true" tabindex="-1"></a>    main()</span></code></pre></div>
+<pre><code>## Sum: 11</code></pre>
+<p>Some of these functions aren’t used in the final step, typically defined in python as the <code>main()</code> function. Let’s ask AI to remove them.</p>
+<div class="query">
+<p>“I need help with eliminating unused functions in my Python script.”</p>
+</div>
+<div class="ai_response">
+<p>Sure! Here’s a refactored version:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="refactoring-code.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> default_values():</span>
+<span id="cb20-2"><a href="refactoring-code.html#cb20-2" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb20-3"><a href="refactoring-code.html#cb20-3" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb20-4"><a href="refactoring-code.html#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a, b</span>
+<span id="cb20-5"><a href="refactoring-code.html#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="refactoring-code.html#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_sum(a, b):</span>
+<span id="cb20-7"><a href="refactoring-code.html#cb20-7" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb20-8"><a href="refactoring-code.html#cb20-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb20-9"><a href="refactoring-code.html#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-10"><a href="refactoring-code.html#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
+<span id="cb20-11"><a href="refactoring-code.html#cb20-11" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb20-12"><a href="refactoring-code.html#cb20-12" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb20-13"><a href="refactoring-code.html#cb20-13" aria-hidden="true" tabindex="-1"></a>    a, b <span class="op">=</span> default_values()</span>
+<span id="cb20-14"><a href="refactoring-code.html#cb20-14" aria-hidden="true" tabindex="-1"></a>    sum_result <span class="op">=</span> calculate_sum(a, b)</span>
+<span id="cb20-15"><a href="refactoring-code.html#cb20-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Sum:&quot;</span>, sum_result)</span>
+<span id="cb20-16"><a href="refactoring-code.html#cb20-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-17"><a href="refactoring-code.html#cb20-17" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
+<span id="cb20-18"><a href="refactoring-code.html#cb20-18" aria-hidden="true" tabindex="-1"></a>    main()</span></code></pre></div>
+<pre><code>## Sum: 11</code></pre>
+</div>
+<p>Great! Now our code is much more manageable. This code only includes the necessary functions needed to run the <code>main()</code> function. We can go a step further!</p>
+<div class="query">
+<p>“Can you help me refactor my python code to make it more concise?”</p>
+</div>
+<div class="ai_response">
+<p>Certainly! Here’s a more concise version of your code:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="refactoring-code.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_sum(a<span class="op">=</span><span class="dv">5</span>, b<span class="op">=</span><span class="dv">6</span>):</span>
+<span id="cb22-2"><a href="refactoring-code.html#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb22-3"><a href="refactoring-code.html#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="refactoring-code.html#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
+<span id="cb22-5"><a href="refactoring-code.html#cb22-5" aria-hidden="true" tabindex="-1"></a>    sum_result <span class="op">=</span> calculate_sum()</span>
+<span id="cb22-6"><a href="refactoring-code.html#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Sum:&quot;</span>, sum_result)</span>
+<span id="cb22-7"><a href="refactoring-code.html#cb22-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-8"><a href="refactoring-code.html#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
+<span id="cb22-9"><a href="refactoring-code.html#cb22-9" aria-hidden="true" tabindex="-1"></a>    main()</span></code></pre></div>
+<pre><code>## Sum: 11</code></pre>
+</div>
+<p>In this version, the <code>calculate_sum</code> function is simplified to take default arguments for a and b. This means the <code>default_values</code> function is no longer necessary. The a and b variables are also removed from <code>main</code>, as they are no longer needed. Much better and easier to look at overall.</p>
+</div>
+<div id="code-optimization" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Code optimization</h2>
+<p>loops!</p>
+</div>
+<div id="case-studies-examples-in-industry-if-any" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> Case studies / examples in industry (if any)</h2>
+</div>
+<div id="common-mistakes-edge-cases-things-to-watch-out-for" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Common mistakes / edge cases / things to watch out for</h2>
+</div>
+<div id="challenges-limitations" class="section level2" number="3.9">
+<h2><span class="header-section-number">3.9</span> Challenges / limitations</h2>
+</div>
+<div id="hands-on-exercise" class="section level2" number="3.10">
+<h2><span class="header-section-number">3.10</span> Hands-On Exercise</h2>
+<p>Now it’s your turn to try. Let’s say you …</p>
+<p><strong>Note</strong>: This code is just an example and was written strictly for educational purposes.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="refactoring-code.html#cb24-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
+<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 4.0.2 (2020-06-22)
+##  os       Ubuntu 20.04.5 LTS          
+##  system   x86_64, linux-gnu           
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_US.UTF-8                 
+##  ctype    en_US.UTF-8                 
+##  tz       Etc/UTC                     
+##  date     2023-04-14                  
+## 
+## ─ Packages ───────────────────────────────────────────────────────────────────
+##  package     * version date       lib source                            
+##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
+##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
+##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
+##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
+##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
+##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
+##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
+##  curl          4.3     2019-12-02 [1] RSPM (R 4.0.3)                    
+##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
+##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
+##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
+##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
+##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
+##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
+##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
+##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
+##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
+##  here          1.0.1   2020-12-13 [1] CRAN (R 4.0.2)                    
+##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
+##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
+##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
+##  httr          1.4.2   2020-07-20 [1] RSPM (R 4.0.3)                    
+##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
+##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
+##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
+##  lattice       0.20-41 2020-04-02 [2] CRAN (R 4.0.2)                    
+##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
+##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
+##  Matrix        1.2-18  2019-11-27 [2] CRAN (R 4.0.2)                    
+##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
+##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
+##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
+##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
+##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
+##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
+##  png           0.1-8   2022-11-29 [1] CRAN (R 4.0.2)                    
+##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
+##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
+##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
+##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
+##  Rcpp          1.0.10  2023-01-22 [1] CRAN (R 4.0.2)                    
+##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
+##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
+##  reticulate  * 1.28    2023-01-27 [1] CRAN (R 4.0.2)                    
+##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
+##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
+##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
+##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
+##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
+##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
+##  stringr       1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
+##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
+##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
+##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
+##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
+##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
+##  withr         2.3.0   2020-09-22 [1] RSPM (R 4.0.2)                    
+##  xfun          0.26    2023-03-28 [1] Github (yihui/xfun@74c2a66)       
+##  yaml          2.2.1   2020-02-01 [1] RSPM (R 4.0.3)                    
+## 
+## [1] /usr/local/lib/R/site-library
+## [2] /usr/local/lib/R/library</code></pre>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+      <a href="https://hutchdatascience.org/" target="_blank"><img src="https://hutchdatascience.org/images/crazy-idea-wide.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="writing-and-debugging-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="understanding-unfamiliar-code.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
