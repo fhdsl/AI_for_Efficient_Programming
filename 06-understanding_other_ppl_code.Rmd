@@ -10,7 +10,9 @@ In the end, with patience, persistence, and a willingness to learn, you can succ
 
 ## Using AI to understand code
 
-_"It's like having a paired programmer explain things to you." ~dinosaur cartoon saying Howard's quote?_
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e15d27e55_4_0")
+```
 
 While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages. Firstly, AI tools can analyze the codebase and provide insights into its structure, complexity, and potential defects. This analysis can identify parts of the code that may be challenging to understand, maintain or improve. Based on the analysis, the AI tools may also make recommendations on how to enhance the codebase for better functionality and readability.
 
