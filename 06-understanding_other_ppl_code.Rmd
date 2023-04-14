@@ -228,7 +228,9 @@ x = sub("/d/e","/d",x)
 
 ## Example Four: Understanding Variables and Functions
 
+## Edge Cases
 
+## Limitations?
 
 ## Hands-On Exercise
 
