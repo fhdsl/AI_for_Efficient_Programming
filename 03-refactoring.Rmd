@@ -146,7 +146,7 @@ print_greetings()
 Notice how repetitive this code is? `print()` and the string `"Hello, "` appear five times. We can improve this!
 
 :::{.query}
-"Could you please refactor my Python code to make it more DRY (Don't Repeat Yourself)?"
+"Could you please refactor my Python code to make it more DRY?"
 :::
 
 :::{.ai_response}
