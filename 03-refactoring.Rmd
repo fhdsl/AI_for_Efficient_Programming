@@ -58,6 +58,9 @@ We get the error above because our indentation is off. Let's ask [ChatGPT](https
 "Can you assist me with correcting the formatting and indentation issues in my Python code?"
 :::
 
+:::{.ai_response}
+Of course! Here is the code after correcting the formatting and indentation:
+
 ```{python python.reticulate = TRUE}
 def calculate_sum(a, b):
     result = a + b
@@ -82,6 +85,8 @@ if __name__ == '__main__':
     main()
 ```
 
+:::
+
 Much better! This can be quite handy when you can't immediately see what is wrong with the formatting or if you are working with a large codebase. 
 
 ## Example Two: Syntax Convention
@@ -104,11 +109,16 @@ This code does not produce any errors, but it doesn't follow typical R conventio
 "Can you help me reformat my R code to follow accepted style conventions?"
 :::
 
+:::{.ai_response}
+Sure, here's the cleaned-up R code:
+
 ```{r eval=FALSE}
 a <- "apple"
 b <- "banana"
 c <- "carrot"
 ```
+
+:::
 
 Much better! This code will now look more familiar to other R programmers.
 
@@ -139,6 +149,9 @@ Notice how repetitive this code is? `print()` and the string `"Hello, "` appear 
 "Could you please refactor my Python code to make it more DRY (Don't Repeat Yourself)?"
 :::
 
+:::{.ai_response}
+Sure, here's a refactored version of your code:
+
 ```{python}
 def print_greeting(name):
     print(f"Hello, {name}!")
@@ -150,8 +163,9 @@ def print_greetings():
 
 print_greetings()
 ```
+:::
 
-Now let's imagine your software lead has asked us to change the greeting to Spanish. Notice how we only have to make a small change to the second line of code:
+Now let's imagine your software lead has asked us to change the greeting to Spanish. Notice how we only have to change the second line of code:
 
 ```{python eval = TRUE, python.reticulate = TRUE}
 def print_greeting(name):
@@ -208,6 +222,9 @@ Some of these functions aren't used in the final step, typically defined in pyth
 "I need help with eliminating unused functions in my Python script."
 :::
 
+:::{.ai_response}
+Sure! Here's a refactored version:
+
 ```{python eval = TRUE, python.reticulate = TRUE}
 def default_values():
     a = 5
@@ -228,12 +245,16 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+:::
 
 Great! Now our code is much more manageable. This code only includes the necessary functions needed to run the `main()` function. We can go a step further!
 
 :::{.query}
 "Can you help me refactor my python code to make it more concise?"
 :::
+
+:::{.ai_response}
+Certainly! Here's a more concise version of your code:
 
 ```{python eval = TRUE, python.reticulate = TRUE}
 def calculate_sum(a=5, b=6):
@@ -246,6 +267,7 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+:::
 
 In this version, the `calculate_sum` function is simplified to take default arguments for a and b. This means the `default_values` function is no longer necessary. The a and b variables are also removed from `main`, as they are no longer needed. Much better and easier to look at overall.
 
