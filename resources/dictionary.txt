@@ -1,5 +1,6 @@
 Anthropic
 AnVIL
+Anthropic
 BIPOC
 BitMapBackend
 Bloomberg
@@ -36,6 +37,7 @@ itcrtraining
 ITN
 fyi
 Leanpub
+macOS
 Markua
 mentorship
 NCI
