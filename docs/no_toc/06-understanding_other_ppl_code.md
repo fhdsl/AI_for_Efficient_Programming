@@ -10,7 +10,7 @@ In the end, with patience, persistence, and a willingness to learn, you can succ
 
 ## Using AI to understand code
 
-_"It's like having a paired programmer explain things to you." ~dinosaur cartoon saying Howard's quote?_
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e15d27e55_4_0.png" title="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." alt="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." width="100%" style="display: block; margin: auto;" />
 
 While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages. Firstly, AI tools can analyze the codebase and provide insights into its structure, complexity, and potential defects. This analysis can identify parts of the code that may be challenging to understand, maintain or improve. Based on the analysis, the AI tools may also make recommendations on how to enhance the codebase for better functionality and readability.
 
@@ -389,6 +389,7 @@ devtools::session_info()
 ##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
 ##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
 ##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
+##  curl          4.3     2019-12-02 [1] RSPM (R 4.0.3)                    
 ##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
 ##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
 ##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
@@ -398,8 +399,10 @@ devtools::session_info()
 ##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
 ##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
 ##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
+##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
 ##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
 ##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
+##  httr          1.4.2   2020-07-20 [1] RSPM (R 4.0.3)                    
 ##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
 ##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
 ##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
