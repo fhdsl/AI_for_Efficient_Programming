@@ -48,7 +48,7 @@ d <- ggplot2::diamonds
 d_sel <- d %>%
   select(carat, cut, color, clarity, depth, table, price)
 
-d_fil <- d_s %>%
+d_fil <- d_sel %>%
   filter(price > 5000)
 
 d_bin <- d_fil %>%
