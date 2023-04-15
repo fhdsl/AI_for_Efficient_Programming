@@ -2,54 +2,187 @@
 
 Code annotation, also known as code commenting, is the process of adding explanatory notes to source code. These notes are used to provide context, clarify functionality, and aid in understanding for developers who may be working on the codebase in the future. Code annotation is an important practice for any developer looking to write clear, efficient, and maintainable code.
 
-There are many benefits to annotating code. First, it can help to improve the readability of code. By adding comments, developers can explain the purpose of each section of code, which can make it easier for others to understand what the code is doing. This can be especially helpful for large or complex codebases, where it can be difficult to keep track of all the different components.
+There are many benefits to annotating code.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. "}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_8")
+```
+
+First, it can help to improve the readability of code. By adding comments, developers can explain the purpose of each section of code, which can make it easier for others to understand what the code is doing. This can be especially helpful for large or complex codebases, where it can be difficult to keep track of all the different components. This is particularly important in contexts where the original developer of a project may move on to something else and others are left to work on them. Annotation perhaps most often helps a developer remember things they knew about the code when they were originally writing it (annotation is helpful for future you!) If the original developer left well-annotated code, it can drastically improve the ability of others (and their future selves) to continue with the project.
+
+Comments that help readability **further clarify what the code is doing**
+
+**Examples of readability aiding comments**
+```
+# This custom function handles ...
+# This dataset has this information and is used to ....
+# These variables defined here are used later for ...
+```
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_37")
+```
 
 Second, code annotation can help to improve the maintainability of code. By adding comments, developers can explain the reasoning behind certain decisions, which can make it easier for others to make changes to the code without breaking it. This can be especially helpful when multiple developers are working on the same codebase, as it can help to prevent conflicts and ensure that the code is always in a consistent state.
 
+Comments that help maintainability **explain why the historical decisions of why code was made the way it was**
+
+**Examples of maintainability aiding comments**
+```
+# Package A was used because it fit our requirements of being open source, efficient, and was better maintained than package B.
+# This parameter was chosen because it had the best performance according to some tests we did seen at https://github.com/some_analysis
+# This method was used because it was compared in Smith et al, 2012 to these other methods.
+```
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_37")
+```
+
 Third, code annotation can help to improve the quality of code. By adding comments, developers can identify potential issues or edge cases, which can help to prevent these issues from occurring in the first place. This can be especially helpful when testing code, as it can help to ensure that the code is working as expected.
 
+Comments that help improve the quality of the code **point out gaps or less than ideal implemented solutions**
+
+**Examples of quality aiding comments**
+```
+# This section of the code takes quite a bit of memory to run ~180 GB -- it should not be run on a local machine
+# This custom function's logic is not easy for others to understand
+# TODO: This code could use refactoring because it ...
+```
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Dino says Ah I know exactly how to fix this part of the code that was annotated with a warning!"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_60")
+```
 
 ## AI in Code Annotation
 
-There are several benefits to using AI to annotate code. AI can analyze code much faster than humans can, which means it can quickly generate comments and annotations for large codebases. This can save developers significant time and effort, allowing them to focus on other aspects of the development process. Additionally, AI is not affected by personal biases or preferences, so it can provide consistent annotations across different code files and projects. This can help ensure that all code in a project is well-documented and easy to understand.
-
-AI can analyze code objectively and identify potential issues that may have been missed by humans. This can lead to better quality code that is easier to maintain and less prone to errors. AI models can also learn from large datasets of annotated code and improve their ability to generate comments and annotations over time, which means the more code the AI model analyzes, the more accurate and effective it becomes at annotating code.
-
-Finally, AI models can be trained on specific programming languages, frameworks, or libraries, allowing them to generate language-specific comments and annotations that are tailored to the needs of the project.
-
-
-ALTERNATIVELY:
-
 AI can be used to annotate code, which can help streamline the development process and improve the overall quality of code, and its role in code annotation will become increasingly important in the years to come. Here are some of the benefits of using AI for code annotation:
 
-Speed and efficiency: AI algorithms can analyze code much faster than humans, which means they can quickly generate comments and annotations for large codebases. This can save developers significant time and effort.
+1. **Speed and efficiency:** AI algorithms can analyze code much faster than humans, which means they can quickly generate comments and annotations for large codebases. This can save developers significant time and effort, allowing them to focus on other aspects of the development process.
 
-Consistency: Unlike humans, AI is not affected by personal biases or preferences, so it can provide consistent annotations across different code files and projects. This can help ensure that all code in a project is well-documented and easy to understand.
+1. **Consistency:** Unlike humans, AI is not affected by personal biases or preferences, so it can provide consistent annotations across different code files and projects. This can help ensure that all code in a project is well-documented and easy to understand.
 
-Objectivity: AI can analyze code objectively and identify potential issues that may have been missed by humans. This can lead to better quality code that is easier to maintain and less prone to errors.
+1. **Objectivity:** AI can analyze code objectively and identify potential issues that may have been missed by humans. This can lead to better quality code that is easier to maintain and less prone to errors.
 
-Learning: AI models can learn from large datasets of annotated code and improve their ability to generate comments and annotations over time. This means that the more code the AI model analyzes, the more accurate and effective it becomes at annotating code.
+1. **Learning:** AI models can learn from large datasets of annotated code and improve their ability to generate comments and annotations over time. This means that the more code the AI model analyzes, the more accurate and effective it becomes at annotating code.
 
-Specificity: AI models can be trained on specific programming languages, frameworks, or libraries, allowing them to generate language-specific comments and annotations that are tailored to the needs of the project. This can be particularly helpful for large, complex projects that require specialized knowledge or expertise.
+1. **Specificity:** AI models can be trained on specific programming languages, frameworks, or libraries, allowing them to generate language-specific comments and annotations that are tailored to the needs of the project. This can be particularly helpful for large, complex projects that require specialized knowledge or expertise.
 
 ## Ethics of using AI to annotate code
 
-However, there are also a number of potential ethical concerns associated with using AI to annotate code. For example, AI models may be biased, which could lead to biased annotations. Additionally, AI models may be opaque, which could make it difficult to understand why they made certain annotations. Finally, AI models may be used to generate annotations that are not accurate or helpful, which could lead to problems with the code.
+However, there are also a number of potential ethical concerns associated with using AI to annotate code. For example, we don't yet know how and it what ways AI models may be biased. Additionally, AI models may be opaque, which could make it difficult to understand why they made certain annotations. Finally, because AI models are not humans and don't necessarily tell the stories behind the code, they may be used to generate annotations that are not accurate, helpful, or do not tell the full depth of the history of what occurred with the code, which could lead to problems.
 
-Given these potential benefits and concerns, it is important to carefully consider the ethical implications of using AI to annotate code before doing so. It is also important to use AI in a responsible and ethical manner, such as by being transparent about the use of AI, by mitigating bias, and by being accountable for the decisions that the AI model makes.
+Given these potential benefits and concerns, it is important for users of AI to always realize that they are ultimately accountable for the annotation that AI model makes and careful review of this annotation is needed.
 
 There are a number of ethical considerations to take into account when using AI to annotate code. Here are a few of the most important ones:
 
-Transparency: It is important to be transparent about the use of AI in code annotation. This means disclosing the fact that AI is being used, as well as the specific AI model and dataset that is being used. This transparency allows developers to understand the limitations of the AI model and to make informed decisions about its use.
+1. **Accountability:** First and foremost, a user of AI is always primarily accountable for any output that they use from an AI model. AI models can give you annotation to start with, but it is up to you as the user to verify and review this output carefully. The user of the AI model is ultimately responsible keeping or throwing out the annotations the AI makes and thus is responsible for using errors that the model makes. Much like a user of a Google Search engine is responsible for which results they use, a user of AI is responsible what output from the AI model they use.
 
-Bias: AI models are trained on data, and this data can introduce bias into the model. It is important to be aware of the potential for bias and to take steps to mitigate it. This can be done by using a diverse dataset, by carefully selecting the features that are used to train the model, and by using techniques such as adversarial training.
+2. **Transparency:** It is important to be transparent about the use of AI in code annotation. This means disclosing the fact that AI is being used, as well as the specific AI model and dataset that is being used. This should be stated on every file where annotation has been made using AI. This transparency allows others who view the code to be able more fully interpret the AI-created annotation that accompanies the code.
 
-Explainability: It is important to be able to explain the decisions that an AI model makes. This is especially important in the case of code annotation, where the decisions made by the AI model can have a significant impact on the quality of the code. There are a number of techniques that can be used to explain the decisions of an AI model, such as visualization and rule extraction.
+3. **Bias:** AI models are trained on data, and this data can introduce bias into the model. It is important to be aware of the potential for bias and to take steps to mitigate it. This can be done by using a diverse dataset, by carefully selecting the features that are used to train the model, and by using techniques such as adversarial training.
+TODO: How does this relate to annotation?
 
-Accountability: It is important to be accountable for the decisions that an AI model makes. This means being able to explain the decisions that the model makes, as well as being able to take responsibility for any errors that the model makes. It is also important to have a plan in place for dealing with any potential issues that may arise from the use of AI.
+4. **Explainability:** It is important to be able to explain the decisions that an AI model makes. This is especially important in the case of code annotation, where the decisions made by the AI model can have a significant impact on the quality of the code. There are a number of techniques that can be used to explain the decisions of an AI model, such as visualization and rule extraction.
+
+## Examples on using AI for annotation
+
+### Ask for a README summary
+
+To try out some annotation with code examples, this author dug up some old code that she has no idea what it does because time has passed and at the time she didn't document it very well.
+
+First, I wanted ChatGPT to make a README for me. README's are a standard file that explain what the code base does and provides a summary of what is happening in the set. I asked ChatGPT if it could `create a README for this code` and then I pasted the old code.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The author asked ChatGPT to create a README for some old code."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_60")
+```
+
+ChatGPT gave me some output that generally looked like a README:
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT provided a README. It is titled README for code snippet."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_96")
+```
+
+This README seems accurate given the work I was doing at the time. But obviously the title isn't great -- it doesn't describe the code well. Plus there's not really information about usage or outputs of the code.
+
+So I asked it: `Can you make this README more succinct and with sections about how you would use this code? ` This yielded a much better result.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT provided a better README after I asked it to be more succinct and provide sections about how to use the code. "}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
+```
+
+### Ask for line by line annotation
+
+Second, I wanted to have chatGPT annotate code line by line. So I asked it `Can you annotate some R code for me`.
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked chatGPT to annotate old R code."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
+```
+ It not only provided helpful annotations but it fixed spacing and added more spaces between lines of code:
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked chatGPT to annotate old R code."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
+```
+
+It does however, think the code is Python apparently if we look in the upper left corner.
+But this doesn't seem to have affected its accuracy in its annotations.
+
+### Ask for how the code could be improved
+
+This code is old, and I don't think it runs properly and is in no way reproducible. So I wanted to see what ChatGPT would recommend for improvements to the code.
+
+It had a lot of great advice:
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked chatGPT to annotate old R code."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
+```
+
+First and foremost it told me my variable names are not consistent and also not descriptive. Which is completely accurate! There's variable names like `xx` and `ll` which don't tell the reader anything about the variable.
+
+### Style the code
+
+Next, I asked chatGPT if it could restyle the code into tidyverse style. It definitely put elements that look like tidyverse however, it also put items in the code that I can tell by looking at it won't work.  
+
+So I tried to tell it about the errors: `This code is close but there are some errors. tidyverse functions don't work with matrices` and it told me:
+
+```You are correct that the tidyverse functions are designed to work with data frames and not matrices. Here's a modified version of your code that converts the matrix to a data frame and uses tidyverse functions:
+```
+
+The lesson here is that the output of chatGPT still needs to be vetted by the person asking for it. It is a great idea to continue to have AI's work on something if it isn't quite what you are asking for, however, at the end of the day it is you, the human, who has to vet the output.
+
+### Sometimes it has trouble with file types if given a URL
+
+
+Copying and pasting code appears to be the best way to go at this point in time.
+
+I asked chatGPT if it could annotate code in a Jupyter notebook at a URL I gave it:
+
+```
+Can you annotate the code at this URL? https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb
+
+```
+
+It responded with some of the code at that file where it was annotated but most of the notebook was not there.
+
+I told chatGPT:
+
+```
+That isn't all the code at that url
+```
+
+chatGPT told me:
+
+```
+You're right, I apologize. The code at the given URL is actually in a Jupyter Notebook format, so it's not easy to copy-paste here. However, I can suggest an alternative approach: you can use the website nbviewer (https://nbviewer.jupyter.org/) to view the notebook and its code. Here are the steps to do so:
+
+Go to https://nbviewer.jupyter.org/
+Paste the URL of the notebook (https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb) into the "Enter the location of a Jupyter Notebook" field and press "Go".
+This will display the notebook and its code, and you can read through it and add your own annotations as needed.
+I hope this helps!
+```
+
+This was a nice tool to recommend, however it still told me I should add my own annotations at the end of this.
+
 
 ```{r}
 devtools::session_info()
 ```
-
-
