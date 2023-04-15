@@ -40,7 +40,7 @@ Let's look at some specific examples of how we can use AI to understand code. In
 
 Here's some simple code using the R programming language, written by an unnamed programmer. If you are familiar with R, you might be able to understand what this code does with little effort. However, if you don't know R, you're relatively new to R, or you're just having a bad day, understanding what this bit of code can take a great deal more energy and time. AI language bots can ease that burden.
 
-```{r}
+```
 library(tidyverse)
 
 d <- ggplot2::diamonds
