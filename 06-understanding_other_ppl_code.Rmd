@@ -14,11 +14,13 @@ In the end, with patience, persistence, and a willingness to learn, you can succ
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e15d27e55_4_0")
 ```
 
-While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages. Firstly, AI tools can analyze the codebase and provide insights into its structure, complexity, and potential defects. This analysis can identify parts of the code that may be challenging to understand, maintain or improve. Based on the analysis, the AI tools may also make recommendations on how to enhance the codebase for better functionality and readability.
+While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages.
 
-Secondly, AI tools can assist in summarizing large codebases, which can be challenging to comprehend in detail. Such codebases may have multiple files, functions, and classes, which could take a considerable amount of time to read and understand thoroughly. With the help of AI, programmers can get a high-level overview of the codebase without going through it line by line. This approach can save substantial time and effort, especially when dealing with complex codebases. By gaining a deeper understanding of the codebase, developers can make better-informed decisions when it comes to adding new features, improving existing functionality, or fixing bugs. AI language models can also quickly analyze large amounts of code and provide a summary of its functionality, which can save developers a significant amount of time compared to manually analyzing the code line-by-line. By automating this process, developers can devote more time to other important tasks, such as debugging, testing, and improving the code.
+1. _Summarize large codebases._ AI can quickly scan large codebases and give you a high-level overview of what they do. This can save you a lot of time and effort, especially when dealing with complex codebases. For example, AI can identify the main functions and classes in a codebase, and it can show you how they are related.
 
-Finally, AI can help programmers to understand the comments and documentation written by other developers, as well as their design decisions and implementation details of code. These insights can help programmers to understand the code's purpose and the assumptions and limitations of the codebase. As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps of understanding, especially when the code isn't annotated well or at all. This can be especially helpful when working with older or legacy code, or when collaborating with other developers on a project. For instance, understanding how a particular piece of code works and why it was implemented a certain way can help developers identify potential issues and find more effective solutions. 
+1. _Analyze the code._ AI can look at the code and tell you about its structure, complexity, and potential defects quickly and efficiently. This can help you understand the code better and make it easier to maintain and improve. For example, AI can identify parts of the code that are difficult to understand or maintain, and it can suggest ways to improve the code.
+
+1. _Understand comments and documentation._ AI can read comments and documentation written by other developers. This can help you understand the code's purpose and the assumptions and limitations of the codebase. For example, AI can identify the key assumptions that are made in the code, and it can explain the trade-offs that were made in the design of the code.
 
 ::: {.ethics}
 Keep these ethical considerations in mind when using AI to summarize code.
@@ -30,11 +32,7 @@ Keep these ethical considerations in mind when using AI to summarize code.
 **Does the code contain any sensitive or personal information?** If the code contains any sensitive or personal information, you should take special care to protect that information
 ::: 
 
-## Examples
-
-Let's look at some specific examples of how we can use AI to understand code. In the following examples, we query a variety of bots - feel free to test these examples out using your favorite one. Our use for each example should not be taken as an endorsement of that chatbot.
-
-### Example One: Summarizing Code You Didn't Write
+## Example One: Summarizing Code You Didn't Write
 
 Here's some simple code using the R programming language, written by an unnamed programmer. If you are familiar with R, you might be able to understand what this code does with little effort. However, if you don't know R, you're relatively new to R, or you're just having a bad day, understanding what this bit of code can take a great deal more energy and time. AI language bots can ease that burden.
 
@@ -105,7 +103,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-### Example Two: Identifying a Coding Language
+## Example Two: Identifying a Coding Language
 
 Sometimes you might have to work with legacy code. Legacy code can be difficult to work with, especially if it is written in a language or style with which you are not familiar. There are more than 700 programming languages in use today, so it is impossible for any programmer to know them all. AI can be a helpful tool for identifying the language and version of legacy code, which can make your life just a little easier.
 
@@ -199,7 +197,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-### Example Three: Interpreting Regex
+## Example Three: Interpreting Regex
 
 Regex (short for Regular Expressions) is a powerful tool used to describe patterns in text. It's a sequence of characters that define a search pattern. Regular expressions can be a powerful tool for data cleaning, text mining, and data validation. They are widely used in web development, data science, and other fields where text processing is important. They can also be tricky to understand at first because they involve a specific syntax that can be complex.
 
@@ -219,15 +217,47 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-### Example Four: Understanding Variables
+## Example Four: Demystifying Functions
 
-### Example Five: Something about Functions
+Sometimes we get handed code that includes complex architecture. Perhaps you are working with code you wrote years ago when you really liked loops, but present you finds them difficult to parse. (Be nice to past you - maybe you were a baby programmer and didn't know better.) Instead of giving yourself a headache, you could turn to [ChatGPT](https://chat.openai.com/) to explain what your old code does.
 
-## Edge Cases
+```{python}
+def my_function(x):
+    result = x
+    for i in range(10):
+        for j in range(5):
+            result = result + 2 * (i + 1) * (j + 1) * (i % 2 == 0 and j % 2 == 0) - 1
+    return result
+```
 
-## Limitations?
+:::{.query}
+"What does this function do?"
+:::
 
-## Hands-On Exercise
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT explains the math operations being done on variable x by this complex looped function."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_170")
+```
+
+
+Well, now you have an idea what past-you might have been attempting to do with this code. You can also query AI about the potential problems from using the code as-written.
+
+:::{.query}
+"What are some possible issues with this code?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_176")
+```
+
+
+
+(And if you do ever run across an expression like this in your code, you can check out our chapter on refactoring code using AI to fix it!)
+
+
+## Example Five: Deciphering Comments
+
+
+## Hands-On Exercise [WORK IN PROGRESS]
 
 Now it's your turn to try. Let's say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what's going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.
 
