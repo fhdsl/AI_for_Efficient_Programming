@@ -30,7 +30,6 @@ using-ai-to-understand-code
 example-one-summarizing-code-you-didnt-write
 example-two-identifying-a-coding-language
 example-three-interpreting-regex
-example-four-understanding-variables-and-functions
-edge-cases
-limitations
-hands-on-exercise-1
+example-four-demystifying-functions
+example-five-deciphering-comments
+hands-on-exercise-work-in-progress

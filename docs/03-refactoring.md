@@ -92,9 +92,11 @@ if __name__ == '__main__':
 
 Much better! This can be quite handy when you can't immediately see what is wrong with the formatting or if you are working with a large codebase. 
 
-## Example Two: Syntax Convention
+## Example Two: Styling and Convention
 
 Sometimes programming languages have more flexible rules where there are multiple ways to take the same or almost the same action. For example, in the [R programming language](https://www.r-project.org/), there are several ways to perform variable assignment. However, is is generally accepted among R programmers that the `<-` operator should be used. Single and double quotes can be used for character types interchangeably, but it's generally a good idea to stick with one or the other.
+
+### Commonly Accepted Convention
 
 Let's say we have the following code:
 
@@ -132,6 +134,37 @@ c <- "carrot"
 Much better! This code will now look more familiar to other R programmers.
 
 <img src="resources/images/03-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_10.png" title="AI can help clean up code to match commonly followed conventions by users." alt="AI can help clean up code to match commonly followed conventions by users." width="100%" style="display: block; margin: auto;" />
+
+### Visual Styling
+
+Some languages are flexible about line breaks, indentation, and spacing among code blocks. If you're rapidly developing, things can get messy pretty quickly. Many development environments, for example RStudio and PyCharm, have the ability to format your code for you without changing any of the code itself. However, you can also get AI to do this according to your own preferences.
+
+
+```r
+d <- c(rep(a,5),rep(b,5),rep(c,5),paste(a,b,c),paste(c,b,a))
+```
+
+This code is pretty hard to read. Let's see if AI can do better.
+
+:::{.query}
+"Can you space out this R code to make it more readable?"
+:::
+
+:::{.ai_response}
+Sure! Here's the same code with added spacing for improved readability:
+
+
+```r
+d <- c(rep(a, 5), 
+       rep(b, 5), 
+       rep(c, 5), 
+       paste(a, b, c), 
+       paste(c, b, a))
+```
+
+:::
+
+Better! It's easier to interpret because only one action is being taken on each step. By spacing out the code and breaking it into multiple lines, it becomes easier for the human eye to scan for structure, logic, errors, and/or inconsistencies.
 
 ## Example Three: Staying DRY
 
@@ -320,6 +353,162 @@ if __name__ == '__main__':
 
 In this version, the `calculate_sum` function is simplified to take default arguments for a and b. This means the `default_values` function is no longer necessary. The a and b variables are also removed from `main`, as they are no longer needed. Much better and easier to look at overall.
 
+## Example Five: Making Code Readable
+
+Usually, our first goal as programmers is to get the response we need from the code. Readability might be the last thing on our minds. Luckily, AI can help with this. Let's imagine we whipped up this code pretty quickly. It is tough to read, and it could definitely be improved.
+
+
+```r
+for(term in c("good","bad","ugly")){
+  print(c(rep(term,3),paste("really",stringr::str_to_upper(term))))
+}
+```
+
+```
+## [1] "good"        "good"        "good"        "really GOOD"
+## [1] "bad"        "bad"        "bad"        "really BAD"
+## [1] "ugly"        "ugly"        "ugly"        "really UGLY"
+```
+
+Let's see if AI can do better.
+
+:::{.query}
+"Can you help me clean up this R code so it is more readable?"
+:::
+
+:::{.ai_response}
+Sure! Here's a more readable version of the code:
+
+
+```r
+library(stringr)
+
+for(term in c("good", "bad", "ugly")) {
+  print(c(rep(term, 3), paste("really", str_to_upper(term))))
+}
+```
+
+```
+## [1] "good"        "good"        "good"        "really GOOD"
+## [1] "bad"        "bad"        "bad"        "really BAD"
+## [1] "ugly"        "ugly"        "ugly"        "really UGLY"
+```
+
+I added whitespace around operators and after commas for better readability. I also loaded the stringr package explicitly using `library()` to make the code more self-contained.
+:::
+
+This is a good start, but not much has changed. Let's try again. On ChatGPT, we can click "Regenerate Response".
+
+:::{.ai_response}
+Here's a cleaned-up version of the R code that is more readable:
+
+
+```r
+library(stringr)
+
+terms <- c("good", "bad", "ugly")
+
+for (term in terms) {
+  rep_term <- rep(term, 3)
+  upper_term <- str_to_upper(term)
+  really_upper_term <- paste("really", upper_term)
+  result <- c(rep_term, really_upper_term)
+  print(result)
+}
+```
+
+```
+## [1] "good"        "good"        "good"        "really GOOD"
+## [1] "bad"        "bad"        "bad"        "really BAD"
+## [1] "ugly"        "ugly"        "ugly"        "really UGLY"
+```
+
+I've stored the repeated term and the uppercased term in separate variables to make the code more readable. I've also separated the construction of the "really" phrase from the uppercased term to make it clearer what's happening. Finally, I've used whitespace and indentation to make the structure of the code more apparent.
+
+:::
+
+Better! While the code takes up a greater number of lines, it's easier to interpret because only one action is being taken on each step.
+
+<img src="resources/images/03-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_111.png" title="Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'." alt="Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'." width="100%" style="display: block; margin: auto;" />
+
+## Example Six: Keep it Brief
+
+As we learned above, following the DRY principle and removing dead code can make your code easier to interpret, maintain, and debug. However, sometimes the issue is the functions themselves. No one has perfect knowledge of everything in their programming language. AI can help us determine if there are any more efficient sets of functions that do the same thing. Here is some code that plays with the "CO2" dataset in R:
+
+
+```r
+library(datasets)
+
+for (type in unique(CO2$Type)) {
+  dat_subset <- CO2[CO2$Type == type, ]
+  for (plant in unique(dat_subset$Plant)) {
+    dat_subset_2 <- dat_subset[dat_subset$Plant == plant, ]
+    print(paste(dat_subset_2$Plant[1], round(mean(dat_subset_2$uptake), 1)))
+  }
+}
+```
+
+```
+## [1] "Qn1 33.2"
+## [1] "Qn2 35.2"
+## [1] "Qn3 37.6"
+## [1] "Qc1 30"
+## [1] "Qc2 32.7"
+## [1] "Qc3 32.6"
+## [1] "Mn1 26.4"
+## [1] "Mn2 27.3"
+## [1] "Mn3 24.1"
+## [1] "Mc1 18"
+## [1] "Mc2 12.1"
+## [1] "Mc3 17.3"
+```
+
+Let's see if AI has any ideas for making it more concise.
+
+:::{.query}
+"Can you make this code more concise?"
+:::
+
+:::{.ai_response}
+Here's a more concise version using `dplyr` package in R:
+
+
+```r
+library(dplyr)
+
+CO2 %>%
+  group_by(Type, Plant) %>%
+  summarize(mean_uptake = mean(uptake))
+```
+
+```
+## # A tibble: 12 × 3
+## # Groups:   Type [2]
+##    Type        Plant mean_uptake
+##    <fct>       <ord>       <dbl>
+##  1 Quebec      Qn1          33.2
+##  2 Quebec      Qn2          35.2
+##  3 Quebec      Qn3          37.6
+##  4 Quebec      Qc1          30.0
+##  5 Quebec      Qc3          32.6
+##  6 Quebec      Qc2          32.7
+##  7 Mississippi Mn3          24.1
+##  8 Mississippi Mn2          27.3
+##  9 Mississippi Mn1          26.4
+## 10 Mississippi Mc2          12.1
+## 11 Mississippi Mc3          17.3
+## 12 Mississippi Mc1          18
+```
+
+This code groups the CO2 dataset by Type and Plant, calculates the mean uptake for each group using summarize, and then prints the resulting data frame. The code is shorter and more concise because it uses the `dplyr` package, which has built-in functions for data manipulation and summarization.
+:::
+
+Refactoring the code to be more concise using `dplyr` makes it easier to read and understand the steps involved in the data manipulation. It also reduces the number of nested loops and intermediate variables, making the code more efficient and reducing the chance of errors. Ultimately, it is your job as a programmer to use your best judgment on the fine balance between brevity and readability, as the best solution is not always this obvious.
+
+:::{.notice}
+Remember that you can regenerate the AI's response if you want more options.
+:::
+
 ## Code optimization
 
 loops!
@@ -352,7 +541,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-04-14                  
+##  date     2023-04-17                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
@@ -367,11 +556,13 @@ devtools::session_info()
 ##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
 ##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
 ##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
+##  dplyr       * 1.0.2   2020-08-18 [1] RSPM (R 4.0.2)                    
 ##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
 ##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
 ##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
 ##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
 ##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
+##  generics      0.0.2   2018-11-29 [1] RSPM (R 4.0.0)                    
 ##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
 ##  here          1.0.1   2020-12-13 [1] CRAN (R 4.0.2)                    
 ##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
@@ -395,6 +586,7 @@ devtools::session_info()
 ##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
 ##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
 ##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
+##  purrr         0.3.4   2020-04-17 [1] RSPM (R 4.0.5)                    
 ##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
 ##  Rcpp          1.0.10  2023-01-22 [1] CRAN (R 4.0.2)                    
 ##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
@@ -406,9 +598,10 @@ devtools::session_info()
 ##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
 ##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
 ##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
-##  stringr       1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
+##  stringr     * 1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
 ##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
 ##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
+##  tidyselect    1.1.0   2020-05-11 [1] RSPM (R 4.0.3)                    
 ##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
 ##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
 ##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
