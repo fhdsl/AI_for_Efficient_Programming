@@ -5,6 +5,7 @@ Bookdown
 chatbot
 chatbots
 ChatGPT
+chatGPT
 codebase
 codebases
 Coursera
@@ -14,6 +15,7 @@ DataTrail
 Dockerfile
 Dockerhub
 dropdown
+Explainability
 favicon
 GDSCN
 GitHub
@@ -23,6 +25,7 @@ impactful
 ITCR
 itcrtraining
 ITN
+Jupyter
 fyi
 Leanpub
 Markua
@@ -36,6 +39,9 @@ tidyverse
 UE
 UE5
 reproducibility
+README
+README's
 rmarkdown
+stringr
 underserved
 www
