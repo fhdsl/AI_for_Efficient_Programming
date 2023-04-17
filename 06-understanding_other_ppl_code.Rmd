@@ -21,16 +21,13 @@ Secondly, AI tools can assist in summarizing large codebases, which can be chall
 Finally, AI can help programmers to understand the comments and documentation written by other developers, as well as their design decisions and implementation details of code. These insights can help programmers to understand the code's purpose and the assumptions and limitations of the codebase. As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps of understanding, especially when the code isn't annotated well or at all. This can be especially helpful when working with older or legacy code, or when collaborating with other developers on a project. For instance, understanding how a particular piece of code works and why it was implemented a certain way can help developers identify potential issues and find more effective solutions. 
 
 ::: {.ethics}
+Keep these ethical considerations in mind when using AI to summarize code.
 
-**Ethical Considerations**
+**Who owns the code?** If you are not the owner of the code, you should get permission from the owner before summarizing it.
 
-AI can be used to summarize code, which can be helpful for understanding how the code works. However, it is important to consider the ethical implications of using AI to summarize code that someone else has written.
+**What is the purpose of the summary?** If you are summarizing the code for educational or research purposes, it is likely ethical to do so. However, if you are summarizing the code for commercial purposes, you may need to get permission from the owner.
 
-* Think about the **ownership** of the code. If you are not the owner of the code, you should get permission from the owner before summarizing it. This is because the owner of the code may have intellectual property rights that protect their work.
-
-* Consider the **purpose** of the summary. If you are summarizing the code for educational or research purposes, it is likely ethical to do so. However, if you are summarizing the code for commercial purposes, you may need to get permission from the owner. This is because the owner of the code may be able to profit from the summary, and they may want to be compensated for their work.
-
-* Determine whether the code contains any **sensitive or personal information**. If the code does contain sensitive or personal information, you should take special care to protect that information. This may involve redacting the information from the summary or obtaining permission from the owner to publish the information.
+**Does the code contain any sensitive or personal information?** If the code contains any sensitive or personal information, you should take special care to protect that information
 ::: 
 
 ## Examples
