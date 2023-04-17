@@ -4,58 +4,199 @@ Code annotation, also known as code commenting, is the process of adding explana
 
 There are many benefits to annotating code.
 
+## Improves readability
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. "}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_8")
 ```
 
 First, it can help to improve the readability of code. By adding comments, developers can explain the purpose of each section of code, which can make it easier for others to understand what the code is doing. This can be especially helpful for large or complex codebases, where it can be difficult to keep track of all the different components. This is particularly important in contexts where the original developer of a project may move on to something else and others are left to work on them. Annotation perhaps most often helps a developer remember things they knew about the code when they were originally writing it (annotation is helpful for future you!) If the original developer left well-annotated code, it can drastically improve the ability of others (and their future selves) to continue with the project.
 
-Comments that help readability **further clarify what the code is doing**
+### Examples of readability aiding comments
 
-**Examples of readability aiding comments**
+Comments that help readability **clarify what the code is doing**
+
+**Function explanations:**  A comment at the beginning of a function or method can describe its purpose, parameters, and expected return values. This makes it easier for others to understand what the function does and how to use it.
+
 ```
-# This custom function handles ...
-# This dataset has this information and is used to ....
-# These variables defined here are used later for ...
+# This function calculates the sum of two numbers
+def add_numbers(x, y):
+    return x + y
 ```
+
+**Inline explanations:** Use inline comments to explain what a specific line or block of code does. This can help someone reading your code to quickly understand what's going on.
+```
+# Loop through each item in the list
+for item in my_list:
+    # Check if the item is greater than 10
+    if item > 10:
+        # Print the item
+        print(item)
+```
+
+**TODO comments:** Use TODO comments to mark areas of your code that need further work or improvement. This can help you or others to remember to come back to a specific part of the code.
+
+```
+# TODO: Implement error handling for this function
+def my_function():
+    pass
+```
+
+**Parameter descriptions:** If a function or method has complex parameters, it can be helpful to add comments explaining what each parameter does.
+
+```
+def my_function(parameter1, parameter2):
+    """
+    Calculate the sum of two numbers.
+
+    Parameters:
+    parameter1 (int): The first number to be added.
+    parameter2 (int): The second number to be added.
+
+    Returns:
+    int: The sum of parameter1 and parameter2.
+    """
+    return parameter1 + parameter2
+```
+
+**Code block summary explanations:**  If you have a long or complex code block, you can add a comment to explain what the block is doing.
+
+```
+# This code block creates a dictionary containing the counts of each word in a list of text strings
+word_counts = {}
+for text in text_list:
+    for word in text.split():
+        if word not in word_counts:
+            word_counts[word] = 0
+        word_counts[word] += 1
+```
+
+### Improves maintainability
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_37")
 ```
 
-Second, code annotation can help to improve the maintainability of code. By adding comments, developers can explain the reasoning behind certain decisions, which can make it easier for others to make changes to the code without breaking it. This can be especially helpful when multiple developers are working on the same codebase, as it can help to prevent conflicts and ensure that the code is always in a consistent state.
+Code annotation can help to improve the maintainability of code. By adding comments, developers can explain the reasoning behind certain decisions, which can make it easier for others to make changes to the code without breaking it. This can be especially helpful when multiple developers are working on the same codebase, as it can help to prevent conflicts and ensure that the code is always in a consistent state.
+
+### Examples of maintainability aiding comments
 
 Comments that help maintainability **explain why the historical decisions of why code was made the way it was**
 
 **Examples of maintainability aiding comments**
+
+**Design decisions:** If there were specific design decisions made when creating the code, you can add comments explaining why certain choices were made.
+bash
+
 ```
-# Package A was used because it fit our requirements of being open source, efficient, and was better maintained than package B.
-# This parameter was chosen because it had the best performance according to some tests we did seen at https://github.com/some_analysis
-# This method was used because it was compared in Smith et al, 2012 to these other methods.
+# We chose to use a linked list data structure for this function to reduce the time complexity of inserting and deleting elements.
 ```
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_37")
+**Legacy code:** Sometimes, code may have been written in a certain way due to constraints or limitations at the time it was created. Adding comments to explain this can help others understand why the code is the way it is.
+
+```
+# This code was written before Python 3, which introduced the `yield from` syntax. Therefore, we used a `for` loop to iterate over the nested list.
 ```
 
-Third, code annotation can help to improve the quality of code. By adding comments, developers can identify potential issues or edge cases, which can help to prevent these issues from occurring in the first place. This can be especially helpful when testing code, as it can help to ensure that the code is working as expected.
+**Performance optimizations:** If certain performance optimizations were made to the code, you can add comments explaining why they were necessary.
+bash
 
-Comments that help improve the quality of the code **point out gaps or less than ideal implemented solutions**
+```
+# We used memoization to improve the time complexity of this recursive function, as it was taking too long to execute for larger inputs.
+```
 
-**Examples of quality aiding comments**
+**Compatibility considerations:** If the code was written with compatibility considerations in mind, you can add comments explaining why certain choices were made.
+
 ```
-# This section of the code takes quite a bit of memory to run ~180 GB -- it should not be run on a local machine
-# This custom function's logic is not easy for others to understand
-# TODO: This code could use refactoring because it ...
+# We used the `os.path` module to ensure that this code will work on both Windows and Unix-based systems, as the path separators are different on each platform.
 ```
+
+**Limitations:** If there are limitations or edge cases that the code cannot handle, you can add comments to explain this to others.
+
+```
+# Note that this function assumes that the input array is sorted in ascending order. If the array is unsorted, the results may be incorrect.
+```
+
+## Improves the quality
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Dino says Ah I know exactly how to fix this part of the code that was annotated with a warning!"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_60")
 ```
 
+Code annotation can help to improve the quality of code. By adding comments, developers can identify potential issues or edge cases, which can help to prevent these issues from occurring in the first place. This can be especially helpful when testing code, as it can help to ensure that the code is working as expected.
+
+## Examples of quality aiding comments
+
+Comments that help improve the quality of the code **by explaining to other how to use or help improve it**
+
+**Error handling:** Adding comments to explain how and why error handling is being implemented can help ensure that your code is robust and able to handle unexpected inputs or errors. This helps others know how the code was intended to be used.
+
+```
+# If the input argument is not a list or is empty, raise a ValueError
+if not isinstance(input_list, list) or len(input_list) == 0:
+    raise ValueError("Input list cannot be empty")
+```
+
+**Overcomplexity:** If your code has particular complexities, adding comments that explain it can help others understand the performance characteristics of your code. It may help others identify whether there is a simpler way to write the code.
+
+```
+# This block of code could probably be simplified, but I'm not sure how.
+new_list = []
+for i in old_list:
+    if i > 0:
+        new_list.append(i)
+```
+
+**Constants and variables:** Adding comments to explain the purpose of constants and variables can make your code easier to use. It not only notifies others of the variables existence but lets them know if they need to change the parameters for their own purposes.
+
+```
+# This constant represents the maximum allowed number of retries when attempting to connect to the server.
+MAX_RETRIES = 3
+
+# This variable tracks the number of failed attempts to connect to the server.
+num_retries = 0
+```
+
+**Code organization or disorganization:** Adding comments to explain the organization and structure of your code can make it easier for others to navigate and may bring out a better organizational strategy for your code.
+
+```
+# Define helper functions for data processing
+def preprocess_data(input_data):
+    # Implementation details
+
+def analyze_data(processed_data):
+    # Implementation details
+
+def visualize_data(analyzed_data):
+    # Implementation details
+
+# Load data from file
+input_data = load_data("input.txt")
+
+# Preprocess data
+processed_data = preprocess_data(input_data)
+
+# Analyze data
+analyzed_data = analyze_data(processed_data)
+
+# Visualize data
+visualize_data(analyzed_data)
+```
+
+**Assumptions and constraints:** Adding comments to explain the assumptions and constraints of your code can help others understand its limitations and potential pitfalls.
+
+```
+# This function assumes that all input values are positive integers. Negative or non-integer inputs may result in unexpected behavior.
+```
+
 ## AI in Code Annotation
 
-AI can be used to annotate code, which can help streamline the development process and improve the overall quality of code, and its role in code annotation will become increasingly important in the years to come. Here are some of the benefits of using AI for code annotation:
+
+We've discussed why code annotation and documentation are important, but when and why would you use AI for code annotation? AI can be a nice tool to supplement the annotation of your code. It should not be the only source of annotation for your code, because as the code author, you need to verify that what AI has annotated is consistent with your knowledge and history of development of the code.
+
+ But using AI to annotate your code can be useful to supplement existing code annotations or to annotate old code that was poorly annotated either by yourself or others who are no longer working on the project.
+
+ Here are some of the benefits of using AI for code annotation:
 
 1. **Speed and efficiency:** AI algorithms can analyze code much faster than humans, which means they can quickly generate comments and annotations for large codebases. This can save developers significant time and effort, allowing them to focus on other aspects of the development process.
 
@@ -112,14 +253,14 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 ### Ask for line by line annotation
 
-Second, I wanted to have chatGPT annotate code line by line. So I asked it `Can you annotate some R code for me`.
+Second, I wanted to have ChatGPT annotate code line by line. So I asked it `Can you annotate some R code for me`.
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked chatGPT to annotate old R code."}
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked ChatGPT to annotate old R code."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
 ```
  It not only provided helpful annotations but it fixed spacing and added more spaces between lines of code:
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked chatGPT to annotate old R code."}
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked ChatGPT to annotate old R code."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
 ```
 
@@ -132,7 +273,7 @@ This code is old, and I don't think it runs properly and is in no way reproducib
 
 It had a lot of great advice:
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked chatGPT to annotate old R code."}
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked ChatGPT to annotate old R code."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
 ```
 
@@ -151,7 +292,6 @@ The lesson here is that the output of chatGPT still needs to be vetted by the pe
 
 ### Sometimes it has trouble with file types if given a URL
 
-
 Copying and pasting code appears to be the best way to go at this point in time.
 
 I asked chatGPT if it could annotate code in a Jupyter notebook at a URL I gave it:
@@ -163,13 +303,13 @@ Can you annotate the code at this URL? https://github.com/jhudsl/reproducible-py
 
 It responded with some of the code at that file where it was annotated but most of the notebook was not there.
 
-I told chatGPT:
+I told ChatGPT:
 
 ```
 That isn't all the code at that url
 ```
 
-chatGPT told me:
+ChatGPT told me:
 
 ```
 You're right, I apologize. The code at the given URL is actually in a Jupyter Notebook format, so it's not easy to copy-paste here. However, I can suggest an alternative approach: you can use the website nbviewer (https://nbviewer.jupyter.org/) to view the notebook and its code. Here are the steps to do so:
@@ -181,6 +321,12 @@ I hope this helps!
 ```
 
 This was a nice tool to recommend, however it still told me I should add my own annotations at the end of this.
+
+## Summary
+
+- Code annotation is important for readability, maintainability, and overall quality of code
+- AI can be a helpful tool for supplementing annotations or creating annotation for poorly annotated code.
+- Ultimately the code author who uses AI as a tool for annotation is still ultimately responsible for verifying that the annotations are consistent with their knowledge of the code.
 
 
 ```{r}
