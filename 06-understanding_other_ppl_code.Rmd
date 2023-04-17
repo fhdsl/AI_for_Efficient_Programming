@@ -24,12 +24,13 @@ Finally, AI can help programmers to understand the comments and documentation wr
 
 **Ethical Considerations**
 
-AI language models like ChatGPT, Bard, and others have the ability to summarize code and offer valuable insights into its workings. However, it's important to consider the ethics of using AI to summarize code that someone else has written. Several factors come into play, such as the intended purpose of the summary, the ownership of the code, and the potential impact of the summary. Specifically, it's important to take into account who owns the code, the reason for summarizing the code, and whether the code contains any sensitive or personal information.
+AI can be used to summarize code, which can be helpful for understanding how the code works. However, it is important to consider the ethical implications of using AI to summarize code that someone else has written.
 
-If the reason for summarizing the code is for educational or research purposes, and the code is either publicly available or the owner has granted explicit permission for its use, then it's likely ethical to use AI to summarize the code. However, if the summary is intended for commercial purposes or could potentially infringe upon the owner's intellectual property rights, it may be unethical to use AI to summarize the code without obtaining the owner's consent. Additionally, if the code contains confidential or personal information, using AI to summarize it could raise privacy concerns. In such cases, obtaining explicit consent from the owner and implementing appropriate measures to ensure that the summary does not reveal any confidential information may be necessary.
+* Think about the **ownership** of the code. If you are not the owner of the code, you should get permission from the owner before summarizing it. This is because the owner of the code may have intellectual property rights that protect their work.
 
-Overall, the ethics of using AI to summarize code someone else wrote depend on the specific circumstances and should be carefully considered before proceeding. It is important to respect the intellectual property rights and privacy of the owner and ensure that the summary is used in a responsible and ethical manner.
+* Consider the **purpose** of the summary. If you are summarizing the code for educational or research purposes, it is likely ethical to do so. However, if you are summarizing the code for commercial purposes, you may need to get permission from the owner. This is because the owner of the code may be able to profit from the summary, and they may want to be compensated for their work.
 
+* Determine whether the code contains any **sensitive or personal information**. If the code does contain sensitive or personal information, you should take special care to protect that information. This may involve redacting the information from the summary or obtaining permission from the owner to publish the information.
 ::: 
 
 ## Examples
@@ -69,6 +70,8 @@ We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_22_0")
 ```
 
+
+
 You can ask for Claude to summarize each step in detail as well.
 
 :::{.query}
@@ -78,6 +81,8 @@ You can ask for Claude to summarize each step in detail as well.
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_5")
 ```
+
+
 
 Maybe you've never worked with the tidyverse package in R - Claude can tell you about it.
 
@@ -89,6 +94,8 @@ Maybe you've never worked with the tidyverse package in R - Claude can tell you 
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_14")
 ```
 
+
+
 You might also not be familiar with the diamonds dataset (especially if you've never used it before) and want some clarification on where the data are from.
 
 :::{.query}
@@ -98,6 +105,8 @@ You might also not be familiar with the diamonds dataset (especially if you've n
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_20")
 ```
+
+
 
 ### Example Two: Identifying a Coding Language
 
@@ -167,6 +176,8 @@ We can ask [Bard](https://bard.google.com/) to take a guess at what the coding l
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_46")
 ```
 
+
+
 We can explore further to figure out what indicators tell Bard the language is Pascal.
 
 :::{.query}
@@ -177,6 +188,8 @@ We can explore further to figure out what indicators tell Bard the language is P
 ottrpal::include_slide("hhttps://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_50")
 ```
 
+
+
 It turns out there are multiple versions of Pascal. Since you will presumably need to work with this legacy code, you might want to know which version it is.
 
 :::{.query}
@@ -186,6 +199,8 @@ It turns out there are multiple versions of Pascal. Since you will presumably ne
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_39")
 ```
+
+
 
 ### Example Three: Interpreting Regex
 
@@ -205,7 +220,11 @@ x = sub("/d/e","/d",x)
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_6_4")
 ```
 
-### Example Four: Understanding Variables and Functions
+
+
+### Example Four: Understanding Variables
+
+### Example Five: Something about Functions
 
 ## Edge Cases
 
