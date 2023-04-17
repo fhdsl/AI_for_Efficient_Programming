@@ -137,7 +137,7 @@ if not isinstance(input_list, list) or len(input_list) == 0:
     raise ValueError("Input list cannot be empty")
 ```
 
-**Overcomplexity:** If your code has particular complexities, adding comments that explain it can help others understand the performance characteristics of your code. It may help others identify whether there is a simpler way to write the code. By adding a comment that expresses uncertainty about the code and asking for suggestions, the author can potentially receive feedback from others on how to improve the code. 
+**Overcomplexity:** If your code has particular complexities, adding comments that explain it can help others understand the performance characteristics of your code. It may help others identify whether there is a simpler way to write the code. By adding a comment that expresses uncertainty about the code and asking for suggestions, the author can potentially receive feedback from others on how to improve the code.
 
 ```
 # This block of code could probably be simplified, but I'm not sure how.
@@ -231,7 +231,13 @@ TODO: How does this relate to annotation?
 
 To try out some annotation with code examples, this author dug up some old code that she has no idea what it does because time has passed and at the time she didn't document it very well.
 
-First, I wanted ChatGPT to make a README for me. README's are a standard file that explain what the code base does and provides a summary of what is happening in the set. I asked ChatGPT if it could `create a README for this code` and then I pasted the old code.
+First, I wanted ChatGPT to make a README for me. README's are a standard file that explain what the code base does and provides a summary of what is happening in the set. I asked ChatGPT if it could:
+
+:::{.query}
+Create a README for this code
+:::
+
+and then I pasted the old code.
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The author asked ChatGPT to create a README for some old code."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_60")
@@ -245,7 +251,13 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 This README seems accurate given the work I was doing at the time. But obviously the title isn't great -- it doesn't describe the code well. Plus there's not really information about usage or outputs of the code.
 
-So I asked it: `Can you make this README more succinct and with sections about how you would use this code? ` This yielded a much better result.
+So I asked it:
+
+:::{.query}
+Can you make this README more succinct and with sections about how you would use this code?
+:::
+
+This yielded a much better result.
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT provided a better README after I asked it to be more succinct and provide sections about how to use the code. "}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
@@ -253,7 +265,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 ### Ask for line by line annotation
 
-Second, I wanted to have ChatGPT annotate code line by line. So I asked it `Can you annotate some R code for me`.
+Second, I wanted to have ChatGPT annotate code line by line. So I asked it
+
+:::{.query}
+Can you annotate some R code for me?
+:::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked ChatGPT to annotate old R code."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
@@ -269,7 +285,11 @@ But this doesn't seem to have affected its accuracy in its annotations.
 
 ### Ask for how the code could be improved
 
-This code is old, and I don't think it runs properly and is in no way reproducible. So I wanted to see what ChatGPT would recommend for improvements to the code.
+This code is old, and I don't think it runs properly and is in no way reproducible. So I wanted to see what ChatGPT would recommend for improvements to the code. I said
+
+:::{.query}
+How could I make this code better?
+:::
 
 It had a lot of great advice:
 
@@ -283,9 +303,15 @@ First and foremost it told me my variable names are not consistent and also not 
 
 Next, I asked chatGPT if it could restyle the code into tidyverse style. It definitely put elements that look like tidyverse however, it also put items in the code that I can tell by looking at it won't work.  
 
-So I tried to tell it about the errors: `This code is close but there are some errors. tidyverse functions don't work with matrices` and it told me:
+So I tried to tell it about the errors:
+:::{.query}
+This code is close but there are some errors. tidyverse functions don't work with matrices
+:::
 
-```You are correct that the tidyverse functions are designed to work with data frames and not matrices. Here's a modified version of your code that converts the matrix to a data frame and uses tidyverse functions:
+and it told me:
+
+```
+You are correct that the tidyverse functions are designed to work with data frames and not matrices. Here's a modified version of your code that converts the matrix to a data frame and uses tidyverse functions:
 ```
 
 The lesson here is that the output of chatGPT still needs to be vetted by the person asking for it. It is a great idea to continue to have AI's work on something if it isn't quite what you are asking for, however, at the end of the day it is you, the human, who has to vet the output.
@@ -296,18 +322,17 @@ Copying and pasting code appears to be the best way to go at this point in time.
 
 I asked chatGPT if it could annotate code in a Jupyter notebook at a URL I gave it:
 
-```
+:::{.query}
 Can you annotate the code at this URL? https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb
-
-```
+:::
 
 It responded with some of the code at that file where it was annotated but most of the notebook was not there.
 
 I told ChatGPT:
 
-```
+:::{.query}
 That isn't all the code at that url
-```
+:::
 
 ChatGPT told me:
 
