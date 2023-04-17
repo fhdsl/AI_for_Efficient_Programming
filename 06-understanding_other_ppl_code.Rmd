@@ -29,7 +29,7 @@ Keep these ethical considerations in mind when using AI to summarize code.
 
 **What is the purpose of the summary?** If you are summarizing the code for educational or research purposes, it is likely ethical to do so. However, if you are summarizing the code for commercial purposes, you may need to get permission from the owner.
 
-**Does the code contain any sensitive or personal information?** If the code contains any sensitive or personal information, you should take special care to protect that information
+**Does the code contain any sensitive or personal information?** If the code contains any sensitive or personal information, you should take special care to protect that information.
 ::: 
 
 ## Example One: Summarizing Code You Didn't Write
