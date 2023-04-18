@@ -32,9 +32,9 @@ AI-powered programming tools and technologies are revolutionizing the way we app
 As AI continues to evolve, it is likely to have an even greater impact on the way we develop software in the future.
 
 :::{.ethics}
-**As a programmer using AI, it is up to you to be responsible for what you create.** You must rigorously test any code you write and also take care that you are only using code that you're authorized to use. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).
+**As a programmer using AI, it is up to you to be responsible for what you create.** You must rigorously test any code you write. It is your job to make sure any code you create with AI is not malicious and works as expected.
 
-It is your job to make sure any code you create with AI is not malicious and works as expected.
+You must also take care that you are only using code that you're authorized to use. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).
 :::
 
 
