@@ -4,13 +4,15 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Writing and Debugging Code
+# Writing Code
 
 In today's digitally-driven world, coding has become an essential skill. It is used to create websites, mobile applications, and sophisticated software systems. Contrary to popular belief, coding is not only for those who possess an innate talent for programming. With the right resources and a willingness to learn, anyone can become proficient in coding.
 
 Practice is crucial to mastering the art of coding, and those who are willing to commit themselves to the learning process can achieve great results. Writing code can also be a rewarding and fulfilling hobby, too. Creating your own software, building a website, or automating a task can be immensely satisfying, and can provide a sense of accomplishment and pride.
 
 Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.
+
+[FIGURE SHOWING CODING AS A CREATIVE ART???]
 
 Ultimately, the ability to write code is a valuable asset in today's world, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
 
@@ -38,36 +40,13 @@ You must also take care that you are only using code that you're authorized to u
 :::
 
 
-## The Basics of Code Generation
-
-Using AI to write code is as much of an art as writing your own code. You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do. Following a few rules and suggestions will make your experience much more enjoyable and productive.
-
-**Remember that AI cannot read your mind**. You need to tell it what you're thinking, and it may take several rounds of question-and-answer before you get something you can work with. 
-
-* _Be clear about your goals._ What do you want the AI to do? Be as specific as possible.
-
-* _Start with a simple task._ Don't try to do too much too soon. Start with a simple task and then gradually work your way up to more complex tasks. You wouldn't write a complete program all at once, and you shouldn't have AI do it, either.
-
-* _Provide enough data._ The more data (and detail) you can give the AI, the better it will be able to learn and perform the task you want it to do.
-
-* _Be patient._ Querying an AI can take time. Don't expect it to be perfect right away.
-
-**Test everything AI writes**. You are responsible for the code that AI generates, even if you didn't write it yourself. AI can be biased, just like humans, and this could lead to sub optimal development. There is a concern that AI may focus development on areas that optimize certain metrics but not overall quality, effectiveness, or user needs. Human judgment is still needed to ensure that AI is used in a responsible and ethical way.
-
-* _Test your results._ Make sure the AI is actually doing what you want it to do. AI systems are trained on data, and if the data is not representative of the real world, the AI system may not be able to generate code that works correctly. It is important to test the code to make sure that it is working as intended and that it is producing the desired results. Inadequate testing could lead to low quality, buggy code. Since AI generated code would be highly automated, it requires strong testing procedures and safety oversight to ensure it meets standards before deployment. 
-
-* _Make sure your code is secure._ AI systems can be used to generate code that is vulnerable to attack, and it is important to test the code to make sure that it is secure. This can help to prevent security breaches from occurring. 
-
-* _Use a variety of AI models._ There are many different AI models available. Experiment with different models to see which one works best for your task.
-
-* _Get feedback from others._ Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.
-
-
 ## Step One: Planning Your Program
 
+You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.
 
+### Defining Your Approach
 
-### Selecting a Language: 
+### Selecting a Language
 
 Selecting a language in which to develop software is an important first step. You might choose a language based on:
 
@@ -120,6 +99,35 @@ A powerful language often used for developing high-performance applications and 
 You can find a description of other languages you might encounter [here](Appendix.html).
 
 ## Step Two: Writing And Debugging-As-You-Go
+
+Using AI to write code is as much of an art as writing your own code.  Following a few rules and suggestions will make your experience much more enjoyable and productive.
+
+**Remember that AI cannot read your mind**. You need to tell it what you're thinking, and it may take several rounds of question-and-answer before you get something you can work with. 
+
+* _Be clear about your goals._ What do you want the AI to do? Be as specific as possible.
+
+* _Start with a simple task._ Don't try to do too much too soon. Start with a simple task and then gradually work your way up to more complex tasks. You wouldn't write a complete program all at once, and you shouldn't have AI do it, either.
+
+* _Provide enough data._ The more data (and detail) you can give the AI, the better it will be able to learn and perform the task you want it to do.
+
+* _Be patient._ Querying an AI can take time. Don't expect it to be perfect right away.
+
+**Test everything AI writes**. You are responsible for the code that AI generates, even if you didn't write it yourself. AI can be biased, just like humans, and this could lead to sub optimal development. There is a concern that AI may focus development on areas that optimize certain metrics but not overall quality, effectiveness, or user needs. Human judgment is still needed to ensure that AI is used in a responsible and ethical way.
+
+* _Test your results._ Make sure the AI is actually doing what you want it to do. AI systems are trained on data, and if the data is not representative of the real world, the AI system may not be able to generate code that works correctly. It is important to test the code to make sure that it is working as intended and that it is producing the desired results. Inadequate testing could lead to low quality, buggy code. Since AI generated code would be highly automated, it requires strong testing procedures and safety oversight to ensure it meets standards before deployment. 
+
+* _Make sure your code is secure._ AI systems can be used to generate code that is vulnerable to attack, and it is important to test the code to make sure that it is secure. This can help to prevent security breaches from occurring. 
+
+* _Use a variety of AI models._ There are many different AI models available. Experiment with different models to see which one works best for your task.
+
+* _Get feedback from others._ Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.
+
+### Chunking It Out
+
+### Slowly Add Complexity
+
+
+## Hands On Exercise 
 
 
 
