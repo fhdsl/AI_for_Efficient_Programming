@@ -27,7 +27,10 @@ In this chapter we will discuss the following concerns:
 
 ## Bias
 
-One of the biggest concerns is the potential for AI to create biased code. AI systems are trained on data created by humans. If this data used to train the system is biased, the resulting code could also be biased. This could lead to discrimination against certain groups of people, such as those with certain ethnic or cultural backgrounds, genders, ages, sexuality, capabilities, religions or other group affiliations.
+One of the biggest concerns is the potential for AI to create biased code. AI systems are trained on data created by humans. If this data used to train the system is biased, the resulting code could also be biased. This could lead to discrimination against certain groups of people, such as those with certain ethnic or cultural backgrounds, genders, ages, sexuality, capabilities, religions or other group affiliations. 
+
+<!-- It is well known that data and code are often biased. Want to add examples!  -->
+
 
 ### Avoiding Bias
 
