@@ -329,7 +329,7 @@ for(term in c("good", "bad", "ugly")) {
 }
 ```
 
-I added whitespace around operators and after commas for better readability. I also loaded the stringr package explicitly using `library()` to make the code more self-contained.
+I added whitespace around operators and after commas for better readability. I also loaded the `stringr` package explicitly using `library()` to make the code more self-contained.
 :::
 
 This is a good start, but not much has changed. Let's try again. On ChatGPT, we can click "Regenerate Response".
@@ -490,7 +490,7 @@ AI models require large amounts of data to learn from, but in the case of code r
 
 ### Quality Control
 
-Automated refactoring tools that use AI may not always produce code that is of the same quality as code produced by human developers. It can be difficult to always ensure that the refactored code is maintainable, efficient, and free of bugs. You need to use your best judgement when copying and pasting code into your codebase.
+Automated refactoring tools that use AI may not always produce code that is of the same quality as code produced by human developers. It can be difficult to always ensure that the refactored code is maintainable, efficient, and free of bugs. You need to use your best judgment when copying and pasting code into your codebase.
 
 :::{.warning}
 It's good practice to **always** include unit tests in your code. It can help you catch bugs, including those introduced accidentally by AI!
