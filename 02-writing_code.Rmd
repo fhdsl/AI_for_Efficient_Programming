@@ -185,11 +185,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 Well, I'm convinced. As we start building this code, we will use Python. (You are, of course, more than welcome to do it in Java, but the rest of the example will be in Python.)
 
-### step Three: Chunking It Out
-
-
+### Step Three: Chunking It Out
 
 ### Step Four: Slowly Adding Complexity
+
+## AI Mistakes
 
 
 ## Hands On Exercise 
