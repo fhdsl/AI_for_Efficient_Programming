@@ -7,13 +7,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The use of artificial intelligence (AI) and in particular, generative AI, in coding has raised a number of ethical concerns. We will highlight several current concerns, however please be aware that this is a dynamic field and the possible implications of this technology is continuing to develop. It is critical that we as a society continue to evaluate and predict what the consequences of the use of AI will be, so that we can mitigate harmful effects.
 
+## Major concerns
+
 In this chapter we will discuss the following concerns:
 
-1) Code that contributes to Bias - AI models are built on data and code that were created by biased humans, this bias can be further propegated
+1) Code that contributes to Bias - AI models are built on data and code that were created by biased humans, this bias can be further propagated
 2) Code that contributes to misinformation - fake or manipulated data could be believed to be correct
 3) Code that has bugs - Code that may not be optimal for a given situation may be inadvertently used by those with less familiarity, which may result in faulty software
-4) Code that has security issues - Code may not be optimized for security  
+4) Code that has security issues - Code may not be optimized for security if not adequately evaluated
+5) Code may violate copyright - The code used for the generative AI model may used code that has copyright laws that require attribution or do not allow reuse and it may not be clear where the code came from
+6) Code may violate privacy - Generative AI models have access to large amounts of data that is currently unregulated and may include data that should be protected for privacy reasons
+7) Code may be harmful - Currently it is not clear how well generative AI models restrict the creation of code that will be used for goals that harm others 
 
+
+## Bias
 
 One of the biggest concerns is the potential for AI to create biased code. AI systems are trained on data created by humans. If this data used to train the system is biased, the resulting code could also be biased. This could lead to discrimination against certain groups of people, such as those with certain ethnic or cultural backgrounds, genders, ages, capabilities, religions.
 
