@@ -17,7 +17,7 @@ Moreover, writing code can be a form of creative expression. Just as musicians u
 Ultimately, the ability to write code is a valuable asset in today's world, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
 
 
-## Using AI to write code
+## Writing Code with AI
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_83")
@@ -44,15 +44,28 @@ You must also take care that you are only using code that you're authorized to u
 
 You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.
 
-### Defining Your Approach
+### Example One: Defining Your Approach
 
-### Selecting a Language
+Everyone needs a plan of attack when building software. You should start by identifying what your software will do, then you can figure out the steps necessary to make that happen. 
 
-Selecting a language in which to develop software is an important first step. You might choose a language based on:
+Let's say we want to create software that 
+
+### Example Two: Selecting a Language
+
+You also need to choose the language for your software. You might choose a language based on:
 
 * Your preexisting knowledge or experience with the language
 * A specific use case where the language is commonly used
 * The language(s) your colleagues or coworkers use
+
+AI chatbots are familiar with a huge variety of coding languages, which allows them to be used for a variety of tasks. As AI chatbots continue to develop, they are likely to become even more familiar with a wider variety of coding languages. 
+
+Let's ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) for some recommendations on the appropriate languages for our proposed software from Example One. (Pro tip: the various AI bots all keep track of your previous queries, so you don't have to restate your goal for the software if you're continuing the conversation.)
+
+:::{.query}
+"What would be a good coding language...?"
+:::
+
 
 Here are commonly used languages and their typical use cases.
 
@@ -122,9 +135,11 @@ Using AI to write code is as much of an art as writing your own code.  Following
 
 * _Get feedback from others._ Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.
 
-### Chunking It Out
+### Example Three: Chunking It Out
 
-### Slowly Add Complexity
+### Example Four: Slowly Adding Complexity
+
+### Example Five: Debugging
 
 
 ## Hands On Exercise 
