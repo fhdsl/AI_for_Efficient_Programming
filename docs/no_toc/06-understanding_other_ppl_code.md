@@ -12,22 +12,22 @@ In the end, with patience, persistence, and a willingness to learn, you can succ
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e15d27e55_4_0.png" title="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." alt="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." width="100%" style="display: block; margin: auto;" />
 
-While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages. Firstly, AI tools can analyze the codebase and provide insights into its structure, complexity, and potential defects. This analysis can identify parts of the code that may be challenging to understand, maintain or improve. Based on the analysis, the AI tools may also make recommendations on how to enhance the codebase for better functionality and readability.
+While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages.
 
-Secondly, AI tools can assist in summarizing large codebases, which can be challenging to comprehend in detail. Such codebases may have multiple files, functions, and classes, which could take a considerable amount of time to read and understand thoroughly. With the help of AI, programmers can get a high-level overview of the codebase without going through it line by line. This approach can save substantial time and effort, especially when dealing with complex codebases. By gaining a deeper understanding of the codebase, developers can make better-informed decisions when it comes to adding new features, improving existing functionality, or fixing bugs. AI language models can also quickly analyze large amounts of code and provide a summary of its functionality, which can save developers a significant amount of time compared to manually analyzing the code line-by-line. By automating this process, developers can devote more time to other important tasks, such as debugging, testing, and improving the code.
+1. _Summarize large codebases._ AI can quickly scan large codebases and give you a high-level overview of what they do. This can save you a lot of time and effort, especially when dealing with complex codebases. For example, AI can identify the main functions and classes in a codebase, and it can show you how they are related.
 
-Finally, AI can help programmers to understand the comments and documentation written by other developers, as well as their design decisions and implementation details of code. These insights can help programmers to understand the code's purpose and the assumptions and limitations of the codebase. As a programmer, at some point you will almost certainly need to deal with "legacy code," or code written by someone else years (or decades) earlier. Often when you run across this code, the original programmer is not available to answer questions. Even if they are, they likely won't remember all the details you need about the decisions they made while creating the program. AI bots are an extremely powerful tool that can fill in the gaps of understanding, especially when the code isn't annotated well or at all. This can be especially helpful when working with older or legacy code, or when collaborating with other developers on a project. For instance, understanding how a particular piece of code works and why it was implemented a certain way can help developers identify potential issues and find more effective solutions. 
+1. _Analyze the code._ AI can look at the code and tell you about its structure, complexity, and potential defects quickly and efficiently. This can help you understand the code better and make it easier to maintain and improve. For example, AI can identify parts of the code that are difficult to understand or maintain, and it can suggest ways to improve the code.
+
+1. _Understand comments and documentation._ AI can read comments and documentation written by other developers. This can help you understand the code's purpose and the assumptions and limitations of the codebase. For example, AI can identify the key assumptions that are made in the code, and it can explain the trade-offs that were made in the design of the code.
 
 ::: {.ethics}
+Keep these ethical considerations in mind when using AI to summarize code.
 
-**Ethical Considerations**
+**Who owns the code?** If you are not the owner of the code, you should get permission from the owner before summarizing it.
 
-AI language models like ChatGPT, Bard, and others have the ability to summarize code and offer valuable insights into its workings. However, it's important to consider the ethics of using AI to summarize code that someone else has written. Several factors come into play, such as the intended purpose of the summary, the ownership of the code, and the potential impact of the summary. Specifically, it's important to take into account who owns the code, the reason for summarizing the code, and whether the code contains any sensitive or personal information.
+**What is the purpose of the summary?** If you are summarizing the code for educational or research purposes, it is likely ethical to do so. However, if you are summarizing the code for commercial purposes, you may need to get permission from the owner.
 
-If the reason for summarizing the code is for educational or research purposes, and the code is either publicly available or the owner has granted explicit permission for its use, then it's likely ethical to use AI to summarize the code. However, if the summary is intended for commercial purposes or could potentially infringe upon the owner's intellectual property rights, it may be unethical to use AI to summarize the code without obtaining the owner's consent. Additionally, if the code contains confidential or personal information, using AI to summarize it could raise privacy concerns. In such cases, obtaining explicit consent from the owner and implementing appropriate measures to ensure that the summary does not reveal any confidential information may be necessary.
-
-Overall, the ethics of using AI to summarize code someone else wrote depend on the specific circumstances and should be carefully considered before proceeding. It is important to respect the intellectual property rights and privacy of the owner and ensure that the summary is used in a responsible and ethical manner.
-
+**Does the code contain any sensitive or personal information?** If the code contains any sensitive or personal information, you should take special care to protect that information.
 ::: 
 
 ## Example One: Summarizing Code You Didn't Write
@@ -42,7 +42,7 @@ d <- ggplot2::diamonds
 d_sel <- d %>%
   select(carat, cut, color, clarity, depth, table, price)
 
-d_fil <- d_s %>%
+d_fil <- d_sel %>%
   filter(price > 5000)
 
 d_bin <- d_fil %>%
@@ -51,11 +51,6 @@ d_bin <- d_fil %>%
 d_summ <- d_bin %>%
   group_by(carat_bins, cut, color, clarity) %>%
   summarize(mean_price = mean(price), sd_price = sd(price))
-
-ggplot(d_sum, aes(x = mean_price, y = sd_price)) +
-  geom_point() +
-  facet_grid(cut ~ color + clarity) +
-  labs(x = "Mean Price", y = "Standard Deviation of Price")
 ```
 
 We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) to explain the purpose of this code.
@@ -64,28 +59,43 @@ We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by
 "What does this code do?"
 :::
 
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_22_0.png" title="The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data." alt="The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data." width="100%" style="display: block; margin: auto;" />
 
-You can always ask for clarification if you need more information.
 
+
+You can ask for Claude to summarize each step in detail as well.
 
 :::{.query}
 "Can you explain what each step does in detail?"
 :::
 
-You can also ask about both the tidyverse package and the dataset being used.
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_5.png" title="The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ." alt="The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ." width="100%" style="display: block; margin: auto;" />
+
+
+
+Maybe you've never worked with the tidyverse package in R - Claude can tell you about it.
 
 :::{.query}
-"What is do the tidyverse packages do?"
+"What is the tidyverse package?"
 :::
+
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_14.png" title="The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management." alt="The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management." width="100%" style="display: block; margin: auto;" />
+
+
+
+You might also not be familiar with the diamonds dataset (especially if you've never used it before) and want some clarification on where the data are from.
 
 :::{.query}
 "Can you tell me more about the diamonds dataset?"
 :::
 
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_20.png" title="Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes." alt="Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes." width="100%" style="display: block; margin: auto;" />
+
+
 
 ## Example Two: Identifying a Coding Language
 
-Sometimes you might have to work with legacy code. Legacy code can be difficult to work with, especially if it is written in a language or style that you are not familiar with. There are more than 700 programming languages in use today, so it is impossible for any programmer to know them all. AI can be a helpful tool for identifying the language and version of legacy code, which can make your life just a little easier.
+Sometimes you might have to work with legacy code. Legacy code can be difficult to work with, especially if it is written in a language or style with which you are not familiar. There are more than 700 programming languages in use today, so it is impossible for any programmer to know them all. AI can be a helpful tool for identifying the language and version of legacy code, which can make your life just a little easier.
 
 Let's look at example code that might have been written decades ago.
 
@@ -139,48 +149,6 @@ procedure close_database(fd: integer);
 begin
   { implementation of close_database function }
 end;
-
-begin
-  SetLength(combined_data, n_temperatures + n_smog_measures);
-
-  fd := connect_to_database('seattle_temperature.db');
-  n_temperatures := retrieve_temperatures(fd);
-
-  sfd := connect_to_database('seattle_smog.db');
-  n_smog_measures := retrieve_smog_measures(sfd);
-
-  for i := 0 to n_temperatures-1 do
-  begin
-    temperatures[i] := retrieve_temperature(fd, i);
-    combined_data[i] := temperatures[i];
-  end;
-
-  for j := 0 to n_smog_measures-1 do
-  begin
-    smog_measures[j] := retrieve_smog_measure(sfd, j);
-    combined_data[j + n_temperatures] := smog_measures[j];
-  end;
-
-  close_database(fd);
-  close_database(sfd);
-
-  slope := 0.0;
-  y_intercept := 0.0;
-
-  for i := 0 to n_temperatures+n_smog_measures-1 do
-  begin
-    slope := slope + (combined_data[i + n_temperatures] - y_intercept) *
-            (combined_data[i] - y_intercept);
-    y_intercept := y_intercept + (combined_data[i + n_temperatures] - y_intercept);
-  end;
-
-  slope := slope / (n_temperatures + n_smog_measures);
-  y_intercept := y_intercept / (n_temperatures + n_smog_measures);
-
-  writeln('The slope is ', slope:0:2, ' and the y-intercept is ', y_intercept:0:2, '.');
-
-  readln;
-end.
 ```
 
 We can ask [Bard](https://bard.google.com/) to take a guess at what the coding language might be.
@@ -189,12 +157,18 @@ We can ask [Bard](https://bard.google.com/) to take a guess at what the coding l
 "What language is this code written in?"
 :::
 
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_46.png" title="According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal." alt="According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal." width="100%" style="display: block; margin: auto;" />
+
+
 
 We can explore further to figure out what indicators tell Bard the language is Pascal.
 
 :::{.query}
 "How do you know this is Pascal?"
 :::
+
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_50.png" title="Bard explains that many of the keywords and clauses are common to Pascal syntax." alt="Bard explains that many of the keywords and clauses are common to Pascal syntax." width="100%" style="display: block; margin: auto;" />
+
 
 
 It turns out there are multiple versions of Pascal. Since you will presumably need to work with this legacy code, you might want to know which version it is.
@@ -203,6 +177,10 @@ It turns out there are multiple versions of Pascal. Since you will presumably ne
 "What version of Pascal is this?"
 :::
 
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_39.png" title="Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0" alt="Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0" width="100%" style="display: block; margin: auto;" />
+
+
+
 ## Example Three: Interpreting Regex
 
 Regex (short for Regular Expressions) is a powerful tool used to describe patterns in text. It's a sequence of characters that define a search pattern. Regular expressions can be a powerful tool for data cleaning, text mining, and data validation. They are widely used in web development, data science, and other fields where text processing is important. They can also be tricky to understand at first because they involve a specific syntax that can be complex.
@@ -210,29 +188,55 @@ Regex (short for Regular Expressions) is a powerful tool used to describe patter
 We can use [ChatGPT](https://chat.openai.com/) to explain regex in a bit of someone else's code.
 
 ```
-x = sub(".*presentation/","",x)
+x = sub("/d/e","/d",x)
 ```
 
 :::{.query}
 "What does this do?"
 :::
 
-```
-x = sub("/d/e","/d",x)
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_6_4.png" title="ChatGPT explains this code replaces the substring /d/e with the substring /d." alt="ChatGPT explains this code replaces the substring /d/e with the substring /d." width="100%" style="display: block; margin: auto;" />
+
+
+
+## Example Four: Demystifying Functions
+
+Sometimes we get handed code that includes complex architecture. Perhaps you are working with code you wrote years ago when you really liked loops, but present you finds them difficult to parse. (Be nice to past you - maybe you were a baby programmer and didn't know better.) Instead of giving yourself a headache, you could turn to [ChatGPT](https://chat.openai.com/) to explain what your old code does.
+
+
+```python
+def my_function(x):
+    result = x
+    for i in range(10):
+        for j in range(5):
+            result = result + 2 * (i + 1) * (j + 1) * (i % 2 == 0 and j % 2 == 0) - 1
+    return result
 ```
 
 :::{.query}
-"What about this?"
+"What does this function do?"
 :::
 
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_170.png" title="ChatGPT explains the math operations being done on variable x by this complex looped function." alt="ChatGPT explains the math operations being done on variable x by this complex looped function." width="100%" style="display: block; margin: auto;" />
 
-## Example Four: Understanding Variables and Functions
 
-## Edge Cases
+Well, now you have an idea what past-you might have been attempting to do with this code. You can also query AI about the potential problems from using the code as-written.
 
-## Limitations?
+:::{.query}
+"What are some possible issues with this code?"
+:::
 
-## Hands-On Exercise
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_176.png" title="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." alt="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." width="100%" style="display: block; margin: auto;" />
+
+
+
+(And if you do ever run across an expression like this in your code, you can check out our chapter on refactoring code using AI to fix it!)
+
+
+## Example Five: Deciphering Comments
+
+
+## Hands-On Exercise [WORK IN PROGRESS]
 
 Now it's your turn to try. Let's say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what's going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.
 
@@ -314,13 +318,13 @@ fn main() {
 
 1. What are two clues that tell you the language?
 
+1. What version of the language is it?
+
 1. What is the overall task this code does?
 
-1. What is a new feature you could add to the code?
+1. ANOTHER QUESTION??? 
 
-1. How could you add that feature?
-
-1. What does this bit of code do?
+1. What does this code snippet do?
 
 ```
  let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
@@ -378,7 +382,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-04-14                  
+##  date     2023-04-17                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
@@ -399,6 +403,7 @@ devtools::session_info()
 ##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
 ##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
 ##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
+##  here          1.0.1   2020-12-13 [1] CRAN (R 4.0.2)                    
 ##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
 ##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
 ##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
@@ -406,20 +411,26 @@ devtools::session_info()
 ##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
 ##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
 ##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
+##  lattice       0.20-41 2020-04-02 [2] CRAN (R 4.0.2)                    
 ##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
 ##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
+##  Matrix        1.2-18  2019-11-27 [2] CRAN (R 4.0.2)                    
 ##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
 ##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
 ##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
 ##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
 ##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
 ##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
+##  png           0.1-8   2022-11-29 [1] CRAN (R 4.0.2)                    
 ##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
 ##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
 ##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
 ##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
+##  rappdirs      0.3.3   2021-01-31 [1] CRAN (R 4.0.2)                    
+##  Rcpp          1.0.10  2023-01-22 [1] CRAN (R 4.0.2)                    
 ##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
 ##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
+##  reticulate    1.28    2023-01-27 [1] CRAN (R 4.0.2)                    
 ##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
 ##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
 ##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
