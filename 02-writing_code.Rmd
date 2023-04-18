@@ -33,6 +33,8 @@ As AI continues to evolve, it is likely to have an even greater impact on the wa
 
 :::{.ethics}
 **As a programmer using AI, it is up to you to be responsible for what you create.** You must rigorously test any code you write and also take care that you are only using code that you're authorized to use. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).
+
+It is your job to make sure any code you create with AI is not malicious and works as expected.
 :::
 
 
@@ -40,7 +42,7 @@ As AI continues to evolve, it is likely to have an even greater impact on the wa
 
 Using AI to write code is as much of an art as writing your own code. You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do. Following a few rules and suggestions will make your experience much more enjoyable and productive.
 
-** Remember that AI cannot read your mind**. You need to tell it what you're thinking, and it may take several rounds of question-and-answer before you get something you can work with. 
+**Remember that AI cannot read your mind**. You need to tell it what you're thinking, and it may take several rounds of question-and-answer before you get something you can work with. 
 
 * _Be clear about your goals._ What do you want the AI to do? Be as specific as possible.
 
