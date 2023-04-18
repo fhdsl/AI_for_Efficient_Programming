@@ -12,7 +12,11 @@ Practice is crucial to mastering the art of coding, and those who are willing to
 
 Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.
 
-[FIGURE SHOWING CODING AS A CREATIVE ART???]
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_1_0")
+```
+
+
 
 Ultimately, the ability to write code is a valuable asset in today's world, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
 
@@ -39,33 +43,15 @@ As AI continues to evolve, it is likely to have an even greater impact on the wa
 You must also take care that you are only using code that you're authorized to use. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).
 :::
 
+## Coding Languages
 
-## Step One: Planning Your Program
-
-You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.
-
-### Example One: Defining Your Approach
-
-Everyone needs a plan of attack when building software. You should start by identifying what your software will do, then you can figure out the steps necessary to make that happen. 
-
-Let's say we want to create software that 
-
-### Example Two: Selecting a Language
-
-You also need to choose the language for your software. You might choose a language based on:
+You will need to choose the language for your software. If you don't, AI will likely pick a language for you, which may or may not be one you want. You might choose a language based on:
 
 * Your preexisting knowledge or experience with the language
 * A specific use case where the language is commonly used
 * The language(s) your colleagues or coworkers use
 
 AI chatbots are familiar with a huge variety of coding languages, which allows them to be used for a variety of tasks. As AI chatbots continue to develop, they are likely to become even more familiar with a wider variety of coding languages. 
-
-Let's ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) for some recommendations on the appropriate languages for our proposed software from Example One. (Pro tip: the various AI bots all keep track of your previous queries, so you don't have to restate your goal for the software if you're continuing the conversation.)
-
-:::{.query}
-"What would be a good coding language...?"
-:::
-
 
 Here are commonly used languages and their typical use cases.
 
@@ -111,7 +97,7 @@ A powerful language often used for developing high-performance applications and 
 
 You can find a description of other languages you might encounter [here](Appendix.html).
 
-## Step Two: Writing And Debugging-As-You-Go
+## Tips for Interacting with AI
 
 Using AI to write code is as much of an art as writing your own code.  Following a few rules and suggestions will make your experience much more enjoyable and productive.
 
@@ -135,11 +121,75 @@ Using AI to write code is as much of an art as writing your own code.  Following
 
 * _Get feedback from others._ Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.
 
-### Example Three: Chunking It Out
+## Example One: Creating a Function
 
-### Example Four: Slowly Adding Complexity
+## Example Two: Creating a Multistep Game
 
-### Example Five: Debugging
+Let's say we want to create software that plays Blackjack. There are multiple steps involved in creating such a program, and AI can help us identify and refine them.
+
+### Step One: Planning Your Program
+
+You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.
+
+Everyone needs a plan of attack when building software. You should start by identifying what your software will do, then you can figure out the steps necessary to make that happen. 
+
+We'll ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) how we can go about creating the necessary code for our game.
+
+:::{.query}
+"How would I go about writing a program that can play blackjack?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant laid out seven steps that can be used to build a simple blackjack program. It also offered several ideas for additional features."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_192")
+```
+
+
+
+That seems like a really good roadmap for building a basic game, but if you're ambitious (and of course you are), you might want to give your game a little extra something. Claude-instant has some ideas for that, too.
+
+:::{.query}
+"What are some other features I could add to this game?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant offered eleven additional features that could be added to your blackjack game if you wanted to make it more complex, including different types of betting strategies and surrender opportunities."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_8")
+```
+
+
+
+### Step Two: Selecting a Language
+
+Let's ask Claude-instant again for some recommendations on the appropriate languages for our proposed blackjack game. (Pro tip: the various AI bots all keep track of your previous queries, so you don't have to restate your goal for the software if you're continuing the conversation.)
+
+:::{.query}
+"What would be a good coding language to create this game of blackjack?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant suggested seven possible languages for the blackjack program and gave a brief description of their pros and cons."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_4")
+```
+
+
+
+Claude-instant actually gave us more information than we anticipated. If it hadn't stated pros and cons while offering language suggestions, we could ask for them directly. This could be helpful if you're deciding between two options like, say, Python or Java.
+
+:::{.query}
+"What are the pros and cons of using Python vs Java for this project?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_0")
+```
+
+
+
+Well, I'm convinced. As we start building this code, we will use Python. (You are, of course, more than welcome to do it in Java, but the rest of the example will be in Python.)
+
+### step Three: Chunking It Out
+
+
+
+### Step Four: Slowly Adding Complexity
 
 
 ## Hands On Exercise 
