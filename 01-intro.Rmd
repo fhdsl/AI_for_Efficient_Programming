@@ -15,7 +15,7 @@ Ultimately, while the future of software development is unclear, there is much t
 
 ## AI provides new opportunities
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon asks in a speech bubble "Does AI mean I am going extinct?!?" as a meteor flies overhead."}
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e15d27e55_4_0")
 ```
 
