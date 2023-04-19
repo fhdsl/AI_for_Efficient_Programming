@@ -11,8 +11,8 @@ ottrpal::set_knitr_image_path()
 
 ## Refactoring Hands-On Exercise Solutions {-}
 
-1. 
-
+1. Create an AI prompt that fixes any formatting issues with the code that would cause it not to run.
+    
     :::{.query}
     Can you help me fix any formatting issues in the following python code?
     :::
@@ -82,11 +82,11 @@ ottrpal::set_knitr_image_path()
     ```
     :::
 
-1. 
+1. Devise an AI prompt that removes any dead code from your sample above. What gets removed?
 
-    :::{.query}
-    Can you remove any unused functions from this python code?
-    :::
+      :::{.query}
+      Can you remove any unused functions from this python code?
+      :::
     
     :::{.ai_response}
     Yes, the `get_tweet_length()` function is not being used in this code. It can be removed.
@@ -152,11 +152,11 @@ ottrpal::set_knitr_image_path()
     ::: 
 
 
-1. 
+1. Create a prompt that makes the code less repetitive, adhering to the DRY principle. What aspect of the code was repetitive?
 
-    :::{.query}
-    Can you help make this code more DRY?
-    :::
+        :::{.query}
+        Can you help make this code more DRY?
+        :::
     
     :::{.ai_response}
     Yes, you can make this code more DRY by removing the code repetition. You can combine the three for loops into a single loop and extract all the desired data in one go. Here's an updated version of the code:
@@ -201,7 +201,7 @@ ottrpal::set_knitr_image_path()
     This code extracts the date, location, and text data in one loop, and appends them to a single `tweet_data` dictionary. The data list is populated with these dictionaries, and then used to create the pandas dataframe.
     ::: 
 
-1. 
+1. Construct a prompt that makes the code more concise. What are some trade-offs that appear in this code between readability and brevity?
 
     :::{.query}
     Can you make the following python code more concise?
