@@ -11,7 +11,7 @@ ottrpal::set_knitr_image_path()
 
 ## Refactoring Hands-On Exercise Solutions {-}
 
-1. Create an AI prompt that fixes any formatting issues with the code that would cause it not to run.
+Create an AI prompt that fixes any formatting issues with the code that would cause it not to run.
     
 :::{.query}
 Can you help me fix any formatting issues in the following python code?
@@ -82,7 +82,7 @@ print(df)
 ```
 :::
 
-1. Devise an AI prompt that removes any dead code from your sample above. What gets removed?
+Devise an AI prompt that removes any dead code from your sample above. What gets removed?
 
 :::{.query}
 Can you remove any unused functions from this python code?
@@ -152,7 +152,7 @@ print(df)
 ::: 
 
 
-1. Create a prompt that makes the code less repetitive, adhering to the DRY principle. What aspect of the code was repetitive?
+Create a prompt that makes the code less repetitive, adhering to the DRY principle. What aspect of the code was repetitive?
 
 :::{.query}
 Can you help make this code more DRY?
@@ -201,7 +201,7 @@ print(df)
 This code extracts the date, location, and text data in one loop, and appends them to a single `tweet_data` dictionary. The data list is populated with these dictionaries, and then used to create the pandas dataframe.
 ::: 
 
-1. Construct a prompt that makes the code more concise. What are some trade-offs that appear in this code between readability and brevity?
+Construct a prompt that makes the code more concise. What are some trade-offs that appear in this code between readability and brevity?
 
 :::{.query}
 Can you make the following python code more concise?
