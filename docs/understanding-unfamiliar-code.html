@@ -170,10 +170,18 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.6" data-path="refactoring-code.html"><a href="refactoring-code.html#example-five-making-code-readable"><i class="fa fa-check"></i><b>3.6</b> Example Five: Making Code Readable</a></li>
 <li class="chapter" data-level="3.7" data-path="refactoring-code.html"><a href="refactoring-code.html#example-six-keep-it-brief"><i class="fa fa-check"></i><b>3.7</b> Example Six: Keep it Brief</a></li>
 <li class="chapter" data-level="3.8" data-path="refactoring-code.html"><a href="refactoring-code.html#code-optimization"><i class="fa fa-check"></i><b>3.8</b> Code optimization</a></li>
-<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#case-studies-examples-in-industry-if-any"><i class="fa fa-check"></i><b>3.9</b> Case studies / examples in industry (if any)</a></li>
-<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#common-mistakes-edge-cases-things-to-watch-out-for"><i class="fa fa-check"></i><b>3.10</b> Common mistakes / edge cases / things to watch out for</a></li>
-<li class="chapter" data-level="3.11" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-limitations"><i class="fa fa-check"></i><b>3.11</b> Challenges / limitations</a></li>
-<li class="chapter" data-level="3.12" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>3.12</b> Hands-On Exercise</a></li>
+<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-and-limitations"><i class="fa fa-check"></i><b>3.9</b> Challenges and Limitations</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="refactoring-code.html"><a href="refactoring-code.html#complexity"><i class="fa fa-check"></i><b>3.9.1</b> Complexity</a></li>
+<li class="chapter" data-level="3.9.2" data-path="refactoring-code.html"><a href="refactoring-code.html#limited-data"><i class="fa fa-check"></i><b>3.9.2</b> Limited Data</a></li>
+<li class="chapter" data-level="3.9.3" data-path="refactoring-code.html"><a href="refactoring-code.html#quality-control"><i class="fa fa-check"></i><b>3.9.3</b> Quality Control</a></li>
+<li class="chapter" data-level="3.9.4" data-path="refactoring-code.html"><a href="refactoring-code.html#security"><i class="fa fa-check"></i><b>3.9.4</b> Security</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>3.10</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="3.10.1" data-path="refactoring-code.html"><a href="refactoring-code.html#the-code"><i class="fa fa-check"></i><b>3.10.1</b> The Code</a></li>
+<li class="chapter" data-level="3.10.2" data-path="refactoring-code.html"><a href="refactoring-code.html#questions"><i class="fa fa-check"></i><b>3.10.2</b> Questions</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html"><i class="fa fa-check"></i><b>4</b> Understanding Unfamiliar Code</a>
 <ul>
@@ -367,12 +375,12 @@ end;</code></pre>
 <div id="example-four-demystifying-functions" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> Example Four: Demystifying Functions</h2>
 <p>Sometimes we get handed code that includes complex architecture. Perhaps you are working with code you wrote years ago when you really liked loops, but present you finds them difficult to parse. (Be nice to past you - maybe you were a baby programmer and didn’t know better.) Instead of giving yourself a headache, you could turn to <a href="https://chat.openai.com/">ChatGPT</a> to explain what your old code does.</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="understanding-unfamiliar-code.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_function(x):</span>
-<span id="cb41-2"><a href="understanding-unfamiliar-code.html#cb41-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> x</span>
-<span id="cb41-3"><a href="understanding-unfamiliar-code.html#cb41-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb41-4"><a href="understanding-unfamiliar-code.html#cb41-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
-<span id="cb41-5"><a href="understanding-unfamiliar-code.html#cb41-5" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> result <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> (i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (j <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> j <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">1</span></span>
-<span id="cb41-6"><a href="understanding-unfamiliar-code.html#cb41-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="understanding-unfamiliar-code.html#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_function(x):</span>
+<span id="cb46-2"><a href="understanding-unfamiliar-code.html#cb46-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> x</span>
+<span id="cb46-3"><a href="understanding-unfamiliar-code.html#cb46-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb46-4"><a href="understanding-unfamiliar-code.html#cb46-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb46-5"><a href="understanding-unfamiliar-code.html#cb46-5" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> result <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> (i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (j <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> j <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb46-6"><a href="understanding-unfamiliar-code.html#cb46-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code></pre></div>
 <div class="query">
 <p>“What does this function do?”</p>
 </div>
@@ -497,7 +505,7 @@ let r = y[2];</code></pre>
         .disable_y_mesh()
         .draw()
         .unwrap();</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="understanding-unfamiliar-code.html#cb47-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="understanding-unfamiliar-code.html#cb52-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
 <pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
 ##  setting  value                       
 ##  version  R version 4.0.2 (2020-06-22)
@@ -508,7 +516,7 @@ let r = y[2];</code></pre>
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-04-17                  
+##  date     2023-04-19                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            

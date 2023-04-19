@@ -21,10 +21,14 @@ example-four-keeping-code-alive
 example-five-making-code-readable
 example-six-keep-it-brief
 code-optimization
-case-studies-examples-in-industry-if-any
-common-mistakes-edge-cases-things-to-watch-out-for
-challenges-limitations
+challenges-and-limitations
+complexity
+limited-data
+quality-control
+security
 hands-on-exercise
+the-code
+questions
 understanding-unfamiliar-code
 using-ai-to-understand-code
 example-one-summarizing-code-you-didnt-write
