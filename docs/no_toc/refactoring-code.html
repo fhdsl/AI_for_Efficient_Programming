@@ -170,10 +170,18 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.6" data-path="refactoring-code.html"><a href="refactoring-code.html#example-five-making-code-readable"><i class="fa fa-check"></i><b>3.6</b> Example Five: Making Code Readable</a></li>
 <li class="chapter" data-level="3.7" data-path="refactoring-code.html"><a href="refactoring-code.html#example-six-keep-it-brief"><i class="fa fa-check"></i><b>3.7</b> Example Six: Keep it Brief</a></li>
 <li class="chapter" data-level="3.8" data-path="refactoring-code.html"><a href="refactoring-code.html#code-optimization"><i class="fa fa-check"></i><b>3.8</b> Code optimization</a></li>
-<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#case-studies-examples-in-industry-if-any"><i class="fa fa-check"></i><b>3.9</b> Case studies / examples in industry (if any)</a></li>
-<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#common-mistakes-edge-cases-things-to-watch-out-for"><i class="fa fa-check"></i><b>3.10</b> Common mistakes / edge cases / things to watch out for</a></li>
-<li class="chapter" data-level="3.11" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-limitations"><i class="fa fa-check"></i><b>3.11</b> Challenges / limitations</a></li>
-<li class="chapter" data-level="3.12" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>3.12</b> Hands-On Exercise</a></li>
+<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-and-limitations"><i class="fa fa-check"></i><b>3.9</b> Challenges and Limitations</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="refactoring-code.html"><a href="refactoring-code.html#complexity"><i class="fa fa-check"></i><b>3.9.1</b> Complexity</a></li>
+<li class="chapter" data-level="3.9.2" data-path="refactoring-code.html"><a href="refactoring-code.html#limited-data"><i class="fa fa-check"></i><b>3.9.2</b> Limited Data</a></li>
+<li class="chapter" data-level="3.9.3" data-path="refactoring-code.html"><a href="refactoring-code.html#quality-control"><i class="fa fa-check"></i><b>3.9.3</b> Quality Control</a></li>
+<li class="chapter" data-level="3.9.4" data-path="refactoring-code.html"><a href="refactoring-code.html#security"><i class="fa fa-check"></i><b>3.9.4</b> Security</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>3.10</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="3.10.1" data-path="refactoring-code.html"><a href="refactoring-code.html#the-code"><i class="fa fa-check"></i><b>3.10.1</b> The Code</a></li>
+<li class="chapter" data-level="3.10.2" data-path="refactoring-code.html"><a href="refactoring-code.html#questions"><i class="fa fa-check"></i><b>3.10.2</b> Questions</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html"><i class="fa fa-check"></i><b>4</b> Understanding Unfamiliar Code</a>
 <ul>
@@ -486,7 +494,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] &quot;good&quot;        &quot;good&quot;        &quot;good&quot;        &quot;really GOOD&quot;
 ## [1] &quot;bad&quot;        &quot;bad&quot;        &quot;bad&quot;        &quot;really BAD&quot;
 ## [1] &quot;ugly&quot;        &quot;ugly&quot;        &quot;ugly&quot;        &quot;really UGLY&quot;</code></pre>
-<p>I added whitespace around operators and after commas for better readability. I also loaded the stringr package explicitly using <code>library()</code> to make the code more self-contained.</p>
+<p>I added whitespace around operators and after commas for better readability. I also loaded the <code>stringr</code> package explicitly using <code>library()</code> to make the code more self-contained.</p>
 </div>
 <p>This is a good start, but not much has changed. Let’s try again. On ChatGPT, we can click “Regenerate Response”.</p>
 <div class="ai_response">
@@ -570,103 +578,171 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="code-optimization" class="section level2" number="3.8">
 <h2><span class="header-section-number">3.8</span> Code optimization</h2>
-<p>loops!</p>
+<p>Sometimes time and efficiency is of the essence. Loops can be slow and time consuming in many languages. Take for example the following R code that calculates the cross product between two vectors x and y using nested <code>for</code> loops:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="refactoring-code.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb36-2"><a href="refactoring-code.html#cb36-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb36-3"><a href="refactoring-code.html#cb36-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb36-4"><a href="refactoring-code.html#cb36-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb36-5"><a href="refactoring-code.html#cb36-5" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
+<span id="cb36-6"><a href="refactoring-code.html#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-7"><a href="refactoring-code.html#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Start timer</span></span>
+<span id="cb36-8"><a href="refactoring-code.html#cb36-8" aria-hidden="true" tabindex="-1"></a>start_time <span class="ot">&lt;-</span> <span class="fu">proc.time</span>()</span>
+<span id="cb36-9"><a href="refactoring-code.html#cb36-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-10"><a href="refactoring-code.html#cb36-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n) {</span>
+<span id="cb36-11"><a href="refactoring-code.html#cb36-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n) {</span>
+<span id="cb36-12"><a href="refactoring-code.html#cb36-12" aria-hidden="true" tabindex="-1"></a>    z[i] <span class="ot">&lt;-</span> z[i] <span class="sc">+</span> x[i]<span class="sc">*</span>y[j]</span>
+<span id="cb36-13"><a href="refactoring-code.html#cb36-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb36-14"><a href="refactoring-code.html#cb36-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb36-15"><a href="refactoring-code.html#cb36-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-16"><a href="refactoring-code.html#cb36-16" aria-hidden="true" tabindex="-1"></a><span class="co"># End timer</span></span>
+<span id="cb36-17"><a href="refactoring-code.html#cb36-17" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
+<pre><code>##    user  system elapsed 
+## 231.445   0.099 231.550</code></pre>
+<div class="query">
+<p>“What is a faster, more optimized way of running the following R code?”</p>
 </div>
-<div id="case-studies-examples-in-industry-if-any" class="section level2" number="3.9">
-<h2><span class="header-section-number">3.9</span> Case studies / examples in industry (if any)</h2>
+<div class="ai_response">
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="refactoring-code.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb38-2"><a href="refactoring-code.html#cb38-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb38-3"><a href="refactoring-code.html#cb38-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb38-4"><a href="refactoring-code.html#cb38-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb38-5"><a href="refactoring-code.html#cb38-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-6"><a href="refactoring-code.html#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Start timer</span></span>
+<span id="cb38-7"><a href="refactoring-code.html#cb38-7" aria-hidden="true" tabindex="-1"></a>start_time <span class="ot">&lt;-</span> <span class="fu">proc.time</span>()</span>
+<span id="cb38-8"><a href="refactoring-code.html#cb38-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-9"><a href="refactoring-code.html#cb38-9" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">outer</span>(x, y, <span class="st">&quot;*&quot;</span>)</span>
+<span id="cb38-10"><a href="refactoring-code.html#cb38-10" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(z)</span>
+<span id="cb38-11"><a href="refactoring-code.html#cb38-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-12"><a href="refactoring-code.html#cb38-12" aria-hidden="true" tabindex="-1"></a><span class="co"># End timer</span></span>
+<span id="cb38-13"><a href="refactoring-code.html#cb38-13" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
+<pre><code>##    user  system elapsed 
+##   0.578   0.400   0.659</code></pre>
+<p>The <code>outer()</code> function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The <code>rowSums()</code> function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index <code>i</code> in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.</p>
 </div>
-<div id="common-mistakes-edge-cases-things-to-watch-out-for" class="section level2" number="3.10">
-<h2><span class="header-section-number">3.10</span> Common mistakes / edge cases / things to watch out for</h2>
+<p>So much faster! We can look at another option by regenerating the response:</p>
+<div class="ai_response">
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="refactoring-code.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb40-2"><a href="refactoring-code.html#cb40-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb40-3"><a href="refactoring-code.html#cb40-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb40-4"><a href="refactoring-code.html#cb40-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb40-5"><a href="refactoring-code.html#cb40-5" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
+<span id="cb40-6"><a href="refactoring-code.html#cb40-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-7"><a href="refactoring-code.html#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Start timer</span></span>
+<span id="cb40-8"><a href="refactoring-code.html#cb40-8" aria-hidden="true" tabindex="-1"></a>start_time <span class="ot">&lt;-</span> <span class="fu">proc.time</span>()</span>
+<span id="cb40-9"><a href="refactoring-code.html#cb40-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-10"><a href="refactoring-code.html#cb40-10" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> x <span class="sc">%*%</span> <span class="fu">t</span>(y)</span>
+<span id="cb40-11"><a href="refactoring-code.html#cb40-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-12"><a href="refactoring-code.html#cb40-12" aria-hidden="true" tabindex="-1"></a><span class="co"># End timer</span></span>
+<span id="cb40-13"><a href="refactoring-code.html#cb40-13" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
+<pre><code>##    user  system elapsed 
+##   0.333   0.280   0.391</code></pre>
+<p>One optimized way to perform the same calculation is by using the <code>%*%</code> operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.</p>
 </div>
-<div id="challenges-limitations" class="section level2" number="3.11">
-<h2><span class="header-section-number">3.11</span> Challenges / limitations</h2>
+<p>While this second suggestion is faster, you will need to consider what aspects of the codebase are most important in each instance. For example, this code runs more quickly, but <a href="https://stat.ethz.ch/R-manual/R-patched/library/base/html/matmult.html">the <code>%*%</code> operator</a> might be unfamiliar to some R programmers. In cases where efficiency is less important, or the data are not large, you might consider maximizing readability.</p>
 </div>
-<div id="hands-on-exercise" class="section level2" number="3.12">
-<h2><span class="header-section-number">3.12</span> Hands-On Exercise</h2>
-<p>Now it’s your turn to try. Let’s say you …</p>
+<div id="challenges-and-limitations" class="section level2" number="3.9">
+<h2><span class="header-section-number">3.9</span> Challenges and Limitations</h2>
+<p>Like humans, AI can make mistakes. Be sure to keep the following in mind as you use AI to refactor your code.</p>
+<div id="complexity" class="section level3" number="3.9.1">
+<h3><span class="header-section-number">3.9.1</span> Complexity</h3>
+<p>Refactoring is often a complex process that requires deep understanding of the code and its context. AI may not always be able to fully understand the complexity of the code and may struggle to identify the best refactoring strategy. Use a modular approach whenever possible.</p>
+</div>
+<div id="limited-data" class="section level3" number="3.9.2">
+<h3><span class="header-section-number">3.9.2</span> Limited Data</h3>
+<p>AI models require large amounts of data to learn from, but in the case of code refactoring, there is often limited data available. This can make it difficult for AI models to generalize to new code bases and situations, especially if you are using a more niche programming language.</p>
+</div>
+<div id="quality-control" class="section level3" number="3.9.3">
+<h3><span class="header-section-number">3.9.3</span> Quality Control</h3>
+<p>Automated refactoring tools that use AI may not always produce code that is of the same quality as code produced by human developers. It can be difficult to always ensure that the refactored code is maintainable, efficient, and free of bugs. You need to use your best judgment when copying and pasting AI-produced code into your codebase.</p>
+<div class="warning">
+<p><strong>You should always include unit tests in your code.</strong> Tests can help you catch bugs, including those introduced accidentally by AI.</p>
+</div>
+<p>Because AI models are created by humans, they can be biased. This means they may not always identify your preferred refactorings or may prioritize certain types of refactorings over others. In some cases, this can lead to suboptimal code quality and may create technical debt over time.</p>
+</div>
+<div id="security" class="section level3" number="3.9.4">
+<h3><span class="header-section-number">3.9.4</span> Security</h3>
+<p>When using AI to refactor code, the code itself is often sent to an external service or platform for analysis and transformation. This can raise concerns about the security of the code, especially if it contains sensitive information such as trade secrets, proprietary algorithms, or personal data. If your code is sensitive, it’s important to carefully vet any third-party AI tools or services used in the refactoring process.</p>
+</div>
+</div>
+<div id="hands-on-exercise" class="section level2" number="3.10">
+<h2><span class="header-section-number">3.10</span> Hands-On Exercise</h2>
+<p>Now it’s your turn to try.</p>
+<div id="the-code" class="section level3" number="3.10.1">
+<h3><span class="header-section-number">3.10.1</span> The Code</h3>
+<p>Let’s say you are dusting off some code from your past (no judgment here). You were investigating tweets about <a href="https://www.mrtrashwheel.com/">Mr. Trash Wheel</a>, a beloved Baltimore-based contraption that filters trash out of the waterways.</p>
 <p><strong>Note</strong>: This code is just an example and was written strictly for educational purposes.</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="refactoring-code.html#cb36-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
-<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
-##  setting  value                       
-##  version  R version 4.0.2 (2020-06-22)
-##  os       Ubuntu 20.04.5 LTS          
-##  system   x86_64, linux-gnu           
-##  ui       X11                         
-##  language (EN)                        
-##  collate  en_US.UTF-8                 
-##  ctype    en_US.UTF-8                 
-##  tz       Etc/UTC                     
-##  date     2023-04-17                  
-## 
-## ─ Packages ───────────────────────────────────────────────────────────────────
-##  package     * version date       lib source                            
-##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
-##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
-##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
-##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
-##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
-##  curl          4.3     2019-12-02 [1] RSPM (R 4.0.3)                    
-##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
-##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
-##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
-##  dplyr       * 1.0.2   2020-08-18 [1] RSPM (R 4.0.2)                    
-##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
-##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
-##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
-##  generics      0.0.2   2018-11-29 [1] RSPM (R 4.0.0)                    
-##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
-##  here          1.0.1   2020-12-13 [1] CRAN (R 4.0.2)                    
-##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
-##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  httr          1.4.2   2020-07-20 [1] RSPM (R 4.0.3)                    
-##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
-##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
-##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
-##  lattice       0.20-41 2020-04-02 [2] CRAN (R 4.0.2)                    
-##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
-##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
-##  Matrix        1.2-18  2019-11-27 [2] CRAN (R 4.0.2)                    
-##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
-##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
-##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
-##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
-##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
-##  png           0.1-8   2022-11-29 [1] CRAN (R 4.0.2)                    
-##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
-##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
-##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
-##  purrr         0.3.4   2020-04-17 [1] RSPM (R 4.0.5)                    
-##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
-##  Rcpp          1.0.10  2023-01-22 [1] CRAN (R 4.0.2)                    
-##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
-##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
-##  reticulate  * 1.28    2023-01-27 [1] CRAN (R 4.0.2)                    
-##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
-##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
-##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
-##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
-##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
-##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
-##  stringr     * 1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
-##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
-##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
-##  tidyselect    1.1.0   2020-05-11 [1] RSPM (R 4.0.3)                    
-##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
-##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
-##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  withr         2.3.0   2020-09-22 [1] RSPM (R 4.0.2)                    
-##  xfun          0.26    2023-03-28 [1] Github (yihui/xfun@74c2a66)       
-##  yaml          2.2.1   2020-02-01 [1] RSPM (R 4.0.3)                    
-## 
-## [1] /usr/local/lib/R/site-library
-## [2] /usr/local/lib/R/library</code></pre>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="refactoring-code.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tweepy</span>
+<span id="cb42-2"><a href="refactoring-code.html#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas</span>
+<span id="cb42-3"><a href="refactoring-code.html#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-4"><a href="refactoring-code.html#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your API keys and access tokens here</span></span>
+<span id="cb42-5"><a href="refactoring-code.html#cb42-5" aria-hidden="true" tabindex="-1"></a>consumer_key <span class="op">=</span> <span class="st">&#39;your_consumer_key&#39;</span></span>
+<span id="cb42-6"><a href="refactoring-code.html#cb42-6" aria-hidden="true" tabindex="-1"></a>consumer_secret <span class="op">=</span> <span class="st">&quot;your_consumer_secret&quot;</span></span>
+<span id="cb42-7"><a href="refactoring-code.html#cb42-7" aria-hidden="true" tabindex="-1"></a>access_token <span class="op">=</span> <span class="st">&#39;your_access_token&#39;</span></span>
+<span id="cb42-8"><a href="refactoring-code.html#cb42-8" aria-hidden="true" tabindex="-1"></a>access_token_secret <span class="op">=</span> <span class="st">&#39;your_access_token_secret&#39;</span></span>
+<span id="cb42-9"><a href="refactoring-code.html#cb42-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-10"><a href="refactoring-code.html#cb42-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Authenticate with Twitter API</span></span>
+<span id="cb42-11"><a href="refactoring-code.html#cb42-11" aria-hidden="true" tabindex="-1"></a>auth <span class="op">=</span> tweepy.OAuthHandler(consumer_key, consumer_secret)</span>
+<span id="cb42-12"><a href="refactoring-code.html#cb42-12" aria-hidden="true" tabindex="-1"></a>auth.set_access_token(access_token, access_token_secret)</span>
+<span id="cb42-13"><a href="refactoring-code.html#cb42-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-14"><a href="refactoring-code.html#cb42-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
+<span id="cb42-15"><a href="refactoring-code.html#cb42-15" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&quot;Mr. Trash Wheel&quot;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
+<span id="cb42-16"><a href="refactoring-code.html#cb42-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-17"><a href="refactoring-code.html#cb42-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Create empty list to store tweet data</span></span>
+<span id="cb42-18"><a href="refactoring-code.html#cb42-18" aria-hidden="true" tabindex="-1"></a>date_data <span class="op">=</span> []</span>
+<span id="cb42-19"><a href="refactoring-code.html#cb42-19" aria-hidden="true" tabindex="-1"></a>location_data <span class="op">=</span> []</span>
+<span id="cb42-20"><a href="refactoring-code.html#cb42-20" aria-hidden="true" tabindex="-1"></a>text_data <span class="op">=</span> []</span>
+<span id="cb42-21"><a href="refactoring-code.html#cb42-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-22"><a href="refactoring-code.html#cb42-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_tweet_length(tweet):</span>
+<span id="cb42-23"><a href="refactoring-code.html#cb42-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Return the length of the tweet text</span></span>
+<span id="cb42-24"><a href="refactoring-code.html#cb42-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">len</span>(tweet.full_text)</span>
+<span id="cb42-25"><a href="refactoring-code.html#cb42-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-26"><a href="refactoring-code.html#cb42-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
+<span id="cb42-27"><a href="refactoring-code.html#cb42-27" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
+<span id="cb42-28"><a href="refactoring-code.html#cb42-28" aria-hidden="true" tabindex="-1"></a>      date_info <span class="op">=</span> {</span>
+<span id="cb42-29"><a href="refactoring-code.html#cb42-29" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;date&#39;</span>: tweet.created_at</span>
+<span id="cb42-30"><a href="refactoring-code.html#cb42-30" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb42-31"><a href="refactoring-code.html#cb42-31" aria-hidden="true" tabindex="-1"></a>    date_data.append(date_info)</span>
+<span id="cb42-32"><a href="refactoring-code.html#cb42-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-33"><a href="refactoring-code.html#cb42-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
+<span id="cb42-34"><a href="refactoring-code.html#cb42-34" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&quot;Mr. Trash Wheel&quot;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
+<span id="cb42-35"><a href="refactoring-code.html#cb42-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-36"><a href="refactoring-code.html#cb42-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
+<span id="cb42-37"><a href="refactoring-code.html#cb42-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
+<span id="cb42-38"><a href="refactoring-code.html#cb42-38" aria-hidden="true" tabindex="-1"></a>    location_info <span class="op">=</span> {</span>
+<span id="cb42-39"><a href="refactoring-code.html#cb42-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;location&#39;</span>: tweet.user.location</span>
+<span id="cb42-40"><a href="refactoring-code.html#cb42-40" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb42-41"><a href="refactoring-code.html#cb42-41" aria-hidden="true" tabindex="-1"></a>        location_data.append(location_info)</span>
+<span id="cb42-42"><a href="refactoring-code.html#cb42-42" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb42-43"><a href="refactoring-code.html#cb42-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
+<span id="cb42-44"><a href="refactoring-code.html#cb42-44" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&#39;Mr. Trash Wheel&#39;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
+<span id="cb42-45"><a href="refactoring-code.html#cb42-45" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb42-46"><a href="refactoring-code.html#cb42-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
+<span id="cb42-47"><a href="refactoring-code.html#cb42-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
+<span id="cb42-48"><a href="refactoring-code.html#cb42-48" aria-hidden="true" tabindex="-1"></a>    text_info <span class="op">=</span> {</span>
+<span id="cb42-49"><a href="refactoring-code.html#cb42-49" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;text&#39;</span>: tweet.full_text</span>
+<span id="cb42-50"><a href="refactoring-code.html#cb42-50" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb42-51"><a href="refactoring-code.html#cb42-51" aria-hidden="true" tabindex="-1"></a>    text_data.append(text_info)</span>
+<span id="cb42-52"><a href="refactoring-code.html#cb42-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-53"><a href="refactoring-code.html#cb42-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine lists into a dictionary</span></span>
+<span id="cb42-54"><a href="refactoring-code.html#cb42-54" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">&#39;date&#39;</span>: date_data, </span>
+<span id="cb42-55"><a href="refactoring-code.html#cb42-55" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;location&#39;</span>: location_data, <span class="st">&#39;text&#39;</span>: text_data}</span>
+<span id="cb42-56"><a href="refactoring-code.html#cb42-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-57"><a href="refactoring-code.html#cb42-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Store results in pandas dataframe</span></span>
+<span id="cb42-58"><a href="refactoring-code.html#cb42-58" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pandas.DataFrame(data)</span>
+<span id="cb42-59"><a href="refactoring-code.html#cb42-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-60"><a href="refactoring-code.html#cb42-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Print dataframe</span></span>
+<span id="cb42-61"><a href="refactoring-code.html#cb42-61" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+</div>
+<div id="questions" class="section level3" number="3.10.2">
+<h3><span class="header-section-number">3.10.2</span> Questions</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create an AI prompt that fixes any formatting issues with the code that would cause it not to run.</p></li>
+<li><p>Devise an AI prompt that removes any dead code from your sample above. What gets removed?</p></li>
+<li><p>Create a prompt that makes the code less repetitive, adhering to the DRY principle. What aspect of the code was repetitive?</p></li>
+<li><p>Construct a prompt that makes the code more concise. What are some trade-offs that appear in this code between readability and brevity?</p></li>
+</ol>
 
+</div>
 </div>
 </div>
 <hr>
