@@ -73,18 +73,19 @@ Although humans have been interacting with AI chatbots for years, the popularity
 
 We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human behind it to make sure that AI is used properly and transparently.
 
-Throughout this course, you will see two types of specially-colored boxes.
-
-:::{.query}
-This is a query box. The question we posed to the AI chatbot is written in these boxes to make it easier for you to find.
-:::
-
+Throughout this course, you will see two types of specially-colored boxes. One box highlights potential ethical issues with an AI usage.
 
 :::{.ethics}
 In this box, you'll find reminders of the ethical considerations you should be particularly aware of while using AI to do certain tasks. 
 :::
 
-Wherever possible, we use screenshots of the actual answers we got from the AI chatbots in response to our questions. Occasionally when we have asked for the AI to write or fix code, we have formatted the answer in such a way that makes it easier to use. In these instances, the AI answer will look like this:
+The other box highlights our queries to AI chatbots.
+
+:::{.query}
+The question we posed to the AI chatbot is written in these boxes to make it easier for you to find.
+:::
+
+Wherever possible, we use screenshots of the actual answers we got from the AI chatbots in response to our questions. Occasionally when we have asked for the AI to write or fix code, we have formatted the answer in such a way that makes it easier to use.
 
 :::{.ai_response}
 When you see this format, you will know it indicates an AI response
