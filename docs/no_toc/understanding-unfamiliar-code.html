@@ -375,12 +375,12 @@ end;</code></pre>
 <div id="example-four-demystifying-functions" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> Example Four: Demystifying Functions</h2>
 <p>Sometimes we get handed code that includes complex architecture. Perhaps you are working with code you wrote years ago when you really liked loops, but present you finds them difficult to parse. (Be nice to past you - maybe you were a baby programmer and didn’t know better.) Instead of giving yourself a headache, you could turn to <a href="https://chat.openai.com/">ChatGPT</a> to explain what your old code does.</p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="understanding-unfamiliar-code.html#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_function(x):</span>
-<span id="cb46-2"><a href="understanding-unfamiliar-code.html#cb46-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> x</span>
-<span id="cb46-3"><a href="understanding-unfamiliar-code.html#cb46-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb46-4"><a href="understanding-unfamiliar-code.html#cb46-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
-<span id="cb46-5"><a href="understanding-unfamiliar-code.html#cb46-5" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> result <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> (i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (j <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> j <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">1</span></span>
-<span id="cb46-6"><a href="understanding-unfamiliar-code.html#cb46-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="understanding-unfamiliar-code.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_function(x):</span>
+<span id="cb47-2"><a href="understanding-unfamiliar-code.html#cb47-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> x</span>
+<span id="cb47-3"><a href="understanding-unfamiliar-code.html#cb47-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb47-4"><a href="understanding-unfamiliar-code.html#cb47-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb47-5"><a href="understanding-unfamiliar-code.html#cb47-5" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> result <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> (i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (j <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> j <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb47-6"><a href="understanding-unfamiliar-code.html#cb47-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code></pre></div>
 <div class="query">
 <p>“What does this function do?”</p>
 </div>
@@ -505,7 +505,7 @@ let r = y[2];</code></pre>
         .disable_y_mesh()
         .draw()
         .unwrap();</code></pre>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="understanding-unfamiliar-code.html#cb52-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="understanding-unfamiliar-code.html#cb53-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
 <pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
 ##  setting  value                       
 ##  version  R version 4.0.2 (2020-06-22)
