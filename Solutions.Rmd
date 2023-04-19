@@ -18,7 +18,7 @@ ottrpal::set_knitr_image_path()
     :::
     
     :::{.ai_response}
-    ```{python python.reticulate = FALSE}
+    ```{python eval = FALSE, python.reticulate = FALSE}
     import tweepy
     import pandas
     
@@ -91,7 +91,7 @@ ottrpal::set_knitr_image_path()
     :::{.ai_response}
     Yes, the `get_tweet_length()` function is not being used in this code. It can be removed.
     
-    ```{python python.reticulate = FALSE}
+    ```{python eval = FALSE, python.reticulate = FALSE}
     import tweepy
     import pandas
     
@@ -161,7 +161,7 @@ ottrpal::set_knitr_image_path()
     :::{.ai_response}
     Yes, you can make this code more DRY by removing the code repetition. You can combine the three for loops into a single loop and extract all the desired data in one go. Here's an updated version of the code:
     
-    ```{python python.reticulate = FALSE}
+    ```{python eval = FALSE, python.reticulate = FALSE}
     import tweepy
     import pandas
         
@@ -208,7 +208,7 @@ ottrpal::set_knitr_image_path()
     :::
     
     :::{.ai_response}
-    ```{python python.reticulate = FALSE}
+    ```{python eval = FALSE, python.reticulate = FALSE}
     import tweepy
     import pandas as pd
     
