@@ -126,7 +126,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 ## Example Two: Debugging Code
 
-## Example Three: Figuring Out a Common Task
+## Example Three: Comparing Syntax
+
+## Example Four: Figuring Out a Common Task
 
 Sometimes you have a task that needs done that is fairly routine. You might not have done it before, but plenty of people in the world have. In this case, you don't want to reinvent the wheel, but you may not know exactly where to start. AI is a great option for figuring out the basic workflow steps.
 
@@ -202,7 +204,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-## Example Four: Planning Your Program
+## Example Five: Planning Your Program
 
 Let's say we want to create software that plays the card game blackjack. 
 You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.
@@ -250,7 +252,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 In this case, the AI went beyond just suggesting a first task and also offered several options for how to do it as well. 
 
-## Example Five: Selecting a Language
+## Example Six: Selecting a Coding Language
 
 You will need to choose the language for your software. If you don't, AI will likely pick a language for you, which may or may not be one you want. You might choose a language based on:
 

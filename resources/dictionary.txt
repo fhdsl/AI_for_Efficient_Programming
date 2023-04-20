@@ -1,6 +1,7 @@
 ai
 Anthropic
 AnVIL
+awk
 BIPOC
 BitMapBackend
 Bloomberg
@@ -10,6 +11,8 @@ chatbots
 ChatGPT
 codebase
 codebases
+CodePilot
+CodeWhisperer
 const
 Coursera
 css
@@ -28,6 +31,7 @@ favicon
 fn
 fs
 GDSCN
+github
 GitHub
 Github
 GH
@@ -47,15 +51,20 @@ OdeMethod
 OpenAI's
 ottrpal
 Pandoc
+Phind
 png
 Pre
 PyCharm
 Quora's
+repo
+repos
+roadmap
 RStudio
 summarization
 tidyverse
 UE
 UE5
+vcf
 vec
 Vec
 reproducibility
