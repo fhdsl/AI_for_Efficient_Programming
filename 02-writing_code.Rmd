@@ -70,9 +70,63 @@ Using AI to write code is as much of an art as writing your own code.  Following
 
 ## Example One: Creating a Function
 
+One of the most common things a programmer does is write functions to automate tedious tasks. With proper guidance, AI can speed this process up.
+
+Perhaps you need to write a quick function that reverses all the letters in a string. We can query [Phind](https://www.phind.com/) for help.
+
+:::{.query}
+"How do I write a function that reverses the letters in a string?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates code that allows you to merge vcf files and output the sample names."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_192")
+```
 
 
-## Example Two: Figuring Out a Common Task
+
+
+Phind offers you a variety of ways to do this, but unfortunately they're all in the language Python. Because we didn't include a programming language in our query, Phind picked one for us. Let's refine our query a little.
+
+:::{.query}
+"How do I write a function using bash that reverses the letters in a string?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates code that allows you to merge vcf files and output the sample names."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_92")
+```
+
+
+
+
+Once again, Phind has come through with multiple options. Now let's say you knew you wanted to write a function like this, but you half-remembered that you could do it with awk. You can specify that in your query, too.
+
+:::{.query}
+"How do I write a function using awk that reverses the letters in a string?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates code that allows you to merge vcf files and output the sample names."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_88")
+```
+
+
+
+
+Maybe you need to reverse the letters in a string, but you realize it's only the strings in the third column of your file. Let's add that requirement to our query.
+
+:::{.query}
+"How do I write a function using awk that reverses the letters in a string for the third column of my file?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates code that allows you to merge vcf files and output the sample names."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_84")
+```
+
+
+
+
+## Example Two: Debugging Code
+
+## Example Three: Figuring Out a Common Task
 
 Sometimes you have a task that needs done that is fairly routine. You might not have done it before, but plenty of people in the world have. In this case, you don't want to reinvent the wheel, but you may not know exactly where to start. AI is a great option for figuring out the basic workflow steps.
 
@@ -105,6 +159,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates another way to do the same task."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_34")
 ```
+
 
 
 
@@ -147,8 +202,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-
-## Example Three: Planning Your Program
+## Example Four: Planning Your Program
 
 Let's say we want to create software that plays the card game blackjack. 
 You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.
@@ -167,6 +221,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
+
 That seems like a really good roadmap for building a basic game, but if you're ambitious (and of course you are), you might want to give your game a little extra something. Claude-instant has some ideas for that, too.
 
 :::{.query}
@@ -176,6 +231,7 @@ That seems like a really good roadmap for building a basic game, but if you're a
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant offered eleven additional features that could be added to your blackjack game if you wanted to make it more complex, including different types of betting strategies and surrender opportunities."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_8")
 ```
+
 
 
 
@@ -191,16 +247,16 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
+
 In this case, the AI went beyond just suggesting a first task and also offered several options for how to do it as well. 
 
-## Example Four: Selecting a Language
+## Example Five: Selecting a Language
 
 You will need to choose the language for your software. If you don't, AI will likely pick a language for you, which may or may not be one you want. You might choose a language based on:
 
 * Your preexisting knowledge or experience with the language
 * A specific use case where the language is commonly used
 * The language(s) your colleagues or coworkers use
-
 
 You can find a description of other languages you might encounter [here](Appendix.html).
 
@@ -213,6 +269,7 @@ Let's ask Claude-instant again for some recommendations on the appropriate langu
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant suggested seven possible languages for the blackjack program and gave a brief description of their pros and cons."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_4")
 ```
+
 
 
 
@@ -232,8 +289,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ## Limitations
 
 All of the AI chatbots we use are still in the process of being developed
-
-
 
 ## Hands On Exercise 
 
