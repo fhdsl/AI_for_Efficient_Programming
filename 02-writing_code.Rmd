@@ -27,6 +27,7 @@ Ultimately, the ability to write code is a valuable asset in today's world, with
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_83")
 ```
 
+
 AI-powered programming tools and technologies are revolutionizing the way we approach software development. 
 
 1. _AI can generate code snippets._ An AI-powered code editor can suggest more efficient algorithms or highlight potential errors in real-time. It can also help developers to reproduce bugs more easily and to test potential fixes more quickly. This can save developers a significant amount of time and effort, and it can help them to debug their code more effectively.
@@ -43,61 +44,7 @@ As AI continues to evolve, it is likely to have an even greater impact on the wa
 You must also take care that you are only using code that you're authorized to use. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).
 :::
 
-## Coding Languages
-
-You will need to choose the language for your software. If you don't, AI will likely pick a language for you, which may or may not be one you want. You might choose a language based on:
-
-* Your preexisting knowledge or experience with the language
-* A specific use case where the language is commonly used
-* The language(s) your colleagues or coworkers use
-
-AI chatbots are familiar with a huge variety of coding languages, which allows them to be used for a variety of tasks. As AI chatbots continue to develop, they are likely to become even more familiar with a wider variety of coding languages. 
-
-Here are commonly used languages and their typical use cases.
-
-**Python**
-
-Known for its readability, simple syntax, and comprehensive add-on modules. It is often recommended as a beginner-friendly language. Python is used for scientific computing, data analysis, machine learning, and web development. Many Data Scientist roles rely on Python.
-
-**Ruby**
-
-Similar to Python, Ruby is also known for its readability and user-friendly syntax. It is typically used for web development, building dynamic websites, and creating web applications.
-
-**JavaScript**
-
-A popular language for web development, known for its versatility and ease of use. Many of the interactive features of websites rely on JavaScript.
-
-**Java**
-
-Java is widely used for enterprise applications, android mobile apps, and web apps.
-
-**PHP**
-
-PHP is easy to learn but can become complex as the application grows. It is typically used for building dynamic web pages, web applications, and content management systems.
-
-**R**
-
-Used for statistical computing, data analysis, and data visualization, R is a popular choice for researchers and data scientists. Some beginners find its syntax complex, especially due to differences in the two major dialects: "base" R versus the "tidyverse".
-
-**Kotlin**
-
-Kotlin is a relatively new language that is designed to be more concise and expressive than Java. However, its advanced features and concepts may be challenging for beginners. It is used for developing Android mobile apps, web development, and server-side development.
-
-**Swift**
-
-Used for iOS and macOS app development, Swift is known for its strict syntax and steep learning curve.
-
-**C#**
-
-Often used for Windows desktop applications, web applications, and video games, C# can be challenging due to its more complex syntax and strict type system.
-
-**C++**
-
-A powerful language often used for developing high-performance applications and operating systems, C++ can be challenging to learn due to its complexity and the need to manage memory manually.
-
-You can find a description of other languages you might encounter [here](Appendix.html).
-
-## Tips for Interacting with AI
+## Tips for Coding with AI
 
 Using AI to write code is as much of an art as writing your own code.  Following a few rules and suggestions will make your experience much more enjoyable and productive.
 
@@ -123,9 +70,6 @@ Using AI to write code is as much of an art as writing your own code.  Following
 
 ## Example One: Creating a Function
 
-### Step One: Chunking It Out
-
-### Step Two: Slowly Adding Complexity
 
 
 ## Example Two: Figuring Out a Common Task
@@ -204,12 +148,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-## Example Three: Writing a Multistep Program
+## Example Three: Planning Your Program
 
-Let's say we want to create software that plays the card game blackjack. There are multiple steps involved in creating such a program, and AI can help us identify and refine them.
-
-### Step One: Planning Your Program
-
+Let's say we want to create software that plays the card game blackjack. 
 You can jump right in and ask your AI chatbot to write the code, but you're unlikely to be successful and _incredibly_ likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.
 
 Everyone needs a plan of attack when building software. You should start by identifying what your software will do, then you can figure out the steps necessary to make that happen. 
@@ -238,9 +179,32 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-### Step Two: Selecting a Language
+At this point, you are ready to begin writing your program. You have a lot of tasks to do, so you have to pick a logical starting point. If you're uncertain, you can ask AI for advice on your first task.
 
-Let's ask Claude-instant again for some recommendations on the appropriate languages for our proposed blackjack game. (Pro tip: the various AI bots all keep track of your previous queries, so you don't have to restate your goal for the software if you're continuing the conversation.)
+:::{.query}
+"What should be my first coding task for this program?"
+:::
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant suggests the first task is to create a data structure that represents a deck of cards."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_68")
+```
+
+
+
+In this case, the AI went beyond just suggesting a first task and also offered several options for how to do it as well. 
+
+## Example Four: Selecting a Language
+
+You will need to choose the language for your software. If you don't, AI will likely pick a language for you, which may or may not be one you want. You might choose a language based on:
+
+* Your preexisting knowledge or experience with the language
+* A specific use case where the language is commonly used
+* The language(s) your colleagues or coworkers use
+
+
+You can find a description of other languages you might encounter [here](Appendix.html).
+
+Let's ask Claude-instant again for some recommendations on the appropriate languages for our proposed blackjack game from the above example. (Pro tip: the various AI bots all keep track of your previous queries, so you don't have to restate your goal for the software if you're continuing the conversation.)
 
 :::{.query}
 "What would be a good coding language to create this game of blackjack?"
@@ -264,23 +228,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-### Step Three: Knowing Where to Start
 
-At this point, you are ready to begin writing your program. You have a lot of tasks to do, so you have to pick a logical starting point. If you're uncertain, you can ask AI for advice on your first task.
-
-:::{.query}
-"What should be my first coding task for this program?"
-:::
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant suggests the first task is to create a data structure that represents a deck of cards."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_68")
-```
-
-
-
-In this case, the AI went beyond just suggesting a first task and also offered several options for how to do it as well. 
-
-## Ooops! AI Mistakes
+## Limitations
 
 All of the AI chatbots we use are still in the process of being developed
 
