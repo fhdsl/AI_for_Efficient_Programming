@@ -230,7 +230,7 @@ Well, now you have an idea what past-you might have been attempting to do with t
 
 
 
-(And if you do ever run across an expression like this in your code, you can check out our chapter on refactoring code using AI to fix it!)
+(And if you do ever run across an expression like this in your code, you can check out our chapter on [refactoring code](https://hutchdatascience.org/AI_for_software/refactoring-code.html#refactoring-code) using AI to fix it!)
 
 
 ## Example Five: Deciphering Comments
