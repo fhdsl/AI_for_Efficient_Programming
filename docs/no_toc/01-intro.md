@@ -3,7 +3,8 @@
 
 # Introduction
 
-The increasing availability of AI chatbots is creating a new landscape in software development. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone.
+
+The increasing availability of AI chatbots is creating a new landscape in software development. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone and limits harm as much as possible.
 
 On the one hand, AI chatbots have the potential to replace or significantly reduce the workload of programmers. This could lead to job losses in the software development industry. Additionally, there are significant ethical and privacy concerns regarding the use of training data sets to teach these AI systems. For example, if a chatbot is trained on a dataset of biased or discriminatory data, it could perpetuate those biases in its interactions with users.
 
