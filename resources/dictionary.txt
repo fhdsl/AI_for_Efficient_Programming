@@ -8,6 +8,7 @@ Bookdown
 chatbot
 chatbots
 ChatGPT
+chatGPT
 codebase
 codebases
 const
@@ -22,6 +23,7 @@ Dockerfile
 Dockerhub
 dsdt
 dropdown
+Explainability
 Ehang's
 else's
 favicon
@@ -36,6 +38,7 @@ impactful
 ITCR
 itcrtraining
 ITN
+Jupyter
 fyi
 Leanpub
 macOS
@@ -61,7 +64,10 @@ vec
 Vec
 refactorings
 reproducibility
+README
+README's
 rmarkdown
+stringr
 underserved
 uppercased
 www
