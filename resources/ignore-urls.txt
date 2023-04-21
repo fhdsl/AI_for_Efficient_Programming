@@ -1,4 +1,7 @@
 https://www.someurl.html
+https://github.com/some_analysis
+https://nbviewer.jupyter.org/)
+https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb)	
 https://www.contributor-covenant.org/version/2/0/code_of_conduct.html][v2.0].
 https://www.contributor-covenant.org/faq][FAQ].
 https://www.contributor-covenant.org/translations][translations].
