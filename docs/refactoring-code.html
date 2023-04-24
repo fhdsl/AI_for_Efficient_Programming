@@ -619,7 +619,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb37-16"><a href="refactoring-code.html#cb37-16" aria-hidden="true" tabindex="-1"></a><span class="co"># End timer</span></span>
 <span id="cb37-17"><a href="refactoring-code.html#cb37-17" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
 <pre><code>##    user  system elapsed 
-##  13.389   0.000  13.394</code></pre>
+##  11.561   0.000  11.560</code></pre>
 <div class="query">
 <p>“What is a faster, more optimized way of running the following R code?”</p>
 </div>
@@ -638,7 +638,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb39-12"><a href="refactoring-code.html#cb39-12" aria-hidden="true" tabindex="-1"></a><span class="co"># End timer</span></span>
 <span id="cb39-13"><a href="refactoring-code.html#cb39-13" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
 <pre><code>##    user  system elapsed 
-##   0.911   0.319   0.848</code></pre>
+##   0.635   0.348   0.679</code></pre>
 <p>The <code>outer()</code> function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The <code>rowSums()</code> function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index <code>i</code> in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.</p>
 </div>
 <p>So much faster! We can look at another option by regenerating the response:</p>
@@ -657,7 +657,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb41-12"><a href="refactoring-code.html#cb41-12" aria-hidden="true" tabindex="-1"></a><span class="co"># End timer</span></span>
 <span id="cb41-13"><a href="refactoring-code.html#cb41-13" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
 <pre><code>##    user  system elapsed 
-##   0.430   0.316   0.476</code></pre>
+##   0.312   0.280   0.376</code></pre>
 <p>One optimized way to perform the same calculation is by using the <code>%*%</code> operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.</p>
 </div>
 <p>While this second suggestion is faster, you will need to consider what aspects of the codebase are most important in each instance. For example, this code runs more quickly, but <a href="https://stat.ethz.ch/R-manual/R-patched/library/base/html/matmult.html">the <code>%*%</code> operator</a> might be unfamiliar to some R programmers. In cases where efficiency is less important, or the data are not large, you might consider maximizing readability.</p>

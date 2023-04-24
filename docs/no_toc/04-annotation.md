@@ -121,7 +121,7 @@ Code annotation can help to improve the quality of code. By adding comments, dev
 
 ## Examples of quality aiding comments
 
-Comments that help improve the quality of the code **by explaining to other how to use or help improve it**
+Comments that help improve the quality of the code **by explaining to others how to use or help improve it**
 
 **Error handling:** Adding comments to explain how and why error handling is being implemented can help ensure that your code is robust and able to handle unexpected inputs or errors. This helps others know how the code was intended to be used.
 
@@ -352,7 +352,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-04-21                  
+##  date     2023-04-24                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
