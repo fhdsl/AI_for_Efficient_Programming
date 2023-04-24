@@ -64,7 +64,7 @@ Although humans have been interacting with AI chatbots for years, the popularity
 
 [ChatGPT](https://chat.openai.com/) is OpenAI's large language model based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to understand and generate human-like responses to text-based conversations. You will need to create an account before using it.
 
-[CodePilot](https://github.com/features/copilot) by Github is a language bot that interfaces with your editor. In addition to providing coding suggestions and speeding up testing, this bot does not offer suggestions that match public code. It's a subscription model with both individual and business tiers.
+[CodePilot](https://github.com/features/copilot) by Github is a language bot that interfaces with your editor. In addition to providing coding suggestions and speeding up testing, this bot offers suggestions that match public code. It's a subscription model with both individual and business tiers.
 
 [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
 
