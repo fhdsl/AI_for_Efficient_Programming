@@ -170,7 +170,7 @@ Once again, Phind has come through with multiple options. Now let's say you knew
 "How do I write a function using python that reverses the letters in a string for the third column of my file?"
 :::
 
-:::{.ai_question}
+:::{.ai_response}
 To write a function using Python that reverses the letters in a string for the third column of a file, you can use the extended slice syntax in Python. The extended slice syntax is a more concise and faster way of slicing strings in Python. To reverse a string using extended slices, you can use the following syntax:
 
 ```
@@ -232,8 +232,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ```
 
 
-
-This response was initially going to be included in this course as an example of why it can be helpful to query multiple chatbots, but now it's a cool little example of how the chatbots are rapidly improving.
 
 ## Example Four: Figuring Out a Common Task
 
