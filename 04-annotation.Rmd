@@ -137,7 +137,7 @@ if not isinstance(input_list, list) or len(input_list) == 0:
     raise ValueError("Input list cannot be empty")
 ```
 
-**Overcomplexity:** If your code has particular complexities, adding comments that explain it can help others understand the performance characteristics of your code. It may help others identify whether there is a simpler way to write the code. By adding a comment that expresses uncertainty about the code and asking for suggestions, the author can potentially receive feedback from others on how to improve the code.
+**Complexity:** If your code has particular complexities, adding comments that explain it can help others understand the performance characteristics of your code. It may help others identify whether there is a simpler way to write the code. By adding a comment that expresses uncertainty about the code and asking for suggestions, the author can potentially receive feedback from others on how to improve the code.
 
 ```
 # This block of code could probably be simplified, but I'm not sure how.
@@ -340,7 +340,7 @@ ChatGPT told me:
 You're right, I apologize. The code at the given URL is actually in a Jupyter Notebook format, so it's not easy to copy-paste here. However, I can suggest an alternative approach: you can use the website nbviewer (https://nbviewer.jupyter.org/) to view the notebook and its code. Here are the steps to do so:
 
 Go to https://nbviewer.jupyter.org/
-Paste the URL of the notebook (https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb) into the "Enter the location of a Jupyter Notebook" field and press "Go".
+Paste the URL of the notebook ( https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb ) into the "Enter the location of a Jupyter Notebook" field and press "Go".
 This will display the notebook and its code, and you can read through it and add your own annotations as needed.
 I hope this helps!
 ```
