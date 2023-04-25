@@ -126,7 +126,7 @@ To write a function using Python that reverses the letters in a string, there ar
 
 One approach involves using a for loop and the `concatenation` operator to join the original string in reverse order. This technique is demonstrated in [realpython.com](https://realpython.com/reverse-string-python/) as follows:
 
-```{python python.reticulate = TRUE}
+```
 def reverse_string(text):
     result = ""
     for char in text:
@@ -140,7 +140,7 @@ In this example, the function `reverse_string` takes a string as its argument an
 
 Another approach involves using slicing to reverse the string. This technique is demonstrated in [stackoverflow.com](https://stackoverflow.com/questions/25375794/how-to-reverse-the-order-of-letters-in-a-string-in-python) as follows:
 
-```{python python.reticulate = TRUE}
+```
 def reverse_string(text):
     return text[::-1]
 
@@ -151,7 +151,7 @@ In this example, the function `reverse_string` takes a string as its argument an
 
 A third approach involves using Python's built-in `reversed()` function to reverse the string. This technique is demonstrated in [datagy.io](https://datagy.io/python-palindrome/) as follows:
 
-```{python python.reticulate = TRUE}
+```
 def reverse_string(text):
     return ''.join(reversed(text))
 
