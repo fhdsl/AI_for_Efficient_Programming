@@ -137,7 +137,7 @@ if not isinstance(input_list, list) or len(input_list) == 0:
     raise ValueError("Input list cannot be empty")
 ```
 
-**Overcomplexity:** If your code has particular complexities, adding comments that explain it can help others understand the performance characteristics of your code. It may help others identify whether there is a simpler way to write the code. By adding a comment that expresses uncertainty about the code and asking for suggestions, the author can potentially receive feedback from others on how to improve the code.
+**Complexity:** If your code has particular complexities, adding comments that explain it can help others understand the performance characteristics of your code. It may help others identify whether there is a simpler way to write the code. By adding a comment that expresses uncertainty about the code and asking for suggestions, the author can potentially receive feedback from others on how to improve the code.
 
 ```
 # This block of code could probably be simplified, but I'm not sure how.

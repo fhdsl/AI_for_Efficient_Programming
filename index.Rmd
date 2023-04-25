@@ -33,11 +33,11 @@ This course is available in multiple formats which allows you to take it in the 
 
 **Course Prerequisites**  
 
-Some previous exposure to programming recommended.
+- Some previous exposure to programming recommended.
 
 **Assessment Type**  
 
-Hands-on activities following each lesson.
+- Hands-on activities following each lesson.
 
 ## Lesson Breakdown {-}
 

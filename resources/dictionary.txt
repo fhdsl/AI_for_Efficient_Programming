@@ -11,6 +11,8 @@ ChatGPT
 chatGPT
 codebase
 codebases
+CodePilot
+CodeWhisperer
 const
 Coursera
 css
