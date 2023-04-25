@@ -323,7 +323,7 @@ Copying and pasting code appears to be the best way to go at this point in time.
 I asked chatGPT if it could annotate code in a Jupyter notebook at a URL I gave it:
 
 :::{.query}
-Can you annotate the code at this URL? https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb
+Can you annotate the code at this URL? [https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb]
 :::
 
 It responded with some of the code at that file where it was annotated but most of the notebook was not there.
