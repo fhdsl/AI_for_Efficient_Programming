@@ -498,7 +498,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ## Summary
 
 * AI can increase the efficiency of planning, writing, and debugging code
-* The programmer needs to be specific and patient while querying AI on code writing tasks, start with simple tasks, and also needs to test everything
+* The user needs to be specific and patient while querying AI on code writing tasks, start with simple tasks, and also needs to test everything
 * A programmer is responsible for what they create while coding with AI, even if AI writes the actual code. 
 
 ## Hands On Exercise 
