@@ -75,7 +75,7 @@ One of the most common things a programmer does is write functions to automate t
 Perhaps you need to write a quick function that reverses all the letters in a string. We can query [Phind](https://www.phind.com/) for help.
 
 :::{.query}
-"How do I write a function that reverses the letters in a string?"
+How do I write a function that reverses the letters in a string?
 :::
 
 :::{.ai_response}
@@ -118,7 +118,7 @@ Overall, there are multiple approaches to reversing a string in Bash. The `rev` 
 Phind offers you a variety of ways to do this, but all these options are in the language Bash. Because we didn't include a programming language in our query, Phind picked one for us. Let's refine our query a little.
 
 :::{.query}
-"How do I write a function using Python that reverses the letters in a string?"
+How do I write a function using Python that reverses the letters in a string?
 :::
 
 :::{.ai_response}
@@ -208,12 +208,115 @@ In conclusion, to write a function using Python that reverses the letters in a s
 
 ## Example Two: Debugging Code
 
+A vast amount of time in programming is spent on debugging code. Often the compiler error messages are very precise about what has gone wrong while simultaneously lacking enough detail for the programmer to immediately understand how to fix the error. It is good practice to debug code as you go, instead of writing the entire program and then testing to identify the errors. Using an AI chatbot makes this task much, much easier.
+
+There are two options for using [ChatGPT](https://chat.openai.com/) for debugging. 
+
+First, we could query what the error code means. Here's a Python code snippet that is throwing a `TypeError: unsupported operand type(s) for +: 'int' and 'str'` error when we try running it.
+
+```
+def add_numbers(a, b):
+  result = a + b
+  return result
+
+number1 = 10
+number2 = "20"
+
+sum = add_numbers(number1, number2)
+print("The sum of", number1, "and", number2, "is", sum)
+```
+
+:::{.query}
+What does this error mean? TypeError: unsupported operand type(s) for +: 'int' and 'str'
+:::
+
+:::{.ai_response}
+This error typically occurs when you try to concatenate (i.e., add together) a string and an integer using the "+" operator in Python.
+
+In Python, the "+" operator is used for both addition and concatenation depending on the data types of the operands. If you try to add a string and an integer using the "+" operator, Python will raise a TypeError because these two data types are not compatible for this operation.
+
+For example, if you have the following code:
+
+```
+age = 25
+message = "I am " + age + " years old."
+```
+
+Python will raise the TypeError because you are trying to concatenate a string ("I am ") with an integer (25) using the "+" operator. To fix this error, you can convert the integer to a string using the str() function:
+
+```
+age = 25
+message = "I am " + str(age) + " years old."
+```
+
+In this case, the str() function converts the integer age to a string before concatenating it with the other string, so the operation is valid and no error will be raised.
+:::
+
+ChatGPT helpfully explains what TypeError means, what causes it, and how to fix it. This is quite useful when you don't understand the error message.
+
+Another option is to submit the code snippet that is causing an error to ChatGPT directly and ask for it to fix the mistake. (If you choose to go this route, make sure you're giving a snippet of code at a time and not the entire massive program.) Here's another buggy code snippet, this time in C#. 
+
+:::{.query}
+Can you debug this code?
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        int sum = 0;
+
+        for (int i = 1; i <= numbers.Length; i++)
+        {
+            sum += numbers[i];
+        }
+
+        Console.WriteLine("The sum of the numbers is: " + sum);
+    }
+}
+:::
+
+:::{.ai_response}
+Sure, I can help you debug this code. Here are the issues I see:
+
+1. The loop is going out of bounds: The loop is iterating from 1 to numbers.Length, but array indexes start from 0. Therefore, when i is equal to numbers.Length, numbers[i] is trying to access an element outside the bounds of the array, which will result in an IndexOutOfRangeException. To fix this, you should change the loop condition to i < numbers.Length.
+
+1. The loop is not summing the array elements correctly: The loop is adding the elements starting from the second element instead of the first. To fix this, you should change the initial value of i to 0, which corresponds to the first element of the array.
+
+Here's the corrected code:
+```
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        int sum = 0;
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            sum += numbers[i];
+        }
+
+        Console.WriteLine("The sum of the numbers is: " + sum);
+    }
+}
+```
+
+This should correctly sum the elements of the numbers array and output the result.
+:::
+
+Be aware that if you choose to submit your code directly to an AI chatbot to debug that you submit a snippet at a time (if possible). Otherwise the answer can get quite unwieldy!
+
 ## Example Three: Comparing Syntax
 
 You may be in the middle of writing code when you realize that you've used two possible syntaxes for the same command. Perhaps you are using the R package `here` and are wondering if two different ways of writing a command are the same.
 
 :::{.query}
-"Is `here::here("raw", "data.csv")` equivalent to `here::here("raw/data.csv")`?
+Is `here::here("raw", "data.csv")` equivalent to `here::here("raw/data.csv")`?
 :::
 
 First, let's see what [ChatGPT](https://chat.openai.com/) responded.
@@ -225,7 +328,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-When we first started putting together this course, we had intended to include an answer from [Bard](https://bard.google.com/) that disagreed with the answer from ChatGPT as an example of why it can be helpful to query multiple chatbots. (We decided ChatGPT was correct after verifying its answer in the `here` package documentation.) However, when we queried Bard again two weeks later, we were pleasantly surprised to discover that Bard now had the correct answer. Now it's a cool little example of how the chatbots are rapidly improving and "learning" from their mistakes.
+When we first started putting together this course, we had intended to include an answer from [Bard](https://bard.google.com/) that disagreed with the answer from ChatGPT as an example of why it can be helpful to query multiple chatbots. (We decided ChatGPT was correct after verifying its answer in the `here` package documentation.) However, when we queried Bard again two weeks later, we were pleasantly surprised to discover that Bard had corrected its answer. Now it's a cool little example of how the chatbots are rapidly improving and "learning" from their mistakes.
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates another way to do the same task."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_84")
@@ -240,7 +343,7 @@ Sometimes you have a task that needs done that is fairly routine. You might not 
 A very common task for anyone working with genomic samples is to combine multiple files in the vcf format. Perhaps you've been asked to do this and then create a separate file that contains the names of the samples. You turn to [ChatGPT](https://chat.openai.com/) for help.
 
 :::{.query}
-"Can you write a program that merges vcf files and then outputs the sample names?"
+Can you write a program that merges vcf files and then outputs the sample names?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates another way to do the same task."}
@@ -259,7 +362,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 :::{.query}
-"What's another way I can do this?
+What's another way I can do this?
 :::
 
 
@@ -272,7 +375,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 You can also specify some of the features you'd like in your code, or where you might want the code to come from. Maybe you want to practice using GitHub repositories, so you specifically request it.
 
 :::{.query}
-"Can you write a program that merges vcf files and then outputs the sample names using a github repo?"
+Can you write a program that merges vcf files and then outputs the sample names using a github repo?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates a script using the vcflib repo from GitHub."}
@@ -285,7 +388,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 If you know you've used something like a GitHub repository, you can ask ChatGPT for the citation. Just be aware that you **need** to verify that any citation it gives you should be checked independently. Unfortunately, AI bots can still respond with imaginary journal articles. (Assume that if you can't find it, it doesn't exist.)
 
 :::{.query}
-"What's the citation for the repo used in this code?"
+What's the citation for the repo used in this code?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT responds with the GitHub repository used in the code, as well as the creators and a possible citation."}
@@ -297,7 +400,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 In general, after you find a solution that works for you, you should always make a habit of asking the AI where it got the code. Never, ever, ever run code without knowing where it came from.
 
 :::{.query}
-"What's the source for this code?"
+What's the source for this code?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT responds with the library and basic Unix tools needed to run the generated code."}
@@ -316,7 +419,7 @@ Everyone needs a plan of attack when building software. You should start by iden
 We'll ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) how we can go about creating the necessary code for our game.
 
 :::{.query}
-"How would I go about writing a program that can play blackjack?"
+How would I go about writing a program that can play blackjack?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant laid out seven steps that can be used to build a simple blackjack program. It also offered several ideas for additional features."}
@@ -329,7 +432,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 That seems like a really good roadmap for building a basic game, but if you're ambitious (and of course you are), you might want to give your game a little extra something. Claude-instant has some ideas for that, too.
 
 :::{.query}
-"What are some other features I could add to this game?"
+What are some other features I could add to this game?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant offered eleven additional features that could be added to your blackjack game if you wanted to make it more complex, including different types of betting strategies and surrender opportunities."}
@@ -342,7 +445,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 At this point, you are ready to begin writing your program. You have a lot of tasks to do, so you have to pick a logical starting point. If you're uncertain, you can ask AI for advice on your first task.
 
 :::{.query}
-"What should be my first coding task for this program?"
+What should be my first coding task for this program?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant suggests the first task is to create a data structure that represents a deck of cards."}
@@ -367,7 +470,7 @@ You can find a description of other languages you might encounter [here](Appendi
 Let's ask Claude-instant again for some recommendations on the appropriate languages for our proposed blackjack game from the above example. (Pro tip: the various AI bots all keep track of your previous queries, so you don't have to restate your goal for the software if you're continuing the conversation.)
 
 :::{.query}
-"What would be a good coding language to create this game of blackjack?"
+What would be a good coding language to create this game of blackjack?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant suggested seven possible languages for the blackjack program and gave a brief description of their pros and cons."}
@@ -380,7 +483,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 Claude-instant actually gave us more information than we anticipated. If it hadn't stated pros and cons while offering language suggestions, we could ask for them directly. This could be helpful if you're deciding between two options like, say, Python or Java.
 
 :::{.query}
-"What are the pros and cons of using Python vs Java for this project?"
+What are the pros and cons of using Python vs Java for this project?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game."}
