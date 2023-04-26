@@ -1,5 +1,6 @@
 ---
-title: "Using AI for Software"
+title: "AI for Software Development"
+subtitle: "Harnessing the Power of Large Language Models"
 date: "`r format(Sys.time(), '%B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -38,6 +39,15 @@ This course is available in multiple formats which allows you to take it in the 
 **Assessment Type**  
 
 - Hands-on activities following each lesson.
+
+## Learning Objectives {-}
+
+- Understand the basics of AI and its potential for improving software development workflows.
+- Learn how to write and debug code using AI-based tools.
+- Explore the benefits of refactoring code using AI-powered techniques, such as making code readable, keeping it brief, and optimizing code.
+- Understand the importance of annotating code, and learn best practices for doing so using AI.
+- Learn how to use AI-based tools for understanding and analyzing code, such as code comprehension of unfamiliar languages or functions.
+- Explore the challenges and ethical implications of using AI for different aspects of software development.
 
 ## Lesson Breakdown {-}
 
