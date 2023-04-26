@@ -70,17 +70,11 @@ Although humans have been interacting with AI chatbots for years, the popularity
 
 * [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and [Ehang's](https://www.ehang.com/) Dragonfly AI platform, which was created to interface with their Dragonfly drone. Poe also gives you access to ChatGPT.
 
-**How to classify this one??**
+**IDE-based chatbots**
 
-[CodePilot](https://github.com/features/copilot) by Github is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. It's a subscription model with both individual and business tiers.
+* [CodePilot](https://github.com/features/copilot) by GitHub is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. It's a subscription model with both individual and business tiers.
 
-**Cloud platform chatbots**
-
-[CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
-
-[Vela]()
-
-
+* [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
 
 
 ## About this book

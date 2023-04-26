@@ -4,7 +4,7 @@ AI in cloud computing is an exciting and rapidly advancing field that combines a
 
 Developers can easily incorporate AI into applications using cloud-based AI services. For example, Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform offer AI services like speech recognition, image recognition, natural language processing, and machine learning.
 
-AI optimizes cloud resources and performance. It allocates resources based on workload demands, optimizes power usage, detects threats, and improves application latency by predicting user behavior and pre-loading content.However, integrating AI and cloud computing presents challenges around data, security, privacy, ethics, complexity, and management that must be addressed carefully.
+AI optimizes cloud resources and performance. It allocates resources based on workload demands, optimizes power usage, detects threats, and improves application latency by predicting user behavior and preloading content. However, integrating AI and cloud computing presents challenges around data, security, privacy, ethics, complexity, and management that must be addressed carefully.
 
 Large amounts of data are needed to train AI models, especially deep learning models requiring vast labeled data to identify patterns and predictions accurately. Storing and processing huge data can be expensive, impacting cost, scalability, and environment performance. Ensuring data security, privacy, and ethical use also require consideration.
 

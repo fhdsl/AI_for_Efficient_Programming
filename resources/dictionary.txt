@@ -1,4 +1,5 @@
 ai
+analytics
 Anthropic
 AnVIL
 BIPOC
@@ -52,11 +53,14 @@ OdeMethod
 OpenAI's
 ottrpal
 Pandoc
+Phind
 png
 Pre
 PyCharm
 Quora's
 RStudio
+scalability
+scalable
 suboptimal
 summarization
 tidyverse
