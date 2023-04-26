@@ -1,4 +1,4 @@
-## AI and Cloud Computing
+## AI and Cloud Computing {-}
 
 AI in cloud computing is an exciting and rapidly advancing field that combines artificial intelligence (AI) and cloud computing technologies. Cloud computing provides on-demand access to computing resources over the internet, such as storage, processing, and analytics, while AI uses algorithms and models to enable machines to perform tasks traditionally requiring human intelligence.
 
