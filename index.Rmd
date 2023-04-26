@@ -1,5 +1,6 @@
 ---
-title: "Using AI for Software"
+title: "AI for Software Development"
+subtitle: "Harnessing the Power of Large Language Models"
 date: "`r format(Sys.time(), '%B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
