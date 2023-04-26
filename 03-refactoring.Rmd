@@ -586,3 +586,12 @@ print(df)
 
 1. Construct a prompt that makes the code more concise. What are some trade-offs that appear in this code between readability and brevity?
 
+## Summary
+
+- Code refactoring is the process of improving code quality without changing its functionality. It is crucial in software development to maintain a manageable and adaptable codebase.
+
+- Code refactoring reduces technical debt, improves code stability, and makes it easier to maintain.
+
+- Examples of using AI for code refactoring include correcting syntax, adhering to styling and convention, visual styling, avoiding repetition, removing dead code, and improving both readability and speed of execution (optimization).
+
+- The use of AI for code refactoring raises ethical concerns and is not perfect. It is important for the developer to consider security needs of their code, as well as test out their code.
