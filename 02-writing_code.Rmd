@@ -181,7 +181,7 @@ In this syntax, the first colon indicates the start of the slice, the second col
 
 To create a function that reverses the letters in a string for the third column of a file, you can use the following code:
 
-```{python python.reticulate = TRUE}
+```
 def reverse_string(string):
     return string[:2] + string[2:5][::-1] + string[5:]
 ```
@@ -213,7 +213,7 @@ In conclusion, to write a function using Python that reverses the letters in a s
 You may be in the middle of writing code when you realize that you've used two possible syntaxes for the same command. Perhaps you are using the R package `here` and are wondering if two different ways of writing a command are the same.
 
 :::{.query}
-"Is `here::here("raw", "data.csv")` equivalent to `here::here("raw/data.csv")"?
+"Is `here::here("raw", "data.csv")` equivalent to `here::here("raw/data.csv")`?
 :::
 
 First, let's see what [ChatGPT](https://chat.openai.com/) responded.
@@ -225,7 +225,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-When we first started putting together this course, we had intended to include an answer from [Bard](https://bard.google.com/) that disagreed with the answer from ChatGPT as an example of why it can be helpful to query multiple chatbots. However, when we queried Bard again two weeks later, we were pleasantly surprised to discover that Bard now had the correct answer. Now it's a cool little example of how the chatbots are rapidly improving and "learning" from their mistakes.
+When we first started putting together this course, we had intended to include an answer from [Bard](https://bard.google.com/) that disagreed with the answer from ChatGPT as an example of why it can be helpful to query multiple chatbots. (We decided ChatGPT was correct after verifying its answer in the `here` package documentation.) However, when we queried Bard again two weeks later, we were pleasantly surprised to discover that Bard now had the correct answer. Now it's a cool little example of how the chatbots are rapidly improving and "learning" from their mistakes.
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT generates another way to do the same task."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g230c4a00725_31_84")
