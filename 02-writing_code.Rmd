@@ -259,6 +259,7 @@ Another option is to submit the code snippet that is causing an error to ChatGPT
 :::{.query}
 Can you debug this code?
 
+```
 using System;
 
 class Program
@@ -276,6 +277,7 @@ class Program
         Console.WriteLine("The sum of the numbers is: " + sum);
     }
 }
+```
 :::
 
 :::{.ai_response}
