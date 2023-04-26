@@ -56,17 +56,21 @@ We must always be aware of the potential for harm and deliberately take steps to
 
 Although humans have been interacting with AI chatbots for years, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest in them. We will use a variety of chatbots as examples throughout this course. Some AIs will be better suited for your particular tasks, and it is too early to judge which of the technologies will end up dominating the industry. We encourage you to test multiple AI platforms to find the ones that best fit your needs, and **the use of a particular AI in each chapter should not be taken as an endorsement by us.** 
 
-[Bard](https://bard.google.com/) is Google's large language model, also known as a conversational AI or chatbot trained to be informative and comprehensive. It is trained on a massive amount of text data and is able to communicate and generate human-like text in response to a wide range of prompts and questions. You will need to join the waiting list before getting access, although in our experience the wait time is short.
+**Browser-based chatbots**
 
-[ChatGPT](https://chat.openai.com/) is OpenAI's large language model based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to understand and generate human-like responses to text-based conversations. You will need to create an account before using it.
+* [Bard](https://bard.google.com/) is Google's large language model, also known as a conversational AI or chatbot trained to be informative and comprehensive. It is trained on a massive amount of text data and is able to communicate and generate human-like text in response to a wide range of prompts and questions. You will need to join the waiting list before getting access, although in our experience the wait time is short.
 
-[CodePilot](https://github.com/features/copilot) by Github is a language bot that interfaces with your editor. In addition to providing coding suggestions and speeding up testing, this bot does not offer suggestions that match public code. It's a subscription model with both individual and business tiers.
+* [ChatGPT](https://chat.openai.com/) is OpenAI's large language model based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to understand and generate human-like responses to text-based conversations. You will need to create an account before using it.
 
-[CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
+* [Phind](https://www.phind.com/) is a AI-powered search engine designed specifically for developers asking technical questions. In addition to answering your coding question, it will provide links to the internet sources used to find the answer.
 
-[Phind](https://www.phind.com/) is a AI-powered search engine designed specifically for developers asking technical questions. In addition to answering your coding question, it will provide links to the internet sources used to find the answer.
+* [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and [Ehang's](https://www.ehang.com/) Dragonfly AI platform, which was created to interface with their Dragonfly drone. Poe also gives you access to ChatGPT.
 
-[Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and [Ehang's](https://www.ehang.com/) Dragonfly AI platform, which was created to interface with their Dragonfly drone. Poe also gives you access to ChatGPT.
+**IDE-based chatbots**
+
+* [CodePilot](https://github.com/features/copilot) by GitHub is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. It's a subscription model with both individual and business tiers.
+
+* [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
 
 
 ## About this book
