@@ -4,11 +4,16 @@ As a programmer, you will frequently encounter situations where you need to read
 
 Reading unfamiliar code is like exploring an unfamiliar city without a map or a guide. Just like in a new city, you may not know where to start or how to navigate the codebase. You may encounter unfamiliar syntax, functions, and libraries that you have never seen before, just as you might encounter new streets, buildings, and landmarks. At first, you may feel disoriented and overwhelmed, and may need to spend some time getting oriented and familiarizing yourself with the environment. As you explore, you may start to see patterns and similarities, just as you might begin to recognize neighborhoods and landmarks in a new city. You may also encounter dead-ends, confusing intersections, and unexpected detours, just as you might encounter bugs and errors in the code.
 
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon is holding a map while looking at a forest and says in a speech bubble, 'Where am I?'."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g23a4b1a5015_0_7")
+```
+
 To make progress in this unfamiliar territory, you may need to rely on a combination of intuition, deduction, and experimentation. You may need to break down the code into smaller pieces, analyze the behavior of each piece, and gradually build up a mental model of how the code works. You may also need to consult documentation, online resources, or other experts who are familiar with the codebase, just as you might ask locals or consult a map in a new city.
 
 In the end, with patience, persistence, and a willingness to learn, you can successfully navigate the unfamiliar code and achieve your goals, just as you can successfully explore a new city and discover its hidden treasures. Learning how to read and understand code written by someone else is a valuable skill that can help you be a more effective programmer. By being able to read and comprehend unfamiliar code, you can contribute to projects more quickly, diagnose and fix bugs more effectively, and learn new programming techniques and best practices. As with any skill, the more you practice reading and understanding code written by others, the more comfortable and proficient you will become at it.
 
-## Using AI to understand code
+## AI in Reading Code
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e15d27e55_4_0")
@@ -58,7 +63,7 @@ d_summ <- d_bin %>%
 We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) to explain the purpose of this code.
 
 :::{.query}
-"What does this code do?"
+What does this code do?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data."}
@@ -70,7 +75,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 You can ask for Claude to summarize each step in detail as well.
 
 :::{.query}
-"Can you explain what each step does in detail?"
+Can you explain what each step does in detail?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ."}
@@ -82,7 +87,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 Maybe you've never worked with the tidyverse package in R - Claude can tell you about it.
 
 :::{.query}
-"What is the tidyverse package?"
+What is the tidyverse package?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management."}
@@ -94,7 +99,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 You might also not be familiar with the diamonds dataset (especially if you've never used it before) and want some clarification on where the data are from.
 
 :::{.query}
-"Can you tell me more about the diamonds dataset?"
+Can you tell me more about the diamonds dataset?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes."}
@@ -164,7 +169,7 @@ end;
 We can ask [Bard](https://bard.google.com/) to take a guess at what the coding language might be.
 
 :::{.query}
-"What language is this code written in?"
+What language is this code written in?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal."}
@@ -176,7 +181,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 We can explore further to figure out what indicators tell Bard the language is Pascal.
 
 :::{.query}
-"How do you know this is Pascal?"
+How do you know this is Pascal?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains that many of the keywords and clauses are common to Pascal syntax."}
@@ -188,7 +193,7 @@ ottrpal::include_slide("hhttps://docs.google.com/presentation/d/1MCNeSO4aOm1iESW
 It turns out there are multiple versions of Pascal. Since you will presumably need to work with this legacy code, you might want to know which version it is.
 
 :::{.query}
-"What version of Pascal is this?"
+What version of Pascal is this?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0"}
@@ -208,7 +213,7 @@ x = sub("/d/e","/d",x)
 ```
 
 :::{.query}
-"What does this do?"
+What does this do?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT explains this code replaces the substring /d/e with the substring /d."}
@@ -231,7 +236,7 @@ def my_function(x):
 ```
 
 :::{.query}
-"What does this function do?"
+What does this function do?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT explains the math operations being done on variable x by this complex looped function."}
@@ -242,7 +247,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 Well, now you have an idea what past-you might have been attempting to do with this code. You can also query AI about the potential problems from using the code as-written.
 
 :::{.query}
-"What are some possible issues with this code?"
+What are some possible issues with this code?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function."}
@@ -251,16 +256,15 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-(And if you do ever run across an expression like this in your code, you can check out our chapter on refactoring code using AI to fix it!)
+(And if you do ever run across an expression like this in your code, you can check out our chapter on [refactoring code](https://hutchdatascience.org/AI_for_software/refactoring-code.html#refactoring-code) using AI to fix it!)
 
 
-## Example Five: Deciphering Comments
-
-
-## Hands-On Exercise [WORK IN PROGRESS]
+## Hands-On Exercise 
 
 Now it's your turn to try. Let's say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what's going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.
 
+
+### The Code
 **Note**: This code is just an example and was written strictly for educational purposes.
 
 ```
@@ -333,60 +337,22 @@ fn main() {
             data1.iter().map(|d|
 ```
 
-**QUESTIONS:**
+### Questions
 
-1. What language is the code written in?
+1. Craft a query that identifies the features that can be used to determine the coding language, as well as the version of the language.
 
-1. What are two clues that tell you the language?
+1. Create a prompt that determines what this code does, as well as important features of the program.
 
-1. What version of the language is it?
-
-1. What is the overall task this code does?
-
-1. ANOTHER QUESTION??? 
-
-1. What does this code snippet do?
+1. Write a prompt that determines the purpose of this specific code snippet:
 
 ```
  let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
 ```
 
-7. Why would a programmer set up a section of code like this?
+## Summary
 
-```
-fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {
-    let s = y[0];
-    let i = y[1];
-    let r = y[2];
-    let dsdt = -BETA * s * i / N - v * s;
-    let didt = BETA * s * i / N - GAMMA * i;
-    let drdt = GAMMA * i + v * s;
-    vec![dsdt, didt, drdt]
-}
-```
+* Understanding code written by someone else can be made easier by using AI
+* AI chatbots can summarize the code and the dataset used, as well as clarify functions and expressions that are confusing
+* AI chatbots can also identify the coding language and version used in legacy code
+* Be mindful of who owns the code and what the summary will be used for when using AI to summarize someone else's code
 
-8. How are these variables initialized?
-
-```
-let s = y[0];
-let i = y[1];
-let r = y[2];
-```
-
-9. What are some other variables that could be added to this command to customize the output?
-
-```
-  chart
-        .configure_mesh()
-        .x_labels(10)
-        .y_labels(10)
-        .disable_x_mesh()
-        .disable_y_mesh()
-        .draw()
-        .unwrap();
-```
-
-
-```{r}
-devtools::session_info()
-```
