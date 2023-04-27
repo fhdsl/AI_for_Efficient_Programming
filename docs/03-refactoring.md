@@ -52,7 +52,7 @@ main()
 We get the error above because our indentation is off. Let's ask [ChatGPT](https://chat.openai.com) to clean things up.
 
 :::{.query}
-"Can you assist me with correcting the formatting and indentation issues in my Python code?"
+Can you assist me with correcting the formatting and indentation issues in my Python code?
 :::
 
 :::{.ai_response}
@@ -116,7 +116,7 @@ c(a, b, c)
 This code does not produce any errors, but it doesn't follow typical R convention. Let's ask ChatGPT to clean things up.
 
 :::{.query}
-"Can you help me reformat my R code to follow accepted style conventions?"
+Can you help me reformat my R code to follow accepted style conventions?
 :::
 
 :::{.ai_response}
@@ -147,7 +147,7 @@ d <- c(rep(a,5),rep(b,5),rep(c,5),paste(a,b,c),paste(c,b,a))
 This code is pretty hard to read. Let's see if AI can do better.
 
 :::{.query}
-"Can you space out this R code to make it more readable?"
+Can you space out this R code to make it more readable?
 :::
 
 :::{.ai_response}
@@ -195,7 +195,7 @@ print_greetings()
 Notice how repetitive this code is? `print()` and the string `"Hello, "` appear five times. We can improve this!
 
 :::{.query}
-"Could you please refactor my Python code to make it more DRY?"
+Could you please refactor my Python code to make it more DRY?
 :::
 
 :::{.ai_response}
@@ -291,7 +291,7 @@ if __name__ == '__main__':
 Some of these functions aren't used in the final step, typically defined in python as the `main()` function. Let's ask AI to remove them.
 
 :::{.query}
-"I need help with eliminating unused functions in my Python script."
+I need help with eliminating unused functions in my Python script.
 :::
 
 :::{.ai_response}
@@ -327,7 +327,7 @@ if __name__ == '__main__':
 Great! Now our code is much more manageable. This code only includes the necessary functions needed to run the `main()` function. We can go a step further!
 
 :::{.query}
-"Can you help me refactor my python code to make it more concise?"
+Can you help me refactor my python code to make it more concise?
 :::
 
 :::{.ai_response}
@@ -373,7 +373,7 @@ for(term in c("good","bad","ugly")){
 Let's see if AI can do better.
 
 :::{.query}
-"Can you help me clean up this R code so it is more readable?"
+Can you help me clean up this R code so it is more readable?
 :::
 
 :::{.ai_response}
@@ -466,7 +466,7 @@ for (type in unique(CO2$Type)) {
 Let's see if AI has any ideas for making it more concise.
 
 :::{.query}
-"Can you make this code more concise?"
+Can you make this code more concise?
 :::
 
 :::{.ai_response}
@@ -536,11 +536,11 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##  13.996   0.000  13.997
+##  12.609   0.004  12.616
 ```
 
 :::{.query}
-"What is a faster, more optimized way of running the following R code?"
+What is a faster, more optimized way of running the following R code?
 :::
 
 :::{.ai_response}
@@ -564,7 +564,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.738   0.387   0.748
+##   0.798   0.424   0.830
 ```
 
 The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
@@ -592,7 +592,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.348   0.340   0.435
+##   0.418   0.377   0.504
 ```
 
 One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
@@ -711,3 +711,12 @@ print(df)
 
 1. Construct a prompt that makes the code more concise. What are some trade-offs that appear in this code between readability and brevity?
 
+## Summary
+
+- Code refactoring is the process of improving code quality without changing its functionality. It is crucial in software development to maintain a manageable and adaptable codebase.
+
+- Code refactoring reduces technical debt, improves code stability, and makes it easier to maintain.
+
+- Examples of using AI for code refactoring include correcting syntax, adhering to styling and convention, visual styling, avoiding repetition, removing dead code, and improving both readability and speed of execution (optimization).
+
+- The use of AI for code refactoring raises ethical concerns and is not perfect. It is important for the developer to consider security needs of their code, as well as test out their code.

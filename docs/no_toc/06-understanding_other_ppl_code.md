@@ -4,11 +4,14 @@ As a programmer, you will frequently encounter situations where you need to read
 
 Reading unfamiliar code is like exploring an unfamiliar city without a map or a guide. Just like in a new city, you may not know where to start or how to navigate the codebase. You may encounter unfamiliar syntax, functions, and libraries that you have never seen before, just as you might encounter new streets, buildings, and landmarks. At first, you may feel disoriented and overwhelmed, and may need to spend some time getting oriented and familiarizing yourself with the environment. As you explore, you may start to see patterns and similarities, just as you might begin to recognize neighborhoods and landmarks in a new city. You may also encounter dead-ends, confusing intersections, and unexpected detours, just as you might encounter bugs and errors in the code.
 
+
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23a4b1a5015_0_7.png" title="The dinosaur cartoon is holding a map while looking at a forest and says in a speech bubble, 'Where am I?'." alt="The dinosaur cartoon is holding a map while looking at a forest and says in a speech bubble, 'Where am I?'." width="100%" style="display: block; margin: auto;" />
+
 To make progress in this unfamiliar territory, you may need to rely on a combination of intuition, deduction, and experimentation. You may need to break down the code into smaller pieces, analyze the behavior of each piece, and gradually build up a mental model of how the code works. You may also need to consult documentation, online resources, or other experts who are familiar with the codebase, just as you might ask locals or consult a map in a new city.
 
 In the end, with patience, persistence, and a willingness to learn, you can successfully navigate the unfamiliar code and achieve your goals, just as you can successfully explore a new city and discover its hidden treasures. Learning how to read and understand code written by someone else is a valuable skill that can help you be a more effective programmer. By being able to read and comprehend unfamiliar code, you can contribute to projects more quickly, diagnose and fix bugs more effectively, and learn new programming techniques and best practices. As with any skill, the more you practice reading and understanding code written by others, the more comfortable and proficient you will become at it.
 
-## Using AI to understand code
+## AI in Reading Code
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e15d27e55_4_0.png" title="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." alt="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." width="100%" style="display: block; margin: auto;" />
 
@@ -56,7 +59,7 @@ d_summ <- d_bin %>%
 We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) to explain the purpose of this code.
 
 :::{.query}
-"What does this code do?"
+What does this code do?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_22_0.png" title="The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data." alt="The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data." width="100%" style="display: block; margin: auto;" />
@@ -66,7 +69,7 @@ We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by
 You can ask for Claude to summarize each step in detail as well.
 
 :::{.query}
-"Can you explain what each step does in detail?"
+Can you explain what each step does in detail?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_5.png" title="The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ." alt="The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ." width="100%" style="display: block; margin: auto;" />
@@ -76,7 +79,7 @@ You can ask for Claude to summarize each step in detail as well.
 Maybe you've never worked with the tidyverse package in R - Claude can tell you about it.
 
 :::{.query}
-"What is the tidyverse package?"
+What is the tidyverse package?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_14.png" title="The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management." alt="The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management." width="100%" style="display: block; margin: auto;" />
@@ -86,7 +89,7 @@ Maybe you've never worked with the tidyverse package in R - Claude can tell you 
 You might also not be familiar with the diamonds dataset (especially if you've never used it before) and want some clarification on where the data are from.
 
 :::{.query}
-"Can you tell me more about the diamonds dataset?"
+Can you tell me more about the diamonds dataset?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_20.png" title="Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes." alt="Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes." width="100%" style="display: block; margin: auto;" />
@@ -154,7 +157,7 @@ end;
 We can ask [Bard](https://bard.google.com/) to take a guess at what the coding language might be.
 
 :::{.query}
-"What language is this code written in?"
+What language is this code written in?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_46.png" title="According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal." alt="According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal." width="100%" style="display: block; margin: auto;" />
@@ -164,7 +167,7 @@ We can ask [Bard](https://bard.google.com/) to take a guess at what the coding l
 We can explore further to figure out what indicators tell Bard the language is Pascal.
 
 :::{.query}
-"How do you know this is Pascal?"
+How do you know this is Pascal?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_50.png" title="Bard explains that many of the keywords and clauses are common to Pascal syntax." alt="Bard explains that many of the keywords and clauses are common to Pascal syntax." width="100%" style="display: block; margin: auto;" />
@@ -174,7 +177,7 @@ We can explore further to figure out what indicators tell Bard the language is P
 It turns out there are multiple versions of Pascal. Since you will presumably need to work with this legacy code, you might want to know which version it is.
 
 :::{.query}
-"What version of Pascal is this?"
+What version of Pascal is this?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_39.png" title="Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0" alt="Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0" width="100%" style="display: block; margin: auto;" />
@@ -192,7 +195,7 @@ x = sub("/d/e","/d",x)
 ```
 
 :::{.query}
-"What does this do?"
+What does this do?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_6_4.png" title="ChatGPT explains this code replaces the substring /d/e with the substring /d." alt="ChatGPT explains this code replaces the substring /d/e with the substring /d." width="100%" style="display: block; margin: auto;" />
@@ -214,7 +217,7 @@ def my_function(x):
 ```
 
 :::{.query}
-"What does this function do?"
+What does this function do?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_170.png" title="ChatGPT explains the math operations being done on variable x by this complex looped function." alt="ChatGPT explains the math operations being done on variable x by this complex looped function." width="100%" style="display: block; margin: auto;" />
@@ -223,7 +226,7 @@ def my_function(x):
 Well, now you have an idea what past-you might have been attempting to do with this code. You can also query AI about the potential problems from using the code as-written.
 
 :::{.query}
-"What are some possible issues with this code?"
+What are some possible issues with this code?
 :::
 
 <img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_176.png" title="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." alt="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." width="100%" style="display: block; margin: auto;" />
@@ -233,13 +236,12 @@ Well, now you have an idea what past-you might have been attempting to do with t
 (And if you do ever run across an expression like this in your code, you can check out our chapter on [refactoring code](https://hutchdatascience.org/AI_for_software/refactoring-code.html#refactoring-code) using AI to fix it!)
 
 
-## Example Five: Deciphering Comments
-
-
-## Hands-On Exercise [WORK IN PROGRESS]
+## Hands-On Exercise 
 
 Now it's your turn to try. Let's say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what's going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.
 
+
+### The Code
 **Note**: This code is just an example and was written strictly for educational purposes.
 
 ```
@@ -312,141 +314,22 @@ fn main() {
             data1.iter().map(|d|
 ```
 
-**QUESTIONS:**
+### Questions
 
-1. What language is the code written in?
+1. Craft a query that identifies the features that can be used to determine the coding language, as well as the version of the language.
 
-1. What are two clues that tell you the language?
+1. Create a prompt that determines what this code does, as well as important features of the program.
 
-1. What version of the language is it?
-
-1. What is the overall task this code does?
-
-1. ANOTHER QUESTION??? 
-
-1. What does this code snippet do?
+1. Write a prompt that determines the purpose of this specific code snippet:
 
 ```
  let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
 ```
 
-7. Why would a programmer set up a section of code like this?
+## Summary
 
-```
-fn sir_model(t: f64, y: &[f64], v: f64) -> Vec<f64> {
-    let s = y[0];
-    let i = y[1];
-    let r = y[2];
-    let dsdt = -BETA * s * i / N - v * s;
-    let didt = BETA * s * i / N - GAMMA * i;
-    let drdt = GAMMA * i + v * s;
-    vec![dsdt, didt, drdt]
-}
-```
+* Understanding code written by someone else can be made easier by using AI
+* AI chatbots can summarize the code and the dataset used, as well as clarify functions and expressions that are confusing
+* AI chatbots can also identify the coding language and version used in legacy code
+* Be mindful of who owns the code and what the summary will be used for when using AI to summarize someone else's code
 
-8. How are these variables initialized?
-
-```
-let s = y[0];
-let i = y[1];
-let r = y[2];
-```
-
-9. What are some other variables that could be added to this command to customize the output?
-
-```
-  chart
-        .configure_mesh()
-        .x_labels(10)
-        .y_labels(10)
-        .disable_x_mesh()
-        .disable_y_mesh()
-        .draw()
-        .unwrap();
-```
-
-
-
-```r
-devtools::session_info()
-```
-
-```
-## ─ Session info ───────────────────────────────────────────────────────────────
-##  setting  value                       
-##  version  R version 4.0.2 (2020-06-22)
-##  os       Ubuntu 20.04.5 LTS          
-##  system   x86_64, linux-gnu           
-##  ui       X11                         
-##  language (EN)                        
-##  collate  en_US.UTF-8                 
-##  ctype    en_US.UTF-8                 
-##  tz       Etc/UTC                     
-##  date     2023-04-26                  
-## 
-## ─ Packages ───────────────────────────────────────────────────────────────────
-##  package     * version date       lib source                            
-##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
-##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
-##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
-##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
-##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
-##  curl          4.3     2019-12-02 [1] RSPM (R 4.0.3)                    
-##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
-##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
-##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
-##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
-##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
-##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
-##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
-##  here          1.0.1   2020-12-13 [1] CRAN (R 4.0.2)                    
-##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
-##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  httr          1.4.2   2020-07-20 [1] RSPM (R 4.0.3)                    
-##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
-##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
-##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
-##  lattice       0.20-41 2020-04-02 [2] CRAN (R 4.0.2)                    
-##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
-##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
-##  Matrix        1.2-18  2019-11-27 [2] CRAN (R 4.0.2)                    
-##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
-##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
-##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
-##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
-##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
-##  png           0.1-8   2022-11-29 [1] CRAN (R 4.0.2)                    
-##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
-##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
-##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
-##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
-##  rappdirs      0.3.3   2021-01-31 [1] CRAN (R 4.0.2)                    
-##  Rcpp          1.0.10  2023-01-22 [1] CRAN (R 4.0.2)                    
-##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
-##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
-##  reticulate    1.28    2023-01-27 [1] CRAN (R 4.0.2)                    
-##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
-##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
-##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
-##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
-##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
-##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
-##  stringr       1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
-##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
-##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
-##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
-##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
-##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  withr         2.3.0   2020-09-22 [1] RSPM (R 4.0.2)                    
-##  xfun          0.26    2023-03-28 [1] Github (yihui/xfun@74c2a66)       
-##  yaml          2.2.1   2020-02-01 [1] RSPM (R 4.0.3)                    
-## 
-## [1] /usr/local/lib/R/site-library
-## [2] /usr/local/lib/R/library
-```

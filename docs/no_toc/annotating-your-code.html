@@ -117,6 +117,28 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/style_custom.css" type="text/css" />
@@ -182,6 +204,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.10.1" data-path="refactoring-code.html"><a href="refactoring-code.html#the-code"><i class="fa fa-check"></i><b>3.10.1</b> The Code</a></li>
 <li class="chapter" data-level="3.10.2" data-path="refactoring-code.html"><a href="refactoring-code.html#questions"><i class="fa fa-check"></i><b>3.10.2</b> Questions</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="refactoring-code.html"><a href="refactoring-code.html#summary"><i class="fa fa-check"></i><b>3.11</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="annotating-your-code.html"><a href="annotating-your-code.html"><i class="fa fa-check"></i><b>4</b> Annotating Your Code</a>
 <ul>
@@ -203,23 +226,28 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.6.4" data-path="annotating-your-code.html"><a href="annotating-your-code.html#style-the-code"><i class="fa fa-check"></i><b>4.6.4</b> Style the code</a></li>
 <li class="chapter" data-level="4.6.5" data-path="annotating-your-code.html"><a href="annotating-your-code.html#sometimes-it-has-trouble-with-file-types-if-given-a-url"><i class="fa fa-check"></i><b>4.6.5</b> Sometimes it has trouble with file types if given a URL</a></li>
 </ul></li>
-<li class="chapter" data-level="4.7" data-path="annotating-your-code.html"><a href="annotating-your-code.html#summary"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+<li class="chapter" data-level="4.7" data-path="annotating-your-code.html"><a href="annotating-your-code.html#summary-1"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html"><i class="fa fa-check"></i><b>5</b> Understanding Unfamiliar Code</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#using-ai-to-understand-code"><i class="fa fa-check"></i><b>5.1</b> Using AI to understand code</a></li>
+<li class="chapter" data-level="5.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#ai-in-reading-code"><i class="fa fa-check"></i><b>5.1</b> AI in Reading Code</a></li>
 <li class="chapter" data-level="5.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-one-summarizing-code-you-didnt-write"><i class="fa fa-check"></i><b>5.2</b> Example One: Summarizing Code You Didn’t Write</a></li>
 <li class="chapter" data-level="5.3" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-two-identifying-a-coding-language"><i class="fa fa-check"></i><b>5.3</b> Example Two: Identifying a Coding Language</a></li>
 <li class="chapter" data-level="5.4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-three-interpreting-regex"><i class="fa fa-check"></i><b>5.4</b> Example Three: Interpreting Regex</a></li>
 <li class="chapter" data-level="5.5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-four-demystifying-functions"><i class="fa fa-check"></i><b>5.5</b> Example Four: Demystifying Functions</a></li>
-<li class="chapter" data-level="5.6" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-five-deciphering-comments"><i class="fa fa-check"></i><b>5.6</b> Example Five: Deciphering Comments</a></li>
-<li class="chapter" data-level="5.7" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-work-in-progress"><i class="fa fa-check"></i><b>5.7</b> Hands-On Exercise [WORK IN PROGRESS]</a></li>
+<li class="chapter" data-level="5.6" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-1"><i class="fa fa-check"></i><b>5.6</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#the-code-1"><i class="fa fa-check"></i><b>5.6.1</b> The Code</a></li>
+<li class="chapter" data-level="5.6.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#questions-1"><i class="fa fa-check"></i><b>5.6.2</b> Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#summary-2"><i class="fa fa-check"></i><b>5.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#programming-languages"><i class="fa fa-check"></i>Programming Languages</a></li>
 <li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#ai-and-cloud-computing"><i class="fa fa-check"></i>AI and Cloud Computing</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
 <p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
@@ -476,14 +504,14 @@ I hope this helps!</code></pre>
 <p>This was a nice tool to recommend, however it still told me I should add my own annotations at the end of this.</p>
 </div>
 </div>
-<div id="summary" class="section level2" number="4.7">
+<div id="summary-1" class="section level2" number="4.7">
 <h2><span class="header-section-number">4.7</span> Summary</h2>
 <ul>
 <li>Code annotation is important for readability, maintainability, and overall quality of code</li>
 <li>AI can be a helpful tool for supplementing annotations or creating annotation for poorly annotated code.</li>
 <li>Ultimately the code author who uses AI as a tool for annotation is still ultimately responsible for verifying that the annotations are consistent with their knowledge of the code.</li>
 </ul>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="annotating-your-code.html#cb61-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="annotating-your-code.html#cb59-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
 <pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
 ##  setting  value                       
 ##  version  R version 4.0.2 (2020-06-22)
@@ -494,7 +522,7 @@ I hope this helps!</code></pre>
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-04-26                  
+##  date     2023-04-27                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
