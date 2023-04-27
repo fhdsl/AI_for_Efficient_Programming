@@ -82,7 +82,7 @@ What are the data sources for these chatbots? Some high-profile English-language
 
 ## About this book
 
-We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human behind it to make sure that AI is used properly and transparently.
+This book is written with the expectation that users will follow along and paste the queries from each example into their own AI chatbot session. After you have finished this book, you will be able to use whichever combination of chatbot and programming environment (e.g., an environment on your own computer, one on a high performance computational cluster, or an environment on a cloud computing platform) that you're comfortable using. If you'd like to learn more about how AI can be integrated with cloud computing, you can read about it in the Appendix.
 
 Throughout this course, you will see two types of specially-colored boxes. One box highlights potential ethical issues with an AI usage.
 
@@ -108,5 +108,6 @@ Code in these boxes was written by AI.
 
 
 
-Finally, we want to reiterate a point we made above: **the use of a particular AI should not be taken as an endorsement by us.** 
+We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human behind it to make sure that AI is used properly and transparently.
 
+Finally, we want to reiterate a point we made above: **the use of a particular AI should not be taken as an endorsement by us.** 
