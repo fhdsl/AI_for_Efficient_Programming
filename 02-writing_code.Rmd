@@ -40,8 +40,6 @@ As AI continues to evolve, it is likely to have an even greater impact on the wa
 
 :::{.ethics}
 **As a programmer using AI, it is up to you to be responsible for what you create.** You must rigorously test any code you write. It is your job to make sure any code you create with AI is not malicious and works as expected.
-
-You must also take care that you are only using code that you're authorized to use. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).
 :::
 
 ## Tips for Coding with AI
@@ -410,6 +408,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ```
 
 
+:::{.ethics}
+You should always take care that you are only using code that you're authorized to use when writing code. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).
+:::
 
 ## Example Five: Planning Your Program
 
