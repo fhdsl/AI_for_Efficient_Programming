@@ -6,13 +6,13 @@ ottrpal::set_knitr_image_path()
 # Introduction
 
 
-The increasing availability of AI chatbots is creating a new landscape in software development. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone and limits harm as much as possible.
+The increasing availability of AI chatbots is creating a new landscape in data science. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone and limits harm as much as possible.
 
-On the one hand, AI chatbots have the potential to replace or significantly reduce the workload of programmers. This could lead to job losses in the software development industry. Additionally, there are significant ethical and privacy concerns regarding the use of training data sets to teach these AI systems. For example, if a chatbot is trained on a dataset of biased or discriminatory data, it could perpetuate those biases in its interactions with users.
+On the one hand, AI chatbots have the potential to replace or significantly reduce the workload of programmers. This could lead to job losses in the data science industry. Additionally, there are significant ethical and privacy concerns regarding the use of training data sets to teach these AI systems. For example, if a chatbot is trained on a dataset of biased or discriminatory data, it could perpetuate those biases in its interactions with users.
 
-On the other hand, AI chatbots also have the potential to create new jobs and opportunities in the software development industry. For example, chatbot developers will be needed to create and maintain these AI systems. Additionally, AI chatbots could be used to automate tasks that are currently done by humans, freeing up programmers to focus on more creative and strategic work.
+On the other hand, AI chatbots also have the potential to create new jobs and opportunities. For example, chatbot developers will be needed to create and maintain these AI systems. Additionally, AI chatbots could be used to automate tasks that are currently done by humans, freeing up programmers to focus on more creative and strategic work of interpreting what the data actually mean.
 
-Ultimately, while the future of software development is unclear, there is much to be optimistic about in this brave new world. The advancements in AI and chatbot technology present an opportunity for programmers to work alongside algorithms to create innovative solutions that were previously unimaginable. As with any technological revolution, there will be challenges, but it is up to us to work together to ensure that we use these tools ethically and responsibly, and to create a future that benefits everyone.
+Ultimately, while the future of programming in data science is unclear, there is much to be optimistic about in this brave new world. The advancements in AI and chatbot technology present an opportunity for programmers to work alongside algorithms to create innovative solutions that were previously unimaginable. As with any technological revolution, there will be challenges, but it is up to us to work together to ensure that we use these tools ethically and responsibly, and to create a future that benefits everyone.
 
 ## AI provides new opportunities
 
@@ -21,23 +21,23 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ```
 
 
-We do not believe that AI chatbots will replace software developers. While AI can be powerful and useful, it is only as good as the training data behind it and the human using it. Therefore, for the time being and the foreseeable future, humans will remain at the forefront of programming innovation, with AI providing valuable support. As new code is often built on top of existing code written by humans, it is unlikely that AI will fully replace the need for human programmers.
+We do not believe that AI chatbots will replace programmers and data scientists. While AI can be powerful and useful, it is only as good as the training data behind it and the human using it. Therefore, for the time being and the foreseeable future, humans will remain at the forefront of programming innovation, with AI providing valuable support. As new code is often built on top of existing code written by humans, it is unlikely that AI will fully replace the need for human programmers.
 
-However, we _do_ think that the roles of programmers in software development are changing, and some of the skills required to work in this new environment are slightly different from those needed before. In addition to proficiency in programming syntax, programmers may need to develop a more refined ability to construct queries that enable AI bots to create the desired workflows. Other critical skills such as debugging, troubleshooting, and documentation will continue to be valuable, and can be enhanced through the use of AI.
+However, we _do_ think that the roles of programmers in data science are changing, and some of the skills required to work in this new environment are slightly different from those needed before. In addition to proficiency in programming syntax, programmers may need to develop a more refined ability to construct queries that enable AI bots to create the desired workflows. Other critical skills such as debugging, troubleshooting, and documentation will continue to be valuable, and can be enhanced through the use of AI.
 
 Furthermore, AI creates new opportunities and niches for tasks that were previously difficult, time-consuming, or impossible. This is an exciting time for those working in programming, with great potential to explore new and innovative solutions. As AI technology continues to advance, its role in programming will only become more significant, and it is up to developers to adapt and learn how to use these new tools effectively.
 
 ::: {.reflection}
 
-We asked OpenAI's ChatGPT whether AI chatbots would replace human software developers and programmers, and this was the response:
+We asked OpenAI's ChatGPT whether AI chatbots would replace human data scientists and programmers, and this was the response:
 
-"No, ChatGPT is not replacing human software developers and programmers. While ChatGPT is capable of generating code, it is not a substitute for the skills and expertise of human programmers.
+"It is unlikely that AI chatbots will replace data scientists and programmers entirely. While AI chatbots can perform certain tasks related to data analysis and programming, they are limited in their abilities and require human oversight and input to function properly.
 
-Software development is a complex process that requires a deep understanding of programming languages, algorithms, and software design principles. Human programmers have the ability to not only write code, but also to understand the nuances of different programming languages and frameworks, debug code, and optimize performance.
+AI chatbots are designed to automate certain tasks and provide quick answers to commonly asked questions. They can also perform simple data analysis and make recommendations based on that analysis. However, more complex data analysis and programming tasks require a level of creativity, critical thinking, and problem-solving that AI chatbots cannot currently replicate.
 
-Furthermore, programming is not just about writing code - it also involves understanding and translating business requirements into technical solutions, collaborating with other team members, and maintaining code over time.
+Furthermore, data scientists and programmers have a deep understanding of the technologies and tools used to develop AI chatbots, as well as the ability to optimize and improve those tools. As AI technology advances, it is likely that data scientists and programmers will play an even greater role in developing and improving these systems.
 
-While ChatGPT can be used to automate certain aspects of software development, it cannot replace the creativity, problem-solving skills, and domain expertise of human software developers and programmers."
+In summary, while AI chatbots can provide valuable assistance to data scientists and programmers, they are unlikely to replace them entirely. Human expertise will continue to be essential in developing and optimizing AI systems for the foreseeable future.
 :::
 
 ## AI code of ethics
