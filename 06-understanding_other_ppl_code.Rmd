@@ -63,7 +63,7 @@ d_summ <- d_bin %>%
 We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Poe) to explain the purpose of this code.
 
 :::{.query}
-"What does this code do?"
+What does this code do?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data."}
@@ -75,7 +75,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 You can ask for Claude to summarize each step in detail as well.
 
 :::{.query}
-"Can you explain what each step does in detail?"
+Can you explain what each step does in detail?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ."}
@@ -87,7 +87,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 Maybe you've never worked with the tidyverse package in R - Claude can tell you about it.
 
 :::{.query}
-"What is the tidyverse package?"
+What is the tidyverse package?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management."}
@@ -99,7 +99,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 You might also not be familiar with the diamonds dataset (especially if you've never used it before) and want some clarification on where the data are from.
 
 :::{.query}
-"Can you tell me more about the diamonds dataset?"
+Can you tell me more about the diamonds dataset?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes."}
@@ -169,7 +169,7 @@ end;
 We can ask [Bard](https://bard.google.com/) to take a guess at what the coding language might be.
 
 :::{.query}
-"What language is this code written in?"
+What language is this code written in?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal."}
@@ -181,7 +181,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 We can explore further to figure out what indicators tell Bard the language is Pascal.
 
 :::{.query}
-"How do you know this is Pascal?"
+How do you know this is Pascal?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains that many of the keywords and clauses are common to Pascal syntax."}
@@ -193,7 +193,7 @@ ottrpal::include_slide("hhttps://docs.google.com/presentation/d/1MCNeSO4aOm1iESW
 It turns out there are multiple versions of Pascal. Since you will presumably need to work with this legacy code, you might want to know which version it is.
 
 :::{.query}
-"What version of Pascal is this?"
+What version of Pascal is this?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0"}
@@ -213,7 +213,7 @@ x = sub("/d/e","/d",x)
 ```
 
 :::{.query}
-"What does this do?"
+What does this do?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT explains this code replaces the substring /d/e with the substring /d."}
@@ -236,7 +236,7 @@ def my_function(x):
 ```
 
 :::{.query}
-"What does this function do?"
+What does this function do?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT explains the math operations being done on variable x by this complex looped function."}
@@ -247,7 +247,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 Well, now you have an idea what past-you might have been attempting to do with this code. You can also query AI about the potential problems from using the code as-written.
 
 :::{.query}
-"What are some possible issues with this code?"
+What are some possible issues with this code?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function."}
@@ -356,7 +356,3 @@ fn main() {
 * AI chatbots can also identify the coding language and version used in legacy code
 * Be mindful of who owns the code and what the summary will be used for when using AI to summarize someone else's code
 
-
-```{r}
-devtools::session_info()
-```
