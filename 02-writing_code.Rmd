@@ -254,7 +254,7 @@ In this case, the str() function converts the integer age to a string before con
 
 ChatGPT helpfully explains what TypeError means, what causes it, and how to fix it. This is quite useful when you don't understand the error message.
 
-Another option is to submit the code snippet that is causing an error to ChatGPT directly and ask for it to fix the mistake. (If you choose to go this route, make sure you're giving a snippet of code at a time and not the entire massive program.) Here's another buggy code snippet, this time in C#. 
+Another option is to submit the code snippet that is causing an error to ChatGPT directly and ask for it to fix the mistake. Here's another buggy code snippet, this time in C#. 
 
 :::{.query}
 Can you debug this code?
@@ -494,14 +494,20 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
+## Hands On Exercise 
+
+1. Write a prompt to create a function 
+
+1. Write a prompt to plan out a program that creates and plays a 
 
 ## Summary
 
-* AI can increase the efficiency of planning, writing, and debugging code
-* The user needs to be specific and patient while querying AI on code writing tasks, start with simple tasks, and also needs to test everything
+* Coding has become an essential skill in today's world. AI can increase the efficiency of planning, writing, and debugging code, as well as make coding more accessible for beginners.
+* Querying AI on code writing tasks requires patience. AI cannot read your mind, and users need to be both specific and patient when asking for coding help. 
+* It is essential to test all AI-written code while in development, since inadequate testing could lead to low quality, buggy code.
 * A programmer is responsible for what they create while coding with AI, even if AI writes the actual code. 
 
-## Hands On Exercise 
+
 
 
 
