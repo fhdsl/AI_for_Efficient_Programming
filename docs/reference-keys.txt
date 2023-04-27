@@ -45,10 +45,12 @@ style-the-code
 sometimes-it-has-trouble-with-file-types-if-given-a-url
 summary-1
 understanding-unfamiliar-code
-using-ai-to-understand-code
+ai-in-reading-code
 example-one-summarizing-code-you-didnt-write
 example-two-identifying-a-coding-language
 example-three-interpreting-regex
 example-four-demystifying-functions
-example-five-deciphering-comments
-hands-on-exercise-work-in-progress
+hands-on-exercise-1
+the-code-1
+questions-1
+summary-2
