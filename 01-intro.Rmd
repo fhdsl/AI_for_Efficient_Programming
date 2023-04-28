@@ -58,7 +58,9 @@ We must always be aware of the potential for harm and deliberately take steps to
 
 ## The AI Chatbots
 
-Although humans have been interacting with AI chatbots for years, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest in them. 
+Although humans have been interacting with AI chatbots for years, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest in them. Large language model AIs can be divided into two categories: those that can be reached using an internet browser, and those that can be reached using an integrated development environment (IDE).
+
+This is not a comprehensive list! New AI chatbots are being announced practically every week, so it can be hard to keep up with all the options.
 
 **Browser-based chatbots**
 
@@ -74,7 +76,7 @@ Although humans have been interacting with AI chatbots for years, the popularity
 
 * [CodePilot](https://github.com/features/copilot) by GitHub is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. It's a subscription model with both individual and business tiers.
 
-* [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
+* [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your IDE using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
 
 :::{.reflection}
 What are the data sources for these chatbots? Some high-profile English-language AIs, including Google’s T5 and Facebook’s LLaMA, were trained on more than 15 million websites [@washingtonpost2023]. The top sources of training data for these AI models were https://patents.google.com/ and https://www.wikipedia.org/ ! 
