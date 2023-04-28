@@ -5,7 +5,6 @@ ottrpal::set_knitr_image_path()
 
 # Introduction
 
-
 The increasing availability of AI chatbots is creating a new landscape in software development and data science. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone and limits harm as much as possible.
 
 On the one hand, AI chatbots have the potential to replace or significantly reduce the workload of programmers. This could lead to job losses in the data science industry. Additionally, there are significant ethical and privacy concerns regarding the use of training data sets to teach these AI systems. For example, if a chatbot is trained on a dataset of biased or discriminatory data, it could perpetuate those biases in its interactions with users.
@@ -19,7 +18,6 @@ Ultimately, while the future of programming in software development and data sci
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_67")
 ```
-
 
 We do not believe that AI chatbots will replace programmers, software developers, and data scientists. While AI can be powerful and useful, it is only as good as the training data behind it and the human using it. Therefore, for the time being and the foreseeable future, humans will remain at the forefront of programming innovation, with AI providing valuable support. As new code is often built on top of existing code written by humans, it is unlikely that AI will fully replace the need for human programmers.
 
@@ -100,7 +98,7 @@ In addition to the CodeWhisperer chatbot available on the AWS cloud platform, a 
 
 ### Boxes
 
-Throughout this course, you will see two types of specially-colored boxes. One box highlights potential ethical issues with an AI usage.
+Throughout this course, you will see several types of specially-colored boxes. In particular, there are two to which you should pay special attention. One box highlights potential ethical issues with an AI usage.
 
 :::{.ethics}
 In this box, you'll find reminders of the ethical considerations you should be particularly aware of while using AI to do certain tasks. 
