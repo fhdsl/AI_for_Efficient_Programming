@@ -516,6 +516,8 @@ average = calculate_average(numbers)
 print("The average of the numbers is:", average)
 ```
 
+### Questions
+
 1. Write a prompt to create a function that replaces all instances of the string "three" with the number 3, then create a prompt that allows you to modify the function so that "three", "Three", and "THREE" are all replaced with the number 3.
 
 1. Write a query that helps you debug the code snippet from above.
