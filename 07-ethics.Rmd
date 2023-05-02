@@ -77,6 +77,8 @@ There is a risk that code written with AI tools, if not reviewed carefully enoug
 
 ### Reducing faulty code
 
+Tips for reducing faulty code:
+
 * Do not assume that the code generate by AI is correct.
 * Realize that AI is only as good or up-to-date as what it was trained on, the code may be generated using out-of-date code. Look up packages and functions used to ensure if the code is up-to-date.
 * Make sure that you understand the code that you are using. AI can be used to help you understand what the code is doing, but consult with experts when needed.
@@ -105,6 +107,8 @@ Similarly, AI systems could potentially infringe on intellectual property rights
 
 ### Avoiding copyright violations
 
+Tips to avoid copyright violations:
+
 * Obtain permission from the copyright holders of any code that you use to train the AI system. Only use code that is in the public domain or that has been licensed for use by the AI system's owner.
 * Cite any GitHub repositories or training manuals you might use in your code
 
@@ -115,7 +119,10 @@ Another major concern is the use of AI to generate malicious code. For instance,
 
 ### Avoiding harmful code
 
-* Be careful about what code you share publicly, as it could be used for malicious purposes. Consider how the code might be used by others.
+Tips for avoiding the creation of harmful code:
+
+* Be careful about what code you share publicly, as it could be used for malicious purposes.
+* Consider how the code might be used by others.
 
 
 
