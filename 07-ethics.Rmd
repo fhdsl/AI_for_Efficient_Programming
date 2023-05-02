@@ -98,6 +98,7 @@ Follow best practices for data/code security including:
 * Check that no sensitive data, such as Personal Identifiable Information (PII) becomes public through the code
 * Utilize encryption and other security practices where needed
 * Consult with an expert about data security if you think your code could possibly cause someone to access protected data who is not authorized to access it
+* Promote for regulation of AI tools by voting for such standards where possible
 
 
 ## Violating Copyright
