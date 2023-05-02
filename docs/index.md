@@ -1,7 +1,7 @@
 ---
 title: "AI for Software Development"
 subtitle: "Harnessing the Power of Large Language Models"
-date: "April, 2023"
+date: "May, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
