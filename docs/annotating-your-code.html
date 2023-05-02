@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Annotating Your Code | AI for Software Development</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Annotating Your Code | AI for Software Development" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Annotating Your Code | AI for Software Development" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="refactoring-code.html"/>
+<link rel="next" href="understanding-unfamiliar-code.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/style_custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#available-course-formats"><i class="fa fa-check"></i>Available course formats</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#suggested-activity-context"><i class="fa fa-check"></i>Suggested Activity Context</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#lesson-breakdown"><i class="fa fa-check"></i>Lesson Breakdown</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#ai-provides-new-opportunities"><i class="fa fa-check"></i><b>1.1</b> AI Provides New Opportunities</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#ai-code-of-ethics"><i class="fa fa-check"></i><b>1.2</b> AI Code of Ethics</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#the-ai-chatbots"><i class="fa fa-check"></i><b>1.3</b> The AI Chatbots</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#how-to-use-this-book"><i class="fa fa-check"></i><b>1.4</b> How to Use This Book</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction.html"><a href="introduction.html#choice-of-ai-model"><i class="fa fa-check"></i><b>1.4.1</b> Choice of AI Model</a></li>
+<li class="chapter" data-level="1.4.2" data-path="introduction.html"><a href="introduction.html#computing-environment-needs"><i class="fa fa-check"></i><b>1.4.2</b> Computing Environment Needs</a></li>
+<li class="chapter" data-level="1.4.3" data-path="introduction.html"><a href="introduction.html#boxes"><i class="fa fa-check"></i><b>1.4.3</b> Boxes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#about-this-book"><i class="fa fa-check"></i><b>1.5</b> About This Book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html"><i class="fa fa-check"></i><b>2</b> Writing and Debugging Code</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html#using-ai-to-write-code"><i class="fa fa-check"></i><b>2.1</b> Using AI to write code</a></li>
+<li class="chapter" data-level="2.2" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html#the-basics"><i class="fa fa-check"></i><b>2.2</b> The Basics</a></li>
+<li class="chapter" data-level="2.3" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html#selecting-a-language"><i class="fa fa-check"></i><b>2.3</b> Selecting a Language:</a></li>
+<li class="chapter" data-level="2.4" data-path="writing-and-debugging-code.html"><a href="writing-and-debugging-code.html#prompt-generation"><i class="fa fa-check"></i><b>2.4</b> Prompt Generation:</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="refactoring-code.html"><a href="refactoring-code.html"><i class="fa fa-check"></i><b>3</b> Refactoring Code</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="refactoring-code.html"><a href="refactoring-code.html#ai-in-code-refactoring"><i class="fa fa-check"></i><b>3.1</b> AI in Code Refactoring</a></li>
+<li class="chapter" data-level="3.2" data-path="refactoring-code.html"><a href="refactoring-code.html#example-one-correcting-syntax"><i class="fa fa-check"></i><b>3.2</b> Example One: Correcting Syntax</a></li>
+<li class="chapter" data-level="3.3" data-path="refactoring-code.html"><a href="refactoring-code.html#example-two-styling-and-convention"><i class="fa fa-check"></i><b>3.3</b> Example Two: Styling and Convention</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="refactoring-code.html"><a href="refactoring-code.html#commonly-accepted-convention"><i class="fa fa-check"></i><b>3.3.1</b> Commonly Accepted Convention</a></li>
+<li class="chapter" data-level="3.3.2" data-path="refactoring-code.html"><a href="refactoring-code.html#visual-styling"><i class="fa fa-check"></i><b>3.3.2</b> Visual Styling</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="refactoring-code.html"><a href="refactoring-code.html#example-three-staying-dry"><i class="fa fa-check"></i><b>3.4</b> Example Three: Staying DRY</a></li>
+<li class="chapter" data-level="3.5" data-path="refactoring-code.html"><a href="refactoring-code.html#example-four-keeping-code-alive"><i class="fa fa-check"></i><b>3.5</b> Example Four: Keeping Code Alive</a></li>
+<li class="chapter" data-level="3.6" data-path="refactoring-code.html"><a href="refactoring-code.html#example-five-making-code-readable"><i class="fa fa-check"></i><b>3.6</b> Example Five: Making Code Readable</a></li>
+<li class="chapter" data-level="3.7" data-path="refactoring-code.html"><a href="refactoring-code.html#example-six-keep-it-brief"><i class="fa fa-check"></i><b>3.7</b> Example Six: Keep it Brief</a></li>
+<li class="chapter" data-level="3.8" data-path="refactoring-code.html"><a href="refactoring-code.html#code-optimization"><i class="fa fa-check"></i><b>3.8</b> Code optimization</a></li>
+<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-and-limitations"><i class="fa fa-check"></i><b>3.9</b> Challenges and Limitations</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="refactoring-code.html"><a href="refactoring-code.html#complexity"><i class="fa fa-check"></i><b>3.9.1</b> Complexity</a></li>
+<li class="chapter" data-level="3.9.2" data-path="refactoring-code.html"><a href="refactoring-code.html#limited-data"><i class="fa fa-check"></i><b>3.9.2</b> Limited Data</a></li>
+<li class="chapter" data-level="3.9.3" data-path="refactoring-code.html"><a href="refactoring-code.html#quality-control"><i class="fa fa-check"></i><b>3.9.3</b> Quality Control</a></li>
+<li class="chapter" data-level="3.9.4" data-path="refactoring-code.html"><a href="refactoring-code.html#security"><i class="fa fa-check"></i><b>3.9.4</b> Security</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>3.10</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="3.10.1" data-path="refactoring-code.html"><a href="refactoring-code.html#the-code"><i class="fa fa-check"></i><b>3.10.1</b> The Code</a></li>
+<li class="chapter" data-level="3.10.2" data-path="refactoring-code.html"><a href="refactoring-code.html#questions"><i class="fa fa-check"></i><b>3.10.2</b> Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.11" data-path="refactoring-code.html"><a href="refactoring-code.html#summary"><i class="fa fa-check"></i><b>3.11</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="annotating-your-code.html"><a href="annotating-your-code.html"><i class="fa fa-check"></i><b>4</b> Annotating Your Code</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-readability"><i class="fa fa-check"></i><b>4.1</b> Improves readability</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-readability-aiding-comments"><i class="fa fa-check"></i><b>4.1.1</b> Examples of readability aiding comments</a></li>
+<li class="chapter" data-level="4.1.2" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-maintainability"><i class="fa fa-check"></i><b>4.1.2</b> Improves maintainability</a></li>
+<li class="chapter" data-level="4.1.3" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-maintainability-aiding-comments"><i class="fa fa-check"></i><b>4.1.3</b> Examples of maintainability aiding comments</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-the-quality"><i class="fa fa-check"></i><b>4.2</b> Improves the quality</a></li>
+<li class="chapter" data-level="4.3" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-quality-aiding-comments"><i class="fa fa-check"></i><b>4.3</b> Examples of quality aiding comments</a></li>
+<li class="chapter" data-level="4.4" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ai-in-code-annotation"><i class="fa fa-check"></i><b>4.4</b> AI in Code Annotation</a></li>
+<li class="chapter" data-level="4.5" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ethics-of-using-ai-to-annotate-code"><i class="fa fa-check"></i><b>4.5</b> Ethics of using AI to annotate code</a></li>
+<li class="chapter" data-level="4.6" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-on-using-ai-for-annotation"><i class="fa fa-check"></i><b>4.6</b> Examples on using AI for annotation</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-a-readme-summary"><i class="fa fa-check"></i><b>4.6.1</b> Ask for a README summary</a></li>
+<li class="chapter" data-level="4.6.2" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-line-by-line-annotation"><i class="fa fa-check"></i><b>4.6.2</b> Ask for line by line annotation</a></li>
+<li class="chapter" data-level="4.6.3" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-how-the-code-could-be-improved"><i class="fa fa-check"></i><b>4.6.3</b> Ask for how the code could be improved</a></li>
+<li class="chapter" data-level="4.6.4" data-path="annotating-your-code.html"><a href="annotating-your-code.html#style-the-code"><i class="fa fa-check"></i><b>4.6.4</b> Style the code</a></li>
+<li class="chapter" data-level="4.6.5" data-path="annotating-your-code.html"><a href="annotating-your-code.html#sometimes-it-has-trouble-with-file-types-if-given-a-url"><i class="fa fa-check"></i><b>4.6.5</b> Sometimes it has trouble with file types if given a URL</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="annotating-your-code.html"><a href="annotating-your-code.html#summary-1"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html"><i class="fa fa-check"></i><b>5</b> Understanding Unfamiliar Code</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#ai-in-reading-code"><i class="fa fa-check"></i><b>5.1</b> AI in Reading Code</a></li>
+<li class="chapter" data-level="5.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-one-summarizing-code-you-didnt-write"><i class="fa fa-check"></i><b>5.2</b> Example One: Summarizing Code You Didn’t Write</a></li>
+<li class="chapter" data-level="5.3" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-two-identifying-a-coding-language"><i class="fa fa-check"></i><b>5.3</b> Example Two: Identifying a Coding Language</a></li>
+<li class="chapter" data-level="5.4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-three-interpreting-regex"><i class="fa fa-check"></i><b>5.4</b> Example Three: Interpreting Regex</a></li>
+<li class="chapter" data-level="5.5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-four-demystifying-functions"><i class="fa fa-check"></i><b>5.5</b> Example Four: Demystifying Functions</a></li>
+<li class="chapter" data-level="5.6" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-1"><i class="fa fa-check"></i><b>5.6</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#the-code-1"><i class="fa fa-check"></i><b>5.6.1</b> The Code</a></li>
+<li class="chapter" data-level="5.6.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#questions-1"><i class="fa fa-check"></i><b>5.6.2</b> Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#summary-2"><i class="fa fa-check"></i><b>5.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#programming-languages"><i class="fa fa-check"></i>Programming Languages</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#ai-and-cloud-computing"><i class="fa fa-check"></i>AI and Cloud Computing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/W6Mg4rzuMK6Yk3Am8"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AI for Software Development</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/dasl_thin_main_image.png">
+</div>
+<div id="annotating-your-code" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Annotating Your Code</h1>
+<p>Code annotation, also known as code commenting, is the process of adding explanatory notes to source code. These notes are used to provide context, clarify functionality, and aid in understanding for developers who may be working on the codebase in the future. Code annotation is an important practice for any developer looking to write clear, efficient, and maintainable code.</p>
+<p>There are many benefits to annotating code.</p>
+<div id="improves-readability" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Improves readability</h2>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_8.png" title="Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. " alt="Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. " width="100%" style="display: block; margin: auto;" /></p>
+<p>First, it can help to improve the readability of code. By adding comments, developers can explain the purpose of each section of code, which can make it easier for others to understand what the code is doing. This can be especially helpful for large or complex codebases, where it can be difficult to keep track of all the different components. This is particularly important in contexts where the original developer of a project may move on to something else and others are left to work on them. Annotation perhaps most often helps a developer remember things they knew about the code when they were originally writing it (annotation is helpful for future you!) If the original developer left well-annotated code, it can drastically improve the ability of others (and their future selves) to continue with the project.</p>
+<div id="examples-of-readability-aiding-comments" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Examples of readability aiding comments</h3>
+<p>Comments that help readability <strong>clarify what the code is doing</strong></p>
+<p><strong>Function explanations:</strong> A comment at the beginning of a function or method can describe its purpose, parameters, and expected return values. This makes it easier for others to understand what the function does and how to use it.</p>
+<pre><code># This function calculates the sum of two numbers
+def add_numbers(x, y):
+    return x + y</code></pre>
+<p><strong>Inline explanations:</strong> Use inline comments to explain what a specific line or block of code does. This can help someone reading your code to quickly understand what’s going on.</p>
+<pre><code># Loop through each item in the list
+for item in my_list:
+    # Check if the item is greater than 10
+    if item &gt; 10:
+        # Print the item
+        print(item)</code></pre>
+<p><strong>TODO comments:</strong> Use TODO comments to mark areas of your code that need further work or improvement. This can help you or others to remember to come back to a specific part of the code.</p>
+<pre><code># TODO: Implement error handling for this function
+def my_function():
+    pass</code></pre>
+<p><strong>Parameter descriptions:</strong> If a function or method has complex parameters, it can be helpful to add comments explaining what each parameter does.</p>
+<pre><code>def my_function(parameter1, parameter2):
+    &quot;&quot;&quot;
+    Calculate the sum of two numbers.
+
+    Parameters:
+    parameter1 (int): The first number to be added.
+    parameter2 (int): The second number to be added.
+
+    Returns:
+    int: The sum of parameter1 and parameter2.
+    &quot;&quot;&quot;
+    return parameter1 + parameter2</code></pre>
+<p><strong>Code block summary explanations:</strong> If you have a long or complex code block, you can add a comment to explain what the block is doing.</p>
+<pre><code># This code block creates a dictionary containing the counts of each word in a list of text strings
+word_counts = {}
+for text in text_list:
+    for word in text.split():
+        if word not in word_counts:
+            word_counts[word] = 0
+        word_counts[word] += 1</code></pre>
+</div>
+<div id="improves-maintainability" class="section level3" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Improves maintainability</h3>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_37.png" title="The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’" alt="The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’" width="100%" style="display: block; margin: auto;" /></p>
+<p>Code annotation can help to improve the maintainability of code. By adding comments, developers can explain the reasoning behind certain decisions, which can make it easier for others to make changes to the code without breaking it. This can be especially helpful when multiple developers are working on the same codebase, as it can help to prevent conflicts and ensure that the code is always in a consistent state.</p>
+</div>
+<div id="examples-of-maintainability-aiding-comments" class="section level3" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Examples of maintainability aiding comments</h3>
+<p>Comments that help maintainability <strong>explain why the historical decisions of why code was made the way it was</strong></p>
+<p><strong>Examples of maintainability aiding comments</strong></p>
+<p><strong>Design decisions:</strong> If there were specific design decisions made when creating the code, you can add comments explaining why certain choices were made.
+bash</p>
+<pre><code># We chose to use a linked list data structure for this function to reduce the time complexity of inserting and deleting elements.</code></pre>
+<p><strong>Legacy code:</strong> Sometimes, code may have been written in a certain way due to constraints or limitations at the time it was created. Adding comments to explain this can help others understand why the code is the way it is.</p>
+<pre><code># This code was written before Python 3, which introduced the `yield from` syntax. Therefore, we used a `for` loop to iterate over the nested list.</code></pre>
+<p><strong>Performance optimizations:</strong> If certain performance optimizations were made to the code, you can add comments explaining why they were necessary.
+bash</p>
+<pre><code># We used memoization to improve the time complexity of this recursive function, as it was taking too long to execute for larger inputs.</code></pre>
+<p><strong>Compatibility considerations:</strong> If the code was written with compatibility considerations in mind, you can add comments explaining why certain choices were made.</p>
+<pre><code># We used the `os.path` module to ensure that this code will work on both Windows and Unix-based systems, as the path separators are different on each platform.</code></pre>
+<p><strong>Limitations:</strong> If there are limitations or edge cases that the code cannot handle, you can add comments to explain this to others.</p>
+<pre><code># Note that this function assumes that the input array is sorted in ascending order. If the array is unsorted, the results may be incorrect.</code></pre>
+</div>
+</div>
+<div id="improves-the-quality" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Improves the quality</h2>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_60.png" title="Dino says Ah I know exactly how to fix this part of the code that was annotated with a warning!" alt="Dino says Ah I know exactly how to fix this part of the code that was annotated with a warning!" width="100%" style="display: block; margin: auto;" /></p>
+<p>Code annotation can help to improve the quality of code. By adding comments, developers can identify potential issues or edge cases, which can help to prevent these issues from occurring in the first place. This can be especially helpful when testing code, as it can help to ensure that the code is working as expected.</p>
+</div>
+<div id="examples-of-quality-aiding-comments" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Examples of quality aiding comments</h2>
+<p>Comments that help improve the quality of the code <strong>by explaining to other how to use or help improve it</strong></p>
+<p><strong>Error handling:</strong> Adding comments to explain how and why error handling is being implemented can help ensure that your code is robust and able to handle unexpected inputs or errors. This helps others know how the code was intended to be used.</p>
+<pre><code># If the input argument is not a list or is empty, raise a ValueError
+if not isinstance(input_list, list) or len(input_list) == 0:
+    raise ValueError(&quot;Input list cannot be empty&quot;)</code></pre>
+<p><strong>Complexity:</strong> If your code has particular complexities, adding comments that explain it can help others understand the performance characteristics of your code. It may help others identify whether there is a simpler way to write the code. By adding a comment that expresses uncertainty about the code and asking for suggestions, the author can potentially receive feedback from others on how to improve the code.</p>
+<pre><code># This block of code could probably be simplified, but I&#39;m not sure how.
+new_list = []
+for i in old_list:
+    if i &gt; 0:
+        new_list.append(i)</code></pre>
+<p><strong>Constants and variables:</strong> Adding comments to explain the purpose of constants and variables can make your code easier to use. It not only notifies others of the variables existence but lets them know if they need to change the parameters for their own purposes.</p>
+<pre><code># This constant represents the maximum allowed number of retries when attempting to connect to the server.
+MAX_RETRIES = 3
+
+# This variable tracks the number of failed attempts to connect to the server.
+num_retries = 0</code></pre>
+<p><strong>Code organization or disorganization:</strong> Adding comments to explain the organization and structure of your code can make it easier for others to navigate and may bring out a better organizational strategy for your code.</p>
+<pre><code># Define helper functions for data processing
+def preprocess_data(input_data):
+    # Implementation details
+
+def analyze_data(processed_data):
+    # Implementation details
+
+def visualize_data(analyzed_data):
+    # Implementation details
+
+# Load data from file
+input_data = load_data(&quot;input.txt&quot;)
+
+# Preprocess data
+processed_data = preprocess_data(input_data)
+
+# Analyze data
+analyzed_data = analyze_data(processed_data)
+
+# Visualize data
+visualize_data(analyzed_data)</code></pre>
+<p><strong>Assumptions and constraints:</strong> Adding comments to explain the assumptions and constraints of your code can help others understand its limitations and potential pitfalls.</p>
+<pre><code># This function assumes that all input values are positive integers. Negative or non-integer inputs may result in unexpected behavior.</code></pre>
+</div>
+<div id="ai-in-code-annotation" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> AI in Code Annotation</h2>
+<p>We’ve discussed why code annotation and documentation are important, but when and why would you use AI for code annotation? AI can be a nice tool to supplement the annotation of your code. It should not be the only source of annotation for your code, because as the code author, you need to verify that what AI has annotated is consistent with your knowledge and history of development of the code.</p>
+<p>But using AI to annotate your code can be useful to supplement existing code annotations or to annotate old code that was poorly annotated either by yourself or others who are no longer working on the project.</p>
+<p>Here are some of the benefits of using AI for code annotation:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Speed and efficiency:</strong> AI algorithms can analyze code much faster than humans, which means they can quickly generate comments and annotations for large codebases. This can save developers significant time and effort, allowing them to focus on other aspects of the development process.</p></li>
+<li><p><strong>Consistency:</strong> Unlike humans, AI is not affected by personal biases or preferences, so it can provide consistent annotations across different code files and projects. This can help ensure that all code in a project is well-documented and easy to understand.</p></li>
+<li><p><strong>Objectivity:</strong> AI can analyze code objectively and identify potential issues that may have been missed by humans. This can lead to better quality code that is easier to maintain and less prone to errors.</p></li>
+<li><p><strong>Learning:</strong> AI models can learn from large datasets of annotated code and improve their ability to generate comments and annotations over time. This means that the more code the AI model analyzes, the more accurate and effective it becomes at annotating code.</p></li>
+<li><p><strong>Specificity:</strong> AI models can be trained on specific programming languages, frameworks, or libraries, allowing them to generate language-specific comments and annotations that are tailored to the needs of the project. This can be particularly helpful for large, complex projects that require specialized knowledge or expertise.</p></li>
+</ol>
+</div>
+<div id="ethics-of-using-ai-to-annotate-code" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Ethics of using AI to annotate code</h2>
+<p>However, there are also a number of potential ethical concerns associated with using AI to annotate code. For example, we don’t yet know how and it what ways AI models may be biased. Additionally, AI models may be opaque, which could make it difficult to understand why they made certain annotations. Finally, because AI models are not humans and don’t necessarily tell the stories behind the code, they may be used to generate annotations that are not accurate, helpful, or do not tell the full depth of the history of what occurred with the code, which could lead to problems.</p>
+<p>Given these potential benefits and concerns, it is important for users of AI to always realize that they are ultimately accountable for the annotation that AI model makes and careful review of this annotation is needed.</p>
+<p>There are a number of ethical considerations to take into account when using AI to annotate code. Here are a few of the most important ones:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Accountability:</strong> First and foremost, a user of AI is always primarily accountable for any output that they use from an AI model. AI models can give you annotation to start with, but it is up to you as the user to verify and review this output carefully. The user of the AI model is ultimately responsible keeping or throwing out the annotations the AI makes and thus is responsible for using errors that the model makes. Much like a user of a Google Search engine is responsible for which results they use, a user of AI is responsible what output from the AI model they use.</p></li>
+<li><p><strong>Transparency:</strong> It is important to be transparent about the use of AI in code annotation. This means disclosing the fact that AI is being used, as well as the specific AI model and dataset that is being used. This should be stated on every file where annotation has been made using AI. This transparency allows others who view the code to be able more fully interpret the AI-created annotation that accompanies the code.</p></li>
+<li><p><strong>Bias:</strong> AI models are trained on data, and this data can introduce bias into the model. It is important to be aware of the potential for bias and to take steps to mitigate it. This can be done by using a diverse dataset, by carefully selecting the features that are used to train the model, and by using techniques such as adversarial training.
+TODO: How does this relate to annotation?</p></li>
+<li><p><strong>Explainability:</strong> It is important to be able to explain the decisions that an AI model makes. This is especially important in the case of code annotation, where the decisions made by the AI model can have a significant impact on the quality of the code. There are a number of techniques that can be used to explain the decisions of an AI model, such as visualization and rule extraction.</p></li>
+</ol>
+</div>
+<div id="examples-on-using-ai-for-annotation" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Examples on using AI for annotation</h2>
+<div id="ask-for-a-readme-summary" class="section level3" number="4.6.1">
+<h3><span class="header-section-number">4.6.1</span> Ask for a README summary</h3>
+<p>To try out some annotation with code examples, this author dug up some old code that she has no idea what it does because time has passed and at the time she didn’t document it very well.</p>
+<p>First, I wanted ChatGPT to make a README for me. README’s are a standard file that explain what the code base does and provides a summary of what is happening in the set. I asked ChatGPT if it could:</p>
+<div class="query">
+<p>Create a README for this code</p>
+</div>
+<p>and then I pasted the old code.</p>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_60.png" title="The author asked ChatGPT to create a README for some old code." alt="The author asked ChatGPT to create a README for some old code." width="100%" style="display: block; margin: auto;" /></p>
+<p>ChatGPT gave me some output that generally looked like a README:</p>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_96.png" title="ChatGPT provided a README. It is titled README for code snippet." alt="ChatGPT provided a README. It is titled README for code snippet." width="100%" style="display: block; margin: auto;" /></p>
+<p>This README seems accurate given the work I was doing at the time. But obviously the title isn’t great – it doesn’t describe the code well. Plus there’s not really information about usage or outputs of the code.</p>
+<p>So I asked it:</p>
+<div class="query">
+<p>Can you make this README more succinct and with sections about how you would use this code?</p>
+</div>
+<p>This yielded a much better result.</p>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" title="ChatGPT provided a better README after I asked it to be more succinct and provide sections about how to use the code. " alt="ChatGPT provided a better README after I asked it to be more succinct and provide sections about how to use the code. " width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="ask-for-line-by-line-annotation" class="section level3" number="4.6.2">
+<h3><span class="header-section-number">4.6.2</span> Ask for line by line annotation</h3>
+<p>Second, I wanted to have ChatGPT annotate code line by line. So I asked it</p>
+<div class="query">
+<p>Can you annotate some R code for me?</p>
+</div>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
+It not only provided helpful annotations but it fixed spacing and added more spaces between lines of code:</p>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" /></p>
+<p>It does however, think the code is Python apparently if we look in the upper left corner.
+But this doesn’t seem to have affected its accuracy in its annotations.</p>
+</div>
+<div id="ask-for-how-the-code-could-be-improved" class="section level3" number="4.6.3">
+<h3><span class="header-section-number">4.6.3</span> Ask for how the code could be improved</h3>
+<p>This code is old, and I don’t think it runs properly and is in no way reproducible. So I wanted to see what ChatGPT would recommend for improvements to the code. I said</p>
+<div class="query">
+<p>How could I make this code better?</p>
+</div>
+<p>It had a lot of great advice:</p>
+<p><img src="04-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" /></p>
+<p>First and foremost it told me my variable names are not consistent and also not descriptive. Which is completely accurate! There’s variable names like <code>xx</code> and <code>ll</code> which don’t tell the reader anything about the variable.</p>
+</div>
+<div id="style-the-code" class="section level3" number="4.6.4">
+<h3><span class="header-section-number">4.6.4</span> Style the code</h3>
+<p>Next, I asked chatGPT if it could restyle the code into tidyverse style. It definitely put elements that look like tidyverse however, it also put items in the code that I can tell by looking at it won’t work.</p>
+<p>So I tried to tell it about the errors:
+:::{.query}
+This code is close but there are some errors. tidyverse functions don’t work with matrices
+:::</p>
+<p>and it told me:</p>
+<pre><code>You are correct that the tidyverse functions are designed to work with data frames and not matrices. Here&#39;s a modified version of your code that converts the matrix to a data frame and uses tidyverse functions:</code></pre>
+<p>The lesson here is that the output of chatGPT still needs to be vetted by the person asking for it. It is a great idea to continue to have AI’s work on something if it isn’t quite what you are asking for, however, at the end of the day it is you, the human, who has to vet the output.</p>
+</div>
+<div id="sometimes-it-has-trouble-with-file-types-if-given-a-url" class="section level3" number="4.6.5">
+<h3><span class="header-section-number">4.6.5</span> Sometimes it has trouble with file types if given a URL</h3>
+<p>Copying and pasting code appears to be the best way to go at this point in time.</p>
+<p>I asked chatGPT if it could annotate code in a Jupyter notebook at a URL I gave it:</p>
+<div class="query">
+<p>Can you annotate the code at this URL? <a href="https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb" class="uri">https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb</a></p>
+</div>
+<p>It responded with some of the code at that file where it was annotated but most of the notebook was not there.</p>
+<p>I told ChatGPT:</p>
+<div class="query">
+<p>That isn’t all the code at that url</p>
+</div>
+<p>ChatGPT told me:</p>
+<pre><code>You&#39;re right, I apologize. The code at the given URL is actually in a Jupyter Notebook format, so it&#39;s not easy to copy-paste here. However, I can suggest an alternative approach: you can use the website nbviewer (https://nbviewer.jupyter.org/) to view the notebook and its code. Here are the steps to do so:
+
+Go to https://nbviewer.jupyter.org/
+Paste the URL of the notebook ( https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb ) into the &quot;Enter the location of a Jupyter Notebook&quot; field and press &quot;Go&quot;.
+This will display the notebook and its code, and you can read through it and add your own annotations as needed.
+I hope this helps!</code></pre>
+<p>This was a nice tool to recommend, however it still told me I should add my own annotations at the end of this.</p>
+</div>
+</div>
+<div id="summary-1" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Summary</h2>
+<ul>
+<li>Code annotation is important for readability, maintainability, and overall quality of code</li>
+<li>AI can be a helpful tool for supplementing annotations or creating annotation for poorly annotated code.</li>
+<li>Ultimately the code author who uses AI as a tool for annotation is still ultimately responsible for verifying that the annotations are consistent with their knowledge of the code.</li>
+</ul>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="annotating-your-code.html#cb59-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
+<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 4.0.2 (2020-06-22)
+##  os       Ubuntu 20.04.5 LTS          
+##  system   x86_64, linux-gnu           
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_US.UTF-8                 
+##  ctype    en_US.UTF-8                 
+##  tz       Etc/UTC                     
+##  date     2023-05-02                  
+## 
+## ─ Packages ───────────────────────────────────────────────────────────────────
+##  package     * version date       lib source                            
+##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
+##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
+##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
+##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
+##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
+##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
+##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
+##  curl          4.3     2019-12-02 [1] RSPM (R 4.0.3)                    
+##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
+##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
+##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
+##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
+##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
+##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
+##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
+##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
+##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
+##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
+##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
+##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
+##  httr          1.4.2   2020-07-20 [1] RSPM (R 4.0.3)                    
+##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
+##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
+##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
+##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
+##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
+##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
+##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
+##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
+##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
+##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
+##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
+##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
+##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
+##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
+##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
+##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
+##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
+##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
+##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
+##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
+##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
+##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
+##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
+##  stringr       1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
+##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
+##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
+##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
+##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
+##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
+##  withr         2.3.0   2020-09-22 [1] RSPM (R 4.0.2)                    
+##  xfun          0.26    2023-03-28 [1] Github (yihui/xfun@74c2a66)       
+##  yaml          2.2.1   2020-02-01 [1] RSPM (R 4.0.3)                    
+## 
+## [1] /usr/local/lib/R/site-library
+## [2] /usr/local/lib/R/library</code></pre>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+      <a href="https://hutchdatascience.org/" target="_blank"><img src="https://hutchdatascience.org/images/crazy-idea-wide.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="refactoring-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="understanding-unfamiliar-code.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

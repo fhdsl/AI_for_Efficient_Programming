@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Writing and Debugging Code | Using AI for Software</title>
+  <title>Chapter 2 Writing and Debugging Code | AI for Software Development</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Writing and Debugging Code | Using AI for Software" />
+  <meta property="og:title" content="Chapter 2 Writing and Debugging Code | AI for Software Development" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Writing and Debugging Code | Using AI for Software" />
+  <meta name="twitter:title" content="Chapter 2 Writing and Debugging Code | AI for Software Development" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -117,6 +117,28 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/style_custom.css" type="text/css" />
@@ -137,10 +159,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
 <ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#available-course-formats"><i class="fa fa-check"></i><b>0.1</b> Available course formats</a>
-<ul>
-<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#testing-query-css"><i class="fa fa-check"></i><b>0.1.1</b> Testing query css</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#available-course-formats"><i class="fa fa-check"></i>Available course formats</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#suggested-activity-context"><i class="fa fa-check"></i>Suggested Activity Context</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#lesson-breakdown"><i class="fa fa-check"></i>Lesson Breakdown</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
@@ -170,25 +192,62 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.6" data-path="refactoring-code.html"><a href="refactoring-code.html#example-five-making-code-readable"><i class="fa fa-check"></i><b>3.6</b> Example Five: Making Code Readable</a></li>
 <li class="chapter" data-level="3.7" data-path="refactoring-code.html"><a href="refactoring-code.html#example-six-keep-it-brief"><i class="fa fa-check"></i><b>3.7</b> Example Six: Keep it Brief</a></li>
 <li class="chapter" data-level="3.8" data-path="refactoring-code.html"><a href="refactoring-code.html#code-optimization"><i class="fa fa-check"></i><b>3.8</b> Code optimization</a></li>
-<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#case-studies-examples-in-industry-if-any"><i class="fa fa-check"></i><b>3.9</b> Case studies / examples in industry (if any)</a></li>
-<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#common-mistakes-edge-cases-things-to-watch-out-for"><i class="fa fa-check"></i><b>3.10</b> Common mistakes / edge cases / things to watch out for</a></li>
-<li class="chapter" data-level="3.11" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-limitations"><i class="fa fa-check"></i><b>3.11</b> Challenges / limitations</a></li>
-<li class="chapter" data-level="3.12" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>3.12</b> Hands-On Exercise</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html"><i class="fa fa-check"></i><b>4</b> Understanding Unfamiliar Code</a>
+<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-and-limitations"><i class="fa fa-check"></i><b>3.9</b> Challenges and Limitations</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#using-ai-to-understand-code"><i class="fa fa-check"></i><b>4.1</b> Using AI to understand code</a></li>
-<li class="chapter" data-level="4.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-one-summarizing-code-you-didnt-write"><i class="fa fa-check"></i><b>4.2</b> Example One: Summarizing Code You Didn’t Write</a></li>
-<li class="chapter" data-level="4.3" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-two-identifying-a-coding-language"><i class="fa fa-check"></i><b>4.3</b> Example Two: Identifying a Coding Language</a></li>
-<li class="chapter" data-level="4.4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-three-interpreting-regex"><i class="fa fa-check"></i><b>4.4</b> Example Three: Interpreting Regex</a></li>
-<li class="chapter" data-level="4.5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-four-demystifying-functions"><i class="fa fa-check"></i><b>4.5</b> Example Four: Demystifying Functions</a></li>
-<li class="chapter" data-level="4.6" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-five-deciphering-comments"><i class="fa fa-check"></i><b>4.6</b> Example Five: Deciphering Comments</a></li>
-<li class="chapter" data-level="4.7" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-work-in-progress"><i class="fa fa-check"></i><b>4.7</b> Hands-On Exercise [WORK IN PROGRESS]</a></li>
+<li class="chapter" data-level="3.9.1" data-path="refactoring-code.html"><a href="refactoring-code.html#complexity"><i class="fa fa-check"></i><b>3.9.1</b> Complexity</a></li>
+<li class="chapter" data-level="3.9.2" data-path="refactoring-code.html"><a href="refactoring-code.html#limited-data"><i class="fa fa-check"></i><b>3.9.2</b> Limited Data</a></li>
+<li class="chapter" data-level="3.9.3" data-path="refactoring-code.html"><a href="refactoring-code.html#quality-control"><i class="fa fa-check"></i><b>3.9.3</b> Quality Control</a></li>
+<li class="chapter" data-level="3.9.4" data-path="refactoring-code.html"><a href="refactoring-code.html#security"><i class="fa fa-check"></i><b>3.9.4</b> Security</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>3.10</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="3.10.1" data-path="refactoring-code.html"><a href="refactoring-code.html#the-code"><i class="fa fa-check"></i><b>3.10.1</b> The Code</a></li>
+<li class="chapter" data-level="3.10.2" data-path="refactoring-code.html"><a href="refactoring-code.html#questions"><i class="fa fa-check"></i><b>3.10.2</b> Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.11" data-path="refactoring-code.html"><a href="refactoring-code.html#summary"><i class="fa fa-check"></i><b>3.11</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="annotating-your-code.html"><a href="annotating-your-code.html"><i class="fa fa-check"></i><b>4</b> Annotating Your Code</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-readability"><i class="fa fa-check"></i><b>4.1</b> Improves readability</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-readability-aiding-comments"><i class="fa fa-check"></i><b>4.1.1</b> Examples of readability aiding comments</a></li>
+<li class="chapter" data-level="4.1.2" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-maintainability"><i class="fa fa-check"></i><b>4.1.2</b> Improves maintainability</a></li>
+<li class="chapter" data-level="4.1.3" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-maintainability-aiding-comments"><i class="fa fa-check"></i><b>4.1.3</b> Examples of maintainability aiding comments</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-the-quality"><i class="fa fa-check"></i><b>4.2</b> Improves the quality</a></li>
+<li class="chapter" data-level="4.3" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-quality-aiding-comments"><i class="fa fa-check"></i><b>4.3</b> Examples of quality aiding comments</a></li>
+<li class="chapter" data-level="4.4" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ai-in-code-annotation"><i class="fa fa-check"></i><b>4.4</b> AI in Code Annotation</a></li>
+<li class="chapter" data-level="4.5" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ethics-of-using-ai-to-annotate-code"><i class="fa fa-check"></i><b>4.5</b> Ethics of using AI to annotate code</a></li>
+<li class="chapter" data-level="4.6" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-on-using-ai-for-annotation"><i class="fa fa-check"></i><b>4.6</b> Examples on using AI for annotation</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-a-readme-summary"><i class="fa fa-check"></i><b>4.6.1</b> Ask for a README summary</a></li>
+<li class="chapter" data-level="4.6.2" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-line-by-line-annotation"><i class="fa fa-check"></i><b>4.6.2</b> Ask for line by line annotation</a></li>
+<li class="chapter" data-level="4.6.3" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-how-the-code-could-be-improved"><i class="fa fa-check"></i><b>4.6.3</b> Ask for how the code could be improved</a></li>
+<li class="chapter" data-level="4.6.4" data-path="annotating-your-code.html"><a href="annotating-your-code.html#style-the-code"><i class="fa fa-check"></i><b>4.6.4</b> Style the code</a></li>
+<li class="chapter" data-level="4.6.5" data-path="annotating-your-code.html"><a href="annotating-your-code.html#sometimes-it-has-trouble-with-file-types-if-given-a-url"><i class="fa fa-check"></i><b>4.6.5</b> Sometimes it has trouble with file types if given a URL</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="annotating-your-code.html"><a href="annotating-your-code.html#summary-1"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html"><i class="fa fa-check"></i><b>5</b> Understanding Unfamiliar Code</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#ai-in-reading-code"><i class="fa fa-check"></i><b>5.1</b> AI in Reading Code</a></li>
+<li class="chapter" data-level="5.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-one-summarizing-code-you-didnt-write"><i class="fa fa-check"></i><b>5.2</b> Example One: Summarizing Code You Didn’t Write</a></li>
+<li class="chapter" data-level="5.3" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-two-identifying-a-coding-language"><i class="fa fa-check"></i><b>5.3</b> Example Two: Identifying a Coding Language</a></li>
+<li class="chapter" data-level="5.4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-three-interpreting-regex"><i class="fa fa-check"></i><b>5.4</b> Example Three: Interpreting Regex</a></li>
+<li class="chapter" data-level="5.5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-four-demystifying-functions"><i class="fa fa-check"></i><b>5.5</b> Example Four: Demystifying Functions</a></li>
+<li class="chapter" data-level="5.6" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-1"><i class="fa fa-check"></i><b>5.6</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#the-code-1"><i class="fa fa-check"></i><b>5.6.1</b> The Code</a></li>
+<li class="chapter" data-level="5.6.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#questions-1"><i class="fa fa-check"></i><b>5.6.2</b> Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#summary-2"><i class="fa fa-check"></i><b>5.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
 <ul>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#additional-programming-languages"><i class="fa fa-check"></i>Additional Programming Languages</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#programming-languages"><i class="fa fa-check"></i>Programming Languages</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#ai-and-cloud-computing"><i class="fa fa-check"></i>AI and Cloud Computing</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
 <p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
@@ -203,7 +262,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Using AI for Software</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AI for Software Development</a>
           </h1>
         </div>
 
@@ -305,7 +364,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="prompt-generation" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Prompt Generation:</h2>
 <p>Create a set of prompts that will be used to guide participants in writing code in the selected language. These prompts should be specific enough to provide guidance, but open-ended enough to allow participants to exercise their creativity and problem-solving skills. For the example(s), walk participants through the process of interacting with ChatGPT and provide tips on how to refine their queries to get the best results.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="writing-and-debugging-code.html#cb3-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="writing-and-debugging-code.html#cb2-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
 <pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
 ##  setting  value                       
 ##  version  R version 4.0.2 (2020-06-22)
@@ -316,7 +375,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-04-17                  
+##  date     2023-04-27                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            

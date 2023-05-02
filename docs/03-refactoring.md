@@ -52,7 +52,7 @@ main()
 We get the error above because our indentation is off. Let's ask [ChatGPT](https://chat.openai.com) to clean things up.
 
 :::{.query}
-"Can you assist me with correcting the formatting and indentation issues in my Python code?"
+Can you assist me with correcting the formatting and indentation issues in my Python code?
 :::
 
 :::{.ai_response}
@@ -116,7 +116,7 @@ c(a, b, c)
 This code does not produce any errors, but it doesn't follow typical R convention. Let's ask ChatGPT to clean things up.
 
 :::{.query}
-"Can you help me reformat my R code to follow accepted style conventions?"
+Can you help me reformat my R code to follow accepted style conventions?
 :::
 
 :::{.ai_response}
@@ -147,7 +147,7 @@ d <- c(rep(a,5),rep(b,5),rep(c,5),paste(a,b,c),paste(c,b,a))
 This code is pretty hard to read. Let's see if AI can do better.
 
 :::{.query}
-"Can you space out this R code to make it more readable?"
+Can you space out this R code to make it more readable?
 :::
 
 :::{.ai_response}
@@ -195,7 +195,7 @@ print_greetings()
 Notice how repetitive this code is? `print()` and the string `"Hello, "` appear five times. We can improve this!
 
 :::{.query}
-"Could you please refactor my Python code to make it more DRY?"
+Could you please refactor my Python code to make it more DRY?
 :::
 
 :::{.ai_response}
@@ -291,7 +291,7 @@ if __name__ == '__main__':
 Some of these functions aren't used in the final step, typically defined in python as the `main()` function. Let's ask AI to remove them.
 
 :::{.query}
-"I need help with eliminating unused functions in my Python script."
+I need help with eliminating unused functions in my Python script.
 :::
 
 :::{.ai_response}
@@ -327,7 +327,7 @@ if __name__ == '__main__':
 Great! Now our code is much more manageable. This code only includes the necessary functions needed to run the `main()` function. We can go a step further!
 
 :::{.query}
-"Can you help me refactor my python code to make it more concise?"
+Can you help me refactor my python code to make it more concise?
 :::
 
 :::{.ai_response}
@@ -373,7 +373,7 @@ for(term in c("good","bad","ugly")){
 Let's see if AI can do better.
 
 :::{.query}
-"Can you help me clean up this R code so it is more readable?"
+Can you help me clean up this R code so it is more readable?
 :::
 
 :::{.ai_response}
@@ -394,7 +394,7 @@ for(term in c("good", "bad", "ugly")) {
 ## [1] "ugly"        "ugly"        "ugly"        "really UGLY"
 ```
 
-I added whitespace around operators and after commas for better readability. I also loaded the stringr package explicitly using `library()` to make the code more self-contained.
+I added whitespace around operators and after commas for better readability. I also loaded the `stringr` package explicitly using `library()` to make the code more self-contained.
 :::
 
 This is a good start, but not much has changed. Let's try again. On ChatGPT, we can click "Regenerate Response".
@@ -466,7 +466,7 @@ for (type in unique(CO2$Type)) {
 Let's see if AI has any ideas for making it more concise.
 
 :::{.query}
-"Can you make this code more concise?"
+Can you make this code more concise?
 :::
 
 :::{.ai_response}
@@ -511,104 +511,212 @@ Remember that you can regenerate the AI's response if you want more options.
 
 ## Code optimization
 
-loops!
+Sometimes time and efficiency is of the essence. Loops can be slow and time consuming in many languages. Take for example the following R code that calculates the cross product between two vectors x and y using nested `for` loops:
 
-## Case studies / examples in industry (if any)
 
-## Common mistakes / edge cases / things to watch out for
+```r
+set.seed(123)
+n <- 10000
+x <- rnorm(n)
+y <- rnorm(n)
+z <- numeric(n)
 
-## Challenges / limitations
+# Start timer
+start_time <- proc.time()
+
+for(i in 1:n) {
+  for(j in 1:n) {
+    z[i] <- z[i] + x[i]*y[j]
+  }
+}
+
+# End timer
+proc.time() - start_time
+```
+
+```
+##    user  system elapsed 
+##  13.612   0.000  13.613
+```
+
+:::{.query}
+What is a faster, more optimized way of running the following R code?
+:::
+
+:::{.ai_response}
+
+
+```r
+set.seed(123)
+n <- 10000
+x <- rnorm(n)
+y <- rnorm(n)
+
+# Start timer
+start_time <- proc.time()
+
+z <- outer(x, y, "*")
+z <- rowSums(z)
+
+# End timer
+proc.time() - start_time
+```
+
+```
+##    user  system elapsed 
+##   0.670   0.359   0.680
+```
+
+The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
+:::
+
+So much faster! We can look at another option by regenerating the response:
+
+:::{.ai_response}
+
+```r
+set.seed(123)
+n <- 10000
+x <- rnorm(n)
+y <- rnorm(n)
+z <- numeric(n)
+
+# Start timer
+start_time <- proc.time()
+
+z <- x %*% t(y)
+
+# End timer
+proc.time() - start_time
+```
+
+```
+##    user  system elapsed 
+##   0.279   0.328   0.385
+```
+
+One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
+:::
+
+While this second suggestion is faster, you will need to consider what aspects of the codebase are most important in each instance. For example, this code runs more quickly, but [the `%*%` operator](https://stat.ethz.ch/R-manual/R-patched/library/base/html/matmult.html) might be unfamiliar to some R programmers. In cases where efficiency is less important, or the data are not large, you might consider maximizing readability. 
+
+## Challenges and Limitations
+
+Like humans, AI can make mistakes. Be sure to keep the following in mind as you use AI to refactor your code.
+
+### Complexity
+
+Refactoring is often a complex process that requires deep understanding of the code and its context. AI may not always be able to fully understand the complexity of the code and may struggle to identify the best refactoring strategy. Use a modular approach whenever possible.
+
+### Limited Data
+
+AI models require large amounts of data to learn from, but in the case of code refactoring, there is often limited data available. This can make it difficult for AI models to generalize to new code bases and situations, especially if you are using a more niche programming language.
+
+### Quality Control
+
+Automated refactoring tools that use AI may not always produce code that is of the same quality as code produced by human developers. It can be difficult to always ensure that the refactored code is maintainable, efficient, and free of bugs. You need to use your best judgment when copying and pasting AI-produced code into your codebase.
+
+:::{.warning}
+**You should always include unit tests in your code.** Tests can help you catch bugs, including those introduced accidentally by AI.
+:::
+
+Because AI models are created by humans, they can be biased. This means they may not always identify your preferred refactorings or may prioritize certain types of refactorings over others. In some cases, this can lead to suboptimal code quality and may create technical debt over time.
+
+### Security
+
+When using AI to refactor code, the code itself is often sent to an external service or platform for analysis and transformation. This can raise concerns about the security of the code, especially if it contains sensitive information such as trade secrets, proprietary algorithms, or personal data. If your code is sensitive, it's important to carefully vet any third-party AI tools or services used in the refactoring process.
 
 ## Hands-On Exercise
 
-Now it's your turn to try. Let's say you ...
+Now it's your turn to try. 
+
+### The Code
+
+Let's say you are dusting off some code from your past (no judgment here). You were investigating tweets about [Mr. Trash Wheel](https://www.mrtrashwheel.com/), a beloved Baltimore-based contraption that filters trash out of the waterways.
 
 **Note**: This code is just an example and was written strictly for educational purposes.
 
 
-```r
-devtools::session_info()
+```python
+import tweepy
+import pandas
+
+# Enter your API keys and access tokens here
+consumer_key = 'your_consumer_key'
+consumer_secret = "your_consumer_secret"
+access_token = 'your_access_token'
+access_token_secret = 'your_access_token_secret'
+
+# Authenticate with Twitter API
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+
+# Search for tweets containing the search term
+tweets = tweepy.Cursor(tweepy.API(auth).search_tweets, q="Mr. Trash Wheel", tweet_mode='extended').items(100)
+
+# Create empty list to store tweet data
+date_data = []
+location_data = []
+text_data = []
+
+def get_tweet_length(tweet):
+    # Return the length of the tweet text
+    return len(tweet.full_text)
+
+# Loop through each tweet and extract desired data
+for tweet in tweets:
+      date_info = {
+        'date': tweet.created_at
+    }
+    date_data.append(date_info)
+
+# Search for tweets containing the search term
+tweets = tweepy.Cursor(tweepy.API(auth).search_tweets, q="Mr. Trash Wheel", tweet_mode='extended').items(100)
+
+# Loop through each tweet and extract desired data
+for tweet in tweets:
+    location_info = {
+        'location': tweet.user.location
+    }
+        location_data.append(location_info)
+    
+# Search for tweets containing the search term
+tweets = tweepy.Cursor(tweepy.API(auth).search_tweets, q='Mr. Trash Wheel', tweet_mode='extended').items(100)
+    
+# Loop through each tweet and extract desired data
+for tweet in tweets:
+    text_info = {
+        'text': tweet.full_text
+    }
+    text_data.append(text_info)
+
+# Combine lists into a dictionary
+data = {'date': date_data, 
+  'location': location_data, 'text': text_data}
+
+# Store results in pandas dataframe
+df = pandas.DataFrame(data)
+
+# Print dataframe
+print(df)
 ```
 
-```
-## ─ Session info ───────────────────────────────────────────────────────────────
-##  setting  value                       
-##  version  R version 4.0.2 (2020-06-22)
-##  os       Ubuntu 20.04.5 LTS          
-##  system   x86_64, linux-gnu           
-##  ui       X11                         
-##  language (EN)                        
-##  collate  en_US.UTF-8                 
-##  ctype    en_US.UTF-8                 
-##  tz       Etc/UTC                     
-##  date     2023-04-17                  
-## 
-## ─ Packages ───────────────────────────────────────────────────────────────────
-##  package     * version date       lib source                            
-##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
-##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
-##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
-##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
-##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
-##  curl          4.3     2019-12-02 [1] RSPM (R 4.0.3)                    
-##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
-##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
-##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
-##  dplyr       * 1.0.2   2020-08-18 [1] RSPM (R 4.0.2)                    
-##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
-##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
-##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
-##  generics      0.0.2   2018-11-29 [1] RSPM (R 4.0.0)                    
-##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
-##  here          1.0.1   2020-12-13 [1] CRAN (R 4.0.2)                    
-##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
-##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  httr          1.4.2   2020-07-20 [1] RSPM (R 4.0.3)                    
-##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
-##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
-##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
-##  lattice       0.20-41 2020-04-02 [2] CRAN (R 4.0.2)                    
-##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
-##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
-##  Matrix        1.2-18  2019-11-27 [2] CRAN (R 4.0.2)                    
-##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
-##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
-##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
-##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
-##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
-##  png           0.1-8   2022-11-29 [1] CRAN (R 4.0.2)                    
-##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
-##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
-##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
-##  purrr         0.3.4   2020-04-17 [1] RSPM (R 4.0.5)                    
-##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
-##  Rcpp          1.0.10  2023-01-22 [1] CRAN (R 4.0.2)                    
-##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
-##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
-##  reticulate  * 1.28    2023-01-27 [1] CRAN (R 4.0.2)                    
-##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
-##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
-##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
-##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
-##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
-##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
-##  stringr     * 1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
-##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
-##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
-##  tidyselect    1.1.0   2020-05-11 [1] RSPM (R 4.0.3)                    
-##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
-##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
-##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  withr         2.3.0   2020-09-22 [1] RSPM (R 4.0.2)                    
-##  xfun          0.26    2023-03-28 [1] Github (yihui/xfun@74c2a66)       
-##  yaml          2.2.1   2020-02-01 [1] RSPM (R 4.0.3)                    
-## 
-## [1] /usr/local/lib/R/site-library
-## [2] /usr/local/lib/R/library
-```
+### Questions
+
+1. Create an AI prompt that fixes any formatting issues with the code that would cause it not to run.
+
+1. Devise an AI prompt that removes any dead code from your sample above. What gets removed?
+
+1. Create a prompt that makes the code less repetitive, adhering to the DRY principle. What aspect of the code was repetitive?
+
+1. Construct a prompt that makes the code more concise. What are some trade-offs that appear in this code between readability and brevity?
+
+## Summary
+
+- Code refactoring is the process of improving code quality without changing its functionality. It is crucial in software development to maintain a manageable and adaptable codebase.
+
+- Code refactoring reduces technical debt, improves code stability, and makes it easier to maintain.
+
+- Examples of using AI for code refactoring include correcting syntax, adhering to styling and convention, visual styling, avoiding repetition, removing dead code, and improving both readability and speed of execution (optimization).
+
+- The use of AI for code refactoring raises ethical concerns and is not perfect. It is important for the developer to consider security needs of their code, as well as test out their code.

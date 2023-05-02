@@ -3,7 +3,7 @@
 
 # Appendix {-}
 
-## Additional Programming Languages {-}
+## Programming Languages {-}
 
 You might also encounter these programming languages on your software journey.
 

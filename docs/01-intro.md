@@ -3,34 +3,40 @@
 
 # Introduction
 
-The increasing availability of AI chatbots is creating a new landscape in software development. While the future of those who work with code is uncertain, there are valid concerns about the potential for AI bots to replace or significantly reduce the workload of programmers, resulting in a loss of job opportunities. Additionally, there are significant ethical and privacy concerns regarding the use of training data sets to teach these AI systems.
+The increasing availability of AI chatbots is creating a new landscape in software development and data science. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone and limits harm as much as possible.
 
-Despite these worries, the widespread adoption of AI bots is ushering in a new era of computing, data science, and information interaction that presents many exciting possibilities. As AI bots become more ubiquitous, they have the potential to change the way we work with information and interact with machines. The rapid development of AI technology is creating exciting opportunities for programmers to develop innovative solutions to previously intractable problems.
+On the one hand, AI chatbots have the potential to replace or significantly reduce the workload of programmers. This could lead to job losses in the data science industry. Additionally, there are significant ethical and privacy concerns regarding the use of training data sets to teach these AI systems. For example, if a chatbot is trained on a dataset of biased or discriminatory data, it could perpetuate those biases in its interactions with users.
 
-Ultimately, while the future of software development is unclear, there is much to be optimistic about in this brave new world. The advancements in AI and chatbot technology present an opportunity for programmers to work alongside algorithms to create innovative solutions that were previously unimaginable. As with any technological revolution, there will be challenges, but it is up to us to work together to ensure that we use these tools ethically and responsibly, and to create a future that benefits everyone.
+On the other hand, AI chatbots also have the potential to create new jobs and opportunities. For example, chatbot developers will be needed to create and maintain these AI systems. Additionally, AI chatbots could be used to automate tasks that are currently done by humans, freeing up programmers to focus on more creative and strategic work of interpreting what the data actually mean.
 
-## AI provides new opportunities
+Ultimately, while the future of programming in software development and data science is unclear, there is much to be optimistic about in this brave new world. The advancements in AI and chatbot technology present an opportunity for programmers to work alongside algorithms to create innovative solutions that were previously unimaginable. As with any technological revolution, there will be challenges, but it is up to us to work together to ensure that we use these tools ethically and responsibly, and to create a future that benefits everyone.
 
-We do not believe that AI chatbots will replace software developers. While AI can be powerful and useful, it is only as good as the training data behind it and the human using it. Therefore, for the time being and the foreseeable future, humans will remain at the forefront of programming innovation, with AI providing valuable support. As new code is often built on top of existing code written by humans, it is unlikely that AI will fully replace the need for human programmers.
+## AI Provides New Opportunities
 
-However, we _do_ think that the roles of programmers in software development are changing, and some of the skills required to work in this new environment are slightly different from those needed before. In addition to proficiency in programming syntax, programmers may need to develop a more refined ability to construct queries that enable AI bots to create the desired workflows. Other critical skills such as debugging, troubleshooting, and documentation will continue to be valuable, and can be enhanced through the use of AI.
+<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_67.png" title="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." alt="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." width="100%" style="display: block; margin: auto;" />
+
+We do not believe that AI chatbots will replace programmers, software developers, and data scientists. While AI can be powerful and useful, it is only as good as the training data behind it and the human using it. Therefore, for the time being and the foreseeable future, humans will remain at the forefront of programming innovation, with AI providing valuable support. As new code is often built on top of existing code written by humans, it is unlikely that AI will fully replace the need for human programmers.
+
+However, we _do_ think that the roles of programmers in software development and data science are changing, and some of the skills required to work in this new environment are slightly different from those needed before. In addition to proficiency in programming syntax, programmers may need to develop a more refined ability to construct queries that enable AI bots to create the desired workflows. Other critical skills such as debugging, troubleshooting, and documentation will continue to be valuable, and can be enhanced through the use of AI.
 
 Furthermore, AI creates new opportunities and niches for tasks that were previously difficult, time-consuming, or impossible. This is an exciting time for those working in programming, with great potential to explore new and innovative solutions. As AI technology continues to advance, its role in programming will only become more significant, and it is up to developers to adapt and learn how to use these new tools effectively.
 
 ::: {.reflection}
 
-We asked OpenAI's ChatGPT whether AI chatbots would replace human software developers and programmers, and this was the response:
+We asked OpenAI's ChatGPT whether AI chatbots would replace human software developers, data scientists, and programmers, and this was the response:
 
-"No, ChatGPT is not replacing human software developers and programmers. While ChatGPT is capable of generating code, it is not a substitute for the skills and expertise of human programmers.
+"It is unlikely that AI chatbots will replace software developers, data scientists, and programmers entirely. While AI chatbots can perform certain tasks related to software development, data analysis, and programming, they are limited in their abilities and require human oversight and input to function properly.
 
-Software development is a complex process that requires a deep understanding of programming languages, algorithms, and software design principles. Human programmers have the ability to not only write code, but also to understand the nuances of different programming languages and frameworks, debug code, and optimize performance.
+AI chatbots can be used to automate certain tasks such as generating simple code snippets, running tests, and performing simple data analysis. They can also assist in the development process by providing quick answers to commonly asked questions and suggesting possible solutions to programming problems.
 
-Furthermore, programming is not just about writing code - it also involves understanding and translating business requirements into technical solutions, collaborating with other team members, and maintaining code over time.
+However, more complex software development, data analysis, and programming tasks require a level of creativity, critical thinking, and problem-solving that AI chatbots cannot currently replicate. Software developers, data scientists, and programmers have a deep understanding of the technologies and tools used to develop AI chatbots, as well as the ability to optimize and improve those tools.
 
-While ChatGPT can be used to automate certain aspects of software development, it cannot replace the creativity, problem-solving skills, and domain expertise of human software developers and programmers."
+Furthermore, software development, data analysis, and programming require a high level of human communication and collaboration, which AI chatbots cannot currently replicate. Humans are also essential in making ethical decisions related to AI development, such as ensuring that AI systems are transparent, fair, and unbiased.
+
+In summary, while AI chatbots can provide valuable assistance to software developers, data scientists, and programmers, they are unlikely to replace them entirely. Human expertise, creativity, and critical thinking will continue to be essential in developing and optimizing AI systems for the foreseeable future."
 :::
 
-## AI code of ethics
+## AI Code of Ethics
 
 Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. _Intentional harm_ is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. _Inadvertent harm_ is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss.
 
@@ -46,93 +52,74 @@ We must always be aware of the potential for harm and deliberately take steps to
 
 **Advocate for ethical AI.** Speak up when you see AI being used in a way that you believe is unethical. Support organizations that are working to promote ethical AI.
 
-## The AI chatbots
+## The AI Chatbots
 
-Although humans have been interacting with AI chatbots for years, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest in them. We will use a variety of chatbots as examples throughout this course. Some AIs will be better suited for your particular tasks, and it is too early to judge which of the technologies will end up dominating the industry. We encourage you to test multiple AI platforms to find the ones that best fit your needs, and the use of a particular AI in each chapter should not be taken as an endorsement by us.
+Although humans have been interacting with AI chatbots for years, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest in them. Large language model AIs can be divided into two categories: those that can be reached using an internet browser, and those that can be reached using an integrated development environment (IDE).
 
-[ChatGPT](https://chat.openai.com/) is OpenAI's large language model based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to understand and generate human-like responses to text-based conversations. You will need to create an account before using it.
+This is not a comprehensive list! 
 
-[Bard](https://bard.google.com/) is Google's large language model, also known as a conversational AI or chatbot trained to be informative and comprehensive. It is trained on a massive amount of text data and is able to communicate and generate human-like text in response to a wide range of prompts and questions. You will need to join the waiting list before getting access, although in our experience the wait time is short.
+**Browser-based chatbots**
 
-[Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and [Ehang's](https://www.ehang.com/) AI platform, which was created to interface with their Dragonfly drone. Poe also gives you access to ChatGPT.
+* [Bard](https://bard.google.com/) is Google's large language model, also known as a conversational AI or chatbot trained to be informative and comprehensive. It is trained on a massive amount of text data and is able to communicate and generate human-like text in response to a wide range of prompts and questions. You will need to join the waiting list before getting access, although in our experience the wait time is short.
 
-## About this book
+* [ChatGPT](https://chat.openai.com/) is OpenAI's large language model based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to understand and generate human-like responses to text-based conversations. You will need to create an account before using it.
 
-We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules. It is up to the human behind it to make sure that AI is used properly and transparently.
+* [Phind](https://www.phind.com/) is a AI-powered search engine designed specifically for developers asking technical questions. In addition to answering your coding question, it will provide links to the internet sources used to find the answer.
 
+* [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and [Ehang's](https://www.ehang.com/) Dragonfly AI platform, which was created to interface with their Dragonfly drone. Poe also gives you access to ChatGPT.
 
+**IDE-based chatbots**
 
+* [CodePilot](https://github.com/features/copilot) by GitHub is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. It's a subscription model with both individual and business tiers.
 
-```r
-devtools::session_info()
+* [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your IDE using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
+
+:::{.reflection}
+What are the data sources for these chatbots? Some high-profile English-language AIs, including Google’s T5 and Facebook’s LLaMA, were trained on more than 15 million websites [@washingtonpost2023]. The top sources of training data for these AI models were https://patents.google.com/ and https://www.wikipedia.org/ ! 
+:::
+
+## How to Use This Book
+
+This book is written with the expectation that users will follow along and paste the queries from each example into their own AI chatbot session. After you have finished this book, you will be able to use whichever combination of chatbot and programming environment that you're comfortable using.
+
+### Choice of AI Model
+
+You can use whichever AI you like for this course, as long as it is a large language model. (Other types of AIs are not explored in this course.) We will use a variety of browser-based chatbots as examples throughout this course. Some AIs will be better suited for your particular tasks, and it is too early to judge which of the technologies will end up dominating the industry. We encourage you to test multiple AI platforms to find the ones that best fit your needs, and **the use of a particular AI in each chapter should not be taken as an endorsement by us.** 
+
+We have focused on the browser-based chatbots for our examples in this course for ease of demonstration.
+
+### Computing Environment Needs
+
+All the examples and activities in this course can be done in the computer environment you prefer. None of the tasks require a huge amount of computing power, so local installations on your personal computer are fine, though everything will also translate to a high performance computing cluster or a cloud computing platform. 
+
+In addition to the CodeWhisperer chatbot available on the AWS cloud platform, a variety of cloud-based AI tools and platforms exist that can be leveraged for practical projects after this course. For instance, Amazon SageMaker or Google Cloud AI Platform can be used for constructing and training machine learning models, while Microsoft Azure Cognitive Services can be applied to incorporate natural language processing features into your applications. If you'd like to learn more about how AI can be integrated with cloud computing, you can read about it in the Appendix.
+
+### Boxes
+
+Throughout this course, you will see several types of specially-colored boxes. In particular, there are two to which you should pay special attention. One box highlights potential ethical issues with an AI usage.
+
+:::{.ethics}
+In this box, you'll find reminders of the ethical considerations you should be particularly aware of while using AI to do certain tasks. 
+:::
+
+The other box highlights our queries to AI chatbots.
+
+:::{.query}
+The question we posed to the AI chatbot is written in these boxes to make it easier for you to find.
+:::
+
+Wherever possible, we use screenshots of the actual answers we got from the AI chatbots in response to our questions. Occasionally when we have asked for the AI to write or fix code, we have formatted the answer in such a way that makes it easier to use.
+
+:::{.ai_response}
+When you see this format, you will know it indicates an AI response
+
 ```
+Code in these boxes was written by AI. 
+```
+:::
 
-```
-## ─ Session info ───────────────────────────────────────────────────────────────
-##  setting  value                       
-##  version  R version 4.0.2 (2020-06-22)
-##  os       Ubuntu 20.04.5 LTS          
-##  system   x86_64, linux-gnu           
-##  ui       X11                         
-##  language (EN)                        
-##  collate  en_US.UTF-8                 
-##  ctype    en_US.UTF-8                 
-##  tz       Etc/UTC                     
-##  date     2023-04-17                  
-## 
-## ─ Packages ───────────────────────────────────────────────────────────────────
-##  package     * version date       lib source                            
-##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
-##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
-##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
-##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
-##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
-##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
-##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
-##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
-##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
-##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
-##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
-##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
-##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
-##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
-##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
-##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
-##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
-##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
-##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
-##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
-##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
-##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
-##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
-##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
-##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
-##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
-##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
-##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
-##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
-##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
-##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
-##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
-##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
-##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
-##  stringr       1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
-##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
-##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
-##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
-##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
-##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  withr         2.3.0   2020-09-22 [1] RSPM (R 4.0.2)                    
-##  xfun          0.26    2023-03-28 [1] Github (yihui/xfun@74c2a66)       
-##  yaml          2.2.1   2020-02-01 [1] RSPM (R 4.0.3)                    
-## 
-## [1] /usr/local/lib/R/site-library
-## [2] /usr/local/lib/R/library
-```
+
+## About This Book
+
+We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules while we created this book. 
+
