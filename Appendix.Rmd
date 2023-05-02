@@ -7,7 +7,47 @@ ottrpal::set_knitr_image_path()
 
 ## Programming Languages {-}
 
-You might also encounter these programming languages on your software journey.
+Here are commonly used languages and their typical use cases.
+
+**Python**
+
+Known for its readability, simple syntax, and comprehensive add-on modules. It is often recommended as a beginner-friendly language. Python is used for scientific computing, data analysis, machine learning, and web development. Many Data Scientist roles rely on Python.
+
+**Ruby**
+
+Similar to Python, Ruby is also known for its readability and user-friendly syntax. It is typically used for web development, building dynamic websites, and creating web applications.
+
+**JavaScript**
+
+A popular language for web development, known for its versatility and ease of use. Many of the interactive features of websites rely on JavaScript.
+
+**Java**
+
+Java is widely used for enterprise applications, android mobile apps, and web apps.
+
+**PHP**
+
+PHP is easy to learn but can become complex as the application grows. It is typically used for building dynamic web pages, web applications, and content management systems.
+
+**R**
+
+Used for statistical computing, data analysis, and data visualization, R is a popular choice for researchers and data scientists. Some beginners find its syntax complex, especially due to differences in the two major dialects: "base" R versus the "tidyverse".
+
+**Kotlin**
+
+Kotlin is a relatively new language that is designed to be more concise and expressive than Java. However, its advanced features and concepts may be challenging for beginners. It is used for developing Android mobile apps, web development, and server-side development.
+
+**Swift**
+
+Used for iOS and macOS app development, Swift is known for its strict syntax and steep learning curve.
+
+**C#**
+
+Often used for Windows desktop applications, web applications, and video games, C# can be challenging due to its more complex syntax and strict type system.
+
+**C++**
+
+A powerful language often used for developing high-performance applications and operating systems, C++ can be challenging to learn due to its complexity and the need to manage memory manually.
 
 **Julia**
 
