@@ -54,11 +54,13 @@ This course is available in multiple formats which allows you to take it in the 
 | Activity | Duration |
 | :-- | :-- |
 | [Introduction](https://hutchdatascience.org/AI_for_software/introduction.html) | 10 minutes |
-| [Writing and Debugging Code](https://hutchdatascience.org/AI_for_software/writing-and-debugging-code.html) | 10 minutes |
+| [Writing Code](https://hutchdatascience.org/AI_for_software/writing-code.html) | 35 minutes |
+| [Writing Exercise](https://hutchdatascience.org/AI_for_software/writing-code.html#hands-on-exercise) | 15 minutes |
 | [Refactoring Code](https://hutchdatascience.org/AI_for_software/refactoring-code.html) | 35 minutes |
 | [Refactoring Exercise](https://hutchdatascience.org/AI_for_software/refactoring-code.html#hands-on-exercise) | 15 minutes |
 | [Annotating Code](https://hutchdatascience.org/AI_for_software/annotating-your-code.html) | 25 minutes |
 | [Understanding Code](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html) | 25 minutes |
-| [Understanding Code Exercise](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html#hands-on-exercise) | 10 minutes |
-| **Total** | 2 hours & 20 minutes |
+| [Understanding Exercise](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html#hamds-on-exercise) | 10 minutes |
+| **Total** | 2 hours & 50 minutes |
+
 
