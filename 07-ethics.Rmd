@@ -20,6 +20,7 @@ In this chapter we will discuss the following issues that writing code with AI t
 1) Code may be harmful - Currently it is not clear how well generative AI models restrict the creation of code that will be used for goals that harm others.
 
 
+Note that this is an incomplete list, additional ethical concerns will become apparent as we continue to use these new technologies.
 
 **It is essential to address these ethical concerns and ensure that the use of AI in coding is done in a responsible and transparent manner.** This could be done through ensuring the quality of the data used to train AI systems, promoting transparency in AI-generated code, and implementing safeguards against the creation of harmful or biased code. By doing so, we can harness the potential of AI to improve and transform the way we write and optimize code while maintaining ethical standards.
 
