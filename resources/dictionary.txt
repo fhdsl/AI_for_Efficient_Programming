@@ -13,7 +13,7 @@ ChatGPT
 chatGPT
 codebase
 codebases
-CodePilot
+CoPilot
 CodeWhisperer
 const
 Coursera
@@ -50,6 +50,7 @@ ITN
 Jupyter
 fyi
 Leanpub
+LLaMA
 macOS
 Markua
 mentorship
@@ -70,6 +71,7 @@ realpython
 repo
 roadmap
 RStudio
+SageMaker
 str
 stackoverflow
 StackOverflow
