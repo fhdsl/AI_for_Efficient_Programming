@@ -45,7 +45,7 @@ Here are some additional tips for using AI responsibly in coding to avoid bias:
 
 * Be aware that some AI tools currently make up false information based on artifacts of the algorithm. Do not assume that everything that the algorithm produces is real or correct. 
 
-## Unitelligable Code
+## Unitelligible Code
 
 There is risk that those less aware of best coding practices use AI-generated code and do not follow these practices. This could make it difficult for others to understand how the code works and could make it hard to identify and fix any issues that may arise. This could result in negative consequences, such as system crashes or security breaches, that could have been avoided if the code had been written by an experienced and savvy human programmer.
 
@@ -71,10 +71,10 @@ Tips to avoid creating unintelligible code include:
 
 
 
-## Secuirty issues
+## Security issues
 
 
-### Reducing secruity issues
+### Reducing security issues
 
 Follow best practices for data/code security including:
 
