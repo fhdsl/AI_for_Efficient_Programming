@@ -9,7 +9,7 @@ The use of artificial intelligence (AI) and in particular, generative AI, in cod
 
 ## Major concerns
 
-In this chapter we will discuss the following concerns:
+In this chapter we will discuss the following issues that writing code with AI tools may contribute to:
 
 1) Code that contributes to Bias - AI models are built on data and code that were created by biased humans, this bias can be further perpetuated
 1) Code that contributes to misinformation - fake or manipulated data used to help design algorithms could be believed to be correct and this could be further propagated
@@ -30,14 +30,18 @@ Another critical point is that those who use AI tools to write code or to unders
 
 One of the biggest concerns is the potential for AI to create biased code. AI systems are trained on data created by humans. If this data used to train the system is biased, the resulting code could also be biased. This could lead to discrimination against certain groups of people, such as those with certain ethnic or cultural backgrounds, genders, ages, sexuality, capabilities, religions or other group affiliations. 
 
-<!-- It is well known that data and code are often biased. Want to add examples!  -->
-
+It is well known that data and code are often biased [@belenguer_ai_2022]. It is important that evaluations be made throughout the software development process to check for and consider potential perpetuation of bias.
 
 ### Avoiding Bias
 
-Here are some additional tips for using AI responsibly in coding to avoid bias:
+Here are some  tips for using AI responsibly to avoid bias:
 
 * Be aware of the potential biases in the data that is used to train AI systems.
+* Check for possible biases within the data.
+* Evaluate the code for biases as it is developed.
+* Consider the possible outcomes of the use of the code. Consider if the code could possibly be used in a manner that will result in discrimination.
+
+See @belenguer_ai_2022 for more guidance.
 
 ## Misinformation
 
