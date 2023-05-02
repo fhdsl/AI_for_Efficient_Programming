@@ -26,11 +26,13 @@ Note that this is an incomplete list, additional ethical concerns will become ap
 
 Another critical point to remember is that those who use AI tools to write code or to understand code need to recognize their own value in the process. While AI systems are useful, they **do not replace the strengths that humans have** for innovating new ways to write code, evaluating how the code integrates into the larger picture of a project, or in evaluating the downstream consequences of the code. Computer science is a field that has historically lacked diversity and new learners can often feel intimidated. There is the potential that new learners may feel even more discouraged as they learn to write code when witnessing AI tools write code. It is critical that we support diverse new learners of computer science, as we will continue to need human involvement in the development and use of AI tools.
 
+
+
 ## Bias
 
 One of the biggest concerns is the potential for AI to create biased code. AI systems are trained on data created by humans. If this data  used to train the system is biased (and this includes existing code that may be written in a biased manner), the resulting code could also be biased. This could lead to discrimination, abuse, or neglect for certain groups of people, such as those with certain ethnic or cultural backgrounds, genders, ages, sexuality, capabilities, religions or other group affiliations. 
 
-It is well known that data and code are often biased [@belenguer_ai_2022]. It is important that evaluations be made throughout the software development process to check for and consider potential perpetuations of bias.
+It is well known that data and code are often biased [@belenguer_ai_2022]. It is important that evaluations be made throughout the software development process to check for and consider potential perpetuation of bias.
 
 ### Avoiding Bias
 
@@ -111,6 +113,7 @@ Similarly, AI systems could potentially infringe on intellectual property rights
 
 Tips to avoid copyright violations:
 
+* Be transparent about what AI tools you use to write your code 
 * Obtain permission from the copyright holders of any code that you use to train the AI system. Only use code that is in the public domain or that has been licensed for use by the AI system's owner.
 * Cite any GitHub repositories or training manuals you might use in your code
 
