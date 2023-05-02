@@ -51,7 +51,10 @@ AI tools use data that may contain false information. AI tools may also report d
 
 ### Reducing Misinformation
 
-* Be aware that some AI tools currently make up false information based on artifacts of the algorithm. Do not assume that everything that the algorithm produces is real or correct. 
+Tips for reducing misinformation:
+
+* Be aware that some AI tools currently make up false information based on artifacts of the algorithm. 
+* Do not assume that everything that the algorithm produces is real or correct. 
 
 ## Unitelligible Code
 
