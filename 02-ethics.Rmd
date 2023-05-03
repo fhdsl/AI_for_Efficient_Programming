@@ -7,6 +7,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The use of artificial intelligence (AI) and in particular, generative AI, in coding has raised a number of ethical concerns. We will highlight several current concerns, however please be aware that this is a dynamic field and the possible implications of this technology is continuing to develop. It is critical that we as a society continue to evaluate and predict what the consequences of the use of AI will be, so that we can mitigate harmful effects.
 
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g23e17ee1585_223_0")
+```
+
+
 ## Major concerns
 
 In this chapter we will discuss the following issues that writing code with AI tools may contribute to:
@@ -24,7 +29,7 @@ In this chapter we will discuss the following issues that writing code with AI t
 Note that this is an incomplete list; additional ethical concerns will become apparent as we continue to use these new technologies. We highly suggest that users of these tools be **transparent** about the use of these tools, so that as new ethical issues emerge, we will be better prepared to understand the implications for specific coding projects.
 
 :::{.ethics}
-Be transparent about what AI tools you are using. Not only does it help others to better understand how you created your code and what possible code written by humans the tool actually used in generating the code, but it also may help us with future issues related to the use of these tools.
+Be transparent about what AI tools you are using. Not only does it help others to better understand how you created your code and what possible code written by humans the tool actually used in generating the code, but it also may help with future issues related to the use of these tools.
 :::
 
 **It is essential to address these ethical concerns and ensure that the use of AI in coding is done in a responsible and transparent manner.** This could be done through ensuring the quality of the data used to train AI systems, promoting transparency in AI-generated code, and implementing safeguards against the creation of harmful or biased code. By doing so, we can harness the potential of AI to improve and transform the way we write and optimize code while maintaining ethical standards.
@@ -107,6 +112,12 @@ Are there any limitations associated with this code?
 :::{.query}
 What assumptions were made in writing this code?
 :::
+
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g23e17ee1585_223_13")
+```
+
 
 ## Security and Privacy issues
 
