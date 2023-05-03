@@ -66,7 +66,7 @@ This is not a comprehensive list!
 
 * [Phind](https://www.phind.com/) is a AI-powered search engine designed specifically for developers asking technical questions. In addition to answering your coding question, it will provide links to the internet sources used to find the answer.
 
-* [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and [Ehang's](https://www.ehang.com/) Dragonfly AI platform, which was created to interface with their Dragonfly drone. Poe also gives you access to ChatGPT.
+* [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and Microsoft's Dragonfly AI-based search engine. Poe also gives you access to ChatGPT.
 
 **IDE-based chatbots**
 
