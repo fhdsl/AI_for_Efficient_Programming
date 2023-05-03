@@ -55,7 +55,7 @@ This course is available in multiple formats which allows you to take it in the 
 | Activity | Duration |
 | :-- | :-- |
 | [Introduction](https://hutchdatascience.org/AI_for_software/introduction.html) | 10 minutes |
-|[Ethics for Using AI](https://hutchdatascience.org/AI_for_software/ethics.html) | 20 minutes |
+|[Ethics for Using AI](https://hutchdatascience.org/AI_for_software/ethics-of-using-ai.html) | 20 minutes |
 | [Writing Code](https://hutchdatascience.org/AI_for_software/writing-code.html) | 35 minutes |
 | [Writing Exercise](https://hutchdatascience.org/AI_for_software/writing-code.html#hands-on-exercise) | 15 minutes |
 | [Refactoring Code](https://hutchdatascience.org/AI_for_software/refactoring-code.html) | 35 minutes |
