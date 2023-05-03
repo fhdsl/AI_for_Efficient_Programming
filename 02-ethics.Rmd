@@ -167,28 +167,15 @@ What are some possible negative consequences of using this code?
 Here is a summary of all the tips we suggested:
 
 * Be transparent about what AI tools you have used to write your code.
-* Support human code by: 
-  * Following best teaching practices for inclusion of diverse learners.
-  * Encouraging current and future programmers to continue to innovate and write code. 
-  * Avoiding thinking that code written by computers must be better than code written by humans, as this simply is not true. 
-  * Recalling that humans first wrote they code that the AI tools use to write code.
-  * Giving credit to the humans who write code where possible.
-* To Give credit where possible:
-  * Obtain permission from the copyright holders of any code that you use to train the AI system. Only use code that is in the public domain or that has been licensed for use by the AI system's owner.
-  * Cite any GitHub repositories or training manuals you might use in your code.
-  * Ask the AI tools if the code it helped generate used any code that you can cite.
-  * Be aware that some AI tools currently make up false information based on artifacts of the algorithm. 
+* Support human code by giving credit to the humans who write code where possible, by citing their code and following copyright restrictions.
+* Ask the AI tools if the code it helped generate used any code that you can cite.
+* Be aware that some AI tools currently make up false information based on artifacts of the algorithm. 
 * Do not assume that everything that an AI tool produces is real or correct.
 * Realize that AI is only as good or up-to-date as what it was trained on, the code may be generated using out-of-date code. Look up packages and functions used to ensure if the code is up-to-date.
 * Make sure that you understand the code that you are using. AI can be used to help you understand what the code is doing, but consult with experts when needed.
-* Ask the AI tools for extra information about if there are any potential limitations or weaknesses in the code, but keep in mind that the tool may not be aware of issues and therefore human review is required. The information provided by the tool can however be a helpful starting point.
-* Check that all passwords, access tokens (like API keys), security certificates are not saved in a public place where anyone can access or tamper with them.
-* Check that no sensitive data, such as Personal Identifiable Information (PII) becomes public through the code.
-* Utilize encryption and other security practices where needed.
-* Consult with an expert about data security if you think your code could possibly cause someone to access protected data who is not authorized to access it.
+* Ask the AI tools for extra information about if there are any potential limitations or weaknesses in the code or security or privacy issues, but also consult with human experts.
+* Check that the code does not expose any sensitive data like passwords, or Personal Identifiable Information (PII) through the code.
 * Promote for regulation of AI tools by voting for such standards where possible.
-* Ask AI tools for help in checking for security or privacy issues with the code, but to not rely on them alone.
-* Be careful about what code you share publicly, as it could be used for malicious purposes.
 * Consider how the code might be used by others. Ask the AI tools to help you determine what the downstream consequences could be for your code, but consider this yourself and potentially ask others.
 
 Overall, we hope that these guidelines and tips will help us all to use AI tools more responsibly for writing code. We recognize however, that as this is emerging technology and more ethical issues will emerge as we continue to use these tools in new ways. AI tools can even help us to use them more responsibly when we ask the right additional questions when writing code, but remember that human review is always necessary. Staying up-to-date on the current ethical considerations will also help us all continue to use AI responsibly.
