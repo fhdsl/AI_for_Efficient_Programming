@@ -173,7 +173,7 @@ What are some possible negative consequences of using this code?
 :::
 
 
-## Conclusions
+## Summary
 
 Here is a summary of all the tips we suggested:
 
