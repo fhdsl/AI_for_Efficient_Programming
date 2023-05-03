@@ -10,6 +10,7 @@ The use of artificial intelligence (AI) and in particular, generative AI, in cod
 ## Major concerns
 
 In this chapter we will discuss the following issues that writing code with AI tools may contribute to:
+
 1) Not a replacement for humans - AI tools can help humans write code, but they are not a replacement.
 1) Bias - AI models are built on data and code that were created by biased humans, this bias can be further perpetuated.
 1) Misinformation - fake or manipulated data used to help design algorithms could be believed to be correct and this could be further propagated.
@@ -20,7 +21,7 @@ In this chapter we will discuss the following issues that writing code with AI t
 1) Harmful Code - Currently it is not clear how well generative AI models restrict the creation of code that will be used for goals that harm others.
 
 
-Note that this is an incomplete list; additional ethical concerns will become apparent as we continue to use these new technologies.
+Note that this is an incomplete list; additional ethical concerns will become apparent as we continue to use these new technologies. We highly suggest that users of these tools be transparent about the use of these tools, so that as new ethical issues emerge, we will be better prepared to understand the implications for specific coding projects.
 
 **It is essential to address these ethical concerns and ensure that the use of AI in coding is done in a responsible and transparent manner.** This could be done through ensuring the quality of the data used to train AI systems, promoting transparency in AI-generated code, and implementing safeguards against the creation of harmful or biased code. By doing so, we can harness the potential of AI to improve and transform the way we write and optimize code while maintaining ethical standards.
 
@@ -36,6 +37,7 @@ Computer science is a field that has historically lacked diversity and new learn
 * Encourage current and future programmers to continue to innovate and write code. 
 * Avoid thinking that code written by computers must be better than code written by humans, as this simply is not true. 
 * Recall that humans first wrote they code that the AI tools use to write code.
+* Be transparent about when you do or do not use AI tools, give credit to the humans who write code where possible.
 
 
 ## Bias
@@ -97,11 +99,11 @@ AI tools are not always trained in a way that is particularly conscious of data 
 
 ### Tips for reducing security and privacy issues
 
-* Check that all passwords, access tokens (like API keys), security certificates are not saved in a public place where anyone can access or tamper with them
-* Check that no sensitive data, such as Personal Identifiable Information (PII) becomes public through the code
-* Utilize encryption and other security practices where needed
-* Consult with an expert about data security if you think your code could possibly cause someone to access protected data who is not authorized to access it
-* Promote for regulation of AI tools by voting for such standards where possible
+* Check that all passwords, access tokens (like API keys), security certificates are not saved in a public place where anyone can access or tamper with them.
+* Check that no sensitive data, such as Personal Identifiable Information (PII) becomes public through the code.
+* Utilize encryption and other security practices where needed.
+* Consult with an expert about data security if you think your code could possibly cause someone to access protected data who is not authorized to access it.
+* Promote for regulation of AI tools by voting for such standards where possible.
 
 
 ## Violating Copyright
@@ -111,9 +113,9 @@ Similarly, AI systems could potentially infringe on intellectual property rights
 
 ### Tips for avoiding copyright violations
 
-* Be transparent about what AI tools you use to write your code 
+* Be transparent about what AI tools you use to write your code. 
 * Obtain permission from the copyright holders of any code that you use to train the AI system. Only use code that is in the public domain or that has been licensed for use by the AI system's owner.
-* Cite any GitHub repositories or training manuals you might use in your code
+* Cite any GitHub repositories or training manuals you might use in your code.
 
 ## Harmful code
 
@@ -126,7 +128,9 @@ Another major concern is the use of AI to generate malicious code. For instance,
 * Consider how the code might be used by others.
 
 
+## Conclusions
 
+Overall, we hope that these guidelines and tips will help us all to use AI tools more responsibly for writing code. We recognize however, that as this is emerging technology, more ethical issues will emerge as we continue to use these tools in new ways. Staying up-to-date on the current ethical considerations will also help us all continue to be responsible.
 
 
 
