@@ -3,7 +3,7 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Ethics of AI
+# Ethics of Using AI
 
 The use of artificial intelligence (AI) and in particular, generative AI, in coding has raised a number of ethical concerns. We will highlight several current concerns, however please be aware that this is a dynamic field and the possible implications of this technology is continuing to develop. It is critical that we as a society continue to evaluate and predict what the consequences of the use of AI will be, so that we can mitigate harmful effects.
 
