@@ -316,15 +316,16 @@ fn main() {
 
 ### Questions
 
-1. Craft a query that identifies the features that can be used to determine the coding language, as well as the version of the language.
+1. Craft a query that identifies the features that can be used to determine the coding language, as well as the version of the language. What language and version is it written in? What features give away the coding language?
 
-1. Create a prompt that determines what this code does, as well as important features of the program.
+1. Create a prompt that determines what this code does, as well as important features of the program. What does this code do?
 
 1. Write a prompt that determines the purpose of this specific code snippet:
 
 ```
  let root = BitMapBackend::new("sir_vaccination.png", (800, 600)).into_drawing_area();
 ```
+What is the purpose of this line of code?
 
 ## Summary
 
