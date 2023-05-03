@@ -77,6 +77,11 @@ There is risk that those less aware of best coding practices use AI-generated co
  * Code should be reviewed by experienced programmers.
  * Code should be annotated throughout to explain what the code is doing.
  * Documentation should be created that describes how to use the code properly.
+ * Ask AI tools to help you understand the code, but get expert assistance where needed.
+ 
+:::{.query}
+Can you explain what the code in line 4 is doing?
+:::
  
  
 ## Faulty or Buggy Code
@@ -89,8 +94,15 @@ There is a risk that code written with AI tools, if not reviewed carefully enoug
 * Do not assume that the code generate by AI is correct.
 * Realize that AI is only as good or up-to-date as what it was trained on, the code may be generated using out-of-date code. Look up packages and functions used to ensure if the code is up-to-date.
 * Make sure that you understand the code that you are using. AI can be used to help you understand what the code is doing, but consult with experts when needed.
+* Ask the AI tools for extra information about if there are any potential limitations or weaknesses in the code, but keep in mind that the tool may not be aware of issues and therefore human review is required. The information provided by the tool can however be a helpful starting point.
 
+:::{.query}
+Are there any limitations associated with this code?
+:::
 
+:::{.query}
+What assumptions were made in writing this code?
+:::
 
 ## Security and Privacy issues
 
@@ -104,7 +116,11 @@ AI tools are not always trained in a way that is particularly conscious of data 
 * Utilize encryption and other security practices where needed.
 * Consult with an expert about data security if you think your code could possibly cause someone to access protected data who is not authorized to access it.
 * Promote for regulation of AI tools by voting for such standards where possible.
+* Ask AI tools for help, but to not rely on them alone.
 
+:::{.query}
+Are there any security or privacy concerns associated with this code?
+:::
 
 ## Violating Copyright
 
@@ -116,6 +132,11 @@ Similarly, AI systems could potentially infringe on intellectual property rights
 * Be transparent about what AI tools you use to write your code. 
 * Obtain permission from the copyright holders of any code that you use to train the AI system. Only use code that is in the public domain or that has been licensed for use by the AI system's owner.
 * Cite any GitHub repositories or training manuals you might use in your code.
+* Ask the AI tools if the code it helped generate used any code that you can cite.
+
+:::{.query}
+Did this code use any code from others that I can cite?
+:::
 
 ## Harmful code
 
@@ -126,11 +147,20 @@ Another major concern is the use of AI to generate malicious code. For instance,
 
 * Be careful about what code you share publicly, as it could be used for malicious purposes.
 * Consider how the code might be used by others.
+* Ask the AI tools to help you, but do not rely on them alone.
+
+:::{.query}
+What are the possible downstream uses of this code?
+:::
+
+:::{.query}
+What are some possible negative consequences of using this code?
+:::
 
 
 ## Conclusions
 
-Overall, we hope that these guidelines and tips will help us all to use AI tools more responsibly for writing code. We recognize however, that as this is emerging technology, more ethical issues will emerge as we continue to use these tools in new ways. Staying up-to-date on the current ethical considerations will also help us all continue to be responsible.
+Overall, we hope that these guidelines and tips will help us all to use AI tools more responsibly for writing code. We recognize however, that as this is emerging technology and more ethical issues will emerge as we continue to use these tools in new ways. AI tools can even help us to use them more responsibly when we ask the right additional questions when writing code, but remember that human review is always necessary. Staying up-to-date on the current ethical considerations will also help us all continue to use AI responsibly.
 
 
 
