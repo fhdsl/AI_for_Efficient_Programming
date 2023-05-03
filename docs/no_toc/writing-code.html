@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Writing Code | AI for Software Development</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Writing Code | AI for Software Development" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Writing Code | AI for Software Development" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="refactoring-code.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/style_custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#available-course-formats"><i class="fa fa-check"></i>Available course formats</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#suggested-activity-context"><i class="fa fa-check"></i>Suggested Activity Context</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#lesson-breakdown"><i class="fa fa-check"></i>Lesson Breakdown</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#ai-provides-new-opportunities"><i class="fa fa-check"></i><b>1.1</b> AI Provides New Opportunities</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#ai-code-of-ethics"><i class="fa fa-check"></i><b>1.2</b> AI Code of Ethics</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#the-ai-chatbots"><i class="fa fa-check"></i><b>1.3</b> The AI Chatbots</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#how-to-use-this-book"><i class="fa fa-check"></i><b>1.4</b> How to Use This Book</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction.html"><a href="introduction.html#choice-of-ai-model"><i class="fa fa-check"></i><b>1.4.1</b> Choice of AI Model</a></li>
+<li class="chapter" data-level="1.4.2" data-path="introduction.html"><a href="introduction.html#computing-environment-needs"><i class="fa fa-check"></i><b>1.4.2</b> Computing Environment Needs</a></li>
+<li class="chapter" data-level="1.4.3" data-path="introduction.html"><a href="introduction.html#boxes"><i class="fa fa-check"></i><b>1.4.3</b> Boxes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#about-this-book"><i class="fa fa-check"></i><b>1.5</b> About This Book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="writing-code.html"><a href="writing-code.html"><i class="fa fa-check"></i><b>2</b> Writing Code</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="writing-code.html"><a href="writing-code.html#writing-code-with-ai"><i class="fa fa-check"></i><b>2.1</b> Writing Code with AI</a></li>
+<li class="chapter" data-level="2.2" data-path="writing-code.html"><a href="writing-code.html#tips-for-coding-with-ai"><i class="fa fa-check"></i><b>2.2</b> Tips for Coding with AI</a></li>
+<li class="chapter" data-level="2.3" data-path="writing-code.html"><a href="writing-code.html#example-one-creating-a-function"><i class="fa fa-check"></i><b>2.3</b> Example One: Creating a Function</a></li>
+<li class="chapter" data-level="2.4" data-path="writing-code.html"><a href="writing-code.html#example-two-debugging-code"><i class="fa fa-check"></i><b>2.4</b> Example Two: Debugging Code</a></li>
+<li class="chapter" data-level="2.5" data-path="writing-code.html"><a href="writing-code.html#example-three-comparing-syntax"><i class="fa fa-check"></i><b>2.5</b> Example Three: Comparing Syntax</a></li>
+<li class="chapter" data-level="2.6" data-path="writing-code.html"><a href="writing-code.html#example-four-figuring-out-a-common-task"><i class="fa fa-check"></i><b>2.6</b> Example Four: Figuring Out a Common Task</a></li>
+<li class="chapter" data-level="2.7" data-path="writing-code.html"><a href="writing-code.html#example-five-planning-your-program"><i class="fa fa-check"></i><b>2.7</b> Example Five: Planning Your Program</a></li>
+<li class="chapter" data-level="2.8" data-path="writing-code.html"><a href="writing-code.html#example-six-selecting-a-coding-language"><i class="fa fa-check"></i><b>2.8</b> Example Six: Selecting a Coding Language</a></li>
+<li class="chapter" data-level="2.9" data-path="writing-code.html"><a href="writing-code.html#hands-on-exercise"><i class="fa fa-check"></i><b>2.9</b> Hands On Exercise</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="writing-code.html"><a href="writing-code.html#code"><i class="fa fa-check"></i><b>2.9.1</b> Code</a></li>
+<li class="chapter" data-level="2.9.2" data-path="writing-code.html"><a href="writing-code.html#questions"><i class="fa fa-check"></i><b>2.9.2</b> Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="writing-code.html"><a href="writing-code.html#summary"><i class="fa fa-check"></i><b>2.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="refactoring-code.html"><a href="refactoring-code.html"><i class="fa fa-check"></i><b>3</b> Refactoring Code</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="refactoring-code.html"><a href="refactoring-code.html#ai-in-code-refactoring"><i class="fa fa-check"></i><b>3.1</b> AI in Code Refactoring</a></li>
+<li class="chapter" data-level="3.2" data-path="refactoring-code.html"><a href="refactoring-code.html#example-one-correcting-syntax"><i class="fa fa-check"></i><b>3.2</b> Example One: Correcting Syntax</a></li>
+<li class="chapter" data-level="3.3" data-path="refactoring-code.html"><a href="refactoring-code.html#example-two-styling-and-convention"><i class="fa fa-check"></i><b>3.3</b> Example Two: Styling and Convention</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="refactoring-code.html"><a href="refactoring-code.html#commonly-accepted-convention"><i class="fa fa-check"></i><b>3.3.1</b> Commonly Accepted Convention</a></li>
+<li class="chapter" data-level="3.3.2" data-path="refactoring-code.html"><a href="refactoring-code.html#visual-styling"><i class="fa fa-check"></i><b>3.3.2</b> Visual Styling</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="refactoring-code.html"><a href="refactoring-code.html#example-three-staying-dry"><i class="fa fa-check"></i><b>3.4</b> Example Three: Staying DRY</a></li>
+<li class="chapter" data-level="3.5" data-path="refactoring-code.html"><a href="refactoring-code.html#example-four-keeping-code-alive"><i class="fa fa-check"></i><b>3.5</b> Example Four: Keeping Code Alive</a></li>
+<li class="chapter" data-level="3.6" data-path="refactoring-code.html"><a href="refactoring-code.html#example-five-making-code-readable"><i class="fa fa-check"></i><b>3.6</b> Example Five: Making Code Readable</a></li>
+<li class="chapter" data-level="3.7" data-path="refactoring-code.html"><a href="refactoring-code.html#example-six-keep-it-brief"><i class="fa fa-check"></i><b>3.7</b> Example Six: Keep it Brief</a></li>
+<li class="chapter" data-level="3.8" data-path="refactoring-code.html"><a href="refactoring-code.html#code-optimization"><i class="fa fa-check"></i><b>3.8</b> Code optimization</a></li>
+<li class="chapter" data-level="3.9" data-path="refactoring-code.html"><a href="refactoring-code.html#challenges-and-limitations"><i class="fa fa-check"></i><b>3.9</b> Challenges and Limitations</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="refactoring-code.html"><a href="refactoring-code.html#complexity"><i class="fa fa-check"></i><b>3.9.1</b> Complexity</a></li>
+<li class="chapter" data-level="3.9.2" data-path="refactoring-code.html"><a href="refactoring-code.html#limited-data"><i class="fa fa-check"></i><b>3.9.2</b> Limited Data</a></li>
+<li class="chapter" data-level="3.9.3" data-path="refactoring-code.html"><a href="refactoring-code.html#quality-control"><i class="fa fa-check"></i><b>3.9.3</b> Quality Control</a></li>
+<li class="chapter" data-level="3.9.4" data-path="refactoring-code.html"><a href="refactoring-code.html#security"><i class="fa fa-check"></i><b>3.9.4</b> Security</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="refactoring-code.html"><a href="refactoring-code.html#hands-on-exercise-1"><i class="fa fa-check"></i><b>3.10</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="3.10.1" data-path="refactoring-code.html"><a href="refactoring-code.html#the-code"><i class="fa fa-check"></i><b>3.10.1</b> The Code</a></li>
+<li class="chapter" data-level="3.10.2" data-path="refactoring-code.html"><a href="refactoring-code.html#questions-1"><i class="fa fa-check"></i><b>3.10.2</b> Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.11" data-path="refactoring-code.html"><a href="refactoring-code.html#summary-1"><i class="fa fa-check"></i><b>3.11</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="annotating-your-code.html"><a href="annotating-your-code.html"><i class="fa fa-check"></i><b>4</b> Annotating Your Code</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-readability"><i class="fa fa-check"></i><b>4.1</b> Improves readability</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-readability-aiding-comments"><i class="fa fa-check"></i><b>4.1.1</b> Examples of readability aiding comments</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-maintainability"><i class="fa fa-check"></i><b>4.2</b> Improves maintainability</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-maintainability-aiding-comments"><i class="fa fa-check"></i><b>4.2.1</b> Examples of maintainability aiding comments</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="annotating-your-code.html"><a href="annotating-your-code.html#improves-the-quality"><i class="fa fa-check"></i><b>4.3</b> Improves the quality</a></li>
+<li class="chapter" data-level="4.4" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-of-quality-aiding-comments"><i class="fa fa-check"></i><b>4.4</b> Examples of quality aiding comments</a></li>
+<li class="chapter" data-level="4.5" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ai-in-code-annotation"><i class="fa fa-check"></i><b>4.5</b> AI in Code Annotation</a></li>
+<li class="chapter" data-level="4.6" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ethics-of-using-ai-to-annotate-code"><i class="fa fa-check"></i><b>4.6</b> Ethics of using AI to annotate code</a></li>
+<li class="chapter" data-level="4.7" data-path="annotating-your-code.html"><a href="annotating-your-code.html#examples-on-using-ai-for-annotation"><i class="fa fa-check"></i><b>4.7</b> Examples on using AI for annotation</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-a-readme-summary"><i class="fa fa-check"></i><b>4.7.1</b> Ask for a README summary</a></li>
+<li class="chapter" data-level="4.7.2" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-line-by-line-annotation"><i class="fa fa-check"></i><b>4.7.2</b> Ask for line by line annotation</a></li>
+<li class="chapter" data-level="4.7.3" data-path="annotating-your-code.html"><a href="annotating-your-code.html#ask-for-how-the-code-could-be-improved"><i class="fa fa-check"></i><b>4.7.3</b> Ask for how the code could be improved</a></li>
+<li class="chapter" data-level="4.7.4" data-path="annotating-your-code.html"><a href="annotating-your-code.html#style-the-code"><i class="fa fa-check"></i><b>4.7.4</b> Style the code</a></li>
+<li class="chapter" data-level="4.7.5" data-path="annotating-your-code.html"><a href="annotating-your-code.html#sometimes-it-has-trouble-with-file-types-if-given-a-url"><i class="fa fa-check"></i><b>4.7.5</b> Sometimes it has trouble with file types if given a URL</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="annotating-your-code.html"><a href="annotating-your-code.html#summary-2"><i class="fa fa-check"></i><b>4.8</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html"><i class="fa fa-check"></i><b>5</b> Understanding Unfamiliar Code</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#ai-in-reading-code"><i class="fa fa-check"></i><b>5.1</b> AI in Reading Code</a></li>
+<li class="chapter" data-level="5.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-one-summarizing-code-you-didnt-write"><i class="fa fa-check"></i><b>5.2</b> Example One: Summarizing Code You Didn’t Write</a></li>
+<li class="chapter" data-level="5.3" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-two-identifying-a-coding-language"><i class="fa fa-check"></i><b>5.3</b> Example Two: Identifying a Coding Language</a></li>
+<li class="chapter" data-level="5.4" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-three-interpreting-regex"><i class="fa fa-check"></i><b>5.4</b> Example Three: Interpreting Regex</a></li>
+<li class="chapter" data-level="5.5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-four-demystifying-functions"><i class="fa fa-check"></i><b>5.5</b> Example Four: Demystifying Functions</a></li>
+<li class="chapter" data-level="5.6" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-2"><i class="fa fa-check"></i><b>5.6</b> Hands-On Exercise</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#the-code-1"><i class="fa fa-check"></i><b>5.6.1</b> The Code</a></li>
+<li class="chapter" data-level="5.6.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#questions-2"><i class="fa fa-check"></i><b>5.6.2</b> Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#summary-3"><i class="fa fa-check"></i><b>5.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#programming-languages"><i class="fa fa-check"></i>Programming Languages</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#ai-and-cloud-computing"><i class="fa fa-check"></i>AI and Cloud Computing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/W6Mg4rzuMK6Yk3Am8"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AI for Software Development</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/dasl_thin_main_image.png">
+</div>
+<div id="writing-code" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Writing Code</h1>
+<p>In today’s digitally-driven world, coding has become an essential skill. It is used to create websites, mobile applications, and sophisticated software systems. Contrary to popular belief, coding is not only for those who possess an innate talent for programming. With the right resources and a willingness to learn, anyone can become proficient in coding.</p>
+<p>Practice is crucial to mastering the art of coding, and those who are willing to commit themselves to the learning process can achieve great results. Writing code can also be a rewarding and fulfilling hobby, too. Creating your own software, building a website, or automating a task can be immensely satisfying, and can provide a sense of accomplishment and pride.</p>
+<p>Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.</p>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_1_0.png" title="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." alt="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." width="100%" style="display: block; margin: auto;" /></p>
+<p>Ultimately, the ability to write code is a valuable asset in today’s world, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience.</p>
+<div id="writing-code-with-ai" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Writing Code with AI</h2>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_83.png" title="The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms." alt="The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms." width="100%" style="display: block; margin: auto;" /></p>
+<p>AI-powered programming tools and technologies are revolutionizing the way we approach software development.</p>
+<ol style="list-style-type: decimal">
+<li><p><em>AI can generate code snippets.</em> An AI-powered code editor can suggest more efficient algorithms or highlight potential errors in real-time. It can also help developers to reproduce bugs more easily and to test potential fixes more quickly. This can save developers a significant amount of time and effort, and it can help them to debug their code more effectively.</p></li>
+<li><p><em>AI can make programming more accessible.</em> With AI-generated code and automated programming tools, individuals who are not experienced developers can still create software solutions. This has the potential to democratize programming and lead to new innovations from a wider range of people.</p></li>
+<li><p><em>AI is changing the skills required for writing code.</em> Rather than simply memorizing syntax, developers need to focus on developing their creativity, intuition, and problem-solving skills. Additionally, programmers must also hone their abilities in architecture design and project management, as these skills are becoming increasingly important in the modern software development landscape.</p></li>
+</ol>
+<p>As AI continues to evolve, it is likely to have an even greater impact on the way we develop software in the future.</p>
+<div class="ethics">
+<p><strong>As a programmer using AI, it is up to you to be responsible for what you create.</strong> You must rigorously test any code you write. It is your job to make sure any code you create with AI is not malicious and works as expected.</p>
+</div>
+</div>
+<div id="tips-for-coding-with-ai" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Tips for Coding with AI</h2>
+<p>Using AI to write code is as much of an art as writing your own code. Following a few rules and suggestions will make your experience much more enjoyable and productive.</p>
+<p><strong>Remember that AI cannot read your mind</strong>. You need to tell it what you’re thinking, and it may take several rounds of question-and-answer before you get something you can work with.</p>
+<ul>
+<li><p><em>Be clear about your goals.</em> What do you want the AI to do? Be as specific as possible.</p></li>
+<li><p><em>Start with a simple task.</em> Don’t try to do too much too soon. Start with a simple task and then gradually work your way up to more complex tasks. You wouldn’t write a complete program all at once, and you shouldn’t have AI do it, either.</p></li>
+<li><p><em>Provide enough data.</em> The more data (and detail) you can give the AI, the better it will be able to learn and perform the task you want it to do.</p></li>
+<li><p><em>Be patient.</em> Querying an AI can take time. Don’t expect it to be perfect right away.</p></li>
+</ul>
+<p><strong>Test everything AI writes</strong>. You are responsible for the code that AI generates, even if you didn’t write it yourself. AI can be biased, just like humans, and this could lead to sub optimal development. There is a concern that AI may focus development on areas that optimize certain metrics but not overall quality, effectiveness, or user needs. Human judgment is still needed to ensure that AI is used in a responsible and ethical way.</p>
+<ul>
+<li><p><em>Test your results.</em> Make sure the AI is actually doing what you want it to do. AI systems are trained on data, and if the data is not representative of the real world, the AI system may not be able to generate code that works correctly. It is important to test the code to make sure that it is working as intended and that it is producing the desired results. Inadequate testing could lead to low quality, buggy code. Since AI generated code would be highly automated, it requires strong testing procedures and safety oversight to ensure it meets standards before deployment.</p></li>
+<li><p><em>Make sure your code is secure.</em> AI systems can be used to generate code that is vulnerable to attack, and it is important to test the code to make sure that it is secure. This can help to prevent security breaches from occurring.</p></li>
+<li><p><em>Use a variety of AI models.</em> There are many different AI models available. Experiment with different models to see which one works best for your task.</p></li>
+<li><p><em>Get feedback from others.</em> Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.</p></li>
+</ul>
+</div>
+<div id="example-one-creating-a-function" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Example One: Creating a Function</h2>
+<p>One of the most common things a programmer does is write functions to automate tedious tasks. With proper guidance, AI can speed this process up.</p>
+<p>Perhaps you need to write a quick function that reverses all the letters in a string. We can query <a href="https://www.phind.com/">Phind</a> for help.</p>
+<div class="query">
+<p>How do I write a function that reverses the letters in a string?</p>
+</div>
+<div class="ai_response">
+<p>To reverse a string in Bash, there are multiple approaches.</p>
+<p>One way to reverse a string is by using the <code>rev</code> command. According to <a href="https://stackoverflow.com/questions/11461625/reverse-the-order-of-characters-in-a-string">StackOverflow</a>, the <code>rev</code> command is installed on most Linux systems by default. To use the <code>rev</code> command, simply enter <code>rev</code> followed by the string you want to reverse. For example:</p>
+<pre><code>$ echo &quot;12345&quot; | rev</code></pre>
+<p>However, it is important to note that the rev command is not present in all flavors of Unix.</p>
+<p>Another way to reverse a string is by using a simple Bash script. According to <a href="https://askubuntu.com/questions/1330942/how-to-reverse-a-string-in-bash-script">StackOverflow</a>, we can write a Bash script that reverses a string using a for loop. Here is an example script:</p>
+<pre><code>var=&quot;12345&quot;
+copy=\${var}
+
+len=${#copy}
+for((i=$len-1;i&gt;=0;i--)); do rev=&quot;$rev\${copy:$i:1}&quot;; done
+
+echo &quot;var: $var, rev: $rev&quot;</code></pre>
+<p>This script takes the string “12345” and stores it in the variable <code>var</code>. It then creates a copy of the string and stores it in the variable <code>copy</code>. The length of the string is stored in the variable <code>len</code>. The for loop starts at the end of the string and iterates through each character, adding it to the variable <code>rev</code>. Finally, the script prints the original string and the reversed string.</p>
+<p>Another approach to reversing a string is by using the <code>tac</code> command. According to <a href="https://askubuntu.com/questions/1330942/how-to-reverse-a-string-in-bash-script">StackOverflow</a>, we can use the <code>tac</code> command to reverse the contents of a file or the standard input. Here is an example command:</p>
+<pre><code>$ echo &quot;12345&quot; | sed &#39;s/./&amp;\n/g&#39; | tac | sed -e :a -e &#39;N;s/\n//g;ta&#39;</code></pre>
+<p>This command uses the <code>sed</code> command to insert a newline character after each character in the string. It then passes the output to the <code>tac</code> command, which reverses the order of the lines. Finally, another <code>sed</code> command is used to remove the newline characters and print the reversed string.</p>
+<p>Overall, there are multiple approaches to reversing a string in Bash. The <code>rev</code> command, a simple Bash script with a for loop, and the <code>tac</code> command are all viable options.</p>
+</div>
+<p>Phind offers you a variety of ways to do this, but all these options are in the language Bash. Because we didn’t include a programming language in our query, Phind picked one for us. Let’s refine our query a little.</p>
+<div class="query">
+<p>How do I write a function using Python that reverses the letters in a string?</p>
+</div>
+<div class="ai_response">
+<p>To write a function using Python that reverses the letters in a string, there are several approaches that can be taken.</p>
+<p>One approach involves using a for loop and the <code>concatenation</code> operator to join the original string in reverse order. This technique is demonstrated in <a href="https://realpython.com/reverse-string-python/">realpython.com</a> as follows:</p>
+<pre><code>def reverse_string(text):
+    result = &quot;&quot;
+    for char in text:
+        result = char + result
+    return result
+
+print(reverse_string(&quot;Hello, World!&quot;)) # Output: &#39;!dlroW ,olleH&#39;</code></pre>
+<p>In this example, the function <code>reverse_string</code> takes a string as its argument and initializes an empty string result. The for loop iterates over each character in the input string, concatenating it with the current content of result and reassigning the new intermediate string to result at each iteration. At the end of the loop, result holds a new string as a reversed copy of the original one.</p>
+<p>Another approach involves using slicing to reverse the string. This technique is demonstrated in <a href="https://stackoverflow.com/questions/25375794/how-to-reverse-the-order-of-letters-in-a-string-in-python">stackoverflow.com</a> as follows:</p>
+<pre><code>def reverse_string(text):
+    return text[::-1]
+
+print(reverse_string(&quot;Hello, World!&quot;)) # Output: &#39;!dlroW ,olleH&#39;</code></pre>
+<p>In this example, the function <code>reverse_string</code> takes a string as its argument and returns the string in reverse order using slicing. The syntax text <code>[::-1]</code> means to slice the entire string with a step of -1, which reverses the order of the string.</p>
+<p>A third approach involves using Python’s built-in <code>reversed()</code> function to reverse the string. This technique is demonstrated in <a href="https://datagy.io/python-palindrome/">datagy.io</a> as follows:</p>
+<pre><code>def reverse_string(text):
+    return &#39;&#39;.join(reversed(text))
+
+print(reverse_string(&quot;Hello, World!&quot;)) # Output: &#39;!dlroW ,olleH&#39;</code></pre>
+<p>In this example, the function <code>reverse_string</code> takes a string as its argument and uses the <code>reversed()</code> function to return an iterator that produces the characters of the string in reverse order. The <code>join(</code>) method is then used to convert the iterator back into a string.</p>
+<p>All three approaches produce the same output, but they differ in terms of performance and readability. The first approach using a for loop and concatenation is the most straightforward, but it can be slower for large strings because it creates successive intermediate strings only to throw them away in the next iteration. The second approach using slicing is more efficient because it creates a new string object only once, but it may be less readable for some programmers. The third approach using <code>reversed()</code> is concise and readable, but it may be slower for large strings because it creates a reversed iterator that must be converted back into a string using <code>join()</code>.</p>
+</div>
+<p>Once again, Phind has come through with multiple options. Now let’s say you knew you wanted to write a function like this, but you realize it’s only the strings in the third column of your file. Let’s add that requirement to our query.</p>
+<div class="query">
+<p>“How do I write a function using python that reverses the letters in a string for the third column of my file?”</p>
+</div>
+<div class="ai_response">
+<p>To write a function using Python that reverses the letters in a string for the third column of a file, you can use the extended slice syntax in Python. The extended slice syntax is a more concise and faster way of slicing strings in Python. To reverse a string using extended slices, you can use the following syntax:</p>
+<pre><code>string[::-1]</code></pre>
+<p>In this syntax, the first colon indicates the start of the slice, the second colon indicates the end of the slice, and the third colon indicates the step size of the slice. By setting the step size to -1, you can reverse the string.</p>
+<p>To create a function that reverses the letters in a string for the third column of a file, you can use the following code:</p>
+<pre><code>def reverse_string(string):
+    return string[:2] + string[2:5][::-1] + string[5:]</code></pre>
+<p>In this code, the <code>reverse_string()</code> function takes a string as input and returns the string with its third column reversed. The first two characters of the string are returned as-is, while the third column (characters 3 to 5) are reversed using extended slices. Finally, the remaining characters of the string are returned as-is.</p>
+<p>There are other ways to reverse a string in Python, including using loops, recursion, stacks, and function calls. However, using extended slices is the most concise and efficient way to reverse a string in Python.</p>
+<p>Here are some pros and cons of using extended slices to reverse a string:</p>
+<p>Pros:</p>
+<ul>
+<li>Concise syntax: using the extended slice syntax is a one-liner that is easy to read and write.</li>
+<li>Fast execution: using the extended slice syntax is faster than using loops or other methods to reverse a string.</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Limited functionality: the extended slice syntax can only be used to reverse a string, and cannot be used for more complex string operations.</li>
+<li>Not beginner-friendly: the extended slice syntax is not intuitive for beginners who are not familiar with Python’s slicing syntax.</li>
+</ul>
+<p>In conclusion, to write a function using Python that reverses the letters in a string for the third column of a file, you can use the extended slice syntax in Python. This syntax is concise and efficient, but may not be beginner-friendly and may not be suitable for more complex string operations.</p>
+</div>
+</div>
+<div id="example-two-debugging-code" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Example Two: Debugging Code</h2>
+<p>A vast amount of time in programming is spent on debugging code. Often the compiler error messages are very precise about what has gone wrong while simultaneously lacking enough detail for the programmer to immediately understand how to fix the error. It is good practice to debug code as you go, instead of writing the entire program and then testing to identify the errors. Using an AI chatbot makes this task much, much easier.</p>
+<p>There are two options for using <a href="https://chat.openai.com/">ChatGPT</a> for debugging.</p>
+<p>First, we could query what the error code means. Here’s a Python code snippet that is throwing a <code>TypeError: unsupported operand type(s) for +: 'int' and 'str'</code> error when we try running it.</p>
+<pre><code>def add_numbers(a, b):
+  result = a + b
+  return result
+
+number1 = 10
+number2 = &quot;20&quot;
+
+sum = add_numbers(number1, number2)
+print(&quot;The sum of&quot;, number1, &quot;and&quot;, number2, &quot;is&quot;, sum)</code></pre>
+<div class="query">
+<p>What does this error mean? TypeError: unsupported operand type(s) for +: ‘int’ and ‘str’</p>
+</div>
+<div class="ai_response">
+<p>This error typically occurs when you try to concatenate (i.e., add together) a string and an integer using the “+” operator in Python.</p>
+<p>In Python, the “+” operator is used for both addition and concatenation depending on the data types of the operands. If you try to add a string and an integer using the “+” operator, Python will raise a TypeError because these two data types are not compatible for this operation.</p>
+<p>For example, if you have the following code:</p>
+<pre><code>age = 25
+message = &quot;I am &quot; + age + &quot; years old.&quot;</code></pre>
+<p>Python will raise the TypeError because you are trying to concatenate a string (“I am”) with an integer (25) using the “+” operator. To fix this error, you can convert the integer to a string using the str() function:</p>
+<pre><code>age = 25
+message = &quot;I am &quot; + str(age) + &quot; years old.&quot;</code></pre>
+<p>In this case, the str() function converts the integer age to a string before concatenating it with the other string, so the operation is valid and no error will be raised.</p>
+</div>
+<p>ChatGPT helpfully explains what TypeError means, what causes it, and how to fix it. This is quite useful when you don’t understand the error message.</p>
+<p>Another option is to submit the code snippet that is causing an error to ChatGPT directly and ask for it to fix the mistake. Here’s another buggy code snippet, this time in C#.</p>
+<div class="query">
+<p>Can you debug this code?</p>
+<pre><code>using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        int sum = 0;
+
+        for (int i = 1; i &lt;= numbers.Length; i++)
+        {
+            sum += numbers[i];
+        }
+
+        Console.WriteLine(&quot;The sum of the numbers is: &quot; + sum);
+    }
+}</code></pre>
+</div>
+<div class="ai_response">
+<p>Sure, I can help you debug this code. Here are the issues I see:</p>
+<ol style="list-style-type: decimal">
+<li><p>The loop is going out of bounds: The loop is iterating from 1 to numbers.Length, but array indexes start from 0. Therefore, when i is equal to numbers.Length, numbers[i] is trying to access an element outside the bounds of the array, which will result in an IndexOutOfRangeException. To fix this, you should change the loop condition to i &lt; numbers.Length.</p></li>
+<li><p>The loop is not summing the array elements correctly: The loop is adding the elements starting from the second element instead of the first. To fix this, you should change the initial value of i to 0, which corresponds to the first element of the array.</p></li>
+</ol>
+<p>Here’s the corrected code:</p>
+<pre><code>using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        int sum = 0;
+
+        for (int i = 0; i &lt; numbers.Length; i++)
+        {
+            sum += numbers[i];
+        }
+
+        Console.WriteLine(&quot;The sum of the numbers is: &quot; + sum);
+    }
+}</code></pre>
+<p>This should correctly sum the elements of the numbers array and output the result.</p>
+</div>
+<p>Be aware that if you choose to submit your code directly to an AI chatbot to debug that you submit a snippet at a time (if possible). Otherwise the answer can get quite unwieldy!</p>
+</div>
+<div id="example-three-comparing-syntax" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Example Three: Comparing Syntax</h2>
+<p>You may be in the middle of writing code when you realize that you’ve used two possible syntaxes for the same command. Perhaps you are using the R package <code>here</code> and are wondering if two different ways of writing a command are the same.</p>
+<div class="query">
+<p>Is <code>here::here("raw", "data.csv")</code> equivalent to <code>here::here("raw/data.csv")</code>?</p>
+</div>
+<p>First, let’s see what <a href="https://chat.openai.com/">ChatGPT</a> responded.</p>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_88.png" title="ChatGPT generates another way to do the same task." alt="ChatGPT generates another way to do the same task." width="100%" style="display: block; margin: auto;" /></p>
+<p>When we first started putting together this course, we had intended to include an answer from <a href="https://bard.google.com/">Bard</a> that disagreed with the answer from ChatGPT as an example of why it can be helpful to query multiple chatbots. (We decided ChatGPT was correct after verifying its answer in the <code>here</code> package documentation.) However, when we queried Bard again two weeks later, we were pleasantly surprised to discover that Bard had corrected its answer. Now it’s a cool little example of how the chatbots are rapidly improving and “learning” from their mistakes.</p>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_84.png" title="ChatGPT generates another way to do the same task." alt="ChatGPT generates another way to do the same task." width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="example-four-figuring-out-a-common-task" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Example Four: Figuring Out a Common Task</h2>
+<p>Sometimes you have a task that needs done that is fairly routine. You might not have done it before, but plenty of people in the world have. In this case, you don’t want to reinvent the wheel, but you may not know exactly where to start. AI is a great option for figuring out the basic workflow steps.</p>
+<p>A very common task for anyone working with genomic samples is to combine multiple files in the vcf format. Perhaps you’ve been asked to do this and then create a separate file that contains the names of the samples. You turn to <a href="https://chat.openai.com/">ChatGPT</a> for help.</p>
+<div class="query">
+<p>Can you write a program that merges vcf files and then outputs the sample names?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_34.png" title="ChatGPT generates another way to do the same task." alt="ChatGPT generates another way to do the same task." width="100%" style="display: block; margin: auto;" /></p>
+<p>Great! Of course, maybe you’re not comfortable using bcftools, or you try this and can’t get it to work. You can take advantage of the “Regenerate Response” option in ChatGPT to get another solution.</p>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_30.png" title="You can use the 'Regenerate Response' button on ChatGPT to find a different way to accomplish your task." alt="You can use the 'Regenerate Response' button on ChatGPT to find a different way to accomplish your task." width="100%" style="display: block; margin: auto;" /></p>
+<div class="query">
+<p>What’s another way I can do this?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_77.png" title="ChatGPT generates code that allows you to merge vcf files and output the sample names." alt="ChatGPT generates code that allows you to merge vcf files and output the sample names." width="100%" style="display: block; margin: auto;" /></p>
+<p>You can also specify some of the features you’d like in your code, or where you might want the code to come from. Maybe you want to practice using GitHub repositories, so you specifically request it.</p>
+<div class="query">
+<p>Can you write a program that merges vcf files and then outputs the sample names using a github repo?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_42.png" title="ChatGPT generates a script using the vcflib repo from GitHub." alt="ChatGPT generates a script using the vcflib repo from GitHub." width="100%" style="display: block; margin: auto;" /></p>
+<p>If you know you’ve used something like a GitHub repository, you can ask ChatGPT for the citation. Just be aware that you <strong>need</strong> to verify that any citation it gives you should be checked independently. Unfortunately, AI bots can still respond with imaginary journal articles. (Assume that if you can’t find it, it doesn’t exist.)</p>
+<div class="query">
+<p>What’s the citation for the repo used in this code?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_46.png" title="ChatGPT responds with the GitHub repository used in the code, as well as the creators and a possible citation." alt="ChatGPT responds with the GitHub repository used in the code, as well as the creators and a possible citation." width="100%" style="display: block; margin: auto;" /></p>
+<p>In general, after you find a solution that works for you, you should always make a habit of asking the AI where it got the code. Never, ever, ever run code without knowing where it came from.</p>
+<div class="query">
+<p>What’s the source for this code?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_38.png" title="ChatGPT responds with the library and basic Unix tools needed to run the generated code." alt="ChatGPT responds with the library and basic Unix tools needed to run the generated code." width="100%" style="display: block; margin: auto;" /></p>
+<div class="ethics">
+<p>You should always take care that you are only using code that you’re authorized to use when writing code. This means asking the AI chatbot where code snippets are from and tracking down those citations and authorizations yourself (instead of just trusting the AI that everything is okay).</p>
+</div>
+</div>
+<div id="example-five-planning-your-program" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> Example Five: Planning Your Program</h2>
+<p>Let’s say we want to create software that plays the card game blackjack.
+You can jump right in and ask your AI chatbot to write the code, but you’re unlikely to be successful and <em>incredibly</em> likely to get frustrated. Before you start interacting with the AI, you need to plan out what you want to do.</p>
+<p>Everyone needs a plan of attack when building software. You should start by identifying what your software will do, then you can figure out the steps necessary to make that happen.</p>
+<p>We’ll ask <a href="https://poe.com/Claude-instant">Claude-instant</a> (as implemented by Poe) how we can go about creating the necessary code for our game.</p>
+<div class="query">
+<p>How would I go about writing a program that can play blackjack?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_24.png" title="Claude-instant laid out seven steps that can be used to build a simple blackjack program. It also offered several ideas for additional features." alt="Claude-instant laid out seven steps that can be used to build a simple blackjack program. It also offered several ideas for additional features." width="100%" style="display: block; margin: auto;" /></p>
+<p>That seems like a really good roadmap for building a basic game, but if you’re ambitious (and of course you are), you might want to give your game a little extra something. Claude-instant has some ideas for that, too.</p>
+<div class="query">
+<p>What are some other features I could add to this game?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_8.png" title="Claude-instant offered eleven additional features that could be added to your blackjack game if you wanted to make it more complex, including different types of betting strategies and surrender opportunities." alt="Claude-instant offered eleven additional features that could be added to your blackjack game if you wanted to make it more complex, including different types of betting strategies and surrender opportunities." width="100%" style="display: block; margin: auto;" /></p>
+<p>At this point, you are ready to begin writing your program. You have a lot of tasks to do, so you have to pick a logical starting point. If you’re uncertain, you can ask AI for advice on your first task.</p>
+<div class="query">
+<p>What should be my first coding task for this program?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_68.png" title="Claude-instant suggests the first task is to create a data structure that represents a deck of cards." alt="Claude-instant suggests the first task is to create a data structure that represents a deck of cards." width="100%" style="display: block; margin: auto;" /></p>
+<p>In this case, the AI went beyond just suggesting a first task and also offered several options for how to do it as well.</p>
+</div>
+<div id="example-six-selecting-a-coding-language" class="section level2" number="2.8">
+<h2><span class="header-section-number">2.8</span> Example Six: Selecting a Coding Language</h2>
+<p>You will need to choose the language for your software. If you don’t, AI will likely pick a language for you, which may or may not be one you want. You might choose a language based on:</p>
+<ul>
+<li>Your preexisting knowledge or experience with the language</li>
+<li>A specific use case where the language is commonly used</li>
+<li>The language(s) your colleagues or coworkers use</li>
+</ul>
+<p>You can find a description of other languages you might encounter <a href="Appendix.html">here</a>.</p>
+<p>Let’s ask Claude-instant again for some recommendations on the appropriate languages for our proposed blackjack game from the above example. (Pro tip: the various AI bots all keep track of your previous queries, so you don’t have to restate your goal for the software if you’re continuing the conversation.)</p>
+<div class="query">
+<p>What would be a good coding language to create this game of blackjack?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_4.png" title="Claude-instant suggested seven possible languages for the blackjack program and gave a brief description of their pros and cons." alt="Claude-instant suggested seven possible languages for the blackjack program and gave a brief description of their pros and cons." width="100%" style="display: block; margin: auto;" /></p>
+<p>Claude-instant actually gave us more information than we anticipated. If it hadn’t stated pros and cons while offering language suggestions, we could ask for them directly. This could be helpful if you’re deciding between two options like, say, Python or Java.</p>
+<div class="query">
+<p>What are the pros and cons of using Python vs Java for this project?</p>
+</div>
+<p><img src="resources/images/02-writing_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_0.png" title="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." alt="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="hands-on-exercise" class="section level2" number="2.9">
+<h2><span class="header-section-number">2.9</span> Hands On Exercise</h2>
+<p>Now it’s your turn to try!</p>
+<div id="code" class="section level3" number="2.9.1">
+<h3><span class="header-section-number">2.9.1</span> Code</h3>
+<p>Here’s the code you need for question #2.</p>
+<pre><code>def calculate_average(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    average = total / len(numbers)
+    return average
+
+numbers = [1, 2, 3, 4, &quot;5&quot;]
+average = calculate_average(numbers)
+print(&quot;The average of the numbers is:&quot;, average)</code></pre>
+</div>
+<div id="questions" class="section level3" number="2.9.2">
+<h3><span class="header-section-number">2.9.2</span> Questions</h3>
+<ol style="list-style-type: decimal">
+<li><p>Write a prompt to create a function that replaces all instances of the string “three” with the number 3, then create a prompt that allows you to modify the function so that “three”, “Three”, and “THREE” are all replaced with the number 3.</p></li>
+<li><p>Write a query that helps you debug the code snippet from above.</p></li>
+<li><p>Create a query that explains how to retrieve data from an online database. Don’t forget to find out what the source of the code is.</p></li>
+<li><p>Write a prompt to plan out a program that creates and plays a game of Rock, Paper, Scissors. You should create a multi-step plan as well as figure out what your first coding task should be.</p></li>
+<li><p>Create a prompt that identifies the best coding language for the above game.</p></li>
+</ol>
+</div>
+</div>
+<div id="summary" class="section level2" number="2.10">
+<h2><span class="header-section-number">2.10</span> Summary</h2>
+<ul>
+<li>Coding has become an essential skill in today’s world. AI can increase the efficiency of planning, writing, and debugging code, as well as make coding more accessible for beginners.</li>
+<li>Querying AI on code writing tasks requires patience. AI cannot read your mind, and users need to be both specific and patient when asking for coding help.</li>
+<li>It is essential to test all AI-written code while in development, since inadequate testing could lead to low quality, buggy code.</li>
+<li>A programmer is responsible for what they create while coding with AI, even if AI writes the actual code.</li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="writing-code.html#cb16-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
+<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 4.0.2 (2020-06-22)
+##  os       Ubuntu 20.04.5 LTS          
+##  system   x86_64, linux-gnu           
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_US.UTF-8                 
+##  ctype    en_US.UTF-8                 
+##  tz       Etc/UTC                     
+##  date     2023-05-03                  
+## 
+## ─ Packages ───────────────────────────────────────────────────────────────────
+##  package     * version date       lib source                            
+##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
+##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
+##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
+##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
+##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
+##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
+##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
+##  curl          4.3     2019-12-02 [1] RSPM (R 4.0.3)                    
+##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
+##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
+##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
+##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
+##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
+##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
+##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
+##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
+##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
+##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
+##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
+##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
+##  httr          1.4.2   2020-07-20 [1] RSPM (R 4.0.3)                    
+##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
+##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
+##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
+##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
+##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
+##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
+##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
+##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
+##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
+##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
+##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
+##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
+##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
+##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
+##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
+##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
+##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
+##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
+##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
+##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
+##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
+##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
+##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
+##  stringr       1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
+##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
+##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
+##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
+##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
+##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
+##  withr         2.3.0   2020-09-22 [1] RSPM (R 4.0.2)                    
+##  xfun          0.26    2023-03-28 [1] Github (yihui/xfun@74c2a66)       
+##  yaml          2.2.1   2020-02-01 [1] RSPM (R 4.0.3)                    
+## 
+## [1] /usr/local/lib/R/site-library
+## [2] /usr/local/lib/R/library</code></pre>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+      <a href="https://hutchdatascience.org/" target="_blank"><img src="https://hutchdatascience.org/images/crazy-idea-wide.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="refactoring-code.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

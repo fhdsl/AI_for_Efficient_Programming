@@ -66,13 +66,13 @@ This is not a comprehensive list!
 
 * [Phind](https://www.phind.com/) is a AI-powered search engine designed specifically for developers asking technical questions. In addition to answering your coding question, it will provide links to the internet sources used to find the answer.
 
-* [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and [Ehang's](https://www.ehang.com/) Dragonfly AI platform, which was created to interface with their Dragonfly drone. Poe also gives you access to ChatGPT.
+* [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and ChatGPT.
 
 **IDE-based chatbots**
 
-* [CodePilot](https://github.com/features/copilot) by GitHub is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. It's a subscription model with both individual and business tiers.
+* [CoPilot](https://github.com/features/copilot) by GitHub is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. GitHub describes it as an "AI pair programmer". It uses a subscription model with both individual and business tiers.
 
-* [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your IDE using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free. although you will need to create an AWS account and add a payment method.
+* [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free, although you will need to create an AWS account and add a payment method.
 
 :::{.reflection}
 What are the data sources for these chatbots? Some high-profile English-language AIs, including Google’s T5 and Facebook’s LLaMA, were trained on more than 15 million websites [@washingtonpost2023]. The top sources of training data for these AI models were https://patents.google.com/ and https://www.wikipedia.org/ ! 
