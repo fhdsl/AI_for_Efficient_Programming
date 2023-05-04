@@ -187,7 +187,7 @@ Here is a summary of all the tips we suggested:
   * Sources for the code that you can cite
   * What the code is doing 
   * Code limitations 
-  * Potential security, or privacy issues
+  * Potential security or privacy issues
   * Potential downstream consequences of the code
 * Always have expert humans review the code and value your own contributions and thoughts.
 
