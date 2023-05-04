@@ -179,7 +179,7 @@ Here is a summary of all the tips we suggested:
 
 :::{.ethics}
 
-* Disclose when you us AI tools to write code.
+* Disclose when you use AI tools to write code.
 * Credit human authors by citing their code and adhering to copyright restrictions.
 * Ensure the code doesn't expose sensitive data, such as passwords or PII.
 * Don't assume AI-generated content is real, accurate, or current.
