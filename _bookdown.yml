@@ -3,9 +3,10 @@ chapter_name: "Chapter "
 repo: https://github.com/fhdsl/AI_for_software
 rmd_files: ["index.Rmd",
             "01-intro.Rmd",
-            "02-writing_code.Rmd",
-            "03-refactoring.Rmd",
-            "04-annotation.Rmd",
+            "02-ethics.Rmd",
+            "03-writing_code.Rmd",
+            "04-refactoring.Rmd",
+            "05-annotation.Rmd",
             "06-understanding_other_ppl_code.Rmd",
             "Appendix.Rmd",
             "cloud-computing.Rmd",
