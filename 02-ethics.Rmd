@@ -179,17 +179,17 @@ Here is a summary of all the tips we suggested:
 
 :::{.ethics}
 
-* Be transparent about what AI tools you have used to write your code.
-* Support human code by giving credit to the humans who write code where possible, by citing their code and following copyright restrictions.
-* Ask the AI tools if the code it helped generate used any code that you can cite.
-* Be aware that some AI tools currently make up false information based on artifacts of the algorithm. 
-* Do not assume that everything that an AI tool produces is real or correct.
-* Realize that AI is only as good or up-to-date as what it was trained on, the code may be generated using out-of-date code. Look up packages and functions used to ensure if the code is up-to-date.
-* Make sure that you understand the code that you are using. AI can be used to help you understand what the code is doing, but consult with experts when needed.
-* Ask the AI tools for extra information about if there are any potential limitations or weaknesses in the code or security or privacy issues, but also consult with human experts.
-* Check that the code does not expose any sensitive data like passwords, or Personal Identifiable Information (PII) through the code.
-* Promote for regulation of AI tools by voting for such standards where possible.
-* Consider how the code might be used by others. Ask the AI tools to help you determine what the downstream consequences could be for your code, but consider this yourself and potentially ask others.
+* Disclose when you us AI tools to write code.
+* Credit human authors by citing their code and adhering to copyright restrictions.
+* Ensure the code doesn't expose sensitive data, such as passwords or PII.
+* Don't assume AI-generated content is real, accurate, or current.
+* Ask the AI tools to help you understand:
+  * Sources for the code that you can cite
+  * What the code is doing 
+  * Code limitations 
+  * Potential security, or privacy issues
+  * Potential downstream consequences of the code
+* Always have expert humans review the code and value your own contributions and thoughts.
 
 :::
 
