@@ -23,6 +23,7 @@ This course is available in multiple formats which allows you to take it in the 
 <!-- - This course can be taken for [free certification through Leanpub](LINK HERE). -->
 <!-- - This course can be taken on [Coursera for certification here](LINK HERE) (but it is not available for free on Coursera). -->
 - Our courses are open source, you can find the [source material for this course on GitHub](https://github.com/fhdsl/AI_for_software/).
+- The slides for the images in the course can be found [here](https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit?usp=sharing).
 
 ## Suggested Activity Context {-}
 
@@ -54,6 +55,7 @@ This course is available in multiple formats which allows you to take it in the 
 | Activity | Duration |
 | :-- | :-- |
 | [Introduction](https://hutchdatascience.org/AI_for_software/introduction.html) | 10 minutes |
+|[Ethics for Using AI](https://hutchdatascience.org/AI_for_software/ethics-of-using-ai.html) | 20 minutes |
 | [Writing Code](https://hutchdatascience.org/AI_for_software/writing-code.html) | 35 minutes |
 | [Writing Exercise](https://hutchdatascience.org/AI_for_software/writing-code.html#hands-on-exercise) | 15 minutes |
 | [Refactoring Code](https://hutchdatascience.org/AI_for_software/refactoring-code.html) | 35 minutes |
@@ -61,6 +63,6 @@ This course is available in multiple formats which allows you to take it in the 
 | [Annotating Code](https://hutchdatascience.org/AI_for_software/annotating-your-code.html) | 25 minutes |
 | [Understanding Code](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html) | 25 minutes |
 | [Understanding Exercise](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html#hamds-on-exercise) | 10 minutes |
-| **Total** | 2 hours & 50 minutes |
+| **Total** | 3 hours & 10 minutes |
 
 
