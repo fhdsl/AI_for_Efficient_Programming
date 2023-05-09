@@ -1,8 +1,9 @@
 1-Introduction.md
-2-Writing-Code.md
-3-Refactoring-Code.md
-4-Annotating-Your-Code.md
-5-Understanding-Unfamiliar-Code.md
+2-Ethics-of-Using-AI.md
+3-Writing-Code.md
+4-Refactoring-Code.md
+5-Annotating-Your-Code.md
+6-Understanding-Unfamiliar-Code.md
 About-this-Course.md
 Appendix.md
 References.md
