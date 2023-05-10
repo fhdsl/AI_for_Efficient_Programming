@@ -56,6 +56,9 @@ We must always be aware of the potential for harm and deliberately take steps to
 
 Although humans have been interacting with AI chatbots for years, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest in them. Large language model AIs can be divided into two categories: those that can be reached using an internet browser, and those that can be reached using an integrated development environment (IDE).
 
+<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_77.png" title="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." alt="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." width="100%" style="display: block; margin: auto;" />
+
+
 This is not a comprehensive list! 
 
 **Browser-based chatbots**

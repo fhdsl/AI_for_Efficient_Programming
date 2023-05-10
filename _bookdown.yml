@@ -8,6 +8,7 @@ rmd_files: ["index.Rmd",
             "04-refactoring.Rmd",
             "05-annotation.Rmd",
             "06-understanding_other_ppl_code.Rmd",
+            "About.Rmd",
             "Appendix.Rmd",
             "cloud-computing.Rmd",
             "References.Rmd"]
