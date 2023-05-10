@@ -11,7 +11,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 |**Pedagogy**||
 |Lead Content Instructor|[Elizabeth Humphries]|
 |Content Authors| [Candace Savonen], [Carrie Wright], [Ava Hoffman]|
-|Content Editor Reviewer | Howard Baek|
+|Content Editor Reviewer | Howard Baek |
 |**Technical**||
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
@@ -20,7 +20,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 |**Art and Design**||
 |Figure Artists| [Candace Savonen], [Carrie Wright], [Ava Hoffman], [Elizabeth Humphries]|
 |**Funding**||
-|Funders| Institution/individual who funded course including grant number|
+|Funders| CS, CW, and HB were supported by the National Cancer Institute under Grant UE5CA254170. AMH and EMH were supported by the AnVIL Project through cooperative agreement awards from the National Human Genome Research Institute with cofunding from OD/ODSS to the Broad Institute (U24HG010262) and Johns Hopkins University (U24HG010263). |
 |Funding Staff| Sandra Ormbrek, Shasta Nicholson |
 
 &nbsp;
