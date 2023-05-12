@@ -127,7 +127,7 @@ What assumptions were made in writing this code?
 
 ## Security and Privacy issues
 
-AI tools are not always trained in a way that is particularly conscious of data security. Furthermore, if the code is written using these tools by users who are less familiar with coding security concerns, protected data or important passwords may be leaked within the code itself. AI systems may also utalize data that was actually intended to be private. It is also important to consider what data your code might actually be using.
+AI tools are not always trained in a way that is particularly conscious of data security. Furthermore, if the code is written using these tools by users who are less familiar with coding security concerns, protected data or important passwords may be leaked within the code itself. AI systems may also utilize data that was actually intended to be private. It is also important to consider what data your code might actually be using.
 
 
 ### Tips for reducing security and privacy issues
