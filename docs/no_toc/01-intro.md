@@ -1,6 +1,5 @@
 
 
-
 # Introduction
 
 The increasing availability of AI chatbots is creating a new landscape in software development and data science. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone and limits harm as much as possible.
@@ -17,12 +16,11 @@ Ultimately, while the future of programming in software development and data sci
 
 We do not believe that AI chatbots will replace programmers, software developers, and data scientists. While AI can be powerful and useful, it is only as good as the training data behind it and the human using it. Therefore, for the time being and the foreseeable future, humans will remain at the forefront of programming innovation, with AI providing valuable support. As new code is often built on top of existing code written by humans, it is unlikely that AI will fully replace the need for human programmers.
 
-However, we _do_ think that the roles of programmers in software development and data science are changing, and some of the skills required to work in this new environment are slightly different from those needed before. In addition to proficiency in programming syntax, programmers may need to develop a more refined ability to construct queries that enable AI bots to create the desired workflows. Other critical skills such as debugging, troubleshooting, and documentation will continue to be valuable, and can be enhanced through the use of AI.
+However, we *do* think that the roles of programmers in software development and data science are changing, and some of the skills required to work in this new environment are slightly different from those needed before. In addition to proficiency in programming syntax, programmers may need to develop a more refined ability to construct queries that enable AI bots to create the desired workflows. Other critical skills such as debugging, troubleshooting, and documentation will continue to be valuable, and can be enhanced through the use of AI.
 
 Furthermore, AI creates new opportunities and niches for tasks that were previously difficult, time-consuming, or impossible. This is an exciting time for those working in programming, with great potential to explore new and innovative solutions. As AI technology continues to advance, its role in programming will only become more significant, and it is up to developers to adapt and learn how to use these new tools effectively.
 
-::: {.reflection}
-
+::: reflection
 We asked OpenAI's ChatGPT whether AI chatbots would replace human software developers, data scientists, and programmers, and this was the response:
 
 "It is unlikely that AI chatbots will replace software developers, data scientists, and programmers entirely. While AI chatbots can perform certain tasks related to software development, data analysis, and programming, they are limited in their abilities and require human oversight and input to function properly.
@@ -38,7 +36,7 @@ In summary, while AI chatbots can provide valuable assistance to software develo
 
 ## AI Code of Ethics
 
-Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. _Intentional harm_ is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. _Inadvertent harm_ is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss.
+Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. *Intentional harm* is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. *Inadvertent harm* is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss.
 
 We must always be aware of the potential for harm and deliberately take steps to mitigate it. This includes things like:
 
@@ -54,31 +52,34 @@ We must always be aware of the potential for harm and deliberately take steps to
 
 ## The AI Chatbots
 
-Although humans have been interacting with AI chatbots for years, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest in them. Large language model AIs can be divided into two categories: those that can be reached using an internet browser, and those that can be reached using an integrated development environment (IDE).
+Humans have been interacting with AI chatbots for years. In fact, Alan Turing is credited with coming up with the concept for chatbots as early as 1950. Chatbots are software-based systems that interact with humans typically by text or speech inputs, rather than code. They mimic some human activity [@wikipedia_chatbot_2023; @abdulla2022chatbots] bassed on these language inputs. They process the inputs using natural language processing commonly abbreviated as NLP. NLP is a kind of AI that uses human text or speech and parses the language to determine structures and patterns to extract meaning. NLP uses large amounts of language data (such as books, websites etc.) to train AI systems to identify these structures and patterns. For example, the AI model might identify when a sentence is a question or a statement by examining various features in a prompt such as the inclusion of a question mark of the use of words often used in questions [@wikipedia_natural_2023; @cahn2017chatbot].
+
+The methods used for chatbots have evolved over time. Now chatbots often utilize AI methods like [deep learning](https://en.wikipedia.org/wiki/Deep_learning) (which involve multiple layers of abstractions of the input data [@wikipedia_deep_learning_2023]) to extract meaning from the language data [@wikipedia_natural_2023]. As these methods use large quantities of text, they are therefore often called large language models [@wikipedia_large_language_2023].
+
+Despite the fact that chatbots have been around awhile, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest. These chatbots are in part particularly powerful due to the fact that large amounts of computing power were used to train their NLP models on very large datasets [@caldarini2022literature; @cahn2017chatbot]. Large language model AIs can be divided into two categories: those that can be reached using an internet browser, and those that can be reached using an integrated development environment (IDE).
 
 <img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_77.png" title="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." alt="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." width="100%" style="display: block; margin: auto;" />
 
-
-This is not a comprehensive list! 
+This is not a comprehensive list!
 
 **Browser-based chatbots**
 
-* [Bard](https://bard.google.com/) is Google's large language model, also known as a conversational AI or chatbot trained to be informative and comprehensive. It is trained on a massive amount of text data and is able to communicate and generate human-like text in response to a wide range of prompts and questions. You will need to join the waiting list before getting access, although in our experience the wait time is short.
+-   [Bard](https://bard.google.com/) is Google's large language model, also known as a conversational AI or chatbot trained to be informative and comprehensive. It is trained on a massive amount of text data and is able to communicate and generate human-like text in response to a wide range of prompts and questions. You will need to join the waiting list before getting access, although in our experience the wait time is short.
 
-* [ChatGPT](https://chat.openai.com/) is OpenAI's large language model based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to understand and generate human-like responses to text-based conversations. You will need to create an account before using it.
+-   [ChatGPT](https://chat.openai.com/) is OpenAI's large language model based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to understand and generate human-like responses to text-based conversations. You will need to create an account before using it.
 
-* [Phind](https://www.phind.com/) is a AI-powered search engine designed specifically for developers asking technical questions. In addition to answering your coding question, it will provide links to the internet sources used to find the answer.
+-   [Phind](https://www.phind.com/) is a AI-powered search engine designed specifically for developers asking technical questions. In addition to answering your coding question, it will provide links to the internet sources used to find the answer.
 
-* [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and ChatGPT.
+-   [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and ChatGPT.
 
 **IDE-based chatbots**
 
-* [CoPilot](https://github.com/features/copilot) by GitHub is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. GitHub describes it as an "AI pair programmer". It uses a subscription model with both individual and business tiers.
+-   [CoPilot](https://github.com/features/copilot) by GitHub is a language bot that interfaces with your editor. This bot provides coding suggestions and ways to speed up testing. GitHub describes it as an "AI pair programmer". It uses a subscription model with both individual and business tiers.
 
-* [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free, although you will need to create an AWS account and add a payment method.
+-   [CodeWhisperer](https://aws.amazon.com/codewhisperer/) is the Amazon Web Services chatbot for the AWS cloud platform. It can be installed in your integrated development environment (IDE) using the latest AWS Toolkit plugin. The individual tier for CodeWhisperer is free, although you will need to create an AWS account and add a payment method.
 
-:::{.reflection}
-What are the data sources for these chatbots? Some high-profile English-language AIs, including Google’s T5 and Facebook’s LLaMA, were trained on more than 15 million websites [@washingtonpost2023]. The top sources of training data for these AI models were https://patents.google.com/ and https://www.wikipedia.org/ ! 
+::: reflection
+What are the data sources for these chatbots? Some high-profile English-language AIs, including Google's T5 and Facebook's LLaMA, were trained on more than 15 million websites [@washingtonpost2023]. The top sources of training data for these AI models were <https://patents.google.com/> and <https://www.wikipedia.org/> !
 :::
 
 ## How to Use This Book
@@ -87,13 +88,13 @@ This book is written with the expectation that users will follow along and paste
 
 ### Choice of AI Model
 
-You can use whichever AI you like for this course, as long as it is a large language model. (Other types of AIs are not explored in this course.) We will use a variety of browser-based chatbots as examples throughout this course. Some AIs will be better suited for your particular tasks, and it is too early to judge which of the technologies will end up dominating the industry. We encourage you to test multiple AI platforms to find the ones that best fit your needs, and **the use of a particular AI in each chapter should not be taken as an endorsement by us.** 
+You can use whichever AI you like for this course, as long as it is a large language model. (Other types of AIs are not explored in this course.) We will use a variety of browser-based chatbots as examples throughout this course. Some AIs will be better suited for your particular tasks, and it is too early to judge which of the technologies will end up dominating the industry. We encourage you to test multiple AI platforms to find the ones that best fit your needs, and **the use of a particular AI in each chapter should not be taken as an endorsement by us.**
 
 We have focused on the browser-based chatbots for our examples in this course for ease of demonstration.
 
 ### Computing Environment Needs
 
-All the examples and activities in this course can be done in the computer environment you prefer. None of the tasks require a huge amount of computing power, so local installations on your personal computer are fine, though everything will also translate to a high performance computing cluster or a cloud computing platform. 
+All the examples and activities in this course can be done in the computer environment you prefer. None of the tasks require a huge amount of computing power, so local installations on your personal computer are fine, though everything will also translate to a high performance computing cluster or a cloud computing platform.
 
 In addition to the CodeWhisperer chatbot available on the AWS cloud platform, a variety of cloud-based AI tools and platforms exist that can be leveraged for practical projects after this course. For instance, Amazon SageMaker or Google Cloud AI Platform can be used for constructing and training machine learning models, while Microsoft Azure Cognitive Services can be applied to incorporate natural language processing features into your applications. If you'd like to learn more about how AI can be integrated with cloud computing, you can read about it in the Appendix.
 
@@ -101,28 +102,26 @@ In addition to the CodeWhisperer chatbot available on the AWS cloud platform, a 
 
 Throughout this course, you will see several types of specially-colored boxes. In particular, there are two to which you should pay special attention. One box highlights potential ethical issues with an AI usage.
 
-:::{.ethics}
-In this box, you'll find reminders of the ethical considerations you should be particularly aware of while using AI to do certain tasks. 
+::: ethics
+In this box, you'll find reminders of the ethical considerations you should be particularly aware of while using AI to do certain tasks.
 :::
 
 The other box highlights our queries to AI chatbots.
 
-:::{.query}
+::: query
 The question we posed to the AI chatbot is written in these boxes to make it easier for you to find.
 :::
 
 Wherever possible, we use screenshots of the actual answers we got from the AI chatbots in response to our questions. Occasionally when we have asked for the AI to write or fix code, we have formatted the answer in such a way that makes it easier to use.
 
-:::{.ai_response}
+::: ai_response
 When you see this format, you will know it indicates an AI response
 
-```
+```         
 Code in these boxes was written by AI. 
 ```
 :::
 
-
 ## About This Book
 
-We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules while we created this book. 
-
+We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules while we created this book.
