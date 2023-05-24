@@ -9,8 +9,8 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Credits|Names|
 |-------|-----|
 |**Pedagogy**||
-|Lead Content Instructor|[Elizabeth Humphries]|
-|Content Authors| [Candace Savonen], [Carrie Wright], [Ava Hoffman]|
+|Lead Content Instructor|[Elizabeth Humphries] (Writing Code, Understanding Unfamiliar Code)|
+|Content Authors| [Candace Savonen] (Annotating Your Code), [Carrie Wright] (Ethics of Using AI), [Ava Hoffman] (Refactoring Code)|
 |Content Editor Reviewer | Howard Baek |
 |**Technical**||
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
