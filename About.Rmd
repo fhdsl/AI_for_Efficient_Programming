@@ -42,20 +42,6 @@ devtools::session_info()
 [Sandra Ormbrek]: https://hutchdatascience.org/ourteam/
 [Shasta Nicholson]: https://www.linkedin.com/in/shastanicholson/
 
-&nbsp;
-
-```{r, echo = FALSE}
-devtools::session_info()
-```
-
-<!-- Author information -->
-
-[FirstName LastName]: link to personal website
-[John Muschelli]: https://johnmuschelli.com/
-[Candace Savonen]: https://www.cansavvy.com/
-[Carrie Wright]: https://carriewright11.github.io/
-[Ava Hoffman]: https://www.avahoffman.com/
-[Elizabeth Humphries]: https://www.linkedin.com/in/elizabeth-humphries-61202a103/
 
 <!-- Links -->
 
