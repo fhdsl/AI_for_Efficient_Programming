@@ -20,8 +20,27 @@ These credits are based on our [course contributors table guidelines](https://ww
 |**Art and Design**||
 |Figure Artists| [Candace Savonen], [Carrie Wright], [Ava Hoffman], [Elizabeth Humphries]|
 |**Funding**||
-|Funders| CS, CW, and HB were supported by the National Cancer Institute under Grant UE5CA254170. AMH and EMH were supported by the AnVIL Project through cooperative agreement awards from the National Human Genome Research Institute with cofunding from OD/ODSS to the Broad Institute (U24HG010262) and Johns Hopkins University (U24HG010263). |
-|Funding Staff| Sandra Ormbrek, Shasta Nicholson |
+|Funders| CS, CW, and HB were supported by the [National Cancer Institute (NCI)](https://www.cancer.gov/) under Grant [UE5CA254170](https://grantome.com/grant/NIH/UE5-CA254170-01). AMH and EMH were supported by the AnVIL Project through cooperative agreement awards from the National Human Genome Research Institute with cofunding from OD/ODSS to the Broad Institute (U24HG010262) and Johns Hopkins University (U24HG010263). |
+|Funding Staff| [Sandra Ormbrek], [Shasta Nicholson] |
+
+&nbsp;
+
+Tools Used:
+
+```{r, echo = FALSE}
+devtools::session_info()
+```
+
+<!-- Author information -->
+
+[FirstName LastName]: link to personal website
+[John Muschelli]: https://johnmuschelli.com/
+[Candace Savonen]: https://www.cansavvy.com/
+[Carrie Wright]: https://carriewright11.github.io/
+[Ava Hoffman]: https://www.avahoffman.com/
+[Elizabeth Humphries]: https://www.linkedin.com/in/elizabeth-humphries-61202a103/
+[Sandra Ormbrek]: https://hutchdatascience.org/ourteam/
+[Shasta Nicholson]: https://www.linkedin.com/in/shastanicholson/
 
 &nbsp;
 
