@@ -16,7 +16,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Ava Hoffman], [Candace Savonen]|
-|Package Developers ([ottrpal]) [Candace Savonen], [John Muschelli], [Carrie Wright]|
+|Package Developers ([ottrpal]) | [Candace Savonen], [John Muschelli], [Carrie Wright]|
 |**Art and Design**||
 |Figure Artists| [Candace Savonen], [Carrie Wright], [Ava Hoffman], [Elizabeth Humphries]|
 |**Funding**||
