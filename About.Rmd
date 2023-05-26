@@ -11,7 +11,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 |**Pedagogy**||
 |Lead Content Instructor|[Elizabeth Humphries] (Writing Code, Understanding Unfamiliar Code)|
 |Content Authors| [Candace Savonen] (Annotating Your Code), [Carrie Wright] (Ethics of Using AI), [Ava Hoffman] (Refactoring Code)|
-|Content Editor Reviewer | Howard Baek |
+|Content Editor Reviewer | [Howard Baek] |
 |**Technical**||
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
@@ -41,7 +41,7 @@ devtools::session_info()
 [Elizabeth Humphries]: https://www.linkedin.com/in/elizabeth-humphries-61202a103/
 [Sandra Ormbrek]: https://hutchdatascience.org/ourteam/
 [Shasta Nicholson]: https://www.linkedin.com/in/shastanicholson/
-
+[Howard Baek]: https://howardbaek.com/
 
 <!-- Links -->
 
