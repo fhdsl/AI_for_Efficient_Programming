@@ -9,6 +9,15 @@ ottrpal::set_knitr_image_path()
 
 # Refactoring Code
 
+## Learning Objectives
+
+- Describe how refactoring code involves optimization for maintainability, efficiency, and reuse
+- Explain why refactoring code is important for developers in the longterm 
+- Recognize the benefits and limitations of using AI tools to refactor code, as well as why AI tools are uniquely poised to be beneficial
+- Implement prompt strategies that can be used to assist with refactoring code for correcting syntax, for adopting more consistent styling, for making code more concise, for making code easier to maintain, and for making code more efficient.
+
+## Refactoring Basics
+
 [Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) is the process of improving the quality of underlying code without changing its functionality. In other words, it's a way of cleaning up and optimizing code so that it's easier to maintain and more efficient. This often involves making small changes to the code, such as renaming variables or functions, reorganizing code blocks, or simplifying complex expressions. Refactoring is an essential practice in software development and helps to ensure that the codebase remains manageable and adaptable as requirements and business needs change over time.
 
 Code refactoring helps to reduce [technical debt](https://en.wikipedia.org/wiki/Technical_debt), which is the accumulation of development work that needs to be done in the future as a result of taking shortcuts or using less than optimal solutions. Refactoring can help to identify potential issues and bugs before they cause problems, resulting in more stable software. Finally, refactoring code to be more readable and less verbose can create fewer headaches for you in the future.
@@ -18,6 +27,8 @@ To understand why code refactoring is important, imagine trying to cook in a dis
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22d6414ee48_0_26")
 ```
+
+
 
 ## AI in Code Refactoring
 
