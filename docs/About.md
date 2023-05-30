@@ -9,35 +9,23 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Credits|Names|
 |-------|-----|
 |**Pedagogy**||
-|Lead Content Instructor(s)|[Elizabeth Humphries]|
-|Lecturer(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved| Delivered the course in some way - video or audio|
-|Content Author(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved | If any other authors besides lead instructor|
-|Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved|  Wrote less than a chapter|
-|Content Editor(s)/Reviewer(s) | Checked your content|
-|Content Director(s) | Helped guide the content direction|
-|Content Consultants (include chapter name/link in parentheses or word "General") - make new line if more than one chapter involved | Gave high level advice on content|
-|Acknowledgments| Gave small assistance to content but not to the level of consulting |
-|**Production**||
-|Content Publisher(s)| Helped with publishing platform|
-|Content Publishing Reviewer(s)| Reviewed overall content and aesthetics on publishing platform|
+|Lead Content Instructor|[Elizabeth Humphries] (Writing Code, Understanding Unfamiliar Code)|
+|Content Authors| [Candace Savonen] (Annotating Your Code), [Carrie Wright] (Ethics of Using AI), [Ava Hoffman] (Refactoring Code)|
+|Content Editor Reviewer | [Howard Baek] |
 |**Technical**||
-|Course Publishing Engineer(s)| Helped with the code for the technical aspects related to the specific course generation|
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Ava Hoffman], [Candace Savonen]|
-|Package Developers ([ottrpal]) [Candace Savonen], [John Muschelli], [Carrie Wright]|
+|Package Developers ([ottrpal]) | [Candace Savonen], [John Muschelli], [Carrie Wright]|
 |**Art and Design**||
-|Illustrator(s)| Created graphics for the course|
-|Figure Artist(s)| Created figures/plots for course|
-|Videographer(s)| Filmed videos|
-|Videography Editor(s)| Edited film|
-|Audiographer(s)| Recorded audio|
-|Audiography Editor(s)| Edited audio recordings|
+|Figure Artists| [Candace Savonen], [Carrie Wright], [Ava Hoffman], [Elizabeth Humphries]|
 |**Funding**||
-|Funder(s)| Institution/individual who funded course including grant number|
-|Funding Staff| Staff members who help with funding|
+|Funders| CS, CW, and HB were supported by the [National Cancer Institute (NCI)](https://www.cancer.gov/) under Grant [UE5CA254170](https://grantome.com/grant/NIH/UE5-CA254170-01). AMH and EMH were supported by the AnVIL Project through cooperative agreement awards from the National Human Genome Research Institute with cofunding from OD/ODSS to the Broad Institute (U24HG010262) and Johns Hopkins University (U24HG010263). |
+|Funding Staff| [Sandra Ormbrek], [Shasta Nicholson] |
 
 &nbsp;
+
+Tools Used:
 
 
 ```
@@ -51,7 +39,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-05-12                  
+##  date     2023-05-30                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
@@ -108,6 +96,9 @@ These credits are based on our [course contributors table guidelines](https://ww
 [Carrie Wright]: https://carriewright11.github.io/
 [Ava Hoffman]: https://www.avahoffman.com/
 [Elizabeth Humphries]: https://www.linkedin.com/in/elizabeth-humphries-61202a103/
+[Sandra Ormbrek]: https://hutchdatascience.org/ourteam/
+[Shasta Nicholson]: https://www.linkedin.com/in/shastanicholson/
+[Howard Baek]: https://howardbaek.com/
 
 <!-- Links -->
 
