@@ -12,6 +12,16 @@ On the other hand, AI chatbots also have the potential to create new jobs and op
 
 Ultimately, while the future of programming in software development and data science is unclear, there is much to be optimistic about in this brave new world. The advancements in AI and chatbot technology present an opportunity for programmers to work alongside algorithms to create innovative solutions that were previously unimaginable. As with any technological revolution, there will be challenges, but it is up to us to work together to ensure that we use these tools ethically and responsibly, and to create a future that benefits everyone.
 
+## Learning Objectives
+
+In this chapter we will demonstrate how to:
+
+- Consider the potential benefits and limitations of AI for software development
+- Recognize how to use this course, how it was written, and what to expect
+- Explain general concepts for ethical use of AI tools for software development
+- Summarize what Chatbots are and how they work
+- Distinguish between different AI options for software development
+
 ## AI Provides New Opportunities
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead."}
