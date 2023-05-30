@@ -8,7 +8,7 @@ bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
 description: "Description about Course/Book."
-favicon: assets/dasl_favicon.ico
+favicon: assets/favicon.ico
 ---
 
 # About this Course {-}
