@@ -15,11 +15,12 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 In this chapter we will demonstrate how to:
 
-- Recognize major ethical concerns for possible issues of using AI tools for software
+- Describe key ethical concerns for using AI tools in software development
 - Identify possible mitigation strategies for these major concerns
-- Describe why transparency about the use of AI tools to write code could be useful for now
-- Appreciate why human contributions are still useful and necessary 
-- Recognize strategies for prompts that can help you use the AI tools more responsibly
+- Explain the potential benefits of being transparent about the use of AI tools to write code
+- Discuss why human contributions are still important and necessary 
+- Recognize strategies for using AI tools to write code more responsibly
+- Implement prompts to ask AI tools about responsible use throught various coding practices
 
 ## Major concerns
 
