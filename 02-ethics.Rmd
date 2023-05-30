@@ -11,6 +11,15 @@ The use of artificial intelligence (AI) and in particular, generative AI, in cod
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g23e17ee1585_223_0")
 ```
 
+## Learning Objectives
+
+In this chapter we will demonstrate how to:
+
+- Recognize major ethical concerns for possible issues of using AI tools for software
+- Identify possible mitigation strategies for these major concerns
+- Describe why transparency about the use of AI tools to write code could be useful for now
+- Appreciate why human contributions are still useful and necessary 
+- Recognize strategies for prompts that can help you use the AI tools more responsibly
 
 ## Major concerns
 
