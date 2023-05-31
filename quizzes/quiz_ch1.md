@@ -53,7 +53,7 @@ C) The blue boxes show queries that could be used with chatbots.
 C) Bard, ChatGPT, Phind and POE are all chatbots.
 m) You can only use ChatGPT with this course.
 m) CoPilot is a Chatbot from GitHub.
-o) ChatGTP is a Chatbot.
+o) ChatGPT is the only current actual Chatbot.
 o) There is only one Chatbot that will work best for your needs.
 
 
