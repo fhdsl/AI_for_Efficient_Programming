@@ -41,7 +41,7 @@ o) The concept for chatbots is actually relatively old
 C) Recent chatbots like ChatGPT are especially powerful because they are trained on large amounts of data.
 C) Recent popular chatbots required large amounts of computing resources to train.
 m) Chatbots like ChatGPT work on what is called small language models.
-m) All Chatbots are internet browser based
+m) All chatbots are internet browser based
 o) Chatbots are trained on small quantities of text.
 o) There is only one kind of chatbot currently.
 
@@ -52,8 +52,8 @@ o) There is only one kind of chatbot currently.
 C) The blue boxes show queries that could be used with chatbots.
 C) Bard, ChatGPT, Phind and POE are all chatbots.
 m) You can only use ChatGPT with this course.
-m) CoPilot is a Chatbot from GitHub.
-o) ChatGPT is the only current actual Chatbot.
+m) CoPilot is a chatbot from GitHub.
+o) ChatGPT is the only current actual chatbot.
 o) There is only one Chatbot that will work best for your needs.
 
 
