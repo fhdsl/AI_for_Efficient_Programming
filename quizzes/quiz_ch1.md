@@ -1,29 +1,29 @@
 
-{quiz, id: quiz_name_here, attempts: 10}
+{quiz, id: quiz_intro, attempts: 10}
 
 ## Template quiz
 
-Put any other instructions your quiz takers need to know here like: Choose the best answer.
+Choose the best answer.
 
 {choose-answers: 4}
-? First question to ask goes here. (Note- you need a question mark at end like this. Just one is required if using a question mark in your question field)?
+? Which of the following are true?
 
-C) One correct answer here marked with a "C"
-C) A second correct answer here
-m) Mandatory incorrect answers have an "m"
-m) A second mandatory incorrect answer
-o) An optional incorrect answer here marked with an "o"
-o) A second optional incorrect answer here
+C) AI can simplify current time consuming tasks
+C) AI can help identify code issues that would otherwise be challenging, such as style inconsistency
+m) AI can currently completely replace humans for writing software
+m) Software developers probably don't need to think about integrating AI into their workflows
+o) AI has no limitations for writing software
+o) AI can't possibly create new jobs
 
 {choose-answers: 4}
-? Question example with just a question mark?
+? Which of the following is correct?
 
-C) One correct answer here marked with a "C"
-C) A second correct answer here
-m) Mandatory incorrect answers have an "m"
-m) A second mandatory incorrect answer
-o) An optional incorrect answer here marked with an "o"
-o) A second optional incorrect answer here
+C) AI systems can be biased
+C) Negligence can cause harm
+m) AI systems do not have bias unlike humans
+m) You don't need to be responsible for code written with AI
+o) AI systems are always correct
+o) AI systems are always correct but can have bias
 
 {choose-answers: 4}
 ? Second question to ask goes here?
