@@ -47,7 +47,7 @@ This course is available in multiple formats which allows you to take it in the 
 - Implement strategies to write and debug code using AI-based tools.
 - Describe the benefits of refactoring code using AI-powered techniques, such as making code readable, keeping it brief, and optimizing code.
 - Apply best practices for annotating code using AI.
-- Recognize strategies for how to use AI-based tools for understanding and analyzing code, such as code comprehension of unfamiliar languages or functions.
+- Recognize strategies for using AI-based tools to understand and analyze code, such as code comprehension of unfamiliar languages or functions.
 - Discuss the challenges and ethical implications of using AI for different aspects of software development.
 
 ## Lesson Breakdown {-}
