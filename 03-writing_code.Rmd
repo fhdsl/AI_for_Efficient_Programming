@@ -12,7 +12,7 @@ ottrpal::set_knitr_image_path()
 - Explain how AI-generated code and automated programming tools contribute to making programming more accessible to individuals with limited coding experience
 - Identify the evolving skills required for programming with AI
 - Explore the ethical considerations associated with using AI in programming, including the importance of rigorous testing before publishing code
-- Apply strategies for using AI to build functions, debug code, understand error messages, choose the proper programming language, and plan out a multistep programming project.
+- Apply strategies for using AI to build functions, debug code, understand error messages, choose the proper programming language, and plan out a multi-step programming project.
 
 ## Coding Basics
 
