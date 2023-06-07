@@ -1,5 +1,16 @@
 # Annotating Your Code
 
+## Learning Objectives
+
+- Explain the significance and benefits of code annotation and how it aids in understanding and working with code in the future.
+- Demonstrate the ability to apply effective code annotation practices by providing clear and concise comments in code. 
+- Recognize the impact of code annotation on code maintainability.
+- Explain how well-annotated code can facilitate collaboration among developers and ensure code consistency.
+- Critically evaluate the use of AI in code annotation, including benefits, ethical considerations, and limitations.
+- Explore how AI can be used to create readme files, do line-by-line annotations, and offer potential code improvements.
+
+## Annotating Code is Good Practice
+
 Code annotation, also known as code commenting, is the process of adding explanatory notes to source code. These notes are used to provide context, clarify functionality, and aid in understanding for developers who may be working on the codebase in the future. Code annotation is an important practice for any developer looking to write clear, efficient, and maintainable code.
 
 There are many benefits to annotating code:
@@ -356,7 +367,7 @@ This was a nice tool to recommend, however it still told me I should add my own 
 
 - Code annotation is important for readability, maintainability, and overall quality of code
 - AI can be a helpful tool for supplementing annotations or creating annotation for poorly annotated code.
-- Ultimately the code author who uses AI as a tool for annotation is still ultimately responsible for verifying that the annotations are consistent with their knowledge of the code.
+- Ultimately the code author who uses AI as a tool for annotation is still responsible for verifying that the annotations are consistent with their knowledge of the code.
 
 
 ```{r}
