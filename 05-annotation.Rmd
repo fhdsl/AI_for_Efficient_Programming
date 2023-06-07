@@ -7,7 +7,7 @@
 - Recognize the impact of code annotation on code maintainability.
 - Explain how well-annotated code can facilitate collaboration among developers and ensure code consistency.
 - Critically evaluate the use of AI in code annotation, including benefits, ethical considerations, and limitations.
-- Explore how AI can be used to create readme files, do line-by-line annotations, and offer potential code improvements.
+- Explore how AI can be used to create README files, do line-by-line annotations, and offer potential code improvements.
 
 ## Annotating Code is Good Practice
 
