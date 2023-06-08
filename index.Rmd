@@ -47,12 +47,14 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 ## Learning Objectives {-}
 
-- Explain the basics of AI and its potential for improving software development workflows.
-- Implement strategies to write and debug code using AI-based tools.
-- Describe the benefits of refactoring code using AI-powered techniques, such as making code readable, keeping it brief, and optimizing code.
-- Apply best practices for annotating code using AI.
-- Recognize strategies for using AI-based tools to understand and analyze code, such as code comprehension of unfamiliar languages or functions.
-- Discuss the challenges and ethical implications of using AI for different aspects of software development.
+Learners will be able to:
+
+- Explain the basics of AI and its potential for improving software development workflows
+- Implement strategies to write and debug code using AI-based tools
+- Describe the benefits of refactoring code using AI-powered techniques, such as making code readable, keeping it brief, and optimizing code
+- Apply best practices for annotating code using AI
+- Recognize strategies for using AI-based tools to understand and analyze code, such as code comprehension of unfamiliar languages or functions
+- Discuss the challenges and ethical implications of using AI for different aspects of software development
 
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code"}
