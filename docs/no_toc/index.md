@@ -45,12 +45,12 @@ This course is available in multiple formats which allows you to take it in the 
 
 ## Learning Objectives {-}
 
-- Understand the basics of AI and its potential for improving software development workflows.
-- Learn how to write and debug code using AI-based tools.
-- Explore the benefits of refactoring code using AI-powered techniques, such as making code readable, keeping it brief, and optimizing code.
-- Understand the importance of annotating code, and learn best practices for doing so using AI.
-- Learn how to use AI-based tools for understanding and analyzing code, such as code comprehension of unfamiliar languages or functions.
-- Explore the challenges and ethical implications of using AI for different aspects of software development.
+- Explain the basics of AI and its potential for improving software development workflows.
+- Implement strategies to write and debug code using AI-based tools.
+- Describe the benefits of refactoring code using AI-powered techniques, such as making code readable, keeping it brief, and optimizing code.
+- Apply best practices for annotating code using AI.
+- Recognize strategies for using AI-based tools to understand and analyze code, such as code comprehension of unfamiliar languages or functions.
+- Discuss the challenges and ethical implications of using AI for different aspects of software development.
 
 
 <img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_355.png" title="Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code" alt="Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code" width="100%" style="display: block; margin: auto;" />
