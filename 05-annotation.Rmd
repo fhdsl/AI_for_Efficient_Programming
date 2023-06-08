@@ -286,12 +286,12 @@ Can you annotate some R code for me?
 :::
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked ChatGPT to annotate old R code."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_87")
 ```
 It not only provided helpful annotations but it fixed spacing and added more spaces between lines of code:
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked ChatGPT to annotate old R code."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_91")
 ```
 
 It does however, think the code is Python apparently if we look in the upper left corner.
@@ -308,7 +308,7 @@ How could I make this code better?
 It had a lot of great advice:
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "I asked ChatGPT to annotate old R code."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_101")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22de39942ac_19_79")
 ```
 
 First and foremost it told me my variable names are not consistent and also not descriptive. Which is completely accurate! There's variable names like `xx` and `ll` which don't tell the reader anything about the variable.
