@@ -64,6 +64,8 @@ the-code
 questions-1
 summary-2
 annotating-your-code
+learning-objectives-4
+annotating-code-is-good-practice
 improves-readability
 examples-of-readability-aiding-comments
 improves-maintainability
