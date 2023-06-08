@@ -1,5 +1,13 @@
 # Understanding Unfamiliar Code
 
+## Learning Objectives
+
+- Recognize the benefits, limitations, and assumptions in using AI to understand unfamiliar code
+- Consider the ethical questions around using AI to understand another person's code
+- Practice using AI to summarize code, identify an unknown coding language, and interpret regex and unknown functions
+
+## Reading Unfamiliar Code Is A Skill
+
 As a programmer, you will frequently encounter situations where you need to read and understand code written by other developers. This could be because you are collaborating on a project, you have taken over maintenance of an existing codebase, or you are learning new syntax or skills that require reading example codes. Comprehending code written by someone else is a distinct skill from being able to write your own code, and it takes practice to become proficient at it.
 
 Reading unfamiliar code is like exploring an unfamiliar city without a map or a guide. Just like in a new city, you may not know where to start or how to navigate the codebase. You may encounter unfamiliar syntax, functions, and libraries that you have never seen before, just as you might encounter new streets, buildings, and landmarks. At first, you may feel disoriented and overwhelmed, and may need to spend some time getting oriented and familiarizing yourself with the environment. As you explore, you may start to see patterns and similarities, just as you might begin to recognize neighborhoods and landmarks in a new city. You may also encounter dead-ends, confusing intersections, and unexpected detours, just as you might encounter bugs and errors in the code.
@@ -316,7 +324,7 @@ fn main() {
 
 ### Questions
 
-1. Craft a query that identifies the features that can be used to determine the coding language, as well as the version of the language. What language and version is it written in? What features give away the coding language?
+1. Write a query that identifies the features that can be used to determine the coding language, as well as the version of the language. What language and version is it written in? What features give away the coding language?
 
 1. Create a prompt that determines what this code does, as well as important features of the program. What does this code do?
 
