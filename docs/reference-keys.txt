@@ -29,6 +29,8 @@ harmful-code
 tips-for-avoiding-the-creation-of-harmful-code
 summary
 writing-code
+learning-objectives-3
+coding-basics
 writing-code-with-ai
 tips-for-coding-with-ai
 example-one-creating-a-function
@@ -42,7 +44,7 @@ code
 questions
 summary-1
 refactoring-code
-learning-objectives-3
+learning-objectives-4
 refactoring-basics
 ai-in-code-refactoring
 example-one-correcting-syntax
@@ -64,7 +66,7 @@ the-code
 questions-1
 summary-2
 annotating-your-code
-learning-objectives-4
+learning-objectives-5
 annotating-code-is-good-practice
 improves-readability
 examples-of-readability-aiding-comments
@@ -82,7 +84,7 @@ style-the-code
 sometimes-it-has-trouble-with-file-types-if-given-a-url
 summary-3
 understanding-unfamiliar-code
-learning-objectives-5
+learning-objectives-6
 reading-unfamiliar-code-is-a-skill
 ai-in-reading-code
 example-one-summarizing-code-you-didnt-write
