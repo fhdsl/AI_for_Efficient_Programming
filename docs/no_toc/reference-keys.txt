@@ -8,6 +8,7 @@ computing-environment-needs
 boxes
 about-this-book
 ethics-of-using-ai
+learning-objectives-1
 major-concerns
 replacing-humans
 tips-for-supporting-human-code

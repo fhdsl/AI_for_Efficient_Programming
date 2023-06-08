@@ -7,6 +7,16 @@ The use of artificial intelligence (AI) and in particular, generative AI, in cod
 
 <img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_0.png" title="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." alt="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." width="100%" style="display: block; margin: auto;" />
 
+## Learning Objectives
+
+In this chapter we will demonstrate how to:
+
+- Describe key ethical concerns for using AI tools in software development
+- Identify possible mitigation strategies for these major concerns
+- Explain the potential benefits of being transparent about the use of AI tools to write code
+- Discuss why human contributions are still important and necessary 
+- Recognize strategies for using AI tools to write code more responsibly
+- Implement prompts to ask AI tools about responsible use throughout various coding practices
 
 ## Major concerns
 
@@ -45,7 +55,7 @@ Computer science is a field that has historically lacked diversity and new learn
 * Be transparent about when you do or do not use AI tools, give credit to the humans who write code where possible.
 
 :::{.ethics}
-A new term in the medical field called [AI paternalism](https://www.technologyreview.com/2023/04/21/1071921/ai-is-infiltrating-health-care-we-shouldnt-let-it-make-decisions/) describes the concept that doctors (and others) may trust AI over their own judgement or the experiences of the patients they treat. This has already been shown to be a problem with earlier AI systems intended to help distinguish patient groups. Not all humans will necessarily fit the expectations of the AI model if it is not very good at predicting edge cases [@AI_paternalism]. Therefore, in all fields it is important for us to not forget our value as humans in our understanding of the world. 
+A new term in the medical field called [AI paternalism](https://www.technologyreview.com/2023/04/21/1071921/ai-is-infiltrating-health-care-we-shouldnt-let-it-make-decisions/) describes the concept that doctors (and others) may trust AI over their own judgment or the experiences of the patients they treat. This has already been shown to be a problem with earlier AI systems intended to help distinguish patient groups. Not all humans will necessarily fit the expectations of the AI model if it is not very good at predicting edge cases [@AI_paternalism]. Therefore, in all fields it is important for us to not forget our value as humans in our understanding of the world. 
 :::
 
 ## Bias
