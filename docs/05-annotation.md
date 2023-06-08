@@ -273,10 +273,10 @@ Second, I wanted to have ChatGPT annotate code line by line. So I asked it
 Can you annotate some R code for me?
 :::
 
-<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
+<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_87.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
 It not only provided helpful annotations but it fixed spacing and added more spaces between lines of code:
 
-<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
+<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_91.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
 
 It does however, think the code is Python apparently if we look in the upper left corner.
 But this doesn't seem to have affected its accuracy in its annotations.
@@ -291,7 +291,7 @@ How could I make this code better?
 
 It had a lot of great advice:
 
-<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
+<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_79.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
 
 First and foremost it told me my variable names are not consistent and also not descriptive. Which is completely accurate! There's variable names like `xx` and `ll` which don't tell the reader anything about the variable.
 

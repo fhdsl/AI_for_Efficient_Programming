@@ -4,6 +4,15 @@
 
 # Writing Code
 
+## Learning Objectives
+
+- Recognize the benefits and capabilities of AI-powered programming tools, particularly for certain kinds of tasks that are difficult for humans
+- Explain how AI-generated code and automated programming tools contribute to making programming more accessible to individuals with limited coding experience or to those working in a new language
+- Explore the ethical considerations associated with using AI in programming, including the importance of rigorous testing before publishing code
+- Apply strategies for using AI to build functions, debug code, understand error messages, check syntax, choose the proper programming language, and plan out a multi-step programming project
+
+## Coding Basics
+
 In today's digitally-driven world, coding has become an essential skill. It is used to create websites, mobile applications, and sophisticated software systems. Contrary to popular belief, coding is not only for those who possess an innate talent for programming. With the right resources and a willingness to learn, anyone can become proficient in coding.
 
 Practice is crucial to mastering the art of coding, and those who are willing to commit themselves to the learning process can achieve great results. Writing code can also be a rewarding and fulfilling hobby, too. Creating your own software, building a website, or automating a task can be immensely satisfying, and can provide a sense of accomplishment and pride.
@@ -24,9 +33,9 @@ Ultimately, the ability to write code is a valuable asset in today's world, with
 
 AI-powered programming tools and technologies are revolutionizing the way we approach software development. 
 
-1. _AI can generate code snippets._ An AI-powered code editor can suggest more efficient algorithms or highlight potential errors in real-time. It can also help developers to reproduce bugs more easily and to test potential fixes more quickly. This can save developers a significant amount of time and effort, and it can help them to debug their code more effectively.
+1. _AI can generate code snippets._ An AI-powered code editor can suggest more efficient algorithms or highlight potential errors in real-time. It can also help developers to reproduce bugs more easily and to test potential fixes more quickly. This can save developers a significant amount of time and effort, and it can help them to debug their code more effectively. **Be aware that AI still makes a lot of mistakes when writing code**, so you will need to be particularly careful in testing code it writes.
 
-1. _AI can make programming more accessible._ With AI-generated code and automated programming tools, individuals who are not experienced developers can still create software solutions. This has the potential to democratize programming and lead to new innovations from a wider range of people.
+1. _AI can make programming more accessible._ With AI-generated code and automated programming tools, individuals who are not experienced developers can still create software solutions. Experienced developers can also more easily write code in languages with which they aren't familiar. This has the potential to democratize programming and lead to new innovations from a wider range of people.
 
 1. _AI is changing the skills required for writing code._ Rather than simply memorizing syntax, developers need to focus on developing their creativity, intuition, and problem-solving skills. Additionally, programmers must also hone their abilities in architecture design and project management, as these skills are becoming increasingly important in the modern software development landscape.
 
