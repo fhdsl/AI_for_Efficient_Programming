@@ -41,6 +41,8 @@ code
 questions
 summary-1
 refactoring-code
+learning-objectives-2
+refactoring-basics
 ai-in-code-refactoring
 example-one-correcting-syntax
 example-two-styling-and-convention
