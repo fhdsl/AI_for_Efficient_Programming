@@ -11,10 +11,10 @@ ottrpal::set_knitr_image_path()
 
 ## Learning Objectives
 
-- Describe how refactoring code involves optimization for maintainability, efficiency, and reuse.
-- Explain why refactoring code is important for developers in the longterm. 
-- Recognize the benefits and limitations of using AI tools to refactor code, as well as why AI tools are uniquely poised to be beneficial.
-- Implement prompt strategies that can be used to assist with refactoring code for correcting syntax, for adopting more consistent styling, for making code more concise, for making code easier to maintain, and for making code more efficient.
+- Describe how refactoring code involves optimization for maintainability, efficiency, and reuse
+- Explain why refactoring code is important for developers in the longterm 
+- Recognize the benefits and limitations of using AI tools to refactor code, as well as why AI tools are uniquely poised to be beneficial
+- Implement prompt strategies that can be used to assist with refactoring code for correcting syntax, for adopting more consistent styling, for making code more concise, for making code easier to maintain, and for making code more efficient
 
 ## Refactoring Basics
 
