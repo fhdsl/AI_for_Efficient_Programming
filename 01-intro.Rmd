@@ -12,6 +12,16 @@ On the other hand, AI chatbots also have the potential to create new jobs and op
 
 Ultimately, while the future of programming in software development and data science is unclear, there is much to be optimistic about in this brave new world. The advancements in AI and chatbot technology present an opportunity for programmers to work alongside algorithms to create innovative solutions that were previously unimaginable. As with any technological revolution, there will be challenges, but it is up to us to work together to ensure that we use these tools ethically and responsibly, and to create a future that benefits everyone.
 
+## Learning Objectives
+
+In this chapter we will demonstrate how to:
+
+- Consider the potential benefits and limitations of AI for software development
+- Recognize how to use this course, how it was written, and what to expect
+- Explain general concepts for ethical use of AI tools for software development
+- Summarize what Chatbots are and how they work
+- Distinguish between different AI options for software development
+
 ## AI Provides New Opportunities
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead."}
@@ -56,7 +66,7 @@ We must always be aware of the potential for harm and deliberately take steps to
 
 ## The AI Chatbots
 
-Humans have been interacting with AI chatbots for years. In fact, Alan Turing is credited with coming up with the concept for chatbots as early as 1950. Chatbots are software-based systems that interact with humans typically by text or speech inputs, rather than code. They mimic some human activity [@wikipedia_chatbot_2023; @abdulla2022chatbots] bassed on these language inputs. They process the inputs using natural language processing commonly abbreviated as NLP. NLP is a kind of AI that uses human text or speech and parses the language to determine structures and patterns to extract meaning. NLP uses large amounts of language data (such as books, websites etc.) to train AI systems to identify these structures and patterns. For example, the AI model might identify when a sentence is a question or a statement by examining various features in a prompt such as the inclusion of a question mark of the use of words often used in questions [@wikipedia_natural_2023; @cahn2017chatbot].
+Humans have been interacting with AI chatbots for years. In fact, Alan Turing is credited with coming up with the concept for chatbots as early as 1950. Chatbots are software-based systems that interact with humans typically by text or speech inputs, rather than code. They mimic some human activity [@wikipedia_chatbot_2023; @abdulla2022chatbots] based on these language inputs. They process the inputs using natural language processing commonly abbreviated as NLP. NLP is a kind of AI that uses human text or speech and parses the language to determine structures and patterns to extract meaning. NLP uses large amounts of language data (such as books, websites etc.) to train AI systems to identify these structures and patterns. For example, the AI model might identify when a sentence is a question or a statement by examining various features in a prompt such as the inclusion of a question mark of the use of words often used in questions [@wikipedia_natural_2023; @cahn2017chatbot].
 
 The methods used for chatbots have evolved over time. Now chatbots often utilize AI methods like [deep learning](https://en.wikipedia.org/wiki/Deep_learning) (which involve multiple layers of abstractions of the input data [@wikipedia_deep_learning_2023]) to extract meaning from the language data [@wikipedia_natural_2023]. As these methods use large quantities of text, they are therefore often called large language models [@wikipedia_large_language_2023].
 

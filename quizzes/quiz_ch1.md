@@ -1,61 +1,60 @@
 
-{quiz, id: quiz_name_here, attempts: 10}
+{quiz, id: quiz_intro, attempts: 10}
 
 ## Template quiz
 
-Put any other instructions your quiz takers need to know here like: Choose the best answer.
+Choose the best answer.
 
 {choose-answers: 4}
-? First question to ask goes here. (Note- you need a question mark at end like this. Just one is required if using a question mark in your question field)?
+? Which of the following are true?
 
-C) One correct answer here marked with a "C"
-C) A second correct answer here
-m) Mandatory incorrect answers have an "m"
-m) A second mandatory incorrect answer
-o) An optional incorrect answer here marked with an "o"
-o) A second optional incorrect answer here
-
-{choose-answers: 4}
-? Question example with just a question mark?
-
-C) One correct answer here marked with a "C"
-C) A second correct answer here
-m) Mandatory incorrect answers have an "m"
-m) A second mandatory incorrect answer
-o) An optional incorrect answer here marked with an "o"
-o) A second optional incorrect answer here
+C) AI can simplify current time consuming tasks
+C) AI can help identify code issues that would otherwise be challenging, such as style inconsistency
+m) AI can currently completely replace humans for writing software
+m) Software developers probably don't need to think about integrating AI into their workflows
+o) AI has no limitations for writing software
+o) AI can't possibly create new jobs
 
 {choose-answers: 4}
-? Second question to ask goes here?
+? Which of the following is correct?
 
-C) A correct answer here!
-m) Mandatory incorrect answers have an "m"
-m) A second mandatory incorrect answer
-o) An optional incorrect answer here marked with an "o"
-o) A second optional incorrect answer here
+C) AI systems can be biased
+C) Negligence can cause harm
+m) AI systems do not have bias unlike humans
+m) You don't need to be responsible for code written with AI
+o) AI systems are always correct
+o) AI systems are always correct but can have bias
+
+{choose-answers: 4}
+? Which of the following is NOT true about chatbots?
+
+C) Chatbots only take code as input
+C) Chatbots are a completely new concept taking the world by storm
+m) Chatbots work by identifying structures within language data and identifying patterns
+m) Chatbots take text or speach input
+o) Chatbots extract meaning from language-related data
+o) The concept for chatbots is actually relatively old
+
+{choose-answers: 4}
+? Which of the following is TRUE?
+
+C) Recent chatbots like ChatGPT are especially powerful because they are trained on large amounts of data.
+C) Recent popular chatbots required large amounts of computing resources to train.
+m) Chatbots like ChatGPT work on what is called small language models.
+m) All chatbots are internet browser based
+o) Chatbots are trained on small quantities of text.
+o) There is only one kind of chatbot currently.
 
 
 {choose-answers: 4}
-? A more complicated example. Note the question mark at the end of the options! Which of the following are correct
-1. An option described
-2. A second option
-3. A third option
-4. A fourth option
-5. A fifth option ?
+? Which of the following is TRUE?
 
-C) All of the examples listed except 5
-C) All of the listed examples except 5
-m) 1, 3, and 5
-m) 1, 2, and 3
-o) All of the examples except 1 and 5
-o) All of the examples listed
+C) The blue boxes show queries that could be used with chatbots.
+C) Bard, ChatGPT, Phind and POE are all chatbots.
+m) You can only use ChatGPT with this course.
+m) CoPilot is a chatbot from GitHub.
+o) ChatGPT is the only current actual chatbot.
+o) There is only one Chatbot that will work best for your needs.
 
-{random-choice-order: false}
-? A question in which the order of choices is important?
-
-a) The possible responses should be labeled a, b, c, etc
-b) The correct answer has a capital letter, in this case "D" is correct
-c) both a and b
-D) All of the above will always be last choice in this question
 
 {/quiz}
