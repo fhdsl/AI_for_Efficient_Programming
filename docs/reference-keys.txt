@@ -64,6 +64,8 @@ the-code
 questions-1
 summary-2
 annotating-your-code
+learning-objectives-4
+annotating-code-is-good-practice
 improves-readability
 examples-of-readability-aiding-comments
 improves-maintainability
@@ -80,6 +82,8 @@ style-the-code
 sometimes-it-has-trouble-with-file-types-if-given-a-url
 summary-3
 understanding-unfamiliar-code
+learning-objectives-5
+reading-unfamiliar-code-is-a-skill
 ai-in-reading-code
 example-one-summarizing-code-you-didnt-write
 example-two-identifying-a-coding-language
