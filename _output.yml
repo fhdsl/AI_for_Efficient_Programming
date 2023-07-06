@@ -1,6 +1,7 @@
 bookdown::gitbook:
   css: [assets/style.css, assets/style_custom.css]
   includes:
+    in_header: GA_Script.html
     before_body: assets/big-image_fhdasl.html
     after_body: assets/footer.html
   split_bib: false
