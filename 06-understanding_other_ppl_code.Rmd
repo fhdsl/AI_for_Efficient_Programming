@@ -266,6 +266,27 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 (And if you do ever run across an expression like this in your code, you can check out our chapter on [refactoring code](https://hutchdatascience.org/AI_for_software/refactoring-code.html#refactoring-code) using AI to fix it!)
 
+## Limitations 
+
+Although chatbots can be extremely helpful for better understanding someone else's code, if there is a lack of annotation or documentation, it will be difficult to discern more about the context of the development.
+
+Cases where developers may not have provided context information include:
+
+1) Not stating their purpose for writing this code.
+2) Not describing what they planned to do next.
+3) Not describing (or being aware of) possible parts of the code that need updating or maybe have security or privacy issues.
+4) Not describing how they made certain decisions in the development process.
+
+Although we can't truly understand some of this information, it is however possible to get some assistance from chatbots with prompts such as:
+
+1) What do you think the purpose of this code is?
+2) What might be possible next steps to further develop this code?
+3) What are possible issues with this code, particularly for security or privacy?
+4) Why was the code possibly written with this structure? What other options are possible?
+
+Chatbot tools are also limited in terms of how up-to-date their training data is to know about current possible issues with code. 
+
+
 
 ## Hands-On Exercise 
 
