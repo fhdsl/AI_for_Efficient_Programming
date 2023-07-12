@@ -1,7 +1,7 @@
 ---
 title: "AI for Software Development"
 subtitle: "Harnessing the Power of Large Language Models"
-date: "June, 2023"
+date: "July, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -32,6 +32,8 @@ This course is available in multiple formats which allows you to take it in the 
 - Professionals looking to improve efficiency
 - Students hoping to learn more about programming
 - Anyone curious about how AI can be harnessed for technology
+
+**Note**: Those completely new to programming will find using AI tools to create software solutions challenging at this time. It is helpful to have some fundamental knowledge to write appropriate prompts and to discern when code is not working as expected. We advise novices to seek expert review.  
 
 <img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_176.png" title="For individuals who: develop software or want to start, are interested in using large language model AI tools to help you with your work, want to use AI tools responsibly" alt="For individuals who: develop software or want to start, are interested in using large language model AI tools to help you with your work, want to use AI tools responsibly" width="100%" style="display: block; margin: auto;" />
 
