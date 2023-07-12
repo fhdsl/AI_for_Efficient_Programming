@@ -1,7 +1,7 @@
 
 {quiz, id: quiz_refactoring, attempts: 10}
 
-## Template quiz
+## Quiz: Refactoring
 
 Choose the best answer.
 
