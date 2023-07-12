@@ -31,7 +31,7 @@ o) AI systems are always correct but can have bias
 C) Chatbots only take code as input
 C) Chatbots are a completely new concept taking the world by storm
 m) Chatbots work by identifying structures within language data and identifying patterns
-m) Chatbots take text or speach input
+m) Chatbots take text or speech input
 o) Chatbots extract meaning from language-related data
 o) The concept for chatbots is actually relatively old
 
