@@ -43,6 +43,12 @@ AI-powered programming tools and technologies are revolutionizing the way we app
 
 1. _AI can make programming more accessible._ With AI-generated code and automated programming tools, individuals who are not experienced developers can still create software solutions. Experienced developers can also more easily write code in languages with which they aren't familiar. This has the potential to democratize programming and lead to new innovations from a wider range of people.
 
+:::{.notice}
+Can complete novices learn how to program using AI tools?
+
+At present, it is very challenging for complete novices to rely on AI chatbots to learn how to write code. These tools will sometimes write buggy code or code that doesn't not work as intended, and a person with no programming experience will have difficulty learning how to spot these sorts of mistakes. AI chatbots are best thought of as a supplement to your software development education, not as a replacement, and they should be used alongside other resources. Therefore, we advise that you seek expert review and assistance. As AI tools are refined, complete novices may be able to create software products more readily on their own.
+:::
+
 1. _AI is changing the skills required for writing code._ Rather than simply memorizing syntax, developers need to focus on developing their creativity, intuition, and problem-solving skills. Additionally, programmers must also hone their abilities in architecture design and project management, as these skills are becoming increasingly important in the modern software development landscape.
 
 As AI continues to evolve, it is likely to have an even greater impact on the way we develop software in the future.

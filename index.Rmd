@@ -33,6 +33,8 @@ This course is available in multiple formats which allows you to take it in the 
 - Students hoping to learn more about programming
 - Anyone curious about how AI can be harnessed for technology
 
+**Note**: Those completely new to programming will find using AI tools to create software solutions challenging at this time. It is helpful to have some fundamental knowledge to write appropriate prompts and to discern when code is not working as expected. We advise novices to seek expert review.  
+
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "For individuals who: develop software or want to start, are interested in using large language model AI tools to help you with your work, want to use AI tools responsibly"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g225d384a06d_0_176")
 ```
