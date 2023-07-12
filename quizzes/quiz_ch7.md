@@ -28,4 +28,12 @@ m) Avoiding prompting AI with general facts about your study system and data cla
 m) Limiting the use of AI to non-biological disciplines
 m) Prioritizing the speed of development over code quality and efficiency
 
+? You are thinking about polishing up a bioinformatics tool you created when you were first starting out. Which of the following should you consider before submitting your codebase to an AI resource?
+
+C) All of the above
+m) Ensuring there is no protected data, even for testing
+o) Breaking down your code into smaller chunks for AI to clean up
+o) Whether or not your tool is proprietary
+o) Giving the AI some context on your tool's use case so that it interprets the software's function correctly
+
 {/quiz}
