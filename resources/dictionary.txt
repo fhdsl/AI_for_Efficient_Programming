@@ -4,6 +4,7 @@ Anthropic
 AnVIL
 bcftools
 BIPOC
+bioinformatics
 BitMapBackend
 Bloomberg
 Bookdown
@@ -41,6 +42,7 @@ Github
 github
 GH
 GPT
+https
 impactful
 IndexOutOfRangeException
 io
