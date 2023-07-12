@@ -80,7 +80,9 @@ It is well known that data and code are often biased [@belenguer_ai_2022]. It is
 * Evaluate the code for biases as it is developed. Check if any of the criteria for weighting certain data values over others are rooted in bias.
 * Consider the possible outcomes of the use of the code. Consider if the code could possibly be used in a manner that will result in discrimination.
 
-See @belenguer_ai_2022 for more guidance.
+See @belenguer_ai_2022 for more guidance. We also encourage you to check out the following video for a classic example of bias in AI:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TWWsW1w-BVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Misinformation
 
