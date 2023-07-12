@@ -4,6 +4,7 @@ Anthropic
 AnVIL
 bcftools
 BIPOC
+Bioconductor's
 bioinformatics
 BitMapBackend
 Bloomberg
@@ -33,6 +34,7 @@ dropdown
 Explainability
 Ehang's
 else's
+epigenetic
 favicon
 fn
 fs
@@ -67,6 +69,7 @@ Pandoc
 Phind
 PII
 png
+polymorphisms
 Pre
 preloading
 PyCharm
@@ -85,6 +88,7 @@ suboptimal
 summarization
 syntaxes
 tidyverse
+transformative
 TypeError
 UE
 UE5
