@@ -6,7 +6,7 @@
 ## Learning Objectives
 
 - Describe how refactoring code involves optimization for maintainability, efficiency, and reuse
-- Explain why refactoring code is important for developers in the longterm 
+- Explain why refactoring code is important for developers in the long-term 
 - Recognize the benefits and limitations of using AI tools to refactor code, as well as why AI tools are uniquely poised to be beneficial
 - Implement prompt strategies that can be used to assist with refactoring code for correcting syntax, for adopting more consistent styling, for making code more concise, for making code easier to maintain, and for making code more efficient
 
@@ -547,7 +547,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-## 231.734   0.076 231.807
+## 233.008   0.055 233.087
 ```
 
 :::{.query}
@@ -575,7 +575,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.770   0.263   0.878
+##   0.551   0.348   0.701
 ```
 
 The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
@@ -603,7 +603,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.336   0.236   0.353
+##   0.287   0.296   0.370
 ```
 
 One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
