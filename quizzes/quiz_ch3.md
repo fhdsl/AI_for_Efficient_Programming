@@ -1,7 +1,7 @@
 
 {quiz, id: quiz_writing_code, attempts: 10}
 
-## Template quiz
+## Quiz: Writing Code
 
 Choose the best answer.
 
