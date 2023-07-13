@@ -321,12 +321,13 @@ div.csl-indent {
 <li class="chapter" data-level="6.5" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-two-identifying-a-coding-language"><i class="fa fa-check"></i><b>6.5</b> Example Two: Identifying a Coding Language</a></li>
 <li class="chapter" data-level="6.6" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-three-interpreting-regex"><i class="fa fa-check"></i><b>6.6</b> Example Three: Interpreting Regex</a></li>
 <li class="chapter" data-level="6.7" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#example-four-demystifying-functions"><i class="fa fa-check"></i><b>6.7</b> Example Four: Demystifying Functions</a></li>
-<li class="chapter" data-level="6.8" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-2"><i class="fa fa-check"></i><b>6.8</b> Hands-On Exercise</a>
+<li class="chapter" data-level="6.8" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#limitations"><i class="fa fa-check"></i><b>6.8</b> Limitations</a></li>
+<li class="chapter" data-level="6.9" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#hands-on-exercise-2"><i class="fa fa-check"></i><b>6.9</b> Hands-On Exercise</a>
 <ul>
-<li class="chapter" data-level="6.8.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#the-code-1"><i class="fa fa-check"></i><b>6.8.1</b> The Code</a></li>
-<li class="chapter" data-level="6.8.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#questions-2"><i class="fa fa-check"></i><b>6.8.2</b> Questions</a></li>
+<li class="chapter" data-level="6.9.1" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#the-code-1"><i class="fa fa-check"></i><b>6.9.1</b> The Code</a></li>
+<li class="chapter" data-level="6.9.2" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#questions-2"><i class="fa fa-check"></i><b>6.9.2</b> Questions</a></li>
 </ul></li>
-<li class="chapter" data-level="6.9" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#summary-4"><i class="fa fa-check"></i><b>6.9</b> Summary</a></li>
+<li class="chapter" data-level="6.10" data-path="understanding-unfamiliar-code.html"><a href="understanding-unfamiliar-code.html#summary-4"><i class="fa fa-check"></i><b>6.10</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
@@ -542,11 +543,30 @@ end;</code></pre>
 <p><img src="06-understanding_other_ppl_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_176.png" title="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." alt="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." width="100%" style="display: block; margin: auto;" /></p>
 <p>(And if you do ever run across an expression like this in your code, you can check out our chapter on <a href="https://hutchdatascience.org/AI_for_software/refactoring-code.html#refactoring-code">refactoring code</a> using AI to fix it!)</p>
 </div>
-<div id="hands-on-exercise-2" class="section level2" number="6.8">
-<h2><span class="header-section-number">6.8</span> Hands-On Exercise</h2>
+<div id="limitations" class="section level2" number="6.8">
+<h2><span class="header-section-number">6.8</span> Limitations</h2>
+<p>Although chatbots can be extremely helpful for better understanding someone else’s code, if there is a lack of annotation or documentation, it will be difficult to discern more about the context of the development.</p>
+<p>Cases where developers may not have provided context information include:</p>
+<ol style="list-style-type: decimal">
+<li>Not stating their purpose for writing this code.</li>
+<li>Not describing what they planned to do next.</li>
+<li>Not describing (or being aware of) possible parts of the code that need updating or maybe have security or privacy issues.</li>
+<li>Not describing how they made certain decisions in the development process.</li>
+</ol>
+<p>Although we can’t truly understand some of this information, it is however possible to get some assistance from chatbots with prompts such as:</p>
+<ol style="list-style-type: decimal">
+<li>What do you think the purpose of this code is?</li>
+<li>What might be possible next steps to further develop this code?</li>
+<li>What are possible issues with this code, particularly for security or privacy?</li>
+<li>Why was the code possibly written with this structure? What other options are possible?</li>
+</ol>
+<p>Chatbot tools are also limited in terms of how up-to-date their training data is to know about current possible issues with code.</p>
+</div>
+<div id="hands-on-exercise-2" class="section level2" number="6.9">
+<h2><span class="header-section-number">6.9</span> Hands-On Exercise</h2>
 <p>Now it’s your turn to try. Let’s say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what’s going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.</p>
-<div id="the-code-1" class="section level3" number="6.8.1">
-<h3><span class="header-section-number">6.8.1</span> The Code</h3>
+<div id="the-code-1" class="section level3" number="6.9.1">
+<h3><span class="header-section-number">6.9.1</span> The Code</h3>
 <p><strong>Note</strong>: This code is just an example and was written strictly for educational purposes.</p>
 <pre><code>use ode_solvers::{Euler, OdeMethod};
 use plotters::prelude::*;
@@ -616,8 +636,8 @@ fn main() {
         .draw_series(LineSeries::new(
             data1.iter().map(|d|</code></pre>
 </div>
-<div id="questions-2" class="section level3" number="6.8.2">
-<h3><span class="header-section-number">6.8.2</span> Questions</h3>
+<div id="questions-2" class="section level3" number="6.9.2">
+<h3><span class="header-section-number">6.9.2</span> Questions</h3>
 <ol style="list-style-type: decimal">
 <li><p>Write a query that identifies the features that can be used to determine the coding language, as well as the version of the language. What language and version is it written in? What features give away the coding language?</p></li>
 <li><p>Create a prompt that determines what this code does, as well as important features of the program. What does this code do?</p></li>
@@ -627,8 +647,8 @@ fn main() {
 <p>What is the purpose of this line of code?</p>
 </div>
 </div>
-<div id="summary-4" class="section level2" number="6.9">
-<h2><span class="header-section-number">6.9</span> Summary</h2>
+<div id="summary-4" class="section level2" number="6.10">
+<h2><span class="header-section-number">6.10</span> Summary</h2>
 <ul>
 <li>Understanding code written by someone else can be made easier by using AI</li>
 <li>AI chatbots can summarize the code and the dataset used, as well as clarify functions and expressions that are confusing</li>
