@@ -3,7 +3,9 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Appendix {-}
+# (PART\*) Additional Learning {-}
+
+# Languages and Cloud Computing {-}
 
 ## Programming Languages {-}
 

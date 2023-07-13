@@ -39,7 +39,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 When using AI to help generate code examples, perform refactoring, understand code, or create unit tests, you should keep the following in mind:
 
-- [**Writing Code**](writing-code.html): AI can be used to automatically generate bioinformatics code snippets or functions. It can provide code suggestions, auto-completion, or even generate code based on given specifications or data classes. This can include creating some unit tests for your functions.
+- [**Writing Code**](writing-code.html): AI can be used to automatically generate bioinformatics code snippets or functions. It can provide code suggestions, auto-completion, or even generate code based on given specifications or data classes. This can include creating some [unit tests](https://en.wikipedia.org/wiki/Unit_testing) for your functions to ensure they are working as expected.
 
 - [**Refactoring Code**](refactoring-code.html): AI can aid in refactoring bioinformatics code to improve readability, maintainability, and performance through suggestions for code restructuring.
 
