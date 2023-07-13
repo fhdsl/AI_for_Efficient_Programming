@@ -13,7 +13,7 @@ ottrpal::set_knitr_image_path()
 
 ## AI in Bioinformatics
 
-[Bioinformatics](https://www.genome.gov/genetics-glossary/Bioinformatics) is an interdisciplinary field that combines biology, computer science, statistics, and data analysis to extract insights from biological data. It involves the development and application of computational tools, algorithms, and databases to store, organize, analyze, and interpret vast amounts of biological information, particularly in the context of genomics and public health.
+[Bioinformatics](https://www.genome.gov/genetics-glossary/Bioinformatics) is an interdisciplinary field that combines biology, computer science, statistics, and data analysis to extract insights from biological data. It involves the development and application of computational tools, algorithms, and databases to store, organize, analyze, and interpret vast amounts of biological information, particularly in the context of genomics and public health. [Biomedical imaging](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5171495/) and [electronic health record](https://en.wikipedia.org/wiki/Electronic_health_record) informatics are also rapidly growing subdisciplines.
 
 Bioinformatics is especially important for research and work done with genomes. In genomics, bioinformatics enables the identification and annotation of genes, the prediction of protein structures and functions, and the analysis of genetic variations, such as single nucleotide polymorphisms and gene copy number variations. These analyses help in unraveling the genetic basis of diseases, discovering potential drug targets, and facilitating personalized medicine approaches.
 
@@ -33,7 +33,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 - **Integration with Existing Workflows**: Bioinformatics software is often part of a larger analysis pipeline or workflow. Integrating AI-based tools seamlessly into existing bioinformatics pipelines and workflows, ensuring compatibility, and maintaining data integrity throughout the process requires special attention.
 
-- **Ethical Considerations**: Generally, people are more sensitive about their genome or health data when compared to their Amazon purchases. Genomic data can be highly sensitive and AI tools are not typically designed with security and data sovereignty in mind.
+- **Ethical Considerations**: People are typically more sensitive about their health data when compared to their Amazon purchases. This is for a good reason: there is a painful history of the medical establishment performing experiments on people with less socio-political power. Like medical record data, genomic data is supposed to be [carefully protected](https://www.genome.gov/about-genomics/policy-issues/Privacy) so that it can't be used to disadvantage certain individuals. AI tools on the other hand, are not typically designed with security and data sovereignty in mind.
 
 ## Using these topics for Bioinformatics
 
