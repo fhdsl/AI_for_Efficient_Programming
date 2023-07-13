@@ -46,7 +46,7 @@ In summary, while AI chatbots can provide valuable assistance to software develo
 
 ## AI Code of Ethics
 
-Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. *Intentional harm* is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. *Inadvertent harm* is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss.
+Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. *Intentional harm* is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. *Inadvertent harm* is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss, or create a program that is particularly vulnerable to being hacked.
 
 <img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313b08e75a_243_0.png" title="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." alt="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." width="100%" style="display: block; margin: auto;" />
 
@@ -69,6 +69,12 @@ Humans have been interacting with AI chatbots for years. In fact, Alan Turing is
 The methods used for chatbots have evolved over time. Now chatbots often utilize AI methods like [deep learning](https://en.wikipedia.org/wiki/Deep_learning) (which involve multiple layers of abstractions of the input data [@wikipedia_deep_learning_2023]) to extract meaning from the language data [@wikipedia_natural_2023]. As these methods use large quantities of text, they are therefore often called large language models [@wikipedia_large_language_2023].
 
 Despite the fact that chatbots have been around awhile, the popularity of OpenAI's ChatGPT and DALL-E programs has sparked a recent surge of interest. These chatbots are in part particularly powerful due to the fact that large amounts of computing power were used to train their NLP models on very large datasets [@caldarini2022literature; @cahn2017chatbot]. Large language model AIs can be divided into two categories: those that can be reached using an internet browser, and those that can be reached using an integrated development environment (IDE).
+
+::: warning
+The information presented in this course is meant for use with open source code and software. It is unclear what happens to the information fed to AI chatbots as prompts, or how secure the data are. We know data are saved and may be used to further train the AI tools, but the specifics of how data are saved and how sensitive or personally identifiable information are protected.
+
+Err on the side of caution when interacting with them. We do **not** recommend using proprietary code or private information for prompts unless you are working with an AI that you or your company built and you know is secure.
+:::
 
 <img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_77.png" title="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." alt="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." width="100%" style="display: block; margin: auto;" />
 
@@ -94,9 +100,9 @@ This is not a comprehensive list!
 What are the data sources for these chatbots? Some high-profile English-language AIs, including Google's T5 and Facebook's LLaMA, were trained on more than 15 million websites [@washingtonpost2023]. The top sources of training data for these AI models were <https://patents.google.com/> and <https://www.wikipedia.org/> !
 :::
 
-## Reproducibility with AI chatbots
+## Reproducibility With AI Chatbots
 
-_Reproducibility_ in bioinformatics is the ability to reproduce the results of an analysis using the same data and methods. It's an important aspect of working with AI tools as well, particularly when using AI to debug or fix code. 
+_Reproducibility_ in programming is the ability to reproduce the results of an analysis using the same data and methods. It's an important aspect of working with AI tools as well, particularly when using AI to debug or fix code. 
 
 In order to maximize the reproducibility of your work, you should create good habits when working with any AI tool. This includes documenting your prompts and the intentions behind them, as well as saving the response threads generated by an AI chatbot. Some of the current chatbots already save your threads (particularly ChatGPT and Phind). At this time, Bard and the chatbots accessible via Poe do not save queries as individual threads but do keep a record of the questions and responses for some time. However, it is best practice to save them yourself as the saved chat threads can be reset. Saving them yourself also allows you to write notes about your intentions. 
 
@@ -116,7 +122,7 @@ We have focused on the browser-based chatbots for our examples in this course fo
 
 All the examples and activities in this course can be done in the computer environment you prefer. None of the tasks require a huge amount of computing power, so local installations on your personal computer are fine, though everything will also translate to a high performance computing cluster or a cloud computing platform.
 
-In addition to the CodeWhisperer chatbot available on the AWS cloud platform, a variety of cloud-based AI tools and platforms exist that can be leveraged for practical projects after this course. For instance, Amazon SageMaker or Google Cloud AI Platform can be used for constructing and training machine learning models, while Microsoft Azure Cognitive Services can be applied to incorporate natural language processing features into your applications. If you'd like to learn more about how AI can be integrated with cloud computing, you can read about it in the Appendix.
+In addition to the CodeWhisperer chatbot available on the AWS cloud platform, a variety of cloud-based AI tools and platforms exist that can be leveraged for practical projects after this course. For instance, Amazon SageMaker or Google Cloud AI Platform can be used for constructing and training machine learning models, while Microsoft Azure Cognitive Services can be applied to incorporate natural language processing features into your applications. If you'd like to learn more about how AI can be integrated with cloud computing, you can read about it in the Additional Learning section.
 
 ### Boxes
 
