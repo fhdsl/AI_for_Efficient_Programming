@@ -3,7 +3,9 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# AI for Bioinformatics {-}
+# (PART\*) Additional Learning {-}
+
+# AI for Bioinformatics
 
 ## Learning Objectives
 

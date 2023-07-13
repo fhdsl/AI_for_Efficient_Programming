@@ -9,10 +9,10 @@ rmd_files: ["index.Rmd",
             "05-annotation.Rmd",
             "06-understanding_other_ppl_code.Rmd",
             # Further learning
-            "07-languages.Rmd",
-            "08-cloud-computing.Rmd",
-            "09-bio_code.Rmd",
+            "07-bio_code.Rmd",
             # Appendix
+            "08-languages.Rmd",
+            "09-cloud-computing.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
