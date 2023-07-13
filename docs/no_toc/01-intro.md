@@ -48,6 +48,8 @@ In summary, while AI chatbots can provide valuable assistance to software develo
 
 Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. *Intentional harm* is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. *Inadvertent harm* is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss.
 
+<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313b08e75a_243_0.png" title="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." alt="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." width="100%" style="display: block; margin: auto;" />
+
 We must always be aware of the potential for harm and deliberately take steps to mitigate it. This includes things like:
 
 **Be aware of the potential for bias.** AI systems are trained on data, and that data can reflect the biases of the people who collected it. Programmers should be aware of the potential for bias in their data and take steps to mitigate it.
