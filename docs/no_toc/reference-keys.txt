@@ -92,6 +92,7 @@ example-one-summarizing-code-you-didnt-write
 example-two-identifying-a-coding-language
 example-three-interpreting-regex
 example-four-demystifying-functions
+limitations
 hands-on-exercise-2
 the-code-1
 questions-2
