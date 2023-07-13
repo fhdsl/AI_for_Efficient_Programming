@@ -78,8 +78,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 | [Understanding Code](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html) | 25 minutes |
 | [Understanding Exercise](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html#hands-on-exercise-2) | 10
 minutes |
-| [AI for Bioinformatics](https://hutchdatascience.org/AI_for_software/ai-for-bioinformatics.html) | 15 minutes |
-| [Understanding Exercise](https://hutchdatascience.org/AI_for_software/ai-for-bioinformatics.html#hands-on-exercise-3) | 10
-| **Total** | 3 hours & 35 minutes |
+| **Total** | 3 hours & 10 minutes |
 
 
