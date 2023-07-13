@@ -3,7 +3,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# (PART\*) Additional Learning {-}
+# (PART\*) Additional Learning
 
 # Languages and Cloud Computing {-}
 
