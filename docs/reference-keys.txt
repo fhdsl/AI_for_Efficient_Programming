@@ -97,3 +97,12 @@ hands-on-exercise-2
 the-code-1
 questions-2
 summary-4
+ai-for-bioinformatics
+learning-objectives-7
+ai-in-bioinformatics
+using-these-topics-for-bioinformatics
+hands-on-exercise-3
+the-code-2
+questions-3
+summary-5
+languages-and-cloud-computing
