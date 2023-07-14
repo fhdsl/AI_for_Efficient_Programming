@@ -43,7 +43,7 @@ d) Allow AI models to make all decisions without human verification.
 ? How can AI be used to annotate code?
 
 A) By generating README files and line-by-line annotations.
-b) By creating automatically useable code.
+b) By creating automatically usable code.
 c) By replacing human developers in the code annotation process.
 d) By telling you how you can make the code more clever.
 
