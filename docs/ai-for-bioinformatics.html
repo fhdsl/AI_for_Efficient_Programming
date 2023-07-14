@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>References | AI for Software Development</title>
+  <title>Chapter 7 AI for Bioinformatics | AI for Software Development</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="References | AI for Software Development" />
+  <meta property="og:title" content="Chapter 7 AI for Bioinformatics | AI for Software Development" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="References | AI for Software Development" />
+  <meta name="twitter:title" content="Chapter 7 AI for Bioinformatics | AI for Software Development" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="about-the-authors.html"/>
-
+<link rel="prev" href="understanding-unfamiliar-code.html"/>
+<link rel="next" href="languages-and-cloud-computing.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -54,7 +54,7 @@
   <html>
 
   <head>
-  <title>References | Title</title>
+  <title>Chapter 7 AI for Bioinformatics | Title</title>
   </head>
 
   <body>
@@ -384,41 +384,93 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="references" class="section level1 unnumbered">
-<h1>References</h1>
+<div id="ai-for-bioinformatics" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> AI for Bioinformatics</h1>
+<div id="learning-objectives-7" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Learning Objectives</h2>
+<ul>
+<li>Understand the potential applications of AI assistance in bioinformatics software development</li>
+<li>Identify the challenges and considerations when using AI in bioinformatics software development</li>
+<li>Grasp the serious ethical concerns when designing bioinformatics software that deals with sensitive data</li>
+</ul>
+</div>
+<div id="ai-in-bioinformatics" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> AI in Bioinformatics</h2>
+<p><a href="https://www.genome.gov/genetics-glossary/Bioinformatics">Bioinformatics</a> is an interdisciplinary field that combines biology, computer science, statistics, and data analysis to extract insights from biological data. It involves the development and application of computational tools, algorithms, and databases to store, organize, analyze, and interpret vast amounts of biological information, particularly in the context of genomics and public health. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5171495/">Biomedical imaging</a> and <a href="https://en.wikipedia.org/wiki/Electronic_health_record">electronic health record</a> informatics are also rapidly growing subdisciplines.</p>
+<p>Bioinformatics is especially important for research and work done with genomes. In genomics, bioinformatics enables the identification and annotation of genes, the prediction of protein structures and functions, and the analysis of genetic variations, such as single nucleotide polymorphisms and gene copy number variations. These analyses help in unraveling the genetic basis of diseases, discovering potential drug targets, and facilitating personalized medicine approaches.</p>
+<p>The proliferation of genomic data in recent years have been transformative for the field of genomics. Advances in DNA sequencing technologies, particularly next-generation sequencing, have revolutionized the ability to generate vast amounts of genomic data quickly and at a reduced cost. This has led to an unprecedented increase in the availability and accessibility of genomic information. Researchers estimate that we will generate <a href="https://www.genome.gov/about-genomics/fact-sheets/Genomic-Data-Science">between 2 and 40 exabytes of genomic data</a> within the next decade. Cloud computing platforms like <a href="https://anvilproject.org/">AnVIL</a> are on the forefront of addressing the big genomic data storage and processing challenge.</p>
+<p>You have seen principles in previous chapters that likewise apply to creating bioinformatics software. Creating bioinformatics software, however, comes with its own unique sets of challenges:</p>
+<p><img src="resources/images/07-bio_code_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313f95cd49_180_4.png" title="Bioinformatics dino is excited to get started. It is wearing a lab coat and gloves and is saying 'Don’t worry - We can use bioinformatics to fill in the blanks with frog DNA!'." alt="Bioinformatics dino is excited to get started. It is wearing a lab coat and gloves and is saying 'Don’t worry - We can use bioinformatics to fill in the blanks with frog DNA!'." width="100%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p><strong>Data Complexity</strong>: Genomic data is vast and complex, often consisting of large datasets with multiple dimensions, such as nucleotide sequences and quality scores, gene expression levels, and epigenetic modifications. Developing algorithms and software tools to efficiently handle and analyze this data requires expertise in data management, processing, and interpretation as well as the biological domain knowledge.</p></li>
+<li><p><strong>Diverse Data Types</strong>: Bioinformatics software often handles diverse and complex data outside of strings and numeric types, such as <a href="https://www.bioconductor.org/packages/release/bioc/vignettes/SingleCellExperiment/inst/doc/intro.html">Bioconductor’s <code>Single Cell Experiment</code></a> data class. Knowledge of common data types used in bioinformatics is required to create functional software.</p></li>
+<li><p><strong>Algorithmic Complexity</strong>: Developing accurate and efficient algorithms for various bioinformatics tasks, such as sequence alignment, gene prediction, and protein structure prediction, requires deep understanding of biological principles and computational techniques. Designing algorithms that can handle noise, errors, and biological variations is a persistent challenge.</p></li>
+<li><p><strong>Integration with Existing Workflows</strong>: Bioinformatics software is often part of a larger analysis pipeline or workflow. Integrating AI-based tools seamlessly into existing bioinformatics pipelines and workflows, ensuring compatibility, and maintaining data integrity throughout the process requires special attention.</p></li>
+<li><p><strong>Ethical Considerations</strong>: People are typically more sensitive about their health data when compared to their Amazon purchases. This is for a good reason: there is a painful history of the medical establishment performing experiments on people with less socio-political power. Like medical record data, genomic data is supposed to be <a href="https://www.genome.gov/about-genomics/policy-issues/Privacy">carefully protected</a> so that it can’t be used to disadvantage certain individuals. AI tools on the other hand, are not typically designed with security and data sovereignty in mind.</p></li>
+</ul>
+</div>
+<div id="using-these-topics-for-bioinformatics" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Using these topics for Bioinformatics</h2>
+<p>When using AI to help generate code examples, perform refactoring, understand code, or create unit tests, you should keep the following in mind:</p>
+<ul>
+<li><p><a href="writing-code.html"><strong>Writing Code</strong></a>: AI can be used to automatically generate bioinformatics code snippets or functions. It can provide code suggestions, auto-completion, or even generate code based on given specifications or data classes. This can include creating some <a href="https://en.wikipedia.org/wiki/Unit_testing">unit tests</a> for your functions to ensure they are working as expected.</p></li>
+<li><p><a href="refactoring-code.html"><strong>Refactoring Code</strong></a>: AI can aid in refactoring bioinformatics code to improve readability, maintainability, and performance through suggestions for code restructuring.</p></li>
+<li><p><a href="annotating-your-code.html"><strong>Annotating Code</strong></a>: Bioinformatics tools can be used for clinical decision making. It’s important that anyone vetting or auditing your tool can trace any decision making steps. Therefore, clear understanding and documentation are key. AI can assist in drafting documentation and code annotations, such as through summarizing code functionality, clarifying complex expressions or functions, and/or providing plain-terms explanations of the underlying algorithms.</p></li>
+<li><p><a href="understanding-unfamiliar-code.html"><strong>Understanding Code</strong></a>: Although bioinformatics is rapidly evolving, its often specific use cases mean that sometimes developers have to work with code that is quite old or outdated. AI can help identify the coding language and version used in legacy bioinformatics code. This can be valuable when working with older software or when integrating different codebases.</p></li>
+</ul>
+<div class="warning">
+<p><strong>NEVER</strong> submit chunks of code to AI tools without being 100% sure that they are free from <a href="https://toolkit.ncats.nih.gov/glossary/personally-identifiable-information/">personally identifiable information (PII)</a>. PII includes variables like gender, race, birth date, geographic location, and disease diagnosis. If you need to, generate dummy data to test your code.</p>
+</div>
+</div>
+<div id="hands-on-exercise-3" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Hands-On Exercise</h2>
+<p>Now it’s your turn to try.</p>
+<div id="the-code-2" class="section level3" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> The Code</h3>
+<p>You are working on improving an alignment algorithm. Alignments are typically used for comparing samples from individuals to a reference consensus sequence. To make sure things are working, you want to compare the alignment created by an existing function (<code>pairwiseAlignment</code>) to an alignment created by your tool (<code>my_new_Aligner</code>).</p>
+<p><strong>Note</strong>: This code is just an example and was written strictly for educational purposes.</p>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="ai-for-bioinformatics.html#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb81-2"><a href="ai-for-bioinformatics.html#cb81-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
+<span id="cb81-3"><a href="ai-for-bioinformatics.html#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;Biostrings&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb81-4"><a href="ai-for-bioinformatics.html#cb81-4" aria-hidden="true" tabindex="-1"></a>  BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&quot;Biostrings&quot;</span>)</span>
+<span id="cb81-5"><a href="ai-for-bioinformatics.html#cb81-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-6"><a href="ai-for-bioinformatics.html#cb81-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Biostrings)</span>
+<span id="cb81-7"><a href="ai-for-bioinformatics.html#cb81-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-8"><a href="ai-for-bioinformatics.html#cb81-8" aria-hidden="true" tabindex="-1"></a>reference <span class="ot">&lt;-</span> <span class="fu">DNAString</span>(<span class="st">&quot;ATCGTACGTA&quot;</span>)</span>
+<span id="cb81-9"><a href="ai-for-bioinformatics.html#cb81-9" aria-hidden="true" tabindex="-1"></a>query <span class="ot">&lt;-</span> <span class="fu">DNAString</span>(<span class="st">&quot;ATCGTAGCTA&quot;</span>)</span>
+<span id="cb81-10"><a href="ai-for-bioinformatics.html#cb81-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-11"><a href="ai-for-bioinformatics.html#cb81-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform pairwise sequence alignment</span></span>
+<span id="cb81-12"><a href="ai-for-bioinformatics.html#cb81-12" aria-hidden="true" tabindex="-1"></a>alignment <span class="ot">&lt;-</span> <span class="fu">pairwiseAlignment</span>(reference, query)</span>
+<span id="cb81-13"><a href="ai-for-bioinformatics.html#cb81-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-14"><a href="ai-for-bioinformatics.html#cb81-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform sequence alignment using your algorithm</span></span>
+<span id="cb81-15"><a href="ai-for-bioinformatics.html#cb81-15" aria-hidden="true" tabindex="-1"></a>my_alignment <span class="ot">&lt;-</span> <span class="fu">my_new_Aligner</span>(reference, query)</span>
+<span id="cb81-16"><a href="ai-for-bioinformatics.html#cb81-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-17"><a href="ai-for-bioinformatics.html#cb81-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare pairwise alignment to my_alignment</span></span>
+<span id="cb81-18"><a href="ai-for-bioinformatics.html#cb81-18" aria-hidden="true" tabindex="-1"></a>my_evaluation <span class="ot">&lt;-</span> <span class="fu">my_alignment_evaluator</span>(reference, query, alignment, my_alignment)</span></code></pre></div>
+</div>
+<div id="questions-3" class="section level3" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> Questions</h3>
+<ol style="list-style-type: decimal">
+<li><p>Things are going great with the toy data! You decide to make a tiny subset of your data for testing your aligner by copying the top 100 sequences from patient 1. You then submit the aligner and data to Bard. You prompt, “is there anywhere handling this data can be made more efficient?” Why is this problematic?</p></li>
+<li><p>Can AI be used to improve annotation in the code above? Why or why not?</p></li>
+<li><p>You prefer writing loops, but have learned recently that R works more efficiently using <code>apply()</code> functions. Is it okay to ask ChatGPT to refactor a small loop into an <code>apply()</code> function? Why or why not?</p></li>
+<li><p>A colleague gives you a flash drive with some code from years ago. They swear it contains some useful snippets that will improve your aligner, but it’s in a language you haven’t worked with before. You inspect the code, and don’t believe it contains protected data. The algorithm was published many years ago in a leading journal. Is it okay to ask AI what the code is doing?</p></li>
+</ol>
+</div>
+</div>
+<div id="summary-5" class="section level2" number="7.5">
+<h2><span class="header-section-number">7.5</span> Summary</h2>
+<ul>
+<li>Like other types of software, bioinformatics software and tools can benefit from AI assistance for writing, refactoring, annotating, and understanding code.</li>
+<li>Biological data and workflows can be complex. AI does not replace a thorough understanding of biological processes at play.</li>
+<li><strong>NEVER</strong> submit any protected or sensitive data to AI applications. This can constitute a serious, often illegal breach of subject privacy if you are dealing with data from people.</li>
+</ul>
 
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-abdulla2022chatbots" class="csl-entry">
-Abdulla, Hussam, Asim Mohammed Eltahir, Saleh Alwahaishi, Khalifa Saghair, Jan Platos, and Vaclav Snasel. 2022. <span>“Chatbots Development Using Natural Language Processing: A Review.”</span> In <em>2022 26th International Conference on Circuits, Systems, Communications and Computers (CSCC)</em>, 122–28. IEEE.
-</div>
-<div id="ref-belenguer_ai_2022" class="csl-entry">
-Belenguer, Lorenzo. 2022. <span>“<span>AI</span> Bias: Exploring Discriminatory Algorithmic Decision-Making Models and the Application of Possible Machine-Centric Solutions Adapted from the Pharmaceutical Industry.”</span> <em>Ai and Ethics</em> 2 (4): 771–87. <a href="https://doi.org/10.1007/s43681-022-00138-8">https://doi.org/10.1007/s43681-022-00138-8</a>.
-</div>
-<div id="ref-cahn2017chatbot" class="csl-entry">
-Cahn, Jack. 2017. <span>“CHATBOT: Architecture, Design, &amp; Development.”</span> <em>University of Pennsylvania School of Engineering and Applied Science Department of Computer and Information Science</em>.
-</div>
-<div id="ref-caldarini2022literature" class="csl-entry">
-Caldarini, Guendalina, Sardar Jaf, and Kenneth McGarry. 2022. <span>“A Literature Survey of Recent Advances in Chatbots.”</span> <em>Information</em> 13 (1): 41.
-</div>
-<div id="ref-wikipedia_chatbot_2023" class="csl-entry">
-<span>“Chatbot.”</span> 2023. <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Chatbot&amp;oldid=1153723735">https://en.wikipedia.org/w/index.php?title=Chatbot&amp;oldid=1153723735</a>.
-</div>
-<div id="ref-wikipedia_deep_learning_2023" class="csl-entry">
-<span>“Deep Learning.”</span> 2023. <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Deep_learning&amp;oldid=1152717003">https://en.wikipedia.org/w/index.php?title=Deep_learning&amp;oldid=1152717003</a>.
-</div>
-<div id="ref-AI_paternalism" class="csl-entry">
-Hamzelou, Jessica. n.d. <span>“Artificial Intelligence Is Infiltrating Health Care. <span>We</span> Shouldn’t Let It Make All the Decisions.”</span> <em>MIT Technology Review</em>. Accessed May 8, 2023. <a href="https://www.technologyreview.com/2023/04/21/1071921/ai-is-infiltrating-health-care-we-shouldnt-let-it-make-decisions/">https://www.technologyreview.com/2023/04/21/1071921/ai-is-infiltrating-health-care-we-shouldnt-let-it-make-decisions/</a>.
-</div>
-<div id="ref-wikipedia_large_language_2023" class="csl-entry">
-<span>“Large Language Model.”</span> 2023. <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Large_language_model&amp;oldid=1153821175">https://en.wikipedia.org/w/index.php?title=Large_language_model&amp;oldid=1153821175</a>.
-</div>
-<div id="ref-wikipedia_natural_2023" class="csl-entry">
-<span>“Natural Language Processing.”</span> 2023. <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Natural_language_processing&amp;oldid=1148327592">https://en.wikipedia.org/w/index.php?title=Natural_language_processing&amp;oldid=1148327592</a>.
-</div>
-<div id="ref-washingtonpost2023" class="csl-entry">
-Schaul, Kevin, Szu Yu Chen, and Nitasha Tiku. 2023. <span>“Inside the Secret List of Websites That Make AI Like ChatGPT Sound Smart.”</span> Online. <a href="https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/">https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/</a>.
 </div>
 </div>
+
+
+
 </div>
 <hr>
 <center> 
@@ -434,8 +486,8 @@ Schaul, Kevin, Szu Yu Chen, and Nitasha Tiku. 2023. <span>“Inside the Secret L
           </div>
         </div>
       </div>
-<a href="about-the-authors.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="understanding-unfamiliar-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="languages-and-cloud-computing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

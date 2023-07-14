@@ -1,0 +1,68 @@
+
+
+
+# (PART\*) Appendix {-}
+
+<br>
+
+# Languages and Cloud Computing
+
+## Programming Languages {-}
+
+Here are commonly used languages and their typical use cases.
+
+**Python**
+
+Known for its readability, simple syntax, and comprehensive add-on modules. It is often recommended as a beginner-friendly language. Python is used for scientific computing, data analysis, machine learning, and web development. Many Data Scientist roles rely on Python.
+
+**Ruby**
+
+Similar to Python, Ruby is also known for its readability and user-friendly syntax. It is typically used for web development, building dynamic websites, and creating web applications.
+
+**JavaScript**
+
+A popular language for web development, known for its versatility and ease of use. Many of the interactive features of websites rely on JavaScript.
+
+**Java**
+
+Java is widely used for enterprise applications, android mobile apps, and web apps.
+
+**PHP**
+
+PHP is easy to learn but can become complex as the application grows. It is typically used for building dynamic web pages, web applications, and content management systems.
+
+**R**
+
+Used for statistical computing, data analysis, and data visualization, R is a popular choice for researchers and data scientists. Some beginners find its syntax complex, especially due to differences in the two major dialects: "base" R versus the "tidyverse".
+
+**Kotlin**
+
+Kotlin is a relatively new language that is designed to be more concise and expressive than Java. However, its advanced features and concepts may be challenging for beginners. It is used for developing Android mobile apps, web development, and server-side development.
+
+**Swift**
+
+Used for iOS and macOS app development, Swift is known for its strict syntax and steep learning curve.
+
+**C#**
+
+Often used for Windows desktop applications, web applications, and video games, C# can be challenging due to its more complex syntax and strict type system.
+
+**C++**
+
+A powerful language often used for developing high-performance applications and operating systems, C++ can be challenging to learn due to its complexity and the need to manage memory manually.
+
+**Julia**
+
+Julia is designed for numerical and scientific computing, data analysis, and machine learning. It has a syntax that is easy to learn and read, making it an ideal choice for data scientists, engineers, and researchers. Julia code can also be compiled to native machine code using the Julia compiler. Because Julia is a relatively new language, it has fewer add-on libraries and resources available compared to more established languages.
+
+**MATLAB**
+
+MATLAB is a high-level programming language and development environment commonly used for numerical computation, data analysis, and visualization. It is widely used in engineering, physics, and finance, among other fields. It is generally considered to have a user-friendly syntax and is relatively easy to learn compared to other languages. MATLAB has a development environment called MATLAB Compiler that allows you to package MATLAB code into standalone executables or shared libraries for use on a wide variety of operating systems. 
+
+**Fortran**
+
+Fortran has been around for decades and has a long history in scientific and engineering communities. It has a more challenging syntax and is considered harder to learn than some of the other languages on this list. It is primarily used for scientific and engineering applications that require numerical computations and simulations such as computational physics, weather forecasting, and computational chemistry.
+
+**Rust**
+
+Rust is a systems programming language that focuses on speed, reliability, and memory safety. It is commonly used for developing performance-critical software, such as operating systems, web browsers, and game engines. Rust's syntax is similar to C++, but is often considered to have a steeper learning curve due to its focus on memory safety and ownership concepts.
