@@ -45,6 +45,12 @@ Keep these ethical considerations in mind when using AI to summarize code.
 **Does the code contain any sensitive or personal information?** If the code contains any sensitive or personal information, you should take special care to protect that information.
 ::: 
 
+::: warning
+The information presented in this course is meant for use with open source code and software. It is unclear what happens to the information fed to AI chatbots as prompts, or how secure the data are. We know data are saved and may be used to further train the AI tools, but the specifics of how data are saved, as well as how sensitive or personally identifiable information are protected, is unknown.
+
+Err on the side of caution when interacting with them. We do **not** recommend using proprietary code or private information for prompts unless you are working with an AI that you or your company built and you know is secure.
+:::
+
 ## Example One: Summarizing Code You Didn't Write
 
 Here's some simple code using the R programming language, written by an unnamed programmer. If you are familiar with R, you might be able to understand what this code does with little effort. However, if you don't know R, you're relatively new to R, or you're just having a bad day, understanding what this bit of code can take a great deal more energy and time. AI language bots can ease that burden.
