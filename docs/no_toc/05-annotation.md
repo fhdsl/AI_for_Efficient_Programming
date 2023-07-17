@@ -19,6 +19,12 @@ There are many benefits to annotating code:
 - Improves maintainability
 - Improves quality
 
+::: warning
+The information presented in this course is meant for use with open source code and software. It is unclear what happens to the information fed to AI chatbots as prompts, or how secure the data are. We know data are saved and may be used to further train the AI tools, but the specifics of how data are saved, as well as how sensitive or personally identifiable information are protected, is unknown.
+
+Err on the side of caution when interacting with them. We do **not** recommend using proprietary code or private information for prompts unless you are working with an AI that you or your company built and you know is secure.
+:::
+
 ## Improves readability
 
 <img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_8.png" title="Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. " alt="Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. " width="100%" style="display: block; margin: auto;" />
@@ -368,7 +374,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-07-14                  
+##  date     2023-07-17                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
