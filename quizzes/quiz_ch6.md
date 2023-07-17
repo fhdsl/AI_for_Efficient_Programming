@@ -38,7 +38,7 @@ o) Assume that the chatbot knows who wrote the code and if you have permission t
 {choose-answers: 4}
 ? Which of the following are NOT helpful questions to ask about someone else's code?
 
-C) What did the developer plan to further develop?
+C) Why did the developer not write documentation for this code?
 C) Why did the developer not annotate this section of code?
 m) What does this regex indicate?
 m) What does this function do?
