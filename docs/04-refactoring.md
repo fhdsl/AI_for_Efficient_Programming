@@ -30,6 +30,12 @@ However, AI has significant potential to help with code refactoring. AI can use 
 
 AI refactoring is also faster and more accurate than manual refactoring. This is particularly useful for large-scale software projects with massive codebases, where manual code review and refactoring can be an enormous task. In the next sections, we'll take a look at some examples of using AI to refactor code.
 
+::: warning
+The information presented in this course is meant for use with open source code and software. It is unclear what happens to the information fed to AI chatbots as prompts, or how secure the data are. We know data are saved and may be used to further train the AI tools, but the specifics of how data are saved, as well as how sensitive or personally identifiable information are protected, is unknown.
+
+Err on the side of caution when interacting with them. We do **not** recommend using proprietary code or private information for prompts unless you are working with an AI that you or your company built and you know is secure.
+:::
+
 ## Example One: Correcting Syntax
 
 Programming languages operate using their established set of rules. For example, [Python](https://www.python.org/) uses indentation to define code blocks. However, when you shift between development environments, indentation and line breaks can sometimes be affected, causing major headaches! 
@@ -547,7 +553,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##  12.208   0.000  12.208
+##  12.039   0.001  12.041
 ```
 
 :::{.query}
@@ -575,7 +581,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.575   0.327   0.598
+##   0.650   0.356   0.680
 ```
 
 The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
@@ -603,7 +609,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.265   0.288   0.350
+##   0.334   0.284   0.396
 ```
 
 One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
