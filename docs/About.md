@@ -8,8 +8,8 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Credits|Names|
 |-------|-----|
 |**Pedagogy**||
-|Lead Content Instructor|[Elizabeth Humphries] (Writing Code, Understanding Unfamiliar Code)|
-|Content Authors| [Candace Savonen] (Annotating Your Code), [Carrie Wright] (Ethics of Using AI), [Ava Hoffman] (Refactoring Code)|
+|Lead Content Instructor|[Elizabeth Humphries] (Writing Code, Understanding Unfamiliar Code, Cloud Computing)|
+|Content Authors| [Candace Savonen] (Annotating Your Code), [Carrie Wright] (Ethics of Using AI), [Ava Hoffman] (Refactoring Code, AI for Bioinformatics, Programming Languages)|
 |Content Editor Reviewer | [Howard Baek] |
 |**Technical**||
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
@@ -38,7 +38,7 @@ Tools Used:
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-07-17                  
+##  date     2023-07-18                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
