@@ -330,14 +330,14 @@ Is `here::here("raw", "data.csv")` equivalent to `here::here("raw/data.csv")`?
 
 First, let's see what [ChatGPT](https://chat.openai.com/) responded.
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_88.png" title="ChatGPT generates another way to do the same task." alt="ChatGPT generates another way to do the same task." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_88.png" title="ChatGPT explains whether two ways of writing the same command in R are equivalent." alt="ChatGPT explains whether two ways of writing the same command in R are equivalent." width="100%" style="display: block; margin: auto;" />
 
 
 
 
 When we first started putting together this course, we had intended to include an answer from [Bard](https://bard.google.com/) that disagreed with the answer from ChatGPT as an example of why it can be helpful to query multiple chatbots. (We decided ChatGPT was correct after verifying its answer in the `here` package documentation.) However, when we queried Bard again two weeks later, we were pleasantly surprised to discover that Bard had corrected its answer. Now it's a cool little example of how the chatbots are rapidly improving and "learning" from their mistakes.
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_84.png" title="ChatGPT generates another way to do the same task." alt="ChatGPT generates another way to do the same task." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_84.png" title="Bard offers two different answers about whether syntaxes are equivalent. The first answer was incorrect, but the answer two weeks later had changed and now had the correct information." alt="Bard offers two different answers about whether syntaxes are equivalent. The first answer was incorrect, but the answer two weeks later had changed and now had the correct information." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -351,7 +351,7 @@ A very common task for anyone working with genomic samples is to combine multipl
 Can you write a program that merges vcf files and then outputs the sample names?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_34.png" title="ChatGPT generates another way to do the same task." alt="ChatGPT generates another way to do the same task." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_34.png" title="ChatGPT writes a program using bcftools that merges vcf files and outputs the sample names." alt="ChatGPT writes a program using bcftools that merges vcf files and outputs the sample names." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -367,7 +367,7 @@ What's another way I can do this?
 :::
 
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_77.png" title="ChatGPT generates code that allows you to merge vcf files and output the sample names." alt="ChatGPT generates code that allows you to merge vcf files and output the sample names." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_77.png" title="ChatGPT generates different code that allows you to merge vcf files and output the sample names." alt="ChatGPT generates different code that allows you to merge vcf files and output the sample names." width="100%" style="display: block; margin: auto;" />
 
 
 
