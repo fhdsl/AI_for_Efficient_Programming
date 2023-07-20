@@ -8,8 +8,8 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Credits|Names|
 |-------|-----|
 |**Pedagogy**||
-|Lead Content Instructor|[Elizabeth Humphries] (Writing Code, Understanding Unfamiliar Code, Cloud Computing)|
-|Content Authors| [Candace Savonen] (Annotating Your Code), [Carrie Wright] (Ethics of Using AI), [Ava Hoffman] (Refactoring Code, AI for Bioinformatics, Programming Languages)|
+|Lead Content Instructor|[Elizabeth Humphries] (Introduction, Writing Code, Understanding Unfamiliar Code, Cloud Computing)|
+|Content Authors| [Candace Savonen] (Annotating Your Code), [Carrie Wright] (Introduction, Ethics of Using AI), [Ava Hoffman] (Refactoring Code, AI for Bioinformatics, Programming Languages)|
 |Content Editor Reviewer | [Howard Baek] |
 |**Technical**||
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
