@@ -282,7 +282,7 @@ Can you annotate some R code for me?
 <img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_87.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
 It not only provided helpful annotations but it fixed spacing and added more spaces between lines of code:
 
-<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_91.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
+<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_91.png" title="ChatGPT provided annotations for the code I provided." alt="ChatGPT provided annotations for the code I provided." width="100%" style="display: block; margin: auto;" />
 
 It does however, think the code is Python apparently if we look in the upper left corner.
 But this doesn't seem to have affected its accuracy in its annotations.
@@ -297,7 +297,7 @@ How could I make this code better?
 
 It had a lot of great advice:
 
-<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_79.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
+<img src="05-annotation_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_79.png" title="ChatGPT offered ways to improve my old code." alt="ChatGPT offered ways to improve my old code." width="100%" style="display: block; margin: auto;" />
 
 First and foremost it told me my variable names are not consistent and also not descriptive. Which is completely accurate! There's variable names like `xx` and `ll` which don't tell the reader anything about the variable.
 
@@ -316,7 +316,7 @@ and it told me:
 You are correct that the tidyverse functions are designed to work with data frames and not matrices. Here's a modified version of your code that converts the matrix to a data frame and uses tidyverse functions:
 ```
 
-The lesson here is that the output of chatGPT still needs to be vetted by the person asking for it. It is a great idea to continue to have AI's work on something if it isn't quite what you are asking for, however, at the end of the day it is you, the human, who has to vet the output.
+The lesson here is that the output of chatGPT still needs to be vetted by the person asking for it. It is a great idea to continue to have AIs work on something if it isn't quite what you are asking for, however, at the end of the day it is you, the human, who has to vet the output.
 
 ### Sometimes it has trouble with file types if given a URL
 
