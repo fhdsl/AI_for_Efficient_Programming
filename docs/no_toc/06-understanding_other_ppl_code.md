@@ -200,7 +200,7 @@ What version of Pascal is this?
 
 ## Example Three: Interpreting Regex
 
-Regex (short for Regular Expressions) is a powerful tool used to describe patterns in text. It's a sequence of characters that define a search pattern. Regular expressions can be a powerful tool for data cleaning, text mining, and data validation. They are widely used in web development, data science, and other fields where text processing is important. They can also be tricky to understand at first because they involve a specific syntax that can be complex.
+Regex (short for Regular Expressions) is a sequence of characters that define a search pattern. Regular expressions can be a powerful tool for data cleaning, text mining, and data validation. They are widely used in web development, data science, and other fields where text processing is important. They can also be tricky to understand at first because they involve a specific syntax that can be complex.
 
 We can use [ChatGPT](https://chat.openai.com/) to explain regex in a bit of someone else's code.
 
