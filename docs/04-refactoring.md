@@ -553,7 +553,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   9.212   0.008   9.219
+##   7.971   0.000   7.970
 ```
 
 :::{.query}
@@ -581,7 +581,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.807   0.300   0.786
+##   0.800   0.527   0.620
 ```
 
 The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
@@ -609,7 +609,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.344   0.244   0.361
+##   0.340   0.371   0.285
 ```
 
 One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
@@ -643,90 +643,6 @@ Because AI models are created by humans, they can be biased. This means they may
 
 When using AI to refactor code, the code itself is often sent to an external service or platform for analysis and transformation. This can raise concerns about the security of the code, especially if it contains sensitive information such as trade secrets, proprietary algorithms, or personal data. If your code is sensitive, it's important to carefully vet any third-party AI tools or services used in the refactoring process.
 
-## Hands-On Exercise
-
-Now it's your turn to try. 
-
-### The Code
-
-Let's say you are dusting off some code from your past (no judgment here). You were investigating tweets about [Mr. Trash Wheel](https://www.mrtrashwheel.com/), a beloved Baltimore-based contraption that filters trash out of the waterways.
-
-**Note**: This code is just an example and was written strictly for educational purposes.
-
-
-```python
-import tweepy
-import pandas
-
-# Enter your API keys and access tokens here
-consumer_key = 'your_consumer_key'
-consumer_secret = "your_consumer_secret"
-access_token = 'your_access_token'
-access_token_secret = 'your_access_token_secret'
-
-# Authenticate with Twitter API
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-
-# Search for tweets containing the search term
-tweets = tweepy.Cursor(tweepy.API(auth).search_tweets, q="Mr. Trash Wheel", tweet_mode='extended').items(100)
-
-# Create empty list to store tweet data
-date_data = []
-location_data = []
-text_data = []
-
-def get_tweet_length(tweet):
-    # Return the length of the tweet text
-    return len(tweet.full_text)
-
-# Loop through each tweet and extract desired data
-for tweet in tweets:
-      date_info = {
-        'date': tweet.created_at
-    }
-    date_data.append(date_info)
-
-# Search for tweets containing the search term
-tweets = tweepy.Cursor(tweepy.API(auth).search_tweets, q="Mr. Trash Wheel", tweet_mode='extended').items(100)
-
-# Loop through each tweet and extract desired data
-for tweet in tweets:
-    location_info = {
-        'location': tweet.user.location
-    }
-        location_data.append(location_info)
-    
-# Search for tweets containing the search term
-tweets = tweepy.Cursor(tweepy.API(auth).search_tweets, q='Mr. Trash Wheel', tweet_mode='extended').items(100)
-    
-# Loop through each tweet and extract desired data
-for tweet in tweets:
-    text_info = {
-        'text': tweet.full_text
-    }
-    text_data.append(text_info)
-
-# Combine lists into a dictionary
-data = {'date': date_data, 
-  'location': location_data, 'text': text_data}
-
-# Store results in pandas dataframe
-df = pandas.DataFrame(data)
-
-# Print dataframe
-print(df)
-```
-
-### Questions
-
-1. Create an AI prompt that fixes any formatting issues with the code that would cause it not to run.
-
-1. Devise an AI prompt that removes any dead code from your sample above. What gets removed?
-
-1. Create a prompt that makes the code less repetitive, adhering to the DRY principle. What aspect of the code was repetitive?
-
-1. Construct a prompt that makes the code more concise. What are some trade-offs that appear in this code between readability and brevity?
 
 ## Summary
 

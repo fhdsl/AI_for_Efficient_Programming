@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Efficient Programming with AI</title>
+  <title>Chapter 12 AI for Bioinformatics: Hands-On Exercise | Efficient Programming with AI</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Efficient Programming with AI" />
+  <meta property="og:title" content="Chapter 12 AI for Bioinformatics: Hands-On Exercise | Efficient Programming with AI" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Efficient Programming with AI" />
+  <meta name="twitter:title" content="Chapter 12 AI for Bioinformatics: Hands-On Exercise | Efficient Programming with AI" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-
-
+<link rel="prev" href="ai-for-bioinformatics.html"/>
+<link rel="next" href="languages-and-cloud-computing.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -54,7 +54,7 @@
   <html>
 
   <head>
-  <title>Page not found | Title</title>
+  <title>Chapter 12 AI for Bioinformatics: Hands-On Exercise | Title</title>
   </head>
 
   <body>
@@ -388,11 +388,46 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="ai-for-bioinformatics-hands-on-exercise" class="section level1" number="12">
+<h1><span class="header-section-number">Chapter 12</span> AI for Bioinformatics: Hands-On Exercise</h1>
+<p>Now it’s your turn to try.</p>
+<div id="the-code-3" class="section level2" number="12.1">
+<h2><span class="header-section-number">12.1</span> The Code</h2>
+<p>You are working on improving an alignment algorithm. Alignments are typically used for comparing samples from individuals to a reference consensus sequence. To make sure things are working, you want to compare the alignment created by an existing function (<code>pairwiseAlignment</code>) to an alignment created by your tool (<code>my_new_Aligner</code>).</p>
+<p><strong>Note</strong>: This code is just an example and was written strictly for educational purposes.</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb87-2"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
+<span id="cb87-3"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;Biostrings&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb87-4"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-4" aria-hidden="true" tabindex="-1"></a>  BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&quot;Biostrings&quot;</span>)</span>
+<span id="cb87-5"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-6"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Biostrings)</span>
+<span id="cb87-7"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-8"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-8" aria-hidden="true" tabindex="-1"></a>reference <span class="ot">&lt;-</span> <span class="fu">DNAString</span>(<span class="st">&quot;ATCGTACGTA&quot;</span>)</span>
+<span id="cb87-9"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-9" aria-hidden="true" tabindex="-1"></a>query <span class="ot">&lt;-</span> <span class="fu">DNAString</span>(<span class="st">&quot;ATCGTAGCTA&quot;</span>)</span>
+<span id="cb87-10"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-11"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform pairwise sequence alignment</span></span>
+<span id="cb87-12"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-12" aria-hidden="true" tabindex="-1"></a>alignment <span class="ot">&lt;-</span> <span class="fu">pairwiseAlignment</span>(reference, query)</span>
+<span id="cb87-13"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-14"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform sequence alignment using your algorithm</span></span>
+<span id="cb87-15"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-15" aria-hidden="true" tabindex="-1"></a>my_alignment <span class="ot">&lt;-</span> <span class="fu">my_new_Aligner</span>(reference, query)</span>
+<span id="cb87-16"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-17"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare pairwise alignment to my_alignment</span></span>
+<span id="cb87-18"><a href="ai-for-bioinformatics-hands-on-exercise.html#cb87-18" aria-hidden="true" tabindex="-1"></a>my_evaluation <span class="ot">&lt;-</span> <span class="fu">my_alignment_evaluator</span>(reference, query, alignment, my_alignment)</span></code></pre></div>
+</div>
+<div id="questions-4" class="section level2" number="12.2">
+<h2><span class="header-section-number">12.2</span> Questions</h2>
+<ol style="list-style-type: decimal">
+<li><p>Things are going great with the toy data! You decide to make a tiny subset of your data for testing your aligner by copying the top 100 sequences from patient 1. You then submit the aligner and data to Bard. You prompt, “is there anywhere handling this data can be made more efficient?” Why is this problematic?</p></li>
+<li><p>Can AI be used to improve annotation in the code above? Why or why not?</p></li>
+<li><p>You prefer writing loops, but have learned recently that R works more efficiently using <code>apply()</code> functions. Is it okay to ask ChatGPT to refactor a small loop into an <code>apply()</code> function? Why or why not?</p></li>
+<li><p>A colleague gives you a flash drive with some code from years ago. They swear it contains some useful snippets that will improve your aligner, but it’s in a language you haven’t worked with before. You inspect the code, and don’t believe it contains protected data. The algorithm was published many years ago in a leading journal. Is it okay to ask AI what the code is doing?</p></li>
+</ol>
+
+</div>
+</div>
+
+
+
 </div>
 <hr>
 <center> 
@@ -408,8 +443,8 @@ the table of contents to find the page you are looking for.</p>
           </div>
         </div>
       </div>
-
-
+<a href="ai-for-bioinformatics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="languages-and-cloud-computing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
