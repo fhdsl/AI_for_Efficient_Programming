@@ -477,40 +477,6 @@ What are the pros and cons of using Python vs Java for this project?
 <img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_0.png" title="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." alt="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." width="100%" style="display: block; margin: auto;" />
 
 
-
-## Hands On Exercise 
-
-Now it’s your turn to try!
-
-### Code
-
-Here's the code you need for question #2.
-
-```
-def calculate_average(numbers):
-    total = 0
-    for number in numbers:
-        total += number
-    average = total / len(numbers)
-    return average
-
-numbers = [1, 2, 3, 4, "5"]
-average = calculate_average(numbers)
-print("The average of the numbers is:", average)
-```
-
-### Questions
-
-1. Write a prompt to create a function that replaces all instances of the string "three" with the number 3, then create a prompt that allows you to modify the function so that "three", "Three", and "THREE" are all replaced with the number 3.
-
-1. Write a query that helps you debug the code snippet from above.
-
-1. Create a query that explains how to retrieve data from an online database. Don't forget to find out what the source of the code is.
-
-1. Write a prompt to plan out a program that creates and plays a game of Rock, Paper, Scissors. You should create a multi-step plan as well as figure out what your first coding task should be.
-
-1. Create a prompt that identifies the best coding language for the above game.
-
 ## Summary
 
 * Coding has become an essential skill in today's world. AI can increase the efficiency of planning, writing, and debugging code, as well as make coding more accessible for beginners.
@@ -538,7 +504,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-08-22                  
+##  date     2023-11-01                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            

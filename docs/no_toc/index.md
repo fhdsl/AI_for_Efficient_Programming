@@ -1,7 +1,7 @@
 ---
-title: "AI for Software Development"
+title: "Efficient Programming with AI"
 subtitle: "Harnessing the Power of Large Language Models"
-date: "August, 2023"
+date: "November, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -13,7 +13,7 @@ favicon: assets/favicon.ico
 
 # About this Course {-}
 
-This course on AI for software development explores the use of AI large language models such as ChatGPT, Bard, and others and their potential benefits and challenges. Through examples and hands-on activities, students will develop an understanding of the ways in which AI can speed up software development tasks and free up time for more creative and strategic work. By the end of the course, students will be equipped to navigate the rapidly changing landscape of software development and use AI chatbots in a way that maximizes benefits and efficiency while limiting harm as much as possible.
+This course on efficient programming with AI explores the use of AI large language models such as ChatGPT, Bard, and others and their potential benefits and challenges. Through examples and hands-on activities, students will develop an understanding of the ways in which AI can speed up common programming tasks and free up time for more creative and strategic work. By the end of the course, students will be equipped to navigate the rapidly changing landscape of software development and use AI chatbots in a way that maximizes benefits and efficiency while limiting harm as much as possible.
 
 ## Available course formats {-}
 
@@ -33,7 +33,8 @@ This course is available in multiple formats which allows you to take it in the 
 - Students hoping to learn more about programming
 - Anyone curious about how AI can be harnessed for technology
 
-**Note**: Those completely new to programming will find using AI tools to create software solutions challenging at this time. It is helpful to have some fundamental knowledge to write appropriate prompts and to discern when code is not working as expected. We advise novices to seek expert review.  
+**Note**: Those completely new to programming will find using AI tools to create software solutions challenging at this time. It is helpful to have some fundamental knowledge to write appropriate prompts and to discern when code is not working as expected. We advise novices to seek expert review.
+
 
 <img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_176.png" title="For individuals who: develop software or want to start, are interested in using large language model AI tools to help you with your work, want to use AI tools responsibly" alt="For individuals who: develop software or want to start, are interested in using large language model AI tools to help you with your work, want to use AI tools responsibly" width="100%" style="display: block; margin: auto;" />
 
@@ -54,25 +55,10 @@ Learners will be able to:
 - Describe the benefits of refactoring code using AI-powered techniques, such as making code readable, keeping it brief, and optimizing code
 - Apply best practices for annotating code using AI
 - Recognize strategies for using AI-based tools to understand and analyze code, such as code comprehension of unfamiliar languages or functions
-- Discuss the challenges and ethical implications of using AI for different aspects of software development
+- Discuss the challenges and ethical implications of using AI for different aspects of programming
 
 
 <img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_355.png" title="Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code" alt="Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code" width="100%" style="display: block; margin: auto;" />
 
-
-## Lesson Breakdown {-}
-
-| Activity | Duration |
-| :-- | :-- |
-| [Introduction](https://hutchdatascience.org/AI_for_software/introduction.html) | 10 minutes |
-| [Ethics for Using AI](https://hutchdatascience.org/AI_for_software/ethics-of-using-ai.html) | 20 minutes |
-| [Writing Code](https://hutchdatascience.org/AI_for_software/writing-code.html) | 35 minutes |
-| [Writing Exercise](https://hutchdatascience.org/AI_for_software/writing-code.html#hands-on-exercise) | 15 minutes |
-| [Refactoring Code](https://hutchdatascience.org/AI_for_software/refactoring-code.html) | 35 minutes |
-| [Refactoring Exercise](https://hutchdatascience.org/AI_for_software/refactoring-code.html#hands-on-exercise-1) | 15 minutes |
-| [Annotating Code](https://hutchdatascience.org/AI_for_software/annotating-your-code.html) | 25 minutes |
-| [Understanding Code](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html) | 25 minutes |
-| [Understanding Exercise](https://hutchdatascience.org/AI_for_software/understanding-unfamiliar-code.html#hands-on-exercise-2) | 10 minutes |
-| **Total** | 3 hours & 10 minutes |
 
 
