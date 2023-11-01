@@ -5,9 +5,9 @@ Now it's your turn to try!
 
 ## The Code
 
-Here's some code that hasn't been annotated particularly well.
+Here's some R code that hasn't been annotated particularly well.
 
-```{r}
+```
 library(qqman)
 library(beepr)
 
