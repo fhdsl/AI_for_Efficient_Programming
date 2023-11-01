@@ -9,6 +9,7 @@ rmd_files: ["index.Rmd",
             "04-refactoring.Rmd",
             "04-refactoring_activity.Rmd",
             "05-annotation.Rmd",
+            "05-annotation_activity.Rmd",
             "06-understanding_other_ppl_code.Rmd",
             "06-understanding_other_ppl_code_activity.Rmd",
             # Further learning
