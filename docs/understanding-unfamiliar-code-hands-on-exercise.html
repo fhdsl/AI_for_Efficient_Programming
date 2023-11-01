@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Efficient Programming with AI</title>
+  <title>Chapter 10 Understanding Unfamiliar Code: Hands-On Exercise | Efficient Programming with AI</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Efficient Programming with AI" />
+  <meta property="og:title" content="Chapter 10 Understanding Unfamiliar Code: Hands-On Exercise | Efficient Programming with AI" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Efficient Programming with AI" />
+  <meta name="twitter:title" content="Chapter 10 Understanding Unfamiliar Code: Hands-On Exercise | Efficient Programming with AI" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-
-
+<link rel="prev" href="understanding-unfamiliar-code.html"/>
+<link rel="next" href="ai-for-bioinformatics.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -54,7 +54,7 @@
   <html>
 
   <head>
-  <title>Page not found | Title</title>
+  <title>Chapter 10 Understanding Unfamiliar Code: Hands-On Exercise | Title</title>
   </head>
 
   <body>
@@ -388,12 +388,96 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="understanding-unfamiliar-code-hands-on-exercise" class="section level1" number="10">
+<h1><span class="header-section-number">Chapter 10</span> Understanding Unfamiliar Code: Hands-On Exercise</h1>
+<p>Now it’s your turn to try!</p>
+<div id="the-code-2" class="section level2" number="10.1">
+<h2><span class="header-section-number">10.1</span> The Code</h2>
+<p>Let’s say you were handed this bit of code to work with (and eventually modify), but first you need to figure out what’s going on with it. Unfortunately, the original programmer left very little in the way of notes or annotation.</p>
+<p><strong>Note</strong>: This code is just an example and was written strictly for educational purposes.</p>
+<pre><code>use ode_solvers::{Euler, OdeMethod};
+use plotters::prelude::*;
+use std::fs::File;
+
+
+const N: f64 = 1000000.0;  
+const I0: f64 = 10.0;  
+const R0: f64 = 0.0;   
+const S0: f64 = N - I0 - R0;  
+const BETA: f64 = 0.3;  
+const GAMMA: f64 = 0.1;  
+
+fn sir_model(t: f64, y: &amp;[f64], v: f64) -&gt; Vec&lt;f64&gt; {
+    let s = y[0];
+    let i = y[1];
+    let r = y[2];
+    let dsdt = -BETA * s * i / N - v * s;
+    let didt = BETA * s * i / N - GAMMA * i;
+    let drdt = GAMMA * i + v * s;
+    vec![dsdt, didt, drdt]
+}
+
+fn main() {
+
+    let mut solver = Euler::new(sir_model);
+    solver.set_initial_condition(&amp;[S0, I0, R0]);
+
+
+    let root = BitMapBackend::new(&quot;sir_vaccination.png&quot;, (800, 600)).into_drawing_area();
+    root.fill(&amp;WHITE).unwrap();
+    let mut chart = ChartBuilder::on(&amp;root)
+        .caption(&quot;SIR model with vaccination&quot;, (&quot;sans-serif&quot;, 40))
+        .set_label_area_size(LabelAreaPosition::Left, 60)
+        .set_label_area_size(LabelAreaPosition::Bottom, 40)
+        .build_cartesian_2d(0.0..100.0, 0.0..N)
+        .unwrap();
+
+    let mut data1 = vec![];
+    for _ in 0..1000 {
+        let y = solver.integrate(0.1, 0.0);
+        data1.push((solver.time(), y[0], y[1], y[2]));
+    }
+
+
+    let vac_rate = 0.1;   
+    let vac_coverage = 0.5;   
+    let vac_num = vac_coverage * N;   
+    let mut data2 = vec![];
+    for i in 0..1000 {
+        let t = i as f64 * 0.1;
+        let v = if t &gt;= 50.0 &amp;&amp; t &lt; 150.0 {vac_num * vac_rate} else {0.0};
+        let y = solver.integrate(0.1, v);
+        data2.push((solver.time(), y[0], y[1], y[2]));
+    }
+
+
+    chart
+        .configure_mesh()
+        .x_labels(10)
+        .y_labels(10)
+        .disable_x_mesh()
+        .disable_y_mesh()
+        .draw()
+        .unwrap();
+    chart
+        .draw_series(LineSeries::new(
+            data1.iter().map(|d|</code></pre>
 </div>
+<div id="questions-3" class="section level2" number="10.2">
+<h2><span class="header-section-number">10.2</span> Questions</h2>
+<ol style="list-style-type: decimal">
+<li><p>Write a query that identifies the features that can be used to determine the coding language, as well as the version of the language. What language and version is it written in? What features give away the coding language?</p></li>
+<li><p>Create a prompt that determines what this code does, as well as important features of the program. What does this code do?</p></li>
+<li><p>Write a prompt that determines the purpose of this specific code snippet:</p></li>
+</ol>
+<pre><code> let root = BitMapBackend::new(&quot;sir_vaccination.png&quot;, (800, 600)).into_drawing_area();</code></pre>
+<p>What is the purpose of this line of code?</p>
+
+</div>
+</div>
+
+
+
 <hr>
 <center> 
   <div class="footer">
@@ -408,8 +492,8 @@ the table of contents to find the page you are looking for.</p>
           </div>
         </div>
       </div>
-
-
+<a href="understanding-unfamiliar-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ai-for-bioinformatics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
