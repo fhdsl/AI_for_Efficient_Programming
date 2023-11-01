@@ -96,7 +96,7 @@ This is not a comprehensive list!
 
 -   [Phind](https://www.phind.com/) is a AI-powered search engine designed specifically for developers asking technical questions. In addition to answering your coding question, it will provide links to the internet sources used to find the answer.
 
--   [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); and ChatGPT.
+-   [Poe](https://poe.com/) is Quora's platform that gives you access to multiple AI chatbots, including Sage, based on OpenAI's GPT-3.5 architecture; Claude, an AI natural language bot created by [Anthropic](https://www.anthropic.com); Llama 2, created by [Meta](https://ai.meta.com/llama/), and ChatGPT.
 
 **IDE-based chatbots**
 
@@ -158,4 +158,4 @@ Code in these boxes was written by AI.
 
 ## About This Book
 
-We used AI bots (including ChatGPT, Bard, Sage, and Claude) to develop and write much of this course. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules while we created this book.
+We used AI bots (including ChatGPT, Bard, Sage, and Claude) as part of the process of creating this book. The words are all original content, but we used AI bots to edit for grammar and tone. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules while we created this book.
