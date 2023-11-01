@@ -1,31 +1,46 @@
-# About the Authors {-}
 
-These credits are based on our [course contributors table guidelines](https://www.ottrproject.org/more_features.html#giving-credits-to-contributors).
 
-&nbsp;
-&nbsp;
 
-|Credits|Names|
-|-------|-----|
-|**Pedagogy**||
-|Lead Content Instructor|[Elizabeth Humphries] (Introduction, Writing Code, Understanding Unfamiliar Code, Cloud Computing)|
-|Content Authors| [Candace Savonen] (Annotating Your Code), [Carrie Wright] (Introduction, Ethics of Using AI), [Ava Hoffman] (Refactoring Code, AI for Bioinformatics, Programming Languages)|
-|Content Editor Reviewer | [Howard Baek] |
-|**Technical**||
-|Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
-|Publishing Maintenance Engineer|[Candace Savonen]|
-|Technical Publishing Stylists|[Carrie Wright], [Ava Hoffman], [Candace Savonen]|
-|Package Developers ([ottrpal]) | [Candace Savonen], [John Muschelli], [Carrie Wright]|
-|**Art and Design**||
-|Figure Artists| [Candace Savonen], [Carrie Wright], [Ava Hoffman], [Elizabeth Humphries]|
-|**Funding**||
-|Funders| CS, CW, and HB were supported by the [National Cancer Institute (NCI)](https://www.cancer.gov/) under Grant [UE5CA254170](https://grantome.com/grant/NIH/UE5-CA254170-01). AMH and EMH were supported by the AnVIL Project through cooperative agreement awards from the National Human Genome Research Institute with cofunding from OD/ODSS to the Broad Institute (U24HG010262) and Johns Hopkins University (U24HG010263). |
-|Funding Staff| [Sandra Ormbrek], [Shasta Nicholson] |
 
-&nbsp;
+# Writing Code: Hands-On Exercise 
 
-Tools Used:
+Now it’s your turn to try!
 
+## Code
+
+Here's the code you need for question #2.
+
+```
+def calculate_average(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    average = total / len(numbers)
+    return average
+
+numbers = [1, 2, 3, 4, "5"]
+average = calculate_average(numbers)
+print("The average of the numbers is:", average)
+```
+
+## Questions
+
+1. Write a prompt to create a function that replaces all instances of the string "three" with the number 3, then create a prompt that allows you to modify the function so that "three", "Three", and "THREE" are all replaced with the number 3.
+
+1. Write a query that helps you debug the code snippet from above.
+
+1. Create a query that explains how to retrieve data from an online database. Don't forget to find out what the source of the code is.
+
+1. Write a prompt to plan out a program that creates and plays a game of Rock, Paper, Scissors. You should create a multi-step plan as well as figure out what your first coding task should be.
+
+1. Create a prompt that identifies the best coding language for the above game.
+
+
+
+
+```r
+devtools::session_info()
+```
 
 ```
 ## ─ Session info ───────────────────────────────────────────────────────────────
@@ -97,27 +112,4 @@ Tools Used:
 ## [2] /usr/local/lib/R/library
 ```
 
-<!-- Author information -->
 
-[FirstName LastName]: link to personal website
-[John Muschelli]: https://johnmuschelli.com/
-[Candace Savonen]: https://www.cansavvy.com/
-[Carrie Wright]: https://carriewright11.github.io/
-[Ava Hoffman]: https://www.avahoffman.com/
-[Elizabeth Humphries]: https://www.linkedin.com/in/elizabeth-humphries-61202a103/
-[Sandra Ormbrek]: https://hutchdatascience.org/ourteam/
-[Shasta Nicholson]: https://www.linkedin.com/in/shastanicholson/
-[Howard Baek]: https://howardbaek.com/
-
-<!-- Links -->
-
-[ottrpal]: https://github.com/jhudsl/ottrpal
-
-<!-- Fill out this table using these instructions: https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits
-
-For JHU courses, You will need to add Ira as a credit:
-
-|Content Publisher|[Ira Gooding]|
-...
-[Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
--->
