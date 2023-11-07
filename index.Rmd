@@ -1,5 +1,5 @@
 ---
-title: "Efficient Programming with AI"
+title: "AI for Efficient Programming"
 subtitle: "Harnessing the Power of Large Language Models"
 date: "`r format(Sys.time(), '%B, %Y')`"
 site: bookdown::bookdown_site
