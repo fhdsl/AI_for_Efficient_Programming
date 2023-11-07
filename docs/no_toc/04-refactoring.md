@@ -553,7 +553,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-## 225.863   0.036 225.904
+## 151.132   0.068 151.189
 ```
 
 :::{.query}
@@ -581,7 +581,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.799   0.279   0.765
+##   0.765   0.540   0.588
 ```
 
 The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
@@ -609,7 +609,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.369   0.228   0.370
+##   0.367   0.295   0.266
 ```
 
 One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
