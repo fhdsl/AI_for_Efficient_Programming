@@ -55,6 +55,9 @@ Jupyter
 fyi
 Leanpub
 LLaMA
+LLM
+LLM's
+LLMs
 macOS
 Markua
 mentorship
@@ -68,6 +71,7 @@ Overcomplexity
 Pandoc
 Phind
 PII
+ple
 png
 polymorphisms
 Pre
@@ -79,11 +83,13 @@ repo
 roadmap
 RStudio
 SageMaker
+socio
 str
 stackoverflow
 StackOverflow
 scalability
 scalable
+subdisciplines
 suboptimal
 summarization
 syntaxes
