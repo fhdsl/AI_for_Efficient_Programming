@@ -1,5 +1,5 @@
 ---
-title: "Efficient Programming with AI"
+title: "AI for Efficient Programming"
 subtitle: "Harnessing the Power of Large Language Models"
 date: "November, 2023"
 site: bookdown::bookdown_site
