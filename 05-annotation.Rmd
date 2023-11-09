@@ -379,11 +379,10 @@ I hope this helps!
 
 This was a nice tool to recommend, however it still told me I should add my own annotations at the end of this.
 
-# SUMMARY VIDEO: Annotating Your Code
+# SUMMARY VIDEO: Annotating Your Code - The Main Points!
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=oX61I1NDOFI&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=1&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## The Main Points
 
 - Code annotation is important for readability, maintainability, and overall quality of code
 - AI can be a helpful tool for supplementing annotations or creating annotation for poorly annotated code.

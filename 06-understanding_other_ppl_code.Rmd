@@ -303,11 +303,9 @@ Although we can't truly understand some of this information, it is however possi
 Chatbot tools are also limited in terms of how up-to-date their training data is to know about current possible issues with code. 
 
 
-# SUMMARY VIDEO: Understanding Unfamiliar Code
+# SUMMARY VIDEO: Understanding Unfamiliar Code - The Main Points!
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=6Mxtp2kOjV0&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=8&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## The Main Points
 
 * Understanding code written by someone else can be made easier by using AI
 * AI chatbots can summarize the code and the dataset used, as well as clarify functions and expressions that are confusing

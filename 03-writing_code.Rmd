@@ -519,11 +519,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-# SUMMARY VIDEO: Writing Code
+# SUMMARY VIDEO: Writing Code - The Main Points!
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=sh92SPqsjJc&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=2&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## The Main Points
 
 * Coding has become an essential skill in today's world. AI can increase the efficiency of planning, writing, and debugging code, as well as make coding more accessible for beginners.
 * Querying AI on code writing tasks requires patience. AI cannot read your mind, and users need to be both specific and patient when asking for coding help. 
