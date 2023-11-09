@@ -1,4 +1,4 @@
-# VIDEO: Annotating Code with AI
+# INTRODUCTORY VIDEO: Understanding Unfamiliar Code with AI
 
 This video discusses how AI can be useful when understanding code written by someone else.
 
@@ -303,7 +303,7 @@ Although we can't truly understand some of this information, it is however possi
 Chatbot tools are also limited in terms of how up-to-date their training data is to know about current possible issues with code. 
 
 
-# VIDEO: Summary for Understanding Unfamiliar Code
+# SUMMARY VIDEO: Understanding Unfamiliar Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=6Mxtp2kOjV0&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=8&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

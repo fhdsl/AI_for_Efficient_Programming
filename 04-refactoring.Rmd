@@ -7,7 +7,7 @@ use_python("/usr/bin/python3")
 ottrpal::set_knitr_image_path()
 ```
 
-# VIDEO: Refactoring with AI
+# INTRODUCTORY VIDEO: Refactoring with AI
 
 This video discusses how AI can help with refactoring your code.
 
@@ -530,7 +530,7 @@ Because AI models are created by humans, they can be biased. This means they may
 
 When using AI to refactor code, the code itself is often sent to an external service or platform for analysis and transformation. This can raise concerns about the security of the code, especially if it contains sensitive information such as trade secrets, proprietary algorithms, or personal data. If your code is sensitive, it's important to carefully vet any third-party AI tools or services used in the refactoring process.
 
-# VIDEO: Summary for Refactoring Code
+# SUMMARY VIDEO: Refactoring Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=uKVQAtQ-w0I&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=4&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

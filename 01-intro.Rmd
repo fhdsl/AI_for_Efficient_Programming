@@ -2,6 +2,14 @@
 ottrpal::set_knitr_image_path()
 ```
 
+# VIDEO: AI Code of Ethics
+
+This video covers a set of ethical guidelines to keep in mind while using AI tools for programming.
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=uyCNct8LNU4&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=5&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1-SSnmgtVDGTQnjz0hOXuJMK0sMQEXS_0y4wIGT7fKy4/edit#slide=id.p).
+
 # Introduction
 
 The increasing availability of AI chatbots is creating a new landscape in software development and data science. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone and limits harm as much as possible.
@@ -49,6 +57,8 @@ In summary, while AI chatbots can provide valuable assistance to software develo
 :::
 
 ## AI Code of Ethics
+
+[This information is also covered the the introductory video for this section.]
 
 Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. *Intentional harm* is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. *Inadvertent harm* is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss, or create a program that is particularly vulnerable to being hacked.
 
