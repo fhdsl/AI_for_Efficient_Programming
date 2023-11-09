@@ -1,3 +1,12 @@
+# VIDEO: Annotating Code with AI
+
+This video discusses why AI is a good tool to help with code annotation.
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=XuHVtnED2zQ&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=7&t=44s&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1ufNeULKBS4gMd7KQECsfFVxlRefWVs2pvjwRc5r8EBA/edit#slide=id.p).
+
+
 # Annotating Your Code
 
 ## Learning Objectives
@@ -212,6 +221,7 @@ visualize_data(analyzed_data)
 
 ## AI in Code Annotation
 
+[This information is also covered the the introductory video for this section.]
 
 We've discussed why code annotation and documentation are important, but when and why would you use AI for code annotation? AI can be a nice tool to supplement the annotation of your code. It should not be the only source of annotation for your code, because as the code author, you need to verify that what AI has annotated is consistent with your knowledge and history of development of the code.
 
@@ -369,11 +379,19 @@ I hope this helps!
 
 This was a nice tool to recommend, however it still told me I should add my own annotations at the end of this.
 
-## Summary
+# VIDEO: Summary for Annotating Your Code
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=oX61I1NDOFI&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=1&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## The Main Points
 
 - Code annotation is important for readability, maintainability, and overall quality of code
 - AI can be a helpful tool for supplementing annotations or creating annotation for poorly annotated code.
 - Ultimately the code author who uses AI as a tool for annotation is still responsible for verifying that the annotations are consistent with their knowledge of the code.
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/10_hzwnNx11xafpmHbV6H9XJ4BHPAjMzFvgxlAnrD5hY/edit#slide=id.g29847d27b96_0_188).
+
+
 
 
 ```{r}

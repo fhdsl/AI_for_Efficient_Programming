@@ -7,6 +7,15 @@ use_python("/usr/bin/python3")
 ottrpal::set_knitr_image_path()
 ```
 
+# VIDEO: Refactoring with AI
+
+This video discusses how AI can help with refactoring your code.
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=tcrvwyswExo&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=6&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1RHf5p7504GOhazt_xDshRyMo5mnG_5kH2lOLx18bWjg/edit#slide=id.p).
+
+
 # Refactoring Code
 
 ## Learning Objectives
@@ -31,6 +40,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 ## AI in Code Refactoring
+
+[This information is also covered the the introductory video for this section.]
 
 Code refactoring has historically been done manually by developers. This involves reviewing code and identifying areas that could be improved or optimized, and then making changes to the codebase accordingly. Though important, this is process is time-consuming and labor-intensive, as it requires developers to carefully review every line of code to identify potential issues or areas for improvement. Additionally, manual code refactoring is error-prone, as developers can accidentally introduce bugs or errors into the codebase while making changes.
 
@@ -519,8 +530,11 @@ Because AI models are created by humans, they can be biased. This means they may
 
 When using AI to refactor code, the code itself is often sent to an external service or platform for analysis and transformation. This can raise concerns about the security of the code, especially if it contains sensitive information such as trade secrets, proprietary algorithms, or personal data. If your code is sensitive, it's important to carefully vet any third-party AI tools or services used in the refactoring process.
 
+# VIDEO: Summary for Refactoring Code
 
-## Summary
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=uKVQAtQ-w0I&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=4&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## The Main Points
 
 - Code refactoring is the process of improving code quality without changing its functionality. It is crucial in software development to maintain a manageable and adaptable codebase.
 
@@ -529,3 +543,6 @@ When using AI to refactor code, the code itself is often sent to an external ser
 - Examples of using AI for code refactoring include correcting syntax, adhering to styling and convention, visual styling, avoiding repetition, removing dead code, and improving both readability and speed of execution (optimization).
 
 - The use of AI for code refactoring raises ethical concerns and is not perfect. It is important for the developer to consider security needs of their code, as well as test out their code.
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/12kBb3mQIWOmn44JsjDcXU8e5dhLAf0xAwkoC5FASRrU/edit#slide=id.p).
+

@@ -1,3 +1,11 @@
+# VIDEO: Annotating Code with AI
+
+This video discusses how AI can be useful when understanding code written by someone else.
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=DIlpCC4yUtw&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=9&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1gYxHub8Vuf8uY8xI65R5HL0R31rETtxkQDLiBgb820U/edit#slide=id.g29860008570_0_387).
+
 # Understanding Unfamiliar Code
 
 ## Learning Objectives
@@ -22,6 +30,8 @@ To make progress in this unfamiliar territory, you may need to rely on a combina
 In the end, with patience, persistence, and a willingness to learn, you can successfully navigate the unfamiliar code and achieve your goals, just as you can successfully explore a new city and discover its hidden treasures. Learning how to read and understand code written by someone else is a valuable skill that can help you be a more effective programmer. By being able to read and comprehend unfamiliar code, you can contribute to projects more quickly, diagnose and fix bugs more effectively, and learn new programming techniques and best practices. As with any skill, the more you practice reading and understanding code written by others, the more comfortable and proficient you will become at it.
 
 ## AI in Reading Code
+
+[This information is also covered the the introductory video for this section.]
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e15d27e55_4_0")
@@ -293,10 +303,15 @@ Although we can't truly understand some of this information, it is however possi
 Chatbot tools are also limited in terms of how up-to-date their training data is to know about current possible issues with code. 
 
 
-## Summary
+# VIDEO: Summary for Understanding Unfamiliar Code
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=6Mxtp2kOjV0&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=8&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## The Main Points
 
 * Understanding code written by someone else can be made easier by using AI
 * AI chatbots can summarize the code and the dataset used, as well as clarify functions and expressions that are confusing
 * AI chatbots can also identify the coding language and version used in legacy code
 * Be mindful of who owns the code and what the summary will be used for when using AI to summarize someone else's code
 
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1ygsb4nNLEsHugrXqbeiWUm9IrfvK4Y4f8teZlQAMWNM/edit#slide=id.g29848e7ae84_1_188).

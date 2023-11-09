@@ -4,6 +4,15 @@
 ottrpal::set_knitr_image_path()
 ```
 
+# VIDEO: AI Code of Ethics
+
+This video discusses how bias can show up in AI-created code, images, and video, and what you can do to combat it.
+
+<iframe width="560" height="315" src="PUT YOUTUBE LINK HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1WDqxRNLnJ_o0t4qwSohVhEbv7iwnL6jzSIjkSJ4ZGYo/edit).
+
+
 # Writing Code
 
 ## Learning Objectives
@@ -509,12 +518,20 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 ```
 
 
-## Summary
+
+# VIDEO: Summary for Writing Code
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=sh92SPqsjJc&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=2&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## The Main Points
 
 * Coding has become an essential skill in today's world. AI can increase the efficiency of planning, writing, and debugging code, as well as make coding more accessible for beginners.
 * Querying AI on code writing tasks requires patience. AI cannot read your mind, and users need to be both specific and patient when asking for coding help. 
 * It is essential to test all AI-written code while in development, since inadequate testing could lead to low quality, buggy code.
 * A programmer is responsible for what they create while coding with AI, even if AI writes the actual code. 
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1NAfXSgHP5hFi7Z9gwHGS77_CFTX8J2vYZNBj15SkzJ4/edit#slide=id.g2984ab3ff3d_0_188).
+
 
 
 
