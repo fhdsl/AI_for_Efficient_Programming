@@ -4,13 +4,53 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# INTRODUCTORY VIDEO: Writing Code with AI
+# INTRODUCTION VIDEO: Writing Code with AI
 
 This video discusses why AI is a good tool for planning, writing, and debugging code.
 
 <iframe width="560" height="315" src="PUT YOUTUBE LINK HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1WDqxRNLnJ_o0t4qwSohVhEbv7iwnL6jzSIjkSJ4ZGYo/edit).
+
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_83")
+```
+
+
+AI-powered programming tools and technologies are revolutionizing the way we approach software development. 
+
+1. _AI can generate code snippets._ An AI-powered code editor can suggest more efficient algorithms or highlight potential errors in real-time. It can also help developers to reproduce bugs more easily and to test potential fixes more quickly. This can save developers a significant amount of time and effort, and it can help them to debug their code more effectively. **Be aware that AI still makes a lot of mistakes when writing code**, so you will need to be particularly careful in testing code it writes.
+
+1. _AI can make programming more accessible._ With AI-generated code and automated programming tools, individuals who are not experienced developers can still create software solutions. Experienced developers can also more easily write code in languages with which they aren't familiar. This has the potential to democratize programming and lead to new innovations from a wider range of people.
+
+1. _AI is changing the skills required for writing code._ Rather than simply memorizing syntax, developers need to focus on developing their creativity, intuition, and problem-solving skills. Additionally, programmers must also hone their abilities in architecture design and project management, as these skills are becoming increasingly important in the modern software development landscape.
+
+As AI continues to evolve, it is likely to have an even greater impact on the way we develop software in the future.
+
+## Tips for Coding with AI
+
+Using AI to write code is as much of an art as writing your own code.  Following a few rules and suggestions will make your experience much more enjoyable and productive.
+
+**Remember that AI cannot read your mind**. You need to tell it what you're thinking, and it may take several rounds of question-and-answer before you get something you can work with. 
+
+* _Be clear about your goals._ What do you want the AI to do? Be as specific as possible.
+
+* _Start with a simple task._ Don't try to do too much too soon. Start with a simple task and then gradually work your way up to more complex tasks. You wouldn't write a complete program all at once, and you shouldn't have AI do it, either.
+
+* _Provide enough data._ The more data (and detail) you can give the AI, the better it will be able to learn and perform the task you want it to do.
+
+* _Be patient._ Querying an AI can take time. Don't expect it to be perfect right away.
+
+**Test everything AI writes**. You are responsible for the code that AI generates, even if you didn't write it yourself. AI can be biased, just like humans, and this could lead to sub optimal development. There is a concern that AI may focus development on areas that optimize certain metrics but not overall quality, effectiveness, or user needs. Human judgment is still needed to ensure that AI is used in a responsible and ethical way.
+
+* _Test your results._ Make sure the AI is actually doing what you want it to do. AI systems are trained on data, and if the data is not representative of the real world, the AI system may not be able to generate code that works correctly. It is important to test the code to make sure that it is working as intended and that it is producing the desired results. Inadequate testing could lead to low quality, buggy code. Since AI generated code would be highly automated, it requires strong testing procedures and safety oversight to ensure it meets standards before deployment. 
+
+* _Make sure your code is secure._ AI systems can be used to generate code that is vulnerable to attack, and it is important to test the code to make sure that it is secure. This can help to prevent security breaches from occurring. 
+
+* _Use a variety of AI models._ There are many different AI models available. Experiment with different models to see which one works best for your task.
+
+* _Get feedback from others._ Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.
 
 
 # Writing Code
@@ -38,24 +78,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 Ultimately, the ability to write code is a valuable asset in today's world, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
 
-
-## Writing Code with AI
-
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit#slide=id.g22e0106807c_0_83")
-```
-
-
-AI-powered programming tools and technologies are revolutionizing the way we approach software development. 
-
-1. _AI can generate code snippets._ An AI-powered code editor can suggest more efficient algorithms or highlight potential errors in real-time. It can also help developers to reproduce bugs more easily and to test potential fixes more quickly. This can save developers a significant amount of time and effort, and it can help them to debug their code more effectively. **Be aware that AI still makes a lot of mistakes when writing code**, so you will need to be particularly careful in testing code it writes.
-
-1. _AI can make programming more accessible._ With AI-generated code and automated programming tools, individuals who are not experienced developers can still create software solutions. Experienced developers can also more easily write code in languages with which they aren't familiar. This has the potential to democratize programming and lead to new innovations from a wider range of people.
-
-1. _AI is changing the skills required for writing code._ Rather than simply memorizing syntax, developers need to focus on developing their creativity, intuition, and problem-solving skills. Additionally, programmers must also hone their abilities in architecture design and project management, as these skills are becoming increasingly important in the modern software development landscape.
-
-As AI continues to evolve, it is likely to have an even greater impact on the way we develop software in the future.
-
 :::{.ethics}
 **As a programmer using AI, it is up to you to be responsible for what you create.** You must rigorously test any code you write. It is your job to make sure any code you create with AI is not malicious and works as expected.
 :::
@@ -65,30 +87,6 @@ Can complete novices learn how to program using AI tools?
 
 At present, it is very challenging for complete novices to rely on AI chatbots to learn how to write code. These tools will sometimes write buggy code or code that doesn't not work as intended, and a person with no programming experience will have difficulty learning how to spot these sorts of mistakes. AI chatbots are best thought of as a supplement to your software development education, not as a replacement, and they should be used alongside other resources. Therefore, we advise that you seek expert review and assistance. As AI tools are refined, complete novices may be able to create software products more readily on their own.
 :::
-
-## Tips for Coding with AI
-
-Using AI to write code is as much of an art as writing your own code.  Following a few rules and suggestions will make your experience much more enjoyable and productive.
-
-**Remember that AI cannot read your mind**. You need to tell it what you're thinking, and it may take several rounds of question-and-answer before you get something you can work with. 
-
-* _Be clear about your goals._ What do you want the AI to do? Be as specific as possible.
-
-* _Start with a simple task._ Don't try to do too much too soon. Start with a simple task and then gradually work your way up to more complex tasks. You wouldn't write a complete program all at once, and you shouldn't have AI do it, either.
-
-* _Provide enough data._ The more data (and detail) you can give the AI, the better it will be able to learn and perform the task you want it to do.
-
-* _Be patient._ Querying an AI can take time. Don't expect it to be perfect right away.
-
-**Test everything AI writes**. You are responsible for the code that AI generates, even if you didn't write it yourself. AI can be biased, just like humans, and this could lead to sub optimal development. There is a concern that AI may focus development on areas that optimize certain metrics but not overall quality, effectiveness, or user needs. Human judgment is still needed to ensure that AI is used in a responsible and ethical way.
-
-* _Test your results._ Make sure the AI is actually doing what you want it to do. AI systems are trained on data, and if the data is not representative of the real world, the AI system may not be able to generate code that works correctly. It is important to test the code to make sure that it is working as intended and that it is producing the desired results. Inadequate testing could lead to low quality, buggy code. Since AI generated code would be highly automated, it requires strong testing procedures and safety oversight to ensure it meets standards before deployment. 
-
-* _Make sure your code is secure._ AI systems can be used to generate code that is vulnerable to attack, and it is important to test the code to make sure that it is secure. This can help to prevent security breaches from occurring. 
-
-* _Use a variety of AI models._ There are many different AI models available. Experiment with different models to see which one works best for your task.
-
-* _Get feedback from others._ Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.
 
 ## Example One: Creating a Function
 

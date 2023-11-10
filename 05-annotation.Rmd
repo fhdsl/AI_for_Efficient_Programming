@@ -1,4 +1,4 @@
-# INTRODUCTORY VIDEO: Annotating Code with AI
+# INTRODUCTION VIDEO: Annotating Code with AI
 
 This video discusses why AI is a good tool to help with code annotation.
 
@@ -6,6 +6,37 @@ This video discusses why AI is a good tool to help with code annotation.
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1ufNeULKBS4gMd7KQECsfFVxlRefWVs2pvjwRc5r8EBA/edit#slide=id.p).
 
+We've discussed why code annotation and documentation are important, but when and why would you use AI for code annotation? AI can be a nice tool to supplement the annotation of your code. It should not be the only source of annotation for your code, because as the code author, you need to verify that what AI has annotated is consistent with your knowledge and history of development of the code.
+
+But using AI to annotate your code can be useful to supplement existing code annotations or to annotate old code that was poorly annotated either by yourself or others who are no longer working on the project.
+
+Here are some of the benefits of using AI for code annotation:
+
+1. **Speed and efficiency:** AI algorithms can analyze code much faster than humans, which means they can quickly generate comments and annotations for large codebases. This can save developers significant time and effort, allowing them to focus on other aspects of the development process.
+
+1. **Consistency:** Unlike humans, AI is not affected by personal biases or preferences, so it can provide consistent annotations across different code files and projects. A human may underestimate places in the code that should have annotation, whereas an AI might be more consistent at putting annotation in these places. This can help ensure that all code in a project is well-documented and easy to understand.
+
+1. **Objectivity:** AI can analyze code objectively and identify potential issues that may have been missed by humans. This can lead to better quality code that is easier to maintain and less prone to errors.
+
+1. **Learning:** AI models can learn from large datasets of annotated code and improve their ability to generate comments and annotations over time. This means that the more code the AI model analyzes, the more accurate and effective it becomes at annotating code.
+
+1. **Specificity:** AI models can be trained on specific programming languages, frameworks, or libraries, allowing them to generate language-specific comments and annotations that are tailored to the needs of the project. This can be particularly helpful for large, complex projects that require specialized knowledge or expertise.
+
+## Ethics of using AI to annotate code
+
+However, there are also a number of potential ethical concerns associated with using AI to annotate code. For example, we don't yet know how and in what ways AI models may be biased. Additionally, AI models may be opaque, which could make it difficult to understand why they made certain annotations. Finally, because AI models are not humans and don't necessarily tell the stories behind the code, they may be used to generate annotations that are not accurate, helpful, or do not tell the full depth of the history of what occurred with the code, which could lead to problems.
+
+Given these potential benefits and concerns, it is important for users of AI to always realize that they are ultimately accountable for the annotation that an AI model makes, and careful review of this annotation is needed.
+
+There are a number of ethical considerations to take into account when using AI to annotate code. Here are a few of the most important considerations:
+
+1. **Accountability:** First and foremost, a user of AI is always primarily accountable for any output that they use from an AI model. AI models can give you annotation to start with, but it is up to you as the user to verify and review this output carefully. The user of the AI model is ultimately responsible for keeping or throwing out the annotations the AI makes and thus is responsible for using errors that the model makes. Much like a user of a Google Search engine is responsible for which results they use, a user of AI is responsible what output from the AI model they use.
+
+2. **Transparency:** It is important to be transparent about the use of AI in code annotation. This means disclosing the fact that AI is being used, as well as the specific AI model and dataset that is being used. This should be stated on every file where annotation has been made using AI. This transparency allows others who view the code to be able more fully interpret the AI-created annotation that accompanies the code.
+
+3. **Bias:** AI models are trained on data, and this data can introduce bias into the model. It is important to be aware of the potential for bias and to take steps to mitigate it. This can be done by using a diverse dataset, by carefully selecting the features that are used to train the model, and by using techniques such as adversarial training. It is important to provide annotations that indicate any known biases, possible limitations associated with bias, and any strategies that were used to mitigate bias.
+
+4. **Explainability:** It is important to be able to explain the decisions that an AI model makes. This is especially important in the case of code annotation, where the decisions made by the AI model can have a significant impact on the quality of the code. There are a number of techniques that can be used to explain the decisions of an AI model, such as visualization and rule extraction. You can (and should) ask a chatbot to explain its sources and rationale for output that it gave. (Be aware that actual citations it gives may or may not be accurate, and you need to verify the accuracy of those citations by doing your own follow up literature search).
 
 # Annotating Your Code
 
@@ -218,42 +249,6 @@ visualize_data(analyzed_data)
 ```
 # This function assumes that all input values are positive integers. Negative or non-integer inputs may result in unexpected behavior.
 ```
-
-## AI in Code Annotation
-
-[This information is also covered the the introductory video for this section.]
-
-We've discussed why code annotation and documentation are important, but when and why would you use AI for code annotation? AI can be a nice tool to supplement the annotation of your code. It should not be the only source of annotation for your code, because as the code author, you need to verify that what AI has annotated is consistent with your knowledge and history of development of the code.
-
-But using AI to annotate your code can be useful to supplement existing code annotations or to annotate old code that was poorly annotated either by yourself or others who are no longer working on the project.
-
-Here are some of the benefits of using AI for code annotation:
-
-1. **Speed and efficiency:** AI algorithms can analyze code much faster than humans, which means they can quickly generate comments and annotations for large codebases. This can save developers significant time and effort, allowing them to focus on other aspects of the development process.
-
-1. **Consistency:** Unlike humans, AI is not affected by personal biases or preferences, so it can provide consistent annotations across different code files and projects. A human may underestimate places in the code that should have annotation, whereas an AI might be more consistent at putting annotation in these places. This can help ensure that all code in a project is well-documented and easy to understand.
-
-1. **Objectivity:** AI can analyze code objectively and identify potential issues that may have been missed by humans. This can lead to better quality code that is easier to maintain and less prone to errors.
-
-1. **Learning:** AI models can learn from large datasets of annotated code and improve their ability to generate comments and annotations over time. This means that the more code the AI model analyzes, the more accurate and effective it becomes at annotating code.
-
-1. **Specificity:** AI models can be trained on specific programming languages, frameworks, or libraries, allowing them to generate language-specific comments and annotations that are tailored to the needs of the project. This can be particularly helpful for large, complex projects that require specialized knowledge or expertise.
-
-## Ethics of using AI to annotate code
-
-However, there are also a number of potential ethical concerns associated with using AI to annotate code. For example, we don't yet know how and in what ways AI models may be biased. Additionally, AI models may be opaque, which could make it difficult to understand why they made certain annotations. Finally, because AI models are not humans and don't necessarily tell the stories behind the code, they may be used to generate annotations that are not accurate, helpful, or do not tell the full depth of the history of what occurred with the code, which could lead to problems.
-
-Given these potential benefits and concerns, it is important for users of AI to always realize that they are ultimately accountable for the annotation that an AI model makes, and careful review of this annotation is needed.
-
-There are a number of ethical considerations to take into account when using AI to annotate code. Here are a few of the most important considerations:
-
-1. **Accountability:** First and foremost, a user of AI is always primarily accountable for any output that they use from an AI model. AI models can give you annotation to start with, but it is up to you as the user to verify and review this output carefully. The user of the AI model is ultimately responsible for keeping or throwing out the annotations the AI makes and thus is responsible for using errors that the model makes. Much like a user of a Google Search engine is responsible for which results they use, a user of AI is responsible what output from the AI model they use.
-
-2. **Transparency:** It is important to be transparent about the use of AI in code annotation. This means disclosing the fact that AI is being used, as well as the specific AI model and dataset that is being used. This should be stated on every file where annotation has been made using AI. This transparency allows others who view the code to be able more fully interpret the AI-created annotation that accompanies the code.
-
-3. **Bias:** AI models are trained on data, and this data can introduce bias into the model. It is important to be aware of the potential for bias and to take steps to mitigate it. This can be done by using a diverse dataset, by carefully selecting the features that are used to train the model, and by using techniques such as adversarial training. It is important to provide annotations that indicate any known biases, possible limitations associated with bias, and any strategies that were used to mitigate bias.
-
-4. **Explainability:** It is important to be able to explain the decisions that an AI model makes. This is especially important in the case of code annotation, where the decisions made by the AI model can have a significant impact on the quality of the code. There are a number of techniques that can be used to explain the decisions of an AI model, such as visualization and rule extraction. You can (and should) ask a chatbot to explain its sources and rationale for output that it gave. (Be aware that actual citations it gives may or may not be accurate, and you need to verify the accuracy of those citations by doing your own follow up literature search).
 
 ## Examples on using AI for annotation
 
