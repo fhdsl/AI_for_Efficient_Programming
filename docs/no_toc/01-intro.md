@@ -1,5 +1,6 @@
 
 
+
 # Introduction
 
 The increasing availability of AI chatbots is creating a new landscape in software development and data science. It is important to be aware of the potential benefits and challenges of this technology, so that we can use it in a way that benefits everyone and limits harm as much as possible.
@@ -22,7 +23,7 @@ In this chapter we will demonstrate how to:
 
 ## AI Provides New Opportunities
 
-<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_67.png" title="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." alt="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g295eab4bf3f_0_2.png" title="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." alt="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." width="100%" style="display: block; margin: auto;" />
 
 We do not believe that AI chatbots will replace programmers, software developers, and data scientists. While AI can be powerful and useful, it is only as good as the training data behind it and the human using it. Therefore, for the time being and the foreseeable future, humans will remain at the forefront of programming innovation, with AI providing valuable support. As new code is often built on top of existing code written by humans, it is unlikely that AI will fully replace the need for human programmers.
 
@@ -44,23 +45,6 @@ Furthermore, software development, data analysis, and programming require a high
 In summary, while AI chatbots can provide valuable assistance to software developers, data scientists, and programmers, they are unlikely to replace them entirely. Human expertise, creativity, and critical thinking will continue to be essential in developing and optimizing AI systems for the foreseeable future."
 :::
 
-## AI Code of Ethics
-
-Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. *Intentional harm* is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. *Inadvertent harm* is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss, or create a program that is particularly vulnerable to being hacked.
-
-<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313b08e75a_243_0.png" title="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." alt="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." width="100%" style="display: block; margin: auto;" />
-
-We must always be aware of the potential for harm and deliberately take steps to mitigate it. This includes things like:
-
-**Be aware of the potential for bias.** AI systems are trained on data, and that data can reflect the biases of the people who collected it. Programmers should be aware of the potential for bias in their data and take steps to mitigate it.
-
-**Be transparent about your work.** Share information about your code, data, and algorithms. This will help others to understand how your work works and to identify any potential problems.
-
-**Be accountable for your work.** Take responsibility for the consequences of your code. Be willing to make changes if necessary.
-
-**Participate in discussions about AI ethics.** There are many online and in-person communities where you can discuss the ethical implications of AI with other people.
-
-**Advocate for ethical AI.** Speak up when you see AI being used in a way that you believe is unethical. Support organizations that are working to promote ethical AI.
 
 ## The AI Chatbots
 
@@ -153,3 +137,28 @@ Code in these boxes was written by AI.
 ## About This Book
 
 We used AI bots (including ChatGPT, Bard, Sage, and Claude) as part of the process of creating this book. The words are all original content, but we used AI bots to edit for grammar and tone. We firmly believe this new technology can be used in ethical ways and we put into practice all the rules and suggestions offered over the following modules while we created this book.
+
+# VIDEO: AI Code of Ethics
+
+This video covers a set of ethical guidelines to keep in mind while using AI tools for programming.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uyCNct8LNU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1-SSnmgtVDGTQnjz0hOXuJMK0sMQEXS_0y4wIGT7fKy4/edit#slide=id.p).
+
+Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. *Intentional harm* is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. *Inadvertent harm* is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss, or create a program that is particularly vulnerable to being hacked.
+
+<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313b08e75a_243_0.png" title="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." alt="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." width="100%" style="display: block; margin: auto;" />
+
+We must always be aware of the potential for harm and deliberately take steps to mitigate it. This includes things like:
+
+**Be aware of the potential for bias.** AI systems are trained on data, and that data can reflect the biases of the people who collected it. Programmers should be aware of the potential for bias in their data and take steps to mitigate it.
+
+**Be transparent about your work.** Share information about your code, data, and algorithms. This will help others to understand how your work works and to identify any potential problems.
+
+**Be accountable for your work.** Take responsibility for the consequences of your code. Be willing to make changes if necessary.
+
+**Participate in discussions about AI ethics.** There are many online and in-person communities where you can discuss the ethical implications of AI with other people.
+
+**Advocate for ethical AI.** Speak up when you see AI being used in a way that you believe is unethical. Support organizations that are working to promote ethical AI.
+
