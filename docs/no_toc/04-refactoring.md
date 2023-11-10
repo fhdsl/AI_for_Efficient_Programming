@@ -1,6 +1,20 @@
 
 
 
+# VIDEO Introduction to Refactoring with AI
+
+This video discusses how AI can help with refactoring your code.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tcrvwyswExo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1RHf5p7504GOhazt_xDshRyMo5mnG_5kH2lOLx18bWjg/edit#slide=id.p).
+
+Code refactoring has historically been done manually by developers. This involves reviewing code and identifying areas that could be improved or optimized, and then making changes to the codebase accordingly. Though important, this is process is time-consuming and labor-intensive, as it requires developers to carefully review every line of code to identify potential issues or areas for improvement. Additionally, manual code refactoring is error-prone, as developers can accidentally introduce bugs or errors into the codebase while making changes.
+
+However, AI has significant potential to help with code refactoring. AI can use machine learning algorithms to analyze large amounts of code and identify patterns or areas that could be improved. For example, they can identify sections of code that are redundant, overly complex, or difficult to maintain, and suggest changes that could be made to improve the codebase. Machine learning algorithms can also help to identify potential bugs or security issues in the codebase, which can help to improve the overall quality and stability of the software.
+
+AI refactoring is also faster and more accurate than manual refactoring. This is particularly useful for large-scale software projects with massive codebases, where manual code review and refactoring can be an enormous task. In the next sections, we'll take a look at some examples of using AI to refactor code.
+
 # Refactoring Code
 
 ## Learning Objectives
@@ -21,14 +35,6 @@ To understand why code refactoring is important, imagine trying to cook in a dis
 <img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_26.png" title="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." alt="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." width="100%" style="display: block; margin: auto;" />
 
 
-
-## AI in Code Refactoring
-
-Code refactoring has historically been done manually by developers. This involves reviewing code and identifying areas that could be improved or optimized, and then making changes to the codebase accordingly. Though important, this is process is time-consuming and labor-intensive, as it requires developers to carefully review every line of code to identify potential issues or areas for improvement. Additionally, manual code refactoring is error-prone, as developers can accidentally introduce bugs or errors into the codebase while making changes.
-
-However, AI has significant potential to help with code refactoring. AI can use machine learning algorithms to analyze large amounts of code and identify patterns or areas that could be improved. For example, they can identify sections of code that are redundant, overly complex, or difficult to maintain, and suggest changes that could be made to improve the codebase. Machine learning algorithms can also help to identify potential bugs or security issues in the codebase, which can help to improve the overall quality and stability of the software.
-
-AI refactoring is also faster and more accurate than manual refactoring. This is particularly useful for large-scale software projects with massive codebases, where manual code review and refactoring can be an enormous task. In the next sections, we'll take a look at some examples of using AI to refactor code.
 
 ::: warning
 The information presented in this course is meant for use with open source code and software. It is unclear what happens to the information fed to AI chatbots as prompts, or how secure the data are. We know data are saved and may be used to further train the AI tools, but the specifics of how data are saved, as well as how sensitive or personally identifiable information are protected, is unknown.
@@ -553,7 +559,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-## 151.132   0.068 151.189
+## 150.296   0.036 150.323
 ```
 
 :::{.query}
@@ -581,7 +587,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.765   0.540   0.588
+##   0.763   0.559   0.594
 ```
 
 The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
@@ -609,7 +615,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.367   0.295   0.266
+##   0.336   0.328   0.264
 ```
 
 One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
@@ -643,8 +649,9 @@ Because AI models are created by humans, they can be biased. This means they may
 
 When using AI to refactor code, the code itself is often sent to an external service or platform for analysis and transformation. This can raise concerns about the security of the code, especially if it contains sensitive information such as trade secrets, proprietary algorithms, or personal data. If your code is sensitive, it's important to carefully vet any third-party AI tools or services used in the refactoring process.
 
+# VIDEO Refactoring Code Main Points
 
-## Summary
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uKVQAtQ-w0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - Code refactoring is the process of improving code quality without changing its functionality. It is crucial in software development to maintain a manageable and adaptable codebase.
 
@@ -653,3 +660,6 @@ When using AI to refactor code, the code itself is often sent to an external ser
 - Examples of using AI for code refactoring include correcting syntax, adhering to styling and convention, visual styling, avoiding repetition, removing dead code, and improving both readability and speed of execution (optimization).
 
 - The use of AI for code refactoring raises ethical concerns and is not perfect. It is important for the developer to consider security needs of their code, as well as test out their code.
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/12kBb3mQIWOmn44JsjDcXU8e5dhLAf0xAwkoC5FASRrU/edit#slide=id.p).
+
