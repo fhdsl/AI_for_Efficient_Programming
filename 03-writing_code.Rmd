@@ -4,7 +4,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# INTRODUCTION VIDEO: Writing Code with AI
+# INTRODUCTION VIDEO Writing Code with AI
 
 This video discusses why AI is a good tool for planning, writing, and debugging code.
 
@@ -517,7 +517,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWD
 
 
 
-# SUMMARY VIDEO: Writing Code - The Main Points!
+# SUMMARY VIDEO Writing Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=sh92SPqsjJc&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=2&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

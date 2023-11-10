@@ -1,4 +1,4 @@
-# INTRODUCTION VIDEO: Annotating Code with AI
+# INTRODUCTION VIDEO Annotating Code with AI
 
 This video discusses why AI is a good tool to help with code annotation.
 
@@ -374,7 +374,7 @@ I hope this helps!
 
 This was a nice tool to recommend, however it still told me I should add my own annotations at the end of this.
 
-# SUMMARY VIDEO: Annotating Your Code - The Main Points!
+# SUMMARY VIDEO Annotating Your Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=oX61I1NDOFI&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=1&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
