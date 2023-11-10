@@ -2,31 +2,14 @@
 
 
 
-# Writing Code
+# VIDEO Introduction to Writing Code with AI
 
-## Learning Objectives
+This video discusses why AI is a good tool for planning, writing, and debugging code.
 
-- Recognize the benefits and capabilities of AI-powered programming tools, particularly for certain kinds of tasks that are difficult for humans
-- Explain how AI-generated code and automated programming tools contribute to making programming more accessible to individuals with limited coding experience or to those working in a new language
-- Explore the ethical considerations associated with using AI in programming, including the importance of rigorous testing before publishing code
-- Apply strategies for using AI to build functions, debug code, understand error messages, check syntax, choose the proper programming language, and plan out a multi-step programming project
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/na9ixCg4oMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Coding Basics
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1WDqxRNLnJ_o0t4qwSohVhEbv7iwnL6jzSIjkSJ4ZGYo/edit).
 
-In today's digitally-driven world, coding has become an essential skill. It is used to create websites, mobile applications, and sophisticated software systems. Contrary to popular belief, coding is not only for those who possess an innate talent for programming. With the right resources and a willingness to learn, anyone can become proficient in coding.
-
-Practice is crucial to mastering the art of coding, and those who are willing to commit themselves to the learning process can achieve great results. Writing code can also be a rewarding and fulfilling hobby, too. Creating your own software, building a website, or automating a task can be immensely satisfying, and can provide a sense of accomplishment and pride.
-
-Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.
-
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_1_0.png" title="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." alt="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." width="100%" style="display: block; margin: auto;" />
-
-
-
-Ultimately, the ability to write code is a valuable asset in today's world, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
-
-
-## Writing Code with AI
 
 <img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_83.png" title="The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms." alt="The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms." width="100%" style="display: block; margin: auto;" />
 
@@ -40,16 +23,6 @@ AI-powered programming tools and technologies are revolutionizing the way we app
 1. _AI is changing the skills required for writing code._ Rather than simply memorizing syntax, developers need to focus on developing their creativity, intuition, and problem-solving skills. Additionally, programmers must also hone their abilities in architecture design and project management, as these skills are becoming increasingly important in the modern software development landscape.
 
 As AI continues to evolve, it is likely to have an even greater impact on the way we develop software in the future.
-
-:::{.ethics}
-**As a programmer using AI, it is up to you to be responsible for what you create.** You must rigorously test any code you write. It is your job to make sure any code you create with AI is not malicious and works as expected.
-:::
-
-:::{.notice}
-Can complete novices learn how to program using AI tools?
-
-At present, it is very challenging for complete novices to rely on AI chatbots to learn how to write code. These tools will sometimes write buggy code or code that doesn't not work as intended, and a person with no programming experience will have difficulty learning how to spot these sorts of mistakes. AI chatbots are best thought of as a supplement to your software development education, not as a replacement, and they should be used alongside other resources. Therefore, we advise that you seek expert review and assistance. As AI tools are refined, complete novices may be able to create software products more readily on their own.
-:::
 
 ## Tips for Coding with AI
 
@@ -74,6 +47,40 @@ Using AI to write code is as much of an art as writing your own code.  Following
 * _Use a variety of AI models._ There are many different AI models available. Experiment with different models to see which one works best for your task.
 
 * _Get feedback from others._ Ask other people to review your code and give you feedback. This can help you identify and fix any problems with your code.
+
+
+# Writing Code
+
+## Learning Objectives
+
+- Recognize the benefits and capabilities of AI-powered programming tools, particularly for certain kinds of tasks that are difficult for humans
+- Explain how AI-generated code and automated programming tools contribute to making programming more accessible to individuals with limited coding experience or to those working in a new language
+- Explore the ethical considerations associated with using AI in programming, including the importance of rigorous testing before publishing code
+- Apply strategies for using AI to build functions, debug code, understand error messages, check syntax, choose the proper programming language, and plan out a multi-step programming project
+
+## Coding Basics
+
+In today's digitally-driven world, coding has become an essential skill. It is used to create websites, mobile applications, and sophisticated software systems. Contrary to popular belief, coding is not only for those who possess an innate talent for programming. With the right resources and a willingness to learn, anyone can become proficient in coding.
+
+Practice is crucial to mastering the art of coding, and those who are willing to commit themselves to the learning process can achieve great results. Writing code can also be a rewarding and fulfilling hobby, too. Creating your own software, building a website, or automating a task can be immensely satisfying, and can provide a sense of accomplishment and pride.
+
+Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.
+
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_1_0.png" title="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." alt="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." width="100%" style="display: block; margin: auto;" />
+
+
+
+Ultimately, the ability to write code is a valuable asset in today's world, with increasing demand for skilled programmers in a wide range of industries. Whether as a career or hobby, coding can be both personally and professionally rewarding. The accessibility and versatility of coding make it an excellent skill for anyone to learn, regardless of their background or previous experience. 
+
+:::{.ethics}
+**As a programmer using AI, it is up to you to be responsible for what you create.** You must rigorously test any code you write. It is your job to make sure any code you create with AI is not malicious and works as expected.
+:::
+
+:::{.notice}
+Can complete novices learn how to program using AI tools?
+
+At present, it is very challenging for complete novices to rely on AI chatbots to learn how to write code. These tools will sometimes write buggy code or code that doesn't not work as intended, and a person with no programming experience will have difficulty learning how to spot these sorts of mistakes. AI chatbots are best thought of as a supplement to your software development education, not as a replacement, and they should be used alongside other resources. Therefore, we advise that you seek expert review and assistance. As AI tools are refined, complete novices may be able to create software products more readily on their own.
+:::
 
 ## Example One: Creating a Function
 
@@ -477,12 +484,19 @@ What are the pros and cons of using Python vs Java for this project?
 <img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_0.png" title="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." alt="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." width="100%" style="display: block; margin: auto;" />
 
 
-## Summary
+
+# VIDEO Writing Code Main Points
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sh92SPqsjJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 * Coding has become an essential skill in today's world. AI can increase the efficiency of planning, writing, and debugging code, as well as make coding more accessible for beginners.
 * Querying AI on code writing tasks requires patience. AI cannot read your mind, and users need to be both specific and patient when asking for coding help. 
 * It is essential to test all AI-written code while in development, since inadequate testing could lead to low quality, buggy code.
 * A programmer is responsible for what they create while coding with AI, even if AI writes the actual code. 
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1NAfXSgHP5hFi7Z9gwHGS77_CFTX8J2vYZNBj15SkzJ4/edit#slide=id.g2984ab3ff3d_0_188).
+
 
 
 
@@ -504,7 +518,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-11-07                  
+##  date     2023-11-10                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
