@@ -56,7 +56,7 @@ When using AI to help generate code examples, perform refactoring, understand co
 
 # SUMMARY VIDEO: AI for Bioinformatics - The Main Points!
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=P5_sZlQKTEE&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=3&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P5_sZlQKTEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 - Like other types of software, bioinformatics software and tools can benefit from AI assistance for writing, refactoring, annotating, and understanding code.

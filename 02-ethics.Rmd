@@ -220,7 +220,7 @@ Overall, we hope that these guidelines and tips will help us all to use AI tools
 
 This video discusses how bias can show up in AI-created code, images, and video, and what you can do to combat it.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=CcKWtMfX1Nw&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=10&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CcKWtMfX1Nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1WDqxRNLnJ_o0t4qwSohVhEbv7iwnL6jzSIjkSJ4ZGYo/edit).
 

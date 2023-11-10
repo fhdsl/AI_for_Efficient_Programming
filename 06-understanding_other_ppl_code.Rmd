@@ -2,7 +2,7 @@
 
 This video discusses how AI can be useful when understanding code written by someone else.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=DIlpCC4yUtw&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=9&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DIlpCC4yUtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1gYxHub8Vuf8uY8xI65R5HL0R31rETtxkQDLiBgb820U/edit#slide=id.g29860008570_0_387).
 
@@ -302,7 +302,7 @@ Chatbot tools are also limited in terms of how up-to-date their training data is
 
 # VIDEO Understanding Unfamiliar Code Main Points
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=6Mxtp2kOjV0&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=8&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6Mxtp2kOjV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * Understanding code written by someone else can be made easier by using AI
 * AI chatbots can summarize the code and the dataset used, as well as clarify functions and expressions that are confusing

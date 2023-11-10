@@ -2,7 +2,7 @@
 
 This video discusses why AI is a good tool to help with code annotation.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=XuHVtnED2zQ&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=7&t=44s&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XuHVtnED2zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1ufNeULKBS4gMd7KQECsfFVxlRefWVs2pvjwRc5r8EBA/edit#slide=id.p).
 
@@ -376,7 +376,7 @@ This was a nice tool to recommend, however it still told me I should add my own 
 
 # VIDEO Annotating Your Code Main Points
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=oX61I1NDOFI&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=1&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oX61I1NDOFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 - Code annotation is important for readability, maintainability, and overall quality of code

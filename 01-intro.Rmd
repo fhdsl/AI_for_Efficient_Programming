@@ -148,7 +148,7 @@ We used AI bots (including ChatGPT, Bard, Sage, and Claude) as part of the proce
 
 This video covers a set of ethical guidelines to keep in mind while using AI tools for programming.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=uyCNct8LNU4&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=5&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uyCNct8LNU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1-SSnmgtVDGTQnjz0hOXuJMK0sMQEXS_0y4wIGT7fKy4/edit#slide=id.p).
 
