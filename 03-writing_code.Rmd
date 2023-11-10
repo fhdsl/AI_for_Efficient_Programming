@@ -8,7 +8,7 @@ ottrpal::set_knitr_image_path()
 
 This video discusses why AI is a good tool for planning, writing, and debugging code.
 
-<iframe width="560" height="315" src="PUT YOUTUBE LINK HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=na9ixCg4oMM&list=PLHIPK1Ozlodx_2S5T-ptkz4e0N4Cq2D10&index=11&pp=iAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1WDqxRNLnJ_o0t4qwSohVhEbv7iwnL6jzSIjkSJ4ZGYo/edit).
 
