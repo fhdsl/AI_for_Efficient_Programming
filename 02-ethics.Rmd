@@ -3,6 +3,7 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 # Ethics of Using AI
 
 The use of artificial intelligence (AI) and in particular, generative AI, in coding has raised a number of ethical concerns. We will highlight several current concerns, however please be aware that this is a dynamic field and the possible implications of this technology is continuing to develop. It is critical that we as a society continue to evaluate and predict what the consequences of the use of AI will be, so that we can mitigate harmful effects.
@@ -215,6 +216,13 @@ Here is a summary of all the tips we suggested:
 
 Overall, we hope that these guidelines and tips will help us all to use AI tools more responsibly for writing code. We recognize however, that as this is emerging technology and more ethical issues will emerge as we continue to use these tools in new ways. AI tools can even help us to use them more responsibly when we ask the right additional questions when writing code, but remember that human review is always necessary. Staying up-to-date on the current ethical considerations will also help us all continue to use AI responsibly.
 
+# VIDEO: Combating Bias in LLMs
+
+This video discusses how bias can show up in AI-created code, images, and video, and what you can do to combat it.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CcKWtMfX1Nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1WDqxRNLnJ_o0t4qwSohVhEbv7iwnL6jzSIjkSJ4ZGYo/edit).
 
 
 

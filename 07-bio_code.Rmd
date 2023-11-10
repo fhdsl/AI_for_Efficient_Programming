@@ -54,8 +54,16 @@ When using AI to help generate code examples, perform refactoring, understand co
 :::
 
 
-## Summary
+# VIDEO AI for Bioinformatics Main Points
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P5_sZlQKTEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 - Like other types of software, bioinformatics software and tools can benefit from AI assistance for writing, refactoring, annotating, and understanding code.
 - Biological data and workflows can be complex. AI does not replace a thorough understanding of biological processes at play.
 - **NEVER** submit any protected or sensitive data to AI applications. This can constitute a serious, often illegal breach of subject privacy if you are dealing with data from people.
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1bvd0X57ukyS6l2uffQscXRBHxWc8y9-UZFZe39BETDs/edit#slide=id.g2983f25f381_0_188).
+
+
+
