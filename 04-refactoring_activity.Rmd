@@ -8,7 +8,7 @@ ottrpal::set_knitr_image_path()
 ```
 
 
-# Refactoring Code: Hands-On Exercise
+# Refactoring Code - Hands-On Exercise
 
 Now it's your turn to try. 
 
