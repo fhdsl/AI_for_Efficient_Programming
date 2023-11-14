@@ -19,10 +19,10 @@ This course on efficient programming with AI explores the use of AI large langua
 
 This course is available in multiple formats which allows you to take it in the way that best suits your needs.
 
-- The material for this course can be viewed without login requirement on this [Bookdown website](https://hutchdatascience.org/AI_for_software). This format might be most appropriate for you if you rely on screen-reader technology.
-- This course can be taken for [free certification through Leanpub](https://leanpub.com/courses/fredhutch/ai_for_software).
+- The material for this course can be viewed without login requirement on this [Bookdown website](https://hutchdatascience.org/AI_for_Efficient_Programming). This format might be most appropriate for you if you rely on screen-reader technology.
+- This course can be taken for [free certification through Leanpub](https://leanpub.com/courses/fredhutch/ai_for_efficient_programming).
 <!-- - This course can be taken on [Coursera for certification here](LINK HERE) (but it is not available for free on Coursera). -->
-- Our courses are open source, you can find the [source material for this course on GitHub](https://github.com/fhdsl/AI_for_software/).
+- Our courses are open source, you can find the [source material for this course on GitHub](https://github.com/fhdsl/AI_for_Efficient_Programming/).
 - The slides for the images in the course can be found [here](https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit?usp=sharing).
 
 ## Suggested Activity Context {-}
