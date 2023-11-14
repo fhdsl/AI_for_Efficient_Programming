@@ -6,7 +6,7 @@ This course was created from [this GitHub template](https://github.com/jhudsl/OT
 
 You can see the rendered course material [here](https://hutchdatascience.org/AI_for_software/).
 
-If you would like to contribute to this course material, please [submit an issue](https://github.com/fhdsl/AI_for_software/issues).
+If you would like to contribute to this course material, please [submit an issue](https://github.com/fhdsl/AI_for_Efficient_Programming/issues).
 
 ## About this course
 
