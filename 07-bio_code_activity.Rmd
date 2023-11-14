@@ -2,7 +2,7 @@
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
 ```
-# AI for Bioinformatics: Hands-On Exercise
+# AI for Bioinformatics - Hands-On Exercise
 
 Now it's your turn to try. 
 
