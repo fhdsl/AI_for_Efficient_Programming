@@ -42,7 +42,7 @@ example-four-figuring-out-a-common-task
 example-five-planning-your-program
 example-six-selecting-a-coding-language
 video-writing-code-main-points
-writing-code-hands-on-exercise
+writing-code---hands-on-exercise
 code
 questions
 video-introduction-to-refactoring-with-ai
@@ -64,7 +64,7 @@ limited-data
 quality-control
 security
 video-refactoring-code-main-points
-refactoring-code-hands-on-exercise
+refactoring-code---hands-on-exercise
 the-code
 questions-1
 video-introduction-to-annotating-code-with-ai
@@ -85,7 +85,7 @@ ask-for-how-the-code-could-be-improved
 style-the-code
 sometimes-it-has-trouble-with-file-types-if-given-a-url
 video-annotating-your-code-main-points
-annotation-hands-on-exercise
+annotation---hands-on-exercise
 the-code-1
 questions-2
 video-introduction-to-understanding-unfamiliar-code-with-ai
@@ -98,7 +98,7 @@ example-three-interpreting-regex
 example-four-demystifying-functions
 limitations
 video-understanding-unfamiliar-code-main-points
-understanding-unfamiliar-code-hands-on-exercise
+understanding-unfamiliar-code---hands-on-exercise
 the-code-2
 questions-3
 ai-for-bioinformatics
@@ -106,7 +106,7 @@ learning-objectives-7
 ai-in-bioinformatics
 using-these-topics-for-bioinformatics
 video-ai-for-bioinformatics-main-points
-ai-for-bioinformatics-hands-on-exercise
+ai-for-bioinformatics---hands-on-exercise
 the-code-3
 questions-4
 languages-and-cloud-computing

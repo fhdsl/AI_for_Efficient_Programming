@@ -1,4 +1,4 @@
-# Understanding Unfamiliar Code: Hands-On Exercise 
+# Understanding Unfamiliar Code - Hands-On Exercise 
 
 Now it's your turn to try! 
 
