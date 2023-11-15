@@ -4,7 +4,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Writing Code: Hands-On Exercise 
+# Writing Code - Hands-On Exercise 
 
 Now it’s your turn to try!
 
