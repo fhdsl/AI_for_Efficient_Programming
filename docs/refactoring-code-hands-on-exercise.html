@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 12 Refactoring Code: Hands-On Exercise | AI for Efficient Programming</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 12 Refactoring Code: Hands-On Exercise | AI for Efficient Programming" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -31,7 +30,6 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="video-refactoring-code-main-points.html"/>
 <link rel="next" href="video-introduction-to-annotating-code-with-ai.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,16 +47,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-  <html>
-
-  <head>
-  <title>Chapter 12 Refactoring Code: Hands-On Exercise | Title</title>
-  </head>
-
-  <body>
-
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4LSK62HQ2"></script>
   <script>
@@ -68,9 +59,6 @@
 
     gtag('config', 'G-Q4LSK62HQ2');
   </script>
-
-  </body>
-  </html>
 
 
 <style type="text/css">
@@ -109,11 +97,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -122,14 +110,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -137,6 +125,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
@@ -393,77 +385,77 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="refactoring-code-hands-on-exercise" class="section level1" number="12">
-<h1><span class="header-section-number">Chapter 12</span> Refactoring Code: Hands-On Exercise</h1>
+<div id="refactoring-code-hands-on-exercise" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">Chapter 12</span> Refactoring Code: Hands-On Exercise<a href="refactoring-code-hands-on-exercise.html#refactoring-code-hands-on-exercise" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Now it’s your turn to try.</p>
-<div id="the-code" class="section level2" number="12.1">
-<h2><span class="header-section-number">12.1</span> The Code</h2>
+<div id="the-code" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> The Code<a href="refactoring-code-hands-on-exercise.html#the-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Let’s say you are dusting off some code from your past (no judgment here). You were investigating tweets about <a href="https://www.mrtrashwheel.com/">Mr. Trash Wheel</a>, a beloved Baltimore-based contraption that filters trash out of the waterways.</p>
 <p><strong>Note</strong>: This code is just an example and was written strictly for educational purposes.</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="refactoring-code-hands-on-exercise.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tweepy</span>
-<span id="cb57-2"><a href="refactoring-code-hands-on-exercise.html#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas</span>
-<span id="cb57-3"><a href="refactoring-code-hands-on-exercise.html#cb57-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-4"><a href="refactoring-code-hands-on-exercise.html#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter your API keys and access tokens here</span></span>
-<span id="cb57-5"><a href="refactoring-code-hands-on-exercise.html#cb57-5" aria-hidden="true" tabindex="-1"></a>consumer_key <span class="op">=</span> <span class="st">&#39;your_consumer_key&#39;</span></span>
-<span id="cb57-6"><a href="refactoring-code-hands-on-exercise.html#cb57-6" aria-hidden="true" tabindex="-1"></a>consumer_secret <span class="op">=</span> <span class="st">&quot;your_consumer_secret&quot;</span></span>
-<span id="cb57-7"><a href="refactoring-code-hands-on-exercise.html#cb57-7" aria-hidden="true" tabindex="-1"></a>access_token <span class="op">=</span> <span class="st">&#39;your_access_token&#39;</span></span>
-<span id="cb57-8"><a href="refactoring-code-hands-on-exercise.html#cb57-8" aria-hidden="true" tabindex="-1"></a>access_token_secret <span class="op">=</span> <span class="st">&#39;your_access_token_secret&#39;</span></span>
-<span id="cb57-9"><a href="refactoring-code-hands-on-exercise.html#cb57-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-10"><a href="refactoring-code-hands-on-exercise.html#cb57-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Authenticate with Twitter API</span></span>
-<span id="cb57-11"><a href="refactoring-code-hands-on-exercise.html#cb57-11" aria-hidden="true" tabindex="-1"></a>auth <span class="op">=</span> tweepy.OAuthHandler(consumer_key, consumer_secret)</span>
-<span id="cb57-12"><a href="refactoring-code-hands-on-exercise.html#cb57-12" aria-hidden="true" tabindex="-1"></a>auth.set_access_token(access_token, access_token_secret)</span>
-<span id="cb57-13"><a href="refactoring-code-hands-on-exercise.html#cb57-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-14"><a href="refactoring-code-hands-on-exercise.html#cb57-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
-<span id="cb57-15"><a href="refactoring-code-hands-on-exercise.html#cb57-15" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&quot;Mr. Trash Wheel&quot;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
-<span id="cb57-16"><a href="refactoring-code-hands-on-exercise.html#cb57-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-17"><a href="refactoring-code-hands-on-exercise.html#cb57-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Create empty list to store tweet data</span></span>
-<span id="cb57-18"><a href="refactoring-code-hands-on-exercise.html#cb57-18" aria-hidden="true" tabindex="-1"></a>date_data <span class="op">=</span> []</span>
-<span id="cb57-19"><a href="refactoring-code-hands-on-exercise.html#cb57-19" aria-hidden="true" tabindex="-1"></a>location_data <span class="op">=</span> []</span>
-<span id="cb57-20"><a href="refactoring-code-hands-on-exercise.html#cb57-20" aria-hidden="true" tabindex="-1"></a>text_data <span class="op">=</span> []</span>
-<span id="cb57-21"><a href="refactoring-code-hands-on-exercise.html#cb57-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-22"><a href="refactoring-code-hands-on-exercise.html#cb57-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_tweet_length(tweet):</span>
-<span id="cb57-23"><a href="refactoring-code-hands-on-exercise.html#cb57-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Return the length of the tweet text</span></span>
-<span id="cb57-24"><a href="refactoring-code-hands-on-exercise.html#cb57-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">len</span>(tweet.full_text)</span>
-<span id="cb57-25"><a href="refactoring-code-hands-on-exercise.html#cb57-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-26"><a href="refactoring-code-hands-on-exercise.html#cb57-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
-<span id="cb57-27"><a href="refactoring-code-hands-on-exercise.html#cb57-27" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
-<span id="cb57-28"><a href="refactoring-code-hands-on-exercise.html#cb57-28" aria-hidden="true" tabindex="-1"></a>      date_info <span class="op">=</span> {</span>
-<span id="cb57-29"><a href="refactoring-code-hands-on-exercise.html#cb57-29" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;date&#39;</span>: tweet.created_at</span>
-<span id="cb57-30"><a href="refactoring-code-hands-on-exercise.html#cb57-30" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb57-31"><a href="refactoring-code-hands-on-exercise.html#cb57-31" aria-hidden="true" tabindex="-1"></a>    date_data.append(date_info)</span>
-<span id="cb57-32"><a href="refactoring-code-hands-on-exercise.html#cb57-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-33"><a href="refactoring-code-hands-on-exercise.html#cb57-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
-<span id="cb57-34"><a href="refactoring-code-hands-on-exercise.html#cb57-34" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&quot;Mr. Trash Wheel&quot;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
-<span id="cb57-35"><a href="refactoring-code-hands-on-exercise.html#cb57-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-36"><a href="refactoring-code-hands-on-exercise.html#cb57-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
-<span id="cb57-37"><a href="refactoring-code-hands-on-exercise.html#cb57-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
-<span id="cb57-38"><a href="refactoring-code-hands-on-exercise.html#cb57-38" aria-hidden="true" tabindex="-1"></a>    location_info <span class="op">=</span> {</span>
-<span id="cb57-39"><a href="refactoring-code-hands-on-exercise.html#cb57-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;location&#39;</span>: tweet.user.location</span>
-<span id="cb57-40"><a href="refactoring-code-hands-on-exercise.html#cb57-40" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb57-41"><a href="refactoring-code-hands-on-exercise.html#cb57-41" aria-hidden="true" tabindex="-1"></a>        location_data.append(location_info)</span>
-<span id="cb57-42"><a href="refactoring-code-hands-on-exercise.html#cb57-42" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb57-43"><a href="refactoring-code-hands-on-exercise.html#cb57-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
-<span id="cb57-44"><a href="refactoring-code-hands-on-exercise.html#cb57-44" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&#39;Mr. Trash Wheel&#39;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
-<span id="cb57-45"><a href="refactoring-code-hands-on-exercise.html#cb57-45" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb57-46"><a href="refactoring-code-hands-on-exercise.html#cb57-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
-<span id="cb57-47"><a href="refactoring-code-hands-on-exercise.html#cb57-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
-<span id="cb57-48"><a href="refactoring-code-hands-on-exercise.html#cb57-48" aria-hidden="true" tabindex="-1"></a>    text_info <span class="op">=</span> {</span>
-<span id="cb57-49"><a href="refactoring-code-hands-on-exercise.html#cb57-49" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;text&#39;</span>: tweet.full_text</span>
-<span id="cb57-50"><a href="refactoring-code-hands-on-exercise.html#cb57-50" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb57-51"><a href="refactoring-code-hands-on-exercise.html#cb57-51" aria-hidden="true" tabindex="-1"></a>    text_data.append(text_info)</span>
-<span id="cb57-52"><a href="refactoring-code-hands-on-exercise.html#cb57-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-53"><a href="refactoring-code-hands-on-exercise.html#cb57-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine lists into a dictionary</span></span>
-<span id="cb57-54"><a href="refactoring-code-hands-on-exercise.html#cb57-54" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">&#39;date&#39;</span>: date_data, </span>
-<span id="cb57-55"><a href="refactoring-code-hands-on-exercise.html#cb57-55" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;location&#39;</span>: location_data, <span class="st">&#39;text&#39;</span>: text_data}</span>
-<span id="cb57-56"><a href="refactoring-code-hands-on-exercise.html#cb57-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-57"><a href="refactoring-code-hands-on-exercise.html#cb57-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Store results in pandas dataframe</span></span>
-<span id="cb57-58"><a href="refactoring-code-hands-on-exercise.html#cb57-58" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pandas.DataFrame(data)</span>
-<span id="cb57-59"><a href="refactoring-code-hands-on-exercise.html#cb57-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-60"><a href="refactoring-code-hands-on-exercise.html#cb57-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Print dataframe</span></span>
-<span id="cb57-61"><a href="refactoring-code-hands-on-exercise.html#cb57-61" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="refactoring-code-hands-on-exercise.html#cb57-1" tabindex="-1"></a><span class="im">import</span> tweepy</span>
+<span id="cb57-2"><a href="refactoring-code-hands-on-exercise.html#cb57-2" tabindex="-1"></a><span class="im">import</span> pandas</span>
+<span id="cb57-3"><a href="refactoring-code-hands-on-exercise.html#cb57-3" tabindex="-1"></a></span>
+<span id="cb57-4"><a href="refactoring-code-hands-on-exercise.html#cb57-4" tabindex="-1"></a><span class="co"># Enter your API keys and access tokens here</span></span>
+<span id="cb57-5"><a href="refactoring-code-hands-on-exercise.html#cb57-5" tabindex="-1"></a>consumer_key <span class="op">=</span> <span class="st">&#39;your_consumer_key&#39;</span></span>
+<span id="cb57-6"><a href="refactoring-code-hands-on-exercise.html#cb57-6" tabindex="-1"></a>consumer_secret <span class="op">=</span> <span class="st">&quot;your_consumer_secret&quot;</span></span>
+<span id="cb57-7"><a href="refactoring-code-hands-on-exercise.html#cb57-7" tabindex="-1"></a>access_token <span class="op">=</span> <span class="st">&#39;your_access_token&#39;</span></span>
+<span id="cb57-8"><a href="refactoring-code-hands-on-exercise.html#cb57-8" tabindex="-1"></a>access_token_secret <span class="op">=</span> <span class="st">&#39;your_access_token_secret&#39;</span></span>
+<span id="cb57-9"><a href="refactoring-code-hands-on-exercise.html#cb57-9" tabindex="-1"></a></span>
+<span id="cb57-10"><a href="refactoring-code-hands-on-exercise.html#cb57-10" tabindex="-1"></a><span class="co"># Authenticate with Twitter API</span></span>
+<span id="cb57-11"><a href="refactoring-code-hands-on-exercise.html#cb57-11" tabindex="-1"></a>auth <span class="op">=</span> tweepy.OAuthHandler(consumer_key, consumer_secret)</span>
+<span id="cb57-12"><a href="refactoring-code-hands-on-exercise.html#cb57-12" tabindex="-1"></a>auth.set_access_token(access_token, access_token_secret)</span>
+<span id="cb57-13"><a href="refactoring-code-hands-on-exercise.html#cb57-13" tabindex="-1"></a></span>
+<span id="cb57-14"><a href="refactoring-code-hands-on-exercise.html#cb57-14" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
+<span id="cb57-15"><a href="refactoring-code-hands-on-exercise.html#cb57-15" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&quot;Mr. Trash Wheel&quot;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
+<span id="cb57-16"><a href="refactoring-code-hands-on-exercise.html#cb57-16" tabindex="-1"></a></span>
+<span id="cb57-17"><a href="refactoring-code-hands-on-exercise.html#cb57-17" tabindex="-1"></a><span class="co"># Create empty list to store tweet data</span></span>
+<span id="cb57-18"><a href="refactoring-code-hands-on-exercise.html#cb57-18" tabindex="-1"></a>date_data <span class="op">=</span> []</span>
+<span id="cb57-19"><a href="refactoring-code-hands-on-exercise.html#cb57-19" tabindex="-1"></a>location_data <span class="op">=</span> []</span>
+<span id="cb57-20"><a href="refactoring-code-hands-on-exercise.html#cb57-20" tabindex="-1"></a>text_data <span class="op">=</span> []</span>
+<span id="cb57-21"><a href="refactoring-code-hands-on-exercise.html#cb57-21" tabindex="-1"></a></span>
+<span id="cb57-22"><a href="refactoring-code-hands-on-exercise.html#cb57-22" tabindex="-1"></a><span class="kw">def</span> get_tweet_length(tweet):</span>
+<span id="cb57-23"><a href="refactoring-code-hands-on-exercise.html#cb57-23" tabindex="-1"></a>    <span class="co"># Return the length of the tweet text</span></span>
+<span id="cb57-24"><a href="refactoring-code-hands-on-exercise.html#cb57-24" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">len</span>(tweet.full_text)</span>
+<span id="cb57-25"><a href="refactoring-code-hands-on-exercise.html#cb57-25" tabindex="-1"></a></span>
+<span id="cb57-26"><a href="refactoring-code-hands-on-exercise.html#cb57-26" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
+<span id="cb57-27"><a href="refactoring-code-hands-on-exercise.html#cb57-27" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
+<span id="cb57-28"><a href="refactoring-code-hands-on-exercise.html#cb57-28" tabindex="-1"></a>      date_info <span class="op">=</span> {</span>
+<span id="cb57-29"><a href="refactoring-code-hands-on-exercise.html#cb57-29" tabindex="-1"></a>        <span class="st">&#39;date&#39;</span>: tweet.created_at</span>
+<span id="cb57-30"><a href="refactoring-code-hands-on-exercise.html#cb57-30" tabindex="-1"></a>    }</span>
+<span id="cb57-31"><a href="refactoring-code-hands-on-exercise.html#cb57-31" tabindex="-1"></a>    date_data.append(date_info)</span>
+<span id="cb57-32"><a href="refactoring-code-hands-on-exercise.html#cb57-32" tabindex="-1"></a></span>
+<span id="cb57-33"><a href="refactoring-code-hands-on-exercise.html#cb57-33" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
+<span id="cb57-34"><a href="refactoring-code-hands-on-exercise.html#cb57-34" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&quot;Mr. Trash Wheel&quot;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
+<span id="cb57-35"><a href="refactoring-code-hands-on-exercise.html#cb57-35" tabindex="-1"></a></span>
+<span id="cb57-36"><a href="refactoring-code-hands-on-exercise.html#cb57-36" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
+<span id="cb57-37"><a href="refactoring-code-hands-on-exercise.html#cb57-37" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
+<span id="cb57-38"><a href="refactoring-code-hands-on-exercise.html#cb57-38" tabindex="-1"></a>    location_info <span class="op">=</span> {</span>
+<span id="cb57-39"><a href="refactoring-code-hands-on-exercise.html#cb57-39" tabindex="-1"></a>        <span class="st">&#39;location&#39;</span>: tweet.user.location</span>
+<span id="cb57-40"><a href="refactoring-code-hands-on-exercise.html#cb57-40" tabindex="-1"></a>    }</span>
+<span id="cb57-41"><a href="refactoring-code-hands-on-exercise.html#cb57-41" tabindex="-1"></a>        location_data.append(location_info)</span>
+<span id="cb57-42"><a href="refactoring-code-hands-on-exercise.html#cb57-42" tabindex="-1"></a>    </span>
+<span id="cb57-43"><a href="refactoring-code-hands-on-exercise.html#cb57-43" tabindex="-1"></a><span class="co"># Search for tweets containing the search term</span></span>
+<span id="cb57-44"><a href="refactoring-code-hands-on-exercise.html#cb57-44" tabindex="-1"></a>tweets <span class="op">=</span> tweepy.Cursor(tweepy.API(auth).search_tweets, q<span class="op">=</span><span class="st">&#39;Mr. Trash Wheel&#39;</span>, tweet_mode<span class="op">=</span><span class="st">&#39;extended&#39;</span>).items(<span class="dv">100</span>)</span>
+<span id="cb57-45"><a href="refactoring-code-hands-on-exercise.html#cb57-45" tabindex="-1"></a>    </span>
+<span id="cb57-46"><a href="refactoring-code-hands-on-exercise.html#cb57-46" tabindex="-1"></a><span class="co"># Loop through each tweet and extract desired data</span></span>
+<span id="cb57-47"><a href="refactoring-code-hands-on-exercise.html#cb57-47" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> tweets:</span>
+<span id="cb57-48"><a href="refactoring-code-hands-on-exercise.html#cb57-48" tabindex="-1"></a>    text_info <span class="op">=</span> {</span>
+<span id="cb57-49"><a href="refactoring-code-hands-on-exercise.html#cb57-49" tabindex="-1"></a>        <span class="st">&#39;text&#39;</span>: tweet.full_text</span>
+<span id="cb57-50"><a href="refactoring-code-hands-on-exercise.html#cb57-50" tabindex="-1"></a>    }</span>
+<span id="cb57-51"><a href="refactoring-code-hands-on-exercise.html#cb57-51" tabindex="-1"></a>    text_data.append(text_info)</span>
+<span id="cb57-52"><a href="refactoring-code-hands-on-exercise.html#cb57-52" tabindex="-1"></a></span>
+<span id="cb57-53"><a href="refactoring-code-hands-on-exercise.html#cb57-53" tabindex="-1"></a><span class="co"># Combine lists into a dictionary</span></span>
+<span id="cb57-54"><a href="refactoring-code-hands-on-exercise.html#cb57-54" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">&#39;date&#39;</span>: date_data, </span>
+<span id="cb57-55"><a href="refactoring-code-hands-on-exercise.html#cb57-55" tabindex="-1"></a>  <span class="st">&#39;location&#39;</span>: location_data, <span class="st">&#39;text&#39;</span>: text_data}</span>
+<span id="cb57-56"><a href="refactoring-code-hands-on-exercise.html#cb57-56" tabindex="-1"></a></span>
+<span id="cb57-57"><a href="refactoring-code-hands-on-exercise.html#cb57-57" tabindex="-1"></a><span class="co"># Store results in pandas dataframe</span></span>
+<span id="cb57-58"><a href="refactoring-code-hands-on-exercise.html#cb57-58" tabindex="-1"></a>df <span class="op">=</span> pandas.DataFrame(data)</span>
+<span id="cb57-59"><a href="refactoring-code-hands-on-exercise.html#cb57-59" tabindex="-1"></a></span>
+<span id="cb57-60"><a href="refactoring-code-hands-on-exercise.html#cb57-60" tabindex="-1"></a><span class="co"># Print dataframe</span></span>
+<span id="cb57-61"><a href="refactoring-code-hands-on-exercise.html#cb57-61" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
 </div>
-<div id="questions-1" class="section level2" number="12.2">
-<h2><span class="header-section-number">12.2</span> Questions</h2>
+<div id="questions-1" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> Questions<a href="refactoring-code-hands-on-exercise.html#questions-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
 <li><p>Create an AI prompt that fixes any formatting issues with the code that would cause it not to run.</p></li>
 <li><p>Devise an AI prompt that removes any dead code from your sample above. What gets removed?</p></li>

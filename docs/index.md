@@ -1,7 +1,7 @@
 ---
 title: "AI for Efficient Programming"
 subtitle: "Harnessing the Power of Large Language Models"
-date: "November, 2023"
+date: "June, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -19,10 +19,10 @@ This course on efficient programming with AI explores the use of AI large langua
 
 This course is available in multiple formats which allows you to take it in the way that best suits your needs.
 
-- The material for this course can be viewed without login requirement on this [Bookdown website](https://hutchdatascience.org/AI_for_software). This format might be most appropriate for you if you rely on screen-reader technology.
+- The material for this course can be viewed without login requirement on this [Bookdown website](https://hutchdatascience.org/AI_for_Efficient_Programming). This format might be most appropriate for you if you rely on screen-reader technology.
 - This course can be taken for [free certification through Leanpub](https://leanpub.com/courses/fredhutch/ai_for_software).
-<!-- - This course can be taken on [Coursera for certification here](LINK HERE) (but it is not available for free on Coursera). -->
-- Our courses are open source, you can find the [source material for this course on GitHub](https://github.com/fhdsl/AI_for_software/).
+- This course can be taken on [Coursera for certification here](https://www.coursera.org/learn/ai-for-software-development) (but it is not available for free on Coursera).
+- Our courses are open source, you can find the [source material for this course on GitHub](https://github.com/fhdsl/AI_for_Efficient_Programming/).
 - The slides for the images in the course can be found [here](https://docs.google.com/presentation/d/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE/edit?usp=sharing).
 
 ## Suggested Activity Context {-}
@@ -36,7 +36,7 @@ This course is available in multiple formats which allows you to take it in the 
 **Note**: Those completely new to programming will find using AI tools to create software solutions challenging at this time. It is helpful to have some fundamental knowledge to write appropriate prompts and to discern when code is not working as expected. We advise novices to seek expert review.
 
 
-<img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_176.png" title="For individuals who: develop software or want to start, are interested in using large language model AI tools to help you with your work, want to use AI tools responsibly" alt="For individuals who: develop software or want to start, are interested in using large language model AI tools to help you with your work, want to use AI tools responsibly" width="100%" style="display: block; margin: auto;" />
+<img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_176.png" alt="For individuals who: develop software or want to start, are interested in using large language model AI tools to help you with your work, want to use AI tools responsibly" width="100%" style="display: block; margin: auto;" />
 
 **Course Prerequisites**  
 
@@ -58,7 +58,7 @@ Learners will be able to:
 - Discuss the challenges and ethical implications of using AI for different aspects of programming
 
 
-<img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_355.png" title="Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code" alt="Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code" width="100%" style="display: block; margin: auto;" />
+<img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_355.png" alt="Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code" width="100%" style="display: block; margin: auto;" />
 
 
 

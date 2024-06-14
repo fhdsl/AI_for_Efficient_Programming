@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Ethics of Using AI | AI for Efficient Programming</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Ethics of Using AI | AI for Efficient Programming" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -31,7 +30,6 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="video-ai-code-of-ethics.html"/>
 <link rel="next" href="video-combating-bias-in-llms.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,16 +47,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-  <html>
-
-  <head>
-  <title>Chapter 3 Ethics of Using AI | Title</title>
-  </head>
-
-  <body>
-
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4LSK62HQ2"></script>
   <script>
@@ -68,9 +59,6 @@
 
     gtag('config', 'G-Q4LSK62HQ2');
   </script>
-
-  </body>
-  </html>
 
 
 <style type="text/css">
@@ -109,11 +97,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -122,14 +110,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -137,6 +125,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
@@ -393,12 +385,12 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="ethics-of-using-ai" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Ethics of Using AI</h1>
+<div id="ethics-of-using-ai" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Ethics of Using AI<a href="ethics-of-using-ai.html#ethics-of-using-ai" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The use of artificial intelligence (AI) and in particular, generative AI, in coding has raised a number of ethical concerns. We will highlight several current concerns, however please be aware that this is a dynamic field and the possible implications of this technology is continuing to develop. It is critical that we as a society continue to evaluate and predict what the consequences of the use of AI will be, so that we can mitigate harmful effects.</p>
-<p><img src="02-ethics_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_0.png" title="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." alt="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." width="100%" style="display: block; margin: auto;" /></p>
-<div id="learning-objectives-2" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Learning Objectives</h2>
+<p><img src="02-ethics_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_0.png" alt="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." width="100%" style="display: block; margin: auto;" /></p>
+<div id="learning-objectives-2" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Learning Objectives<a href="ethics-of-using-ai.html#learning-objectives-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this chapter we will demonstrate how to:</p>
 <ul>
 <li>Describe key ethical concerns for using AI tools in software development</li>
@@ -409,8 +401,8 @@ div.csl-indent {
 <li>Implement prompts to ask AI tools about responsible use throughout various coding practices</li>
 </ul>
 </div>
-<div id="major-concerns" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Major concerns</h2>
+<div id="major-concerns" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Major concerns<a href="ethics-of-using-ai.html#major-concerns" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this chapter we will discuss the following issues that writing code with AI tools may contribute to:</p>
 <ol style="list-style-type: decimal">
 <li><strong>Replacing Humans</strong> - AI tools can help humans write code, but they are not a replacement.</li>
@@ -429,12 +421,12 @@ div.csl-indent {
 </div>
 <p><strong>It is essential to address these ethical concerns and ensure that the use of AI in coding is done in a responsible and transparent manner.</strong> This could be done through ensuring the quality of the data used to train AI systems, promoting transparency in AI-generated code, and implementing safeguards against the creation of harmful or biased code. By doing so, we can harness the potential of AI to improve and transform the way we write and optimize code while maintaining ethical standards.</p>
 </div>
-<div id="replacing-humans" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Replacing Humans</h2>
+<div id="replacing-humans" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Replacing Humans<a href="ethics-of-using-ai.html#replacing-humans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Those who use AI tools to write code or to understand code need to recognize their own value in the process. While AI systems are useful, they <strong>do not replace the strengths that humans have</strong> for innovating new ways to write code, evaluating how the code integrates into the larger picture of a project, or in evaluating the downstream consequences of the code.</p>
 <p>Computer science is a field that has historically lacked diversity and new learners can often feel intimidated. There is the potential that new learners may feel even more discouraged as they learn to write code when witnessing AI tools write code. It is critical that we support diverse new learners of computer science, as we will continue to need human involvement in the development and use of AI tools.</p>
-<div id="tips-for-supporting-human-code" class="section level3" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> Tips for supporting human code</h3>
+<div id="tips-for-supporting-human-code" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Tips for supporting human code<a href="ethics-of-using-ai.html#tips-for-supporting-human-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Follow best teaching practices for inclusion of diverse learners.</li>
 <li>Encourage current and future programmers to continue to innovate and write code.</li>
@@ -443,16 +435,16 @@ div.csl-indent {
 <li>Be transparent about when you do or do not use AI tools, give credit to the humans who write code where possible.</li>
 </ul>
 <div class="ethics">
-<p>A new term in the medical field called <a href="https://www.technologyreview.com/2023/04/21/1071921/ai-is-infiltrating-health-care-we-shouldnt-let-it-make-decisions/">AI paternalism</a> describes the concept that doctors (and others) may trust AI over their own judgment or the experiences of the patients they treat. This has already been shown to be a problem with earlier AI systems intended to help distinguish patient groups. Not all humans will necessarily fit the expectations of the AI model if it is not very good at predicting edge cases <span class="citation">(<a href="references.html#ref-AI_paternalism" role="doc-biblioref">Hamzelou n.d.</a>)</span>. Therefore, in all fields it is important for us to not forget our value as humans in our understanding of the world.</p>
+<p>A new term in the medical field called <a href="https://www.technologyreview.com/2023/04/21/1071921/ai-is-infiltrating-health-care-we-shouldnt-let-it-make-decisions/">AI paternalism</a> describes the concept that doctors (and others) may trust AI over their own judgment or the experiences of the patients they treat. This has already been shown to be a problem with earlier AI systems intended to help distinguish patient groups. Not all humans will necessarily fit the expectations of the AI model if it is not very good at predicting edge cases <span class="citation">(<a href="references.html#ref-AI_paternalism">Hamzelou n.d.</a>)</span>. Therefore, in all fields it is important for us to not forget our value as humans in our understanding of the world.</p>
 </div>
 </div>
 </div>
-<div id="bias" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Bias</h2>
+<div id="bias" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Bias<a href="ethics-of-using-ai.html#bias" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>One of the biggest concerns is the potential for AI to create biased code. AI systems are trained on data created by humans. If this data used to train the system is biased (and this includes existing code that may be written in a biased manner), the resulting code could also be biased. This could lead to discrimination, abuse, or neglect for certain groups of people, such as those with certain ethnic or cultural backgrounds, genders, ages, sexuality, capabilities, religions or other group affiliations.</p>
-<p>It is well known that data and code are often biased <span class="citation">(<a href="references.html#ref-belenguer_ai_2022" role="doc-biblioref">Belenguer 2022</a>)</span>. It is important that evaluations be made throughout the software development process to check for and consider potential perpetuation of bias.</p>
-<div id="tips-for-avoiding-bias" class="section level3" number="3.4.1">
-<h3><span class="header-section-number">3.4.1</span> Tips for avoiding bias</h3>
+<p>It is well known that data and code are often biased <span class="citation">(<a href="references.html#ref-belenguer_ai_2022">Belenguer 2022</a>)</span>. It is important that evaluations be made throughout the software development process to check for and consider potential perpetuation of bias.</p>
+<div id="tips-for-avoiding-bias" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Tips for avoiding bias<a href="ethics-of-using-ai.html#tips-for-avoiding-bias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Be aware of the potential biases in the data that is used to train AI systems.</li>
 <li>Check for possible biases within the data.
@@ -464,27 +456,27 @@ div.csl-indent {
 <li>Evaluate the code for biases as it is developed. Check if any of the criteria for weighting certain data values over others are rooted in bias.</li>
 <li>Consider the possible outcomes of the use of the code. Consider if the code could possibly be used in a manner that will result in discrimination.</li>
 </ul>
-<p>See <span class="citation">Belenguer (<a href="references.html#ref-belenguer_ai_2022" role="doc-biblioref">2022</a>)</span> for more guidance. We also encourage you to check out the following video for a classic example of bias in AI:</p>
+<p>See <span class="citation">Belenguer (<a href="references.html#ref-belenguer_ai_2022">2022</a>)</span> for more guidance. We also encourage you to check out the following video for a classic example of bias in AI:</p>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TWWsW1w-BVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 </iframe>
 </div>
 </div>
-<div id="misinformation" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Misinformation</h2>
+<div id="misinformation" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Misinformation<a href="ethics-of-using-ai.html#misinformation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>AI tools use data that may contain false information. AI tools may also report data as if it is real, when it is in fact not real. For example, currently at the time of the writing of this course, ChatGPT will report citations with links that are not correct.</p>
-<div id="tips-for-reducing-misinformation" class="section level3" number="3.5.1">
-<h3><span class="header-section-number">3.5.1</span> Tips for reducing misinformation</h3>
+<div id="tips-for-reducing-misinformation" class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Tips for reducing misinformation<a href="ethics-of-using-ai.html#tips-for-reducing-misinformation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Be aware that some AI tools currently make up false information based on artifacts of the algorithm.</li>
 <li>Do not assume that everything that the algorithm produces is real or correct.</li>
 </ul>
 </div>
 </div>
-<div id="unintelligible-code" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> Unintelligible Code</h2>
+<div id="unintelligible-code" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Unintelligible Code<a href="ethics-of-using-ai.html#unintelligible-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There is risk that those less aware of best coding practices use AI-generated code and do not follow these practices. This could make it difficult for others to understand how the code works and could make it hard to identify and fix any issues that may arise. This could result in negative consequences, such as system crashes or security breaches, that could have been avoided if the code had been written by an experienced and savvy human programmer.</p>
-<div id="tips-for-avoiding-unintelligible-code" class="section level3" number="3.6.1">
-<h3><span class="header-section-number">3.6.1</span> Tips for avoiding unintelligible code</h3>
+<div id="tips-for-avoiding-unintelligible-code" class="section level3 hasAnchor" number="3.6.1">
+<h3><span class="header-section-number">3.6.1</span> Tips for avoiding unintelligible code<a href="ethics-of-using-ai.html#tips-for-avoiding-unintelligible-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Code should be reviewed by experienced programmers.</li>
 <li>Code should be annotated throughout to explain what the code is doing.</li>
@@ -494,14 +486,14 @@ div.csl-indent {
 <div class="query">
 <p>Can you explain what the code in line 4 is doing?</p>
 </div>
-<p><img src="02-ethics_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_13.png" title="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." alt="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-ethics_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_13.png" alt="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." width="100%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
-<div id="faulty-or-buggy-code" class="section level2" number="3.7">
-<h2><span class="header-section-number">3.7</span> Faulty or Buggy Code</h2>
+<div id="faulty-or-buggy-code" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> Faulty or Buggy Code<a href="ethics-of-using-ai.html#faulty-or-buggy-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There is a risk that code written with AI tools, if not reviewed carefully enough, may be faulty. AI systems may not be trained on data that relates to current software dependencies or best practices. It is also important to remember that code generated by AI tools is not necessarily better than code written by humans. It requires just as much code review.</p>
-<div id="tips-for-reducing-faulty-or-buggy-code" class="section level3" number="3.7.1">
-<h3><span class="header-section-number">3.7.1</span> Tips for reducing faulty or buggy code</h3>
+<div id="tips-for-reducing-faulty-or-buggy-code" class="section level3 hasAnchor" number="3.7.1">
+<h3><span class="header-section-number">3.7.1</span> Tips for reducing faulty or buggy code<a href="ethics-of-using-ai.html#tips-for-reducing-faulty-or-buggy-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Do not assume that the code generate by AI is correct.</li>
 <li>Realize that AI is only as good or up-to-date as what it was trained on, the code may be generated using out-of-date code. Look up packages and functions used to ensure if the code is up-to-date.</li>
@@ -519,11 +511,11 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<div id="security-and-privacy-issues" class="section level2" number="3.8">
-<h2><span class="header-section-number">3.8</span> Security and Privacy issues</h2>
+<div id="security-and-privacy-issues" class="section level2 hasAnchor" number="3.8">
+<h2><span class="header-section-number">3.8</span> Security and Privacy issues<a href="ethics-of-using-ai.html#security-and-privacy-issues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>AI tools are not always trained in a way that is particularly conscious of data security. Furthermore, if the code is written using these tools by users who are less familiar with coding security concerns, protected data or important passwords may be leaked within the code itself. AI systems may also utilize data that was actually intended to be private. It is also important to consider what data your code might actually be using.</p>
-<div id="tips-for-reducing-security-and-privacy-issues" class="section level3" number="3.8.1">
-<h3><span class="header-section-number">3.8.1</span> Tips for reducing security and privacy issues</h3>
+<div id="tips-for-reducing-security-and-privacy-issues" class="section level3 hasAnchor" number="3.8.1">
+<h3><span class="header-section-number">3.8.1</span> Tips for reducing security and privacy issues<a href="ethics-of-using-ai.html#tips-for-reducing-security-and-privacy-issues" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Check that all passwords, access tokens (like API keys), security certificates are not saved in a public place where anyone can access or tamper with them.</li>
 <li>Check that no sensitive data, such as Personal Identifiable Information (PII) becomes public through the code.</li>
@@ -537,12 +529,12 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<div id="violating-copyright" class="section level2" number="3.9">
-<h2><span class="header-section-number">3.9</span> Violating Copyright</h2>
+<div id="violating-copyright" class="section level2 hasAnchor" number="3.9">
+<h2><span class="header-section-number">3.9</span> Violating Copyright<a href="ethics-of-using-ai.html#violating-copyright" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>When AI systems are trained on data, they may also learn and incorporate code from that data. This means that AI-generated code could potentially infringe on the copyright of the original author of the code. For example, if an AI system is trained on a GitHub repository that contains code written by a human programmer, the AI system could generate code that is identical to or similar to the code in the GitHub repository. If the AI system then uses this code without permission from the original author, this could constitute copyright infringement. In general, we want programmers to feel comfortable sharing their code openly without fear they won’t be credited.
 Similarly, AI systems could potentially infringe on intellectual property rights by using code that is protected by trademarks or patents. For example, if an AI system is trained on a training manual that contains code that is protected by a trademark, the AI system could generate code that is identical to or similar to the code in the training manual. If the AI system then uses this code without permission from the trademark owner, this could constitute trademark infringement.</p>
-<div id="tips-for-avoiding-copyright-violations" class="section level3" number="3.9.1">
-<h3><span class="header-section-number">3.9.1</span> Tips for avoiding copyright violations</h3>
+<div id="tips-for-avoiding-copyright-violations" class="section level3 hasAnchor" number="3.9.1">
+<h3><span class="header-section-number">3.9.1</span> Tips for avoiding copyright violations<a href="ethics-of-using-ai.html#tips-for-avoiding-copyright-violations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Be transparent about what AI tools you use to write your code.</li>
 <li>Obtain permission from the copyright holders of any code that you use to train the AI system. Only use code that is in the public domain or that has been licensed for use by the AI system’s owner.</li>
@@ -554,11 +546,11 @@ Similarly, AI systems could potentially infringe on intellectual property rights
 </div>
 </div>
 </div>
-<div id="harmful-code" class="section level2" number="3.10">
-<h2><span class="header-section-number">3.10</span> Harmful code</h2>
+<div id="harmful-code" class="section level2 hasAnchor" number="3.10">
+<h2><span class="header-section-number">3.10</span> Harmful code<a href="ethics-of-using-ai.html#harmful-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Another major concern is the use of AI to generate malicious code. For instance, AI could be used to create code that spreads malware or hacks into computer systems. This could cause severe damage to individuals and organizations, including data breaches and financial losses.</p>
-<div id="tips-for-avoiding-the-creation-of-harmful-code" class="section level3" number="3.10.1">
-<h3><span class="header-section-number">3.10.1</span> Tips for avoiding the creation of harmful code</h3>
+<div id="tips-for-avoiding-the-creation-of-harmful-code" class="section level3 hasAnchor" number="3.10.1">
+<h3><span class="header-section-number">3.10.1</span> Tips for avoiding the creation of harmful code<a href="ethics-of-using-ai.html#tips-for-avoiding-the-creation-of-harmful-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Be careful about what code you share publicly, as it could be used for malicious purposes.</li>
 <li>Consider how the code might be used by others.</li>
@@ -572,8 +564,8 @@ Similarly, AI systems could potentially infringe on intellectual property rights
 </div>
 </div>
 </div>
-<div id="summary" class="section level2" number="3.11">
-<h2><span class="header-section-number">3.11</span> Summary</h2>
+<div id="summary" class="section level2 hasAnchor" number="3.11">
+<h2><span class="header-section-number">3.11</span> Summary<a href="ethics-of-using-ai.html#summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Here is a summary of all the tips we suggested:</p>
 <div class="ethics">
 <ul>

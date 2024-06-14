@@ -11,7 +11,7 @@ This video discusses why AI is a good tool for planning, writing, and debugging 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1WDqxRNLnJ_o0t4qwSohVhEbv7iwnL6jzSIjkSJ4ZGYo/edit).
 
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_83.png" title="The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms." alt="The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_83.png" alt="The dinosaur cartoon says in a speech bubble, 'With AI, I am unstoppable!'. The dinosaur is a T-rex and is now holding clamps that extend its arms." width="100%" style="display: block; margin: auto;" />
 
 
 AI-powered programming tools and technologies are revolutionizing the way we approach software development. 
@@ -66,7 +66,7 @@ Practice is crucial to mastering the art of coding, and those who are willing to
 
 Moreover, writing code can be a form of creative expression. Just as musicians use notes to compose music and artists use paint to create visual art, programmers use code to create digital experiences. From building websites to creating video games, code can be used to bring ideas to life in exciting and innovative ways.
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_1_0.png" title="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." alt="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_1_0.png" alt="The dinosaur cartoon is wearing a beret and holding a paintbrush that is is using to paint code onto an easel." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -337,14 +337,14 @@ Is `here::here("raw", "data.csv")` equivalent to `here::here("raw/data.csv")`?
 
 First, let's see what [ChatGPT](https://chat.openai.com/) responded.
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_88.png" title="ChatGPT explains whether two ways of writing the same command in R are equivalent." alt="ChatGPT explains whether two ways of writing the same command in R are equivalent." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_88.png" alt="ChatGPT explains whether two ways of writing the same command in R are equivalent." width="100%" style="display: block; margin: auto;" />
 
 
 
 
 When we first started putting together this course, we had intended to include an answer from [Bard](https://bard.google.com/) that disagreed with the answer from ChatGPT as an example of why it can be helpful to query multiple chatbots. (We decided ChatGPT was correct after verifying its answer in the `here` package documentation.) However, when we queried Bard again two weeks later, we were pleasantly surprised to discover that Bard had corrected its answer. Now it's a cool little example of how the chatbots are rapidly improving and "learning" from their mistakes.
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_84.png" title="Bard offers two different answers about whether syntaxes are equivalent. The first answer was incorrect, but the answer two weeks later had changed and now had the correct information." alt="Bard offers two different answers about whether syntaxes are equivalent. The first answer was incorrect, but the answer two weeks later had changed and now had the correct information." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_84.png" alt="Bard offers two different answers about whether syntaxes are equivalent. The first answer was incorrect, but the answer two weeks later had changed and now had the correct information." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -358,14 +358,14 @@ A very common task for anyone working with genomic samples is to combine multipl
 Can you write a program that merges vcf files and then outputs the sample names?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_34.png" title="ChatGPT writes a program using bcftools that merges vcf files and outputs the sample names." alt="ChatGPT writes a program using bcftools that merges vcf files and outputs the sample names." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_34.png" alt="ChatGPT writes a program using bcftools that merges vcf files and outputs the sample names." width="100%" style="display: block; margin: auto;" />
 
 
 
 
 Great! Of course, maybe you're not comfortable using bcftools, or you try this and can't get it to work. You can take advantage of the "Regenerate Response" option in ChatGPT to get another solution.
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_30.png" title="You can use the 'Regenerate Response' button on ChatGPT to find a different way to accomplish your task." alt="You can use the 'Regenerate Response' button on ChatGPT to find a different way to accomplish your task." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_30.png" alt="You can use the 'Regenerate Response' button on ChatGPT to find a different way to accomplish your task." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -374,7 +374,7 @@ What's another way I can do this?
 :::
 
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_77.png" title="ChatGPT generates different code that allows you to merge vcf files and output the sample names." alt="ChatGPT generates different code that allows you to merge vcf files and output the sample names." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_77.png" alt="ChatGPT generates different code that allows you to merge vcf files and output the sample names." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -384,7 +384,7 @@ You can also specify some of the features you'd like in your code, or where you 
 Can you write a program that merges vcf files and then outputs the sample names using a github repo?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_42.png" title="ChatGPT generates a script using the vcflib repo from GitHub." alt="ChatGPT generates a script using the vcflib repo from GitHub." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_42.png" alt="ChatGPT generates a script using the vcflib repo from GitHub." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -395,7 +395,7 @@ If you know you've used something like a GitHub repository, you can ask ChatGPT 
 What's the citation for the repo used in this code?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_46.png" title="ChatGPT responds with the GitHub repository used in the code, as well as the creators and a possible citation." alt="ChatGPT responds with the GitHub repository used in the code, as well as the creators and a possible citation." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_46.png" alt="ChatGPT responds with the GitHub repository used in the code, as well as the creators and a possible citation." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -405,7 +405,7 @@ In general, after you find a solution that works for you, you should always make
 What's the source for this code?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_38.png" title="ChatGPT responds with the library and basic Unix tools needed to run the generated code." alt="ChatGPT responds with the library and basic Unix tools needed to run the generated code." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_38.png" alt="ChatGPT responds with the library and basic Unix tools needed to run the generated code." width="100%" style="display: block; margin: auto;" />
 
 
 :::{.ethics}
@@ -425,7 +425,7 @@ We'll ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by Po
 How would I go about writing a program that can play blackjack?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_24.png" title="Claude-instant laid out seven steps that can be used to build a simple blackjack program. It also offered several ideas for additional features." alt="Claude-instant laid out seven steps that can be used to build a simple blackjack program. It also offered several ideas for additional features." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_24.png" alt="Claude-instant laid out seven steps that can be used to build a simple blackjack program. It also offered several ideas for additional features." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -436,7 +436,7 @@ That seems like a really good roadmap for building a basic game, but if you're a
 What are some other features I could add to this game?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_8.png" title="Claude-instant offered eleven additional features that could be added to your blackjack game if you wanted to make it more complex, including different types of betting strategies and surrender opportunities." alt="Claude-instant offered eleven additional features that could be added to your blackjack game if you wanted to make it more complex, including different types of betting strategies and surrender opportunities." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_8.png" alt="Claude-instant offered eleven additional features that could be added to your blackjack game if you wanted to make it more complex, including different types of betting strategies and surrender opportunities." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -447,7 +447,7 @@ At this point, you are ready to begin writing your program. You have a lot of ta
 What should be my first coding task for this program?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_68.png" title="Claude-instant suggests the first task is to create a data structure that represents a deck of cards." alt="Claude-instant suggests the first task is to create a data structure that represents a deck of cards." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_68.png" alt="Claude-instant suggests the first task is to create a data structure that represents a deck of cards." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -470,7 +470,7 @@ Let's ask Claude-instant again for some recommendations on the appropriate langu
 What would be a good coding language to create this game of blackjack?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_4.png" title="Claude-instant suggested seven possible languages for the blackjack program and gave a brief description of their pros and cons." alt="Claude-instant suggested seven possible languages for the blackjack program and gave a brief description of their pros and cons." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_4.png" alt="Claude-instant suggested seven possible languages for the blackjack program and gave a brief description of their pros and cons." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -481,7 +481,7 @@ Claude-instant actually gave us more information than we anticipated. If it hadn
 What are the pros and cons of using Python vs Java for this project?
 :::
 
-<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_0.png" title="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." alt="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-writing_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g230c4a00725_31_0.png" alt="Claude-instant directly compares Python and Java as languages for the blackjack game, suggesting Python is best for a simple game and Java is better if you want to build a more complex game." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -503,81 +503,90 @@ You can view and download the Google Slides [here](https://docs.google.com/prese
 
 
 
-```r
+``` r
 devtools::session_info()
 ```
 
 ```
 ## ─ Session info ───────────────────────────────────────────────────────────────
-##  setting  value                       
-##  version  R version 4.0.2 (2020-06-22)
-##  os       Ubuntu 20.04.5 LTS          
-##  system   x86_64, linux-gnu           
-##  ui       X11                         
-##  language (EN)                        
-##  collate  en_US.UTF-8                 
-##  ctype    en_US.UTF-8                 
-##  tz       Etc/UTC                     
-##  date     2023-11-10                  
+##  setting  value
+##  version  R version 4.3.2 (2023-10-31)
+##  os       Ubuntu 22.04.4 LTS
+##  system   x86_64, linux-gnu
+##  ui       X11
+##  language (EN)
+##  collate  en_US.UTF-8
+##  ctype    en_US.UTF-8
+##  tz       Etc/UTC
+##  date     2024-06-14
+##  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
-##  package     * version date       lib source                            
-##  assertthat    0.2.1   2019-03-21 [1] RSPM (R 4.0.5)                    
-##  bookdown      0.24    2023-03-28 [1] Github (rstudio/bookdown@88bc4ea) 
-##  bslib         0.4.2   2022-12-16 [1] CRAN (R 4.0.2)                    
-##  cachem        1.0.7   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  callr         3.5.0   2020-10-08 [1] RSPM (R 4.0.2)                    
-##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  crayon        1.3.4   2017-09-16 [1] RSPM (R 4.0.0)                    
-##  curl          4.3     2019-12-02 [1] RSPM (R 4.0.3)                    
-##  desc          1.2.0   2018-05-01 [1] RSPM (R 4.0.3)                    
-##  devtools      2.3.2   2020-09-18 [1] RSPM (R 4.0.3)                    
-##  digest        0.6.25  2020-02-23 [1] RSPM (R 4.0.0)                    
-##  ellipsis      0.3.1   2020-05-15 [1] RSPM (R 4.0.3)                    
-##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.0.2)                    
-##  fansi         0.4.1   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.0.2)                    
-##  fs            1.5.0   2020-07-31 [1] RSPM (R 4.0.3)                    
-##  glue          1.4.2   2020-08-27 [1] RSPM (R 4.0.5)                    
-##  highr         0.8     2019-03-20 [1] RSPM (R 4.0.3)                    
-##  hms           0.5.3   2020-01-08 [1] RSPM (R 4.0.0)                    
-##  htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.0.2)                    
-##  httr          1.4.2   2020-07-20 [1] RSPM (R 4.0.3)                    
-##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.2)                    
-##  jsonlite      1.7.1   2020-09-07 [1] RSPM (R 4.0.2)                    
-##  knitr         1.33    2023-03-28 [1] Github (yihui/knitr@a1052d1)      
-##  lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.0.2)                    
-##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.0.2)                    
-##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.0.2)                    
-##  ottrpal       1.0.1   2023-03-28 [1] Github (jhudsl/ottrpal@151e412)   
-##  pillar        1.9.0   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  pkgbuild      1.1.0   2020-07-13 [1] RSPM (R 4.0.2)                    
-##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.0.3)                    
-##  pkgload       1.1.0   2020-05-29 [1] RSPM (R 4.0.3)                    
-##  prettyunits   1.1.1   2020-01-24 [1] RSPM (R 4.0.3)                    
-##  processx      3.4.4   2020-09-03 [1] RSPM (R 4.0.2)                    
-##  ps            1.4.0   2020-10-07 [1] RSPM (R 4.0.2)                    
-##  R6            2.4.1   2019-11-12 [1] RSPM (R 4.0.0)                    
-##  readr         1.4.0   2020-10-05 [1] RSPM (R 4.0.2)                    
-##  remotes       2.2.0   2020-07-21 [1] RSPM (R 4.0.3)                    
-##  rlang         1.1.0   2023-03-14 [1] CRAN (R 4.0.2)                    
-##  rmarkdown     2.10    2023-03-28 [1] Github (rstudio/rmarkdown@02d3c25)
-##  rprojroot     2.0.3   2022-04-02 [1] CRAN (R 4.0.2)                    
-##  sass          0.4.5   2023-01-24 [1] CRAN (R 4.0.2)                    
-##  sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 4.0.3)                    
-##  stringi       1.5.3   2020-09-09 [1] RSPM (R 4.0.3)                    
-##  stringr       1.4.0   2019-02-10 [1] RSPM (R 4.0.3)                    
-##  testthat      3.0.1   2023-03-28 [1] Github (R-lib/testthat@e99155a)   
-##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.0.2)                    
-##  usethis       1.6.3   2020-09-17 [1] RSPM (R 4.0.2)                    
-##  utf8          1.1.4   2018-05-24 [1] RSPM (R 4.0.3)                    
-##  vctrs         0.6.1   2023-03-22 [1] CRAN (R 4.0.2)                    
-##  withr         2.3.0   2020-09-22 [1] RSPM (R 4.0.2)                    
-##  xfun          0.26    2023-03-28 [1] Github (yihui/xfun@74c2a66)       
-##  yaml          2.2.1   2020-02-01 [1] RSPM (R 4.0.3)                    
+##  package     * version date (UTC) lib source
+##  askpass       1.2.0   2023-09-03 [1] RSPM (R 4.3.0)
+##  bookdown      0.39.1  2024-06-11 [1] Github (rstudio/bookdown@f244cf1)
+##  bslib         0.6.1   2023-11-28 [1] RSPM (R 4.3.0)
+##  cachem        1.0.8   2023-05-01 [1] RSPM (R 4.3.0)
+##  cli           3.6.2   2023-12-11 [1] RSPM (R 4.3.0)
+##  curl          5.2.0   2023-12-08 [1] RSPM (R 4.3.0)
+##  devtools      2.4.5   2022-10-11 [1] RSPM (R 4.3.0)
+##  digest        0.6.34  2024-01-11 [1] RSPM (R 4.3.0)
+##  ellipsis      0.3.2   2021-04-29 [1] RSPM (R 4.3.0)
+##  evaluate      0.23    2023-11-01 [1] RSPM (R 4.3.0)
+##  fansi         1.0.6   2023-12-08 [1] RSPM (R 4.3.0)
+##  fastmap       1.1.1   2023-02-24 [1] RSPM (R 4.3.0)
+##  fs            1.6.3   2023-07-20 [1] RSPM (R 4.3.0)
+##  glue          1.7.0   2024-01-09 [1] RSPM (R 4.3.0)
+##  highr         0.10    2022-12-22 [1] RSPM (R 4.3.0)
+##  hms           1.1.3   2023-03-21 [1] RSPM (R 4.3.0)
+##  htmltools     0.5.7   2023-11-03 [1] RSPM (R 4.3.0)
+##  htmlwidgets   1.6.4   2023-12-06 [1] RSPM (R 4.3.0)
+##  httpuv        1.6.14  2024-01-26 [1] RSPM (R 4.3.0)
+##  httr          1.4.7   2023-08-15 [1] RSPM (R 4.3.0)
+##  jquerylib     0.1.4   2021-04-26 [1] RSPM (R 4.3.0)
+##  jsonlite      1.8.8   2023-12-04 [1] RSPM (R 4.3.0)
+##  knitr         1.47.3  2024-06-11 [1] Github (yihui/knitr@e1edd34)
+##  later         1.3.2   2023-12-06 [1] RSPM (R 4.3.0)
+##  lifecycle     1.0.4   2023-11-07 [1] RSPM (R 4.3.0)
+##  magrittr      2.0.3   2022-03-30 [1] RSPM (R 4.3.0)
+##  memoise       2.0.1   2021-11-26 [1] RSPM (R 4.3.0)
+##  mime          0.12    2021-09-28 [1] RSPM (R 4.3.0)
+##  miniUI        0.1.1.1 2018-05-18 [1] RSPM (R 4.3.0)
+##  openssl       2.1.1   2023-09-25 [1] RSPM (R 4.3.0)
+##  ottrpal       1.2.1   2024-06-11 [1] Github (jhudsl/ottrpal@828539f)
+##  pillar        1.9.0   2023-03-22 [1] RSPM (R 4.3.0)
+##  pkgbuild      1.4.3   2023-12-10 [1] RSPM (R 4.3.0)
+##  pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.3.0)
+##  pkgload       1.3.4   2024-01-16 [1] RSPM (R 4.3.0)
+##  profvis       0.3.8   2023-05-02 [1] RSPM (R 4.3.0)
+##  promises      1.2.1   2023-08-10 [1] RSPM (R 4.3.0)
+##  purrr         1.0.2   2023-08-10 [1] RSPM (R 4.3.0)
+##  R6            2.5.1   2021-08-19 [1] RSPM (R 4.3.0)
+##  Rcpp          1.0.12  2024-01-09 [1] RSPM (R 4.3.0)
+##  readr         2.1.5   2024-01-10 [1] RSPM (R 4.3.0)
+##  remotes       2.4.2.1 2023-07-18 [1] RSPM (R 4.3.0)
+##  rlang         1.1.4   2024-06-04 [1] CRAN (R 4.3.2)
+##  rmarkdown     2.27.1  2024-06-11 [1] Github (rstudio/rmarkdown@e1c93a9)
+##  sass          0.4.8   2023-12-06 [1] RSPM (R 4.3.0)
+##  sessioninfo   1.2.2   2021-12-06 [1] RSPM (R 4.3.0)
+##  shiny         1.8.0   2023-11-17 [1] RSPM (R 4.3.0)
+##  stringi       1.8.3   2023-12-11 [1] RSPM (R 4.3.0)
+##  stringr       1.5.1   2023-11-14 [1] RSPM (R 4.3.0)
+##  tibble        3.2.1   2023-03-20 [1] CRAN (R 4.3.2)
+##  tzdb          0.4.0   2023-05-12 [1] RSPM (R 4.3.0)
+##  urlchecker    1.0.1   2021-11-30 [1] RSPM (R 4.3.0)
+##  usethis       2.2.3   2024-02-19 [1] RSPM (R 4.3.0)
+##  utf8          1.2.4   2023-10-22 [1] RSPM (R 4.3.0)
+##  vctrs         0.6.5   2023-12-01 [1] RSPM (R 4.3.0)
+##  xfun          0.44.4  2024-06-11 [1] Github (yihui/xfun@9da62cc)
+##  xml2          1.3.6   2023-12-04 [1] RSPM (R 4.3.0)
+##  xtable        1.8-4   2019-04-21 [1] RSPM (R 4.3.0)
+##  yaml          2.3.8   2023-12-11 [1] RSPM (R 4.3.0)
 ## 
-## [1] /usr/local/lib/R/site-library
-## [2] /usr/local/lib/R/library
+##  [1] /usr/local/lib/R/site-library
+##  [2] /usr/local/lib/R/library
+## 
+## ──────────────────────────────────────────────────────────────────────────────
 ```
 
 

@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 14 Annotating Your Code | AI for Efficient Programming</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 14 Annotating Your Code | AI for Efficient Programming" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -31,7 +30,6 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="video-introduction-to-annotating-code-with-ai.html"/>
 <link rel="next" href="video-annotating-your-code-main-points.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,16 +47,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-  <html>
-
-  <head>
-  <title>Chapter 14 Annotating Your Code | Title</title>
-  </head>
-
-  <body>
-
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4LSK62HQ2"></script>
   <script>
@@ -68,9 +59,6 @@
 
     gtag('config', 'G-Q4LSK62HQ2');
   </script>
-
-  </body>
-  </html>
 
 
 <style type="text/css">
@@ -109,11 +97,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -122,14 +110,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -137,6 +125,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
@@ -393,10 +385,10 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="annotating-your-code" class="section level1" number="14">
-<h1><span class="header-section-number">Chapter 14</span> Annotating Your Code</h1>
-<div id="learning-objectives-5" class="section level2" number="14.1">
-<h2><span class="header-section-number">14.1</span> Learning Objectives</h2>
+<div id="annotating-your-code" class="section level1 hasAnchor" number="14">
+<h1><span class="header-section-number">Chapter 14</span> Annotating Your Code<a href="annotating-your-code.html#annotating-your-code" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="learning-objectives-5" class="section level2 hasAnchor" number="14.1">
+<h2><span class="header-section-number">14.1</span> Learning Objectives<a href="annotating-your-code.html#learning-objectives-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>Explain the significance and benefits of code annotation and how it aids in understanding and working with code in the future.</li>
 <li>Demonstrate the ability to apply effective code annotation practices by providing clear and concise comments in code.</li>
@@ -406,8 +398,8 @@ div.csl-indent {
 <li>Explore how AI can be used to create README files, do line-by-line annotations, and offer potential code improvements.</li>
 </ul>
 </div>
-<div id="annotating-code-is-good-practice" class="section level2" number="14.2">
-<h2><span class="header-section-number">14.2</span> Annotating Code is Good Practice</h2>
+<div id="annotating-code-is-good-practice" class="section level2 hasAnchor" number="14.2">
+<h2><span class="header-section-number">14.2</span> Annotating Code is Good Practice<a href="annotating-your-code.html#annotating-code-is-good-practice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Code annotation, also known as code commenting, is the process of adding explanatory notes to source code. These notes are used to provide context, clarify functionality, and aid in understanding for developers who may be working on the codebase in the future. Code annotation is an important practice for any developer looking to write clear, efficient, and maintainable code.</p>
 <p>There are many benefits to annotating code:</p>
 <ul>
@@ -420,12 +412,12 @@ div.csl-indent {
 <p>Err on the side of caution when interacting with them. We do <strong>not</strong> recommend using proprietary code or private information for prompts unless you are working with an AI that you or your company built and you know is secure.</p>
 </div>
 </div>
-<div id="improves-readability" class="section level2" number="14.3">
-<h2><span class="header-section-number">14.3</span> Improves readability</h2>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_8.png" title="Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. " alt="Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. " width="100%" style="display: block; margin: auto;" /></p>
+<div id="improves-readability" class="section level2 hasAnchor" number="14.3">
+<h2><span class="header-section-number">14.3</span> Improves readability<a href="annotating-your-code.html#improves-readability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_8.png" alt="Dino says It’s great this code is well annotated using AI. I totally forgot what I was doing with this code when I wrote it. " width="100%" style="display: block; margin: auto;" /></p>
 <p>First, it can help to improve the readability of code. By adding comments, developers can explain the purpose of each section of code, which can make it easier for others to understand what the code is doing. This can be especially helpful for large or complex codebases, where it can be difficult to keep track of all the different components. This is particularly important in contexts where the original developer of a project may move on to something else and others are left to work on them. Annotation perhaps most often helps a developer remember things they knew about the code when they were originally writing it (annotation is helpful for future you!) If the original developer left well-annotated code, it can drastically improve the ability of others (and their future selves) to continue with the project.</p>
-<div id="examples-of-readability-aiding-comments" class="section level3" number="14.3.1">
-<h3><span class="header-section-number">14.3.1</span> Examples of readability aiding comments</h3>
+<div id="examples-of-readability-aiding-comments" class="section level3 hasAnchor" number="14.3.1">
+<h3><span class="header-section-number">14.3.1</span> Examples of readability aiding comments<a href="annotating-your-code.html#examples-of-readability-aiding-comments" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Comments that help readability <strong>clarify what the code is doing</strong></p>
 <p><strong>Function explanations:</strong> A comment at the beginning of a function or method can describe its purpose, parameters, and expected return values. This makes it easier for others to understand what the function does and how to use it.</p>
 <pre><code># This function calculates and returns the sum of two numbers (x and y)
@@ -465,12 +457,12 @@ for text in text_list:
         word_counts[word] += 1</code></pre>
 </div>
 </div>
-<div id="improves-maintainability" class="section level2" number="14.4">
-<h2><span class="header-section-number">14.4</span> Improves maintainability</h2>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_37.png" title="The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’" alt="The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’" width="100%" style="display: block; margin: auto;" /></p>
+<div id="improves-maintainability" class="section level2 hasAnchor" number="14.4">
+<h2><span class="header-section-number">14.4</span> Improves maintainability<a href="annotating-your-code.html#improves-maintainability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_37.png" alt="The Dinos say ‘It’s easier for us to both work to maintain this code since it is so well annotated!’" width="100%" style="display: block; margin: auto;" /></p>
 <p>Code annotation can help to improve the maintainability of code. By adding comments, developers can explain the reasoning behind certain decisions, which can make it easier for others to make changes to the code without breaking it. This can be especially helpful when multiple developers are working on the same codebase, as it can help to prevent conflicts and ensure that the code is always in a consistent state.</p>
-<div id="examples-of-maintainability-aiding-comments" class="section level3" number="14.4.1">
-<h3><span class="header-section-number">14.4.1</span> Examples of maintainability aiding comments</h3>
+<div id="examples-of-maintainability-aiding-comments" class="section level3 hasAnchor" number="14.4.1">
+<h3><span class="header-section-number">14.4.1</span> Examples of maintainability aiding comments<a href="annotating-your-code.html#examples-of-maintainability-aiding-comments" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Comments that help maintainability <strong>explain the historical context of why code was made the way it was</strong></p>
 <p><strong>Examples of maintainability aiding comments</strong></p>
 <p><strong>Design decisions:</strong> If there were specific design decisions made when creating the code, you can add comments explaining why certain choices were made.
@@ -487,13 +479,13 @@ bash</p>
 <pre><code># Note that this function assumes that the input array is sorted in ascending order. If the array is unsorted, the results may be incorrect.</code></pre>
 </div>
 </div>
-<div id="improves-the-quality" class="section level2" number="14.5">
-<h2><span class="header-section-number">14.5</span> Improves the quality</h2>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_60.png" title="Dino says Ah I know exactly how to fix this part of the code that was annotated with a warning!" alt="Dino says Ah I know exactly how to fix this part of the code that was annotated with a warning!" width="100%" style="display: block; margin: auto;" /></p>
+<div id="improves-the-quality" class="section level2 hasAnchor" number="14.5">
+<h2><span class="header-section-number">14.5</span> Improves the quality<a href="annotating-your-code.html#improves-the-quality" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_60.png" alt="Dino says Ah I know exactly how to fix this part of the code that was annotated with a warning!" width="100%" style="display: block; margin: auto;" /></p>
 <p>Code annotation can help to improve the quality of code. By adding comments, developers can identify potential issues or edge cases, which can help to prevent these issues from occurring in the first place. This can be especially helpful when testing code, as it can help to ensure that the code is working as expected.</p>
 </div>
-<div id="examples-of-quality-aiding-comments" class="section level2" number="14.6">
-<h2><span class="header-section-number">14.6</span> Examples of quality aiding comments</h2>
+<div id="examples-of-quality-aiding-comments" class="section level2 hasAnchor" number="14.6">
+<h2><span class="header-section-number">14.6</span> Examples of quality aiding comments<a href="annotating-your-code.html#examples-of-quality-aiding-comments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Comments that help improve the quality of the code <strong>by explaining to others how to use it or help improve it</strong></p>
 <p><strong>Error handling:</strong> Adding comments to explain how and why error handling is being implemented can help ensure that your code is robust and able to handle unexpected inputs or errors. This helps others know how the code was intended to be used.</p>
 <pre><code># If the input argument is not a list or is empty, raise a ValueError
@@ -536,51 +528,51 @@ visualize_data(analyzed_data)</code></pre>
 <p><strong>Assumptions and constraints:</strong> Adding comments to explain the assumptions and constraints of your code can help others understand its limitations and potential pitfalls.</p>
 <pre><code># This function assumes that all input values are positive integers. Negative or non-integer inputs may result in unexpected behavior.</code></pre>
 </div>
-<div id="examples-on-using-ai-for-annotation" class="section level2" number="14.7">
-<h2><span class="header-section-number">14.7</span> Examples on using AI for annotation</h2>
-<div id="ask-for-a-readme-summary" class="section level3" number="14.7.1">
-<h3><span class="header-section-number">14.7.1</span> Ask for a README summary</h3>
+<div id="examples-on-using-ai-for-annotation" class="section level2 hasAnchor" number="14.7">
+<h2><span class="header-section-number">14.7</span> Examples on using AI for annotation<a href="annotating-your-code.html#examples-on-using-ai-for-annotation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ask-for-a-readme-summary" class="section level3 hasAnchor" number="14.7.1">
+<h3><span class="header-section-number">14.7.1</span> Ask for a README summary<a href="annotating-your-code.html#ask-for-a-readme-summary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To try out some annotation with code examples, this author dug up some old code that she had no idea about what it did anymore because time had passed and she didn’t document it very well.</p>
 <p>First, I wanted ChatGPT to make a README for me. README’s are a standard file that explain what the code base does and provides a summary of what is happening in the set. I asked ChatGPT if it could:</p>
 <div class="query">
 <p>Create a README for this code</p>
 </div>
 <p>and then I pasted the old code.</p>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_60.png" title="The author asked ChatGPT to create a README for some old code." alt="The author asked ChatGPT to create a README for some old code." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_60.png" alt="The author asked ChatGPT to create a README for some old code." width="100%" style="display: block; margin: auto;" /></p>
 <p>ChatGPT gave me some output that generally looked like a README:</p>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_96.png" title="ChatGPT provided a README. It is titled README for code snippet." alt="ChatGPT provided a README. It is titled README for code snippet." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_96.png" alt="ChatGPT provided a README. It is titled README for code snippet." width="100%" style="display: block; margin: auto;" /></p>
 <p>This README seems accurate given the work I was doing at the time. But obviously the title isn’t great – it doesn’t describe the code well. Plus there’s not really information about usage or outputs of the code.</p>
 <p>So I asked it:</p>
 <div class="query">
 <p>Can you make this README more succinct and with sections about how you would use this code?</p>
 </div>
 <p>This yielded a much better result.</p>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" title="ChatGPT provided a better README after I asked it to be more succinct and provide sections about how to use the code. " alt="ChatGPT provided a better README after I asked it to be more succinct and provide sections about how to use the code. " width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_101.png" alt="ChatGPT provided a better README after I asked it to be more succinct and provide sections about how to use the code. " width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="ask-for-line-by-line-annotation" class="section level3" number="14.7.2">
-<h3><span class="header-section-number">14.7.2</span> Ask for line by line annotation</h3>
+<div id="ask-for-line-by-line-annotation" class="section level3 hasAnchor" number="14.7.2">
+<h3><span class="header-section-number">14.7.2</span> Ask for line by line annotation<a href="annotating-your-code.html#ask-for-line-by-line-annotation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Second, I wanted to have ChatGPT annotate code line by line. So I asked it</p>
 <div class="query">
 <p>Can you annotate some R code for me?</p>
 </div>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_87.png" title="I asked ChatGPT to annotate old R code." alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_87.png" alt="I asked ChatGPT to annotate old R code." width="100%" style="display: block; margin: auto;" />
 It not only provided helpful annotations but it fixed spacing and added more spaces between lines of code:</p>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_91.png" title="ChatGPT provided annotations for the code I provided." alt="ChatGPT provided annotations for the code I provided." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_91.png" alt="ChatGPT provided annotations for the code I provided." width="100%" style="display: block; margin: auto;" /></p>
 <p>It does however, think the code is Python apparently if we look in the upper left corner.
 But this doesn’t seem to have affected its accuracy in its annotations.</p>
 </div>
-<div id="ask-for-how-the-code-could-be-improved" class="section level3" number="14.7.3">
-<h3><span class="header-section-number">14.7.3</span> Ask for how the code could be improved</h3>
+<div id="ask-for-how-the-code-could-be-improved" class="section level3 hasAnchor" number="14.7.3">
+<h3><span class="header-section-number">14.7.3</span> Ask for how the code could be improved<a href="annotating-your-code.html#ask-for-how-the-code-could-be-improved" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This code is old, and I don’t think it runs properly and is in no way reproducible. So I wanted to see what ChatGPT would recommend for improvements to the code. I said</p>
 <div class="query">
 <p>How could I make this code better?</p>
 </div>
 <p>It had a lot of great advice:</p>
-<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_79.png" title="ChatGPT offered ways to improve my old code." alt="ChatGPT offered ways to improve my old code." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="05-annotation_files/figure-html/1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_19_79.png" alt="ChatGPT offered ways to improve my old code." width="100%" style="display: block; margin: auto;" /></p>
 <p>First and foremost it told me my variable names are not consistent and also not descriptive. Which is completely accurate! There’s variable names like <code>xx</code> and <code>ll</code> which don’t tell the reader anything about the variable.</p>
 </div>
-<div id="style-the-code" class="section level3" number="14.7.4">
-<h3><span class="header-section-number">14.7.4</span> Style the code</h3>
+<div id="style-the-code" class="section level3 hasAnchor" number="14.7.4">
+<h3><span class="header-section-number">14.7.4</span> Style the code<a href="annotating-your-code.html#style-the-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Next, I asked chatGPT if it could restyle the code into tidyverse style. It definitely put elements that look like tidyverse however, it also put items in the code that I can tell by looking at it won’t work.</p>
 <p>So I tried to tell it about the errors:
 :::{.query}
@@ -590,8 +582,8 @@ This code is close but there are some errors. These tidyverse functions don’t 
 <pre><code>You are correct that the tidyverse functions are designed to work with data frames and not matrices. Here&#39;s a modified version of your code that converts the matrix to a data frame and uses tidyverse functions:</code></pre>
 <p>The lesson here is that the output of chatGPT still needs to be vetted by the person asking for it. It is a great idea to continue to have AIs work on something if it isn’t quite what you are asking for, however, at the end of the day it is you, the human, who has to vet the output.</p>
 </div>
-<div id="sometimes-it-has-trouble-with-file-types-if-given-a-url" class="section level3" number="14.7.5">
-<h3><span class="header-section-number">14.7.5</span> Sometimes it has trouble with file types if given a URL</h3>
+<div id="sometimes-it-has-trouble-with-file-types-if-given-a-url" class="section level3 hasAnchor" number="14.7.5">
+<h3><span class="header-section-number">14.7.5</span> Sometimes it has trouble with file types if given a URL<a href="annotating-your-code.html#sometimes-it-has-trouble-with-file-types-if-given-a-url" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Copying and pasting code appears to be the best way to go at this point in time.</p>
 <p>I asked chatGPT if it could annotate code in a Jupyter notebook at a URL I gave it:</p>
 <div class="query">

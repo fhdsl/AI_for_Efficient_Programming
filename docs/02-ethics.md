@@ -6,7 +6,7 @@
 
 The use of artificial intelligence (AI) and in particular, generative AI, in coding has raised a number of ethical concerns. We will highlight several current concerns, however please be aware that this is a dynamic field and the possible implications of this technology is continuing to develop. It is critical that we as a society continue to evaluate and predict what the consequences of the use of AI will be, so that we can mitigate harmful effects.
 
-<img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_0.png" title="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." alt="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." width="100%" style="display: block; margin: auto;" />
+<img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_0.png" alt="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." width="100%" style="display: block; margin: auto;" />
 
 ## Learning Objectives
 
@@ -106,7 +106,7 @@ There is risk that those less aware of best coding practices use AI-generated co
 Can you explain what the code in line 4 is doing?
 :::
  
-<img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_13.png" title="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." alt="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." width="100%" style="display: block; margin: auto;" />
+<img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_13.png" alt="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." width="100%" style="display: block; margin: auto;" />
 
 ## Faulty or Buggy Code
 

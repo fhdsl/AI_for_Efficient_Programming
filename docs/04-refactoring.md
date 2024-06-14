@@ -32,7 +32,7 @@ Code refactoring helps to reduce [technical debt](https://en.wikipedia.org/wiki/
 
 To understand why code refactoring is important, imagine trying to cook in a disorganized and cluttered kitchen. You might be a fantastic cook, but you are spending more time searching for utensils and ingredients, and the quality of the meal could suffer as a result. Similarly, code that is disorganized and cluttered can be difficult to work with and can result in lower-quality software. Refactoring is like cleaning and organizing the kitchen - it makes the process of cooking (or coding) smoother and more efficient.
 
-<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_26.png" title="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." alt="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_26.png" alt="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -49,7 +49,7 @@ Programming languages operate using their established set of rules. For example,
 Let's say we run the following code:
 
 
-```python
+``` python
 def calculate_sum(a,b):
  result = a + b
   return result
@@ -82,7 +82,7 @@ Can you assist me with correcting the formatting and indentation issues in my Py
 Of course! Here is the code after correcting the formatting and indentation:
 
 
-```python
+``` python
 def calculate_sum(a, b):
     result = a + b
     return result
@@ -124,7 +124,7 @@ Sometimes programming languages have more flexible rules where there are multipl
 Let's say we have the following code:
 
 
-```r
+``` r
 a <- "apple"
 b = 'banana'
 "carrot" -> c
@@ -146,7 +146,7 @@ Can you help me reformat my R code to follow accepted style conventions?
 Sure, here's the cleaned-up R code:
 
 
-```r
+``` r
 a <- "apple"
 b <- "banana"
 c <- "carrot"
@@ -156,14 +156,14 @@ c <- "carrot"
 
 Much better! This code will now look more familiar to other R programmers.
 
-<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_10.png" title="AI can help clean up code to match commonly followed conventions by users." alt="AI can help clean up code to match commonly followed conventions by users." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_10.png" alt="AI can help clean up code to match commonly followed conventions by users." width="100%" style="display: block; margin: auto;" />
 
 ### Visual Styling
 
 Some languages are flexible about line breaks, indentation, and spacing among code blocks. If you're rapidly developing, things can get messy pretty quickly. Many development environments, for example RStudio and PyCharm, have the ability to format your code for you without changing any of the code itself. However, you can also get AI to do this according to your own preferences.
 
 
-```r
+``` r
 d <- c(rep(a,5),rep(b,5),rep(c,5),paste(a,b,c),paste(c,b,a))
 ```
 
@@ -177,7 +177,7 @@ Can you space out this R code to make it more readable?
 Sure! Here's the same code with added spacing for improved readability:
 
 
-```r
+``` r
 d <- c(rep(a, 5), 
        rep(b, 5), 
        rep(c, 5), 
@@ -196,7 +196,7 @@ The DRY (Don't Repeat Yourself) programming tenet is essential to good software.
 Let's take the following Python code:
 
 
-```python
+``` python
 def print_greetings():
     print("Hello, Alice!")
     print("Hello, Bob!")
@@ -225,7 +225,7 @@ Could you please refactor my Python code to make it more DRY?
 Sure, here's a refactored version of your code:
 
 
-```python
+``` python
 def print_greeting(name):
     print(f"Hello, {name}!")
 
@@ -249,7 +249,7 @@ print_greetings()
 Now let's imagine your software lead has asked us to change the greeting to Spanish. Notice how we only have to change the second line of code:
 
 
-```python
+``` python
 def print_greeting(name):
     print(f"¡Hola, {name}!")
 
@@ -278,7 +278,7 @@ During software development, code is often changing rapidly. It's common to end 
 Let's take a look at some Python code with some dead code:
 
 
-```python
+``` python
 def default_values():
     a = 5
     b = 6
@@ -321,7 +321,7 @@ I need help with eliminating unused functions in my Python script.
 Sure! Here's a refactored version:
 
 
-```python
+``` python
 def default_values():
     a = 5
     b = 6
@@ -357,7 +357,7 @@ Can you help me refactor my python code to make it more concise?
 Certainly! Here's a more concise version of your code:
 
 
-```python
+``` python
 def calculate_sum(a=5, b=6):
     return a + b
 
@@ -381,7 +381,7 @@ In this version, the `calculate_sum` function is simplified to take default argu
 Usually, our first goal as programmers is to get the response we need from the code. Readability might be the last thing on our minds. Luckily, AI can help with this. Let's imagine we whipped up this code pretty quickly. It is tough to read, and it could definitely be improved.
 
 
-```r
+``` r
 for(term in c("good","bad","ugly")){
   print(c(rep(term,3),paste("really",stringr::str_to_upper(term))))
 }
@@ -403,7 +403,7 @@ Can you help me clean up this R code so it is more readable?
 Sure! Here's a more readable version of the code:
 
 
-```r
+``` r
 library(stringr)
 
 for(term in c("good", "bad", "ugly")) {
@@ -426,7 +426,7 @@ This is a good start, but not much has changed. Let's try again. On ChatGPT, we 
 Here's a cleaned-up version of the R code that is more readable:
 
 
-```r
+``` r
 library(stringr)
 
 terms <- c("good", "bad", "ugly")
@@ -452,14 +452,14 @@ I've stored the repeated term and the uppercased term in separate variables to m
 
 Better! While the code takes up a greater number of lines, it's easier to interpret because only one action is being taken on each step.
 
-<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_111.png" title="Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'." alt="Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_111.png" alt="Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'." width="100%" style="display: block; margin: auto;" />
 
 ## Example Six: Keep it Brief
 
 As we learned above, following the DRY principle and removing dead code can make your code easier to interpret, maintain, and debug. However, sometimes the issue is the functions themselves. No one has perfect knowledge of everything in their programming language. AI can help us determine if there are any more efficient sets of functions that do the same thing. Here is some code that plays with the "CO2" dataset in R:
 
 
-```r
+``` r
 library(datasets)
 
 for (type in unique(CO2$Type)) {
@@ -496,7 +496,7 @@ Can you make this code more concise?
 Here's a more concise version using `dplyr` package in R:
 
 
-```r
+``` r
 library(dplyr)
 
 CO2 %>%
@@ -537,7 +537,7 @@ Remember that you can regenerate the AI's response if you want more options.
 Sometimes time and efficiency is of the essence. Loops can be slow and time consuming in many languages. Take for example the following R code that calculates the cross product between two vectors x and y using nested `for` loops:
 
 
-```r
+``` r
 set.seed(123)
 n <- 10000
 x <- rnorm(n)
@@ -559,7 +559,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   7.947   0.000   7.947
+##   8.467   0.003   8.469
 ```
 
 :::{.query}
@@ -569,7 +569,7 @@ What is a faster, more optimized way of running the following R code?
 :::{.ai_response}
 
 
-```r
+``` r
 set.seed(123)
 n <- 10000
 x <- rnorm(n)
@@ -587,7 +587,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.782   0.566   0.629
+##   0.716   0.575   0.628
 ```
 
 The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
@@ -597,7 +597,7 @@ So much faster! We can look at another option by regenerating the response:
 
 :::{.ai_response}
 
-```r
+``` r
 set.seed(123)
 n <- 10000
 x <- rnorm(n)
@@ -615,7 +615,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.382   0.276   0.261
+##   0.310   0.291   0.255
 ```
 
 One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
