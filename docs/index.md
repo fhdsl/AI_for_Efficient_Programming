@@ -1,7 +1,7 @@
 ---
 title: "AI for Efficient Programming"
 subtitle: "Harnessing the Power of Large Language Models"
-date: "September, 2024"
+date: "December, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -56,6 +56,10 @@ Learners will be able to:
 - Apply best practices for annotating code using AI
 - Recognize strategies for using AI-based tools to understand and analyze code, such as code comprehension of unfamiliar languages or functions
 - Discuss the challenges and ethical implications of using AI for different aspects of programming
+
+<!--
+<img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2722fe8bae3_1_7.png" alt="Overall Course Learning Objectives: Explain the basics of AI and its potential for improving software development workflows, Implement strategies to write and debug code using AI-based tools, Describe the benefits of refactoring code using AI-generated techniques, such as making code readable, keeping it brief, and optimizing code, Apply best practices for annotating code using AI, Recognize strategies for using AI-based tools to understand and analyze code, such as code comprehension of unfamiliar languages or functions, Discuss the challenges and ethical implications of using AI for different aspects of programming" width="100%" />
+-->
 
 
 <img src="index_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g225d384a06d_0_355.png" alt="Concepts discussed in the Ai for Software Development course: Introduction to large language AI tools, ethics of AI tool use for software development, using AI tools to write code from scratch, using AI tools to refactor code, Using AI to annotate code, and Using AI to understand unfamiliar code" width="100%" style="display: block; margin: auto;" />

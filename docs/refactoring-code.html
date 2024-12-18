@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 10 Refactoring Code | AI for Efficient Programming</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.39.1 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 10 Refactoring Code | AI for Efficient Programming" />
   <meta property="og:type" content="book" />
@@ -761,7 +761,7 @@ div.csl-indent {
 <span id="cb51-16"><a href="refactoring-code.html#cb51-16" tabindex="-1"></a><span class="co"># End timer</span></span>
 <span id="cb51-17"><a href="refactoring-code.html#cb51-17" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
 <pre><code>##    user  system elapsed 
-##   8.472   0.000   8.472</code></pre>
+##   8.189   0.000   8.188</code></pre>
 <div class="query">
 <p>What is a faster, more optimized way of running the following R code?</p>
 </div>
@@ -780,7 +780,7 @@ div.csl-indent {
 <span id="cb53-12"><a href="refactoring-code.html#cb53-12" tabindex="-1"></a><span class="co"># End timer</span></span>
 <span id="cb53-13"><a href="refactoring-code.html#cb53-13" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
 <pre><code>##    user  system elapsed 
-##   0.744   0.600   0.646</code></pre>
+##   0.765   0.571   0.650</code></pre>
 <p>The <code>outer()</code> function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The <code>rowSums()</code> function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index <code>i</code> in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.</p>
 </div>
 <p>So much faster! We can look at another option by regenerating the response:</p>
@@ -799,7 +799,7 @@ div.csl-indent {
 <span id="cb55-12"><a href="refactoring-code.html#cb55-12" tabindex="-1"></a><span class="co"># End timer</span></span>
 <span id="cb55-13"><a href="refactoring-code.html#cb55-13" tabindex="-1"></a><span class="fu">proc.time</span>() <span class="sc">-</span> start_time</span></code></pre></div>
 <pre><code>##    user  system elapsed 
-##   0.364   0.259   0.262</code></pre>
+##   0.319   0.317   0.273</code></pre>
 <p>One optimized way to perform the same calculation is by using the <code>%*%</code> operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.</p>
 </div>
 <p>While this second suggestion is faster, you will need to consider what aspects of the codebase are most important in each instance. For example, this code runs more quickly, but <a href="https://stat.ethz.ch/R-manual/R-patched/library/base/html/matmult.html">the <code>%*%</code> operator</a> might be unfamiliar to some R programmers. In cases where efficiency is less important, or the data are not large, you might consider maximizing readability.</p>
