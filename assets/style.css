@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arimo:400,400i,700,700i|Tinos:400,400i,700,700i&display=swap');
+/* variables are set in style_config_default.css */
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Karla:400,400i,700,700i|Lora:400,400i,700,700i&display=swap');
 
 p.caption {
-  color: #777;
+  color: var(--caption-color);
   margin-top: 10px;
 }
 p code {
@@ -43,18 +45,19 @@ pre code {
 /* ------------Links------------------ */
 
 .book .book-body .page-wrapper .page-inner section.normal a {
-  color: #00C1D5;
+  color: var(--link-color);
+  text-decoration: underline;
 }
 
 
 /*------------- Body and header text---------------- */
 
 .book.font-family-1 {
-  font-family: Arial, 'Arimo', sans-serif;
+  font-family: 'Karla', arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Times New Roman', 'Tinos', serif;
+  font-family: 'Lora', arial, sans-serif;
 }
 
 
@@ -69,16 +72,16 @@ h1, h2, h3, h4 {
 }
 
 .title {
-  font-family: 'Times New Roman', 'Tinos', serif;
+  font-family: 'Lora';
   font-size: 4em !important;
-  color: #1B365D;
+  color: var(--accent-color);
   margin-top: 0.275em !important;
   margin-bottom: 0.35em !important;
 }
 
 .subtitle {
-  font-family: 'Times New Roman', 'Tinos', serif;
-  color: #1B365D;
+  font-family: 'Lora';
+  color: var(--link-color);
 }
 
 
@@ -99,7 +102,7 @@ h1, h2, h3, h4 {
 */
 
 .section.level1 > p:first-of-type:first-letter { /*drop cap for first p beneath level 1 headers only within class .section*/
-  color: #1B365D;
+  color: var(--accent-color);
   float: left;
   font-family: 'Abril Fatface', serif;
   font-size: 7em;
@@ -131,18 +134,18 @@ h1, h2, h3, h4 {
 
 
 .book .book-summary {
-  background: white;
+  background: var(--background-color);
   border-right: none;
 }
 
 /*---color of links in TOC----*/
 
 .book .book-summary a {
-color: #1B365D
+color: var(--accent-color)
 }
 
 .summary{
-  font-family: Arial, 'Arimo', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 /* all TOC list items, basically */
@@ -152,36 +155,18 @@ color: #1B365D
   padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #1B365D;
+  color: var(--accent-color);
 }
 
 .summary a:hover {
-  color: #00C1D5 !important;
+  color: var(--highlight-color) !important;
 }
 
 .book .book-summary ul.summary li.active>a { /*active TOC links*/
-  color: #00C1D5 !important;
+  color: var(--link-color) !important;
   border-left: solid 4px;
-  border-color: #00C1D5;
+  border-color: var(--highlight-color);
   padding-left: 11px !important;
-}
-
-.trapezoid {
-  width: 132px;
-  text-align: center;
-  position: relative;
-    left: 10px;
-  border-right: 50px solid #ffb809;
-  border-bottom: 50px solid #dbdbdb;
-  border-left: 50px solid #b842ca;
-  box-sizing: content-box;
-}
-.trapezoid span {
-  position: absolute;
-  top: 8px;
-  bottom: 5px;
-  left: 5%;
-  color: #dbdbdb;
 }
 
 
@@ -264,18 +249,11 @@ li.appendix span, li.part span { /* for TOC part names */
   width: 50%;
 }
 
-.click_to_expand_block {
-    padding: 1em;
-    padding-top: .5em;
-    border: 1px grey;
-    background: #E8E8E8;
-    color: black;
-}
 
 /* Sidebar formating --------------------------------------------*/
 /* from r-pkgs.org*/
 
-div.notice, div.warning, div.github, div.dictionary, div.reflection, div.question, div.ethics{
+div.notice, div.warning, div.github, div.dictionary, div.reflection, div.wip {
   padding: 1em;
   margin: 1em 0;
   padding-left: 100px;
@@ -283,161 +261,60 @@ div.notice, div.warning, div.github, div.dictionary, div.reflection, div.questio
   background-repeat: no-repeat;
 }
 
- div.motivations, div.question_box, div.data, div.money, div.plan, div.submit{
-  padding: 1em;
-  padding-left: 100px;
-  min-height: 55px;
-  background-repeat: no-repeat;
-}
-
-div.motivations{
-  background-size: 70px;
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/box_images/motivations.png");
-  display:flex;
-  align-items:center;
-}
-
-div.question_box{
-  background-size: 70px;
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/box_images/question_box.png");
-  display:flex;
-  align-items:center;
-}
-
-div.data{
-  background-size: 70px;
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/box_images/data.png");
-  display:flex;
-  align-items:center;
-}
-
-div.money{
-  background-size: 70px;
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/box_images/money.png");
-  display:flex;
-  align-items:center;
-}
-
-div.plan{
-  background-size: 70px;
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/box_images/plan.png");
-  display:flex;
-  align-items:center;
-}
-
-div.submit{
-  background-size: 70px;
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/box_images/submit.png");
-  display:flex;
-  align-items:center;
-}
-
-div.question{
-  background-size: 70px;
-  background-position: 15px center;
-  background-color: #e8ebee;
-  background-repeat: no-repeat;
-  background-image: url("../assets/box_images/question.png");
-  display:flex;
-  align-items:center;
-  border: 4px #00C1D5;
-  border-style: solid;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-div.ethics{
-  background-size: 70px;
-  background-position: 15px center;
-  background-color: #e8ebee;
-  background-image: url("../assets/box_images/justice.png");
-  border: 4px #b842ca;
-  border-style: solid;
-}
-
-
 div.notice{
+  border: 4px var(--highlight-color);
+  border-style: solid;
   background-size: 70px;
   background-position: 15px center;
-  background-color: #e8ebee;
+  background-color: var(--callout-background-color);
   background-image: url("../assets/box_images/note.png");
-  border: 4px #00C1D5;
-  border-style: solid;
 }
+
 
 div.warning{
-  background-size: 70px;
-  background-position: 15px center;
-  background-color: #e8ebee;
-  background-image: url("../assets/box_images/warning.png");
   border: 4px #e0471c;
   border-style: solid;
+  background-size: 70px;
+  background-position: 15px center;
+  background-color: var(--callout-background-color);
+  background-image: url("../assets/box_images/warning.png");
 }
 
 div.github{
-
-  background-size: 70px;
-  background-position: 15px center;
-  background-color: #e8ebee;
-  background-image: url("../assets/box_images/github.png");
   border: 4px #000000;
   border-style: solid;
+  background-size: 70px;
+  background-position: 15px center;
+  background-color: var(--callout-background-color);
+  background-image: url("../assets/box_images/github.png");
 }
-
 
 div.dictionary{
+  border: 4px var(--highlight-color);
+  border-style: solid;
   background-size: 70px;
   background-position: 15px center;
-  background-color: #e8ebee;
+  background-color: var(--callout-background-color);
   background-image: url("../assets/box_images/dictionary.png");
-  border: 4px black;
-  border-style: solid;
 }
 
-
-div.dictionary_long{
-  padding: 1em;
-  padding-top: 20px;
-  padding-left: 100px;
-  min-height: 180px;
-  background-size: 70px;
-  background-color: #e8ebee;
-  background-image: url("../assets/box_images/dictionary.png");
-  background-repeat: no-repeat;
-  background-position: top 70px left 20px;
-  border: 4px black;
-  border-style: solid;
-}
 div.reflection{
+  border: 4px var(--highlight-color);
+  border-style: solid;
   background-size: 90px;
   background-position: 15px center;
-  background-color: #e8ebee;
+  background-color: var(--callout-background-color);
   background-image: url("../assets/box_images/thinking_face.png");
-  border: 4px #00C1D5;
-  border-style: solid;
 }
 
-div.blackbox{
-  padding: 1em;
-  margin: 1em 0;
-  min-height: 120px;
+div.wip{
   border: 4px #000000;
   border-style: solid;
-  outline: 5px solid #ffb808;
+  background-size: 70px;
+  background-position: 15px center;
+  background-color: #f4d03f;
+  background-image: url("../assets/box_images/under_construction.png");
 }
-
 
 /* .book .book-body .page-wrapper .page-inner section.normal is needed
    to override the styles produced by gitbook, which are ridiculously
@@ -558,7 +435,7 @@ a.anchor:hover {
 /* Footer */
 
 .footer {
-  font-family: 'Times New Roman', 'Tinos', serif;
+  font-family: "Lora", serif;
   font-size: .85em;
-  color: #193a5c;
+  color: var(--accent-color);
 }
