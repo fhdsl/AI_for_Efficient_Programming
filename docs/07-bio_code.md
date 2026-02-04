@@ -21,7 +21,7 @@ The proliferation of genomic data in recent years have been transformative for t
 
 You have seen principles in previous chapters that likewise apply to creating bioinformatics software. Creating bioinformatics software, however, comes with its own unique sets of challenges:
 
-<img src="resources/images/07-bio_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313f95cd49_180_4.png" title="Bioinformatics dino is excited to get started. It is wearing a lab coat and gloves and is saying 'Don’t worry - We can use bioinformatics to fill in the blanks with frog DNA!'." alt="Bioinformatics dino is excited to get started. It is wearing a lab coat and gloves and is saying 'Don’t worry - We can use bioinformatics to fill in the blanks with frog DNA!'." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/07-bio_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313f95cd49_180_4.png" alt="Bioinformatics dino is excited to get started. It is wearing a lab coat and gloves and is saying 'Don’t worry - We can use bioinformatics to fill in the blanks with frog DNA!'." width="100%" style="display: block; margin: auto;" />
 
 - **Data Complexity**: Genomic data is vast and complex, often consisting of large datasets with multiple dimensions, such as nucleotide sequences and quality scores, gene expression levels, and epigenetic modifications. Developing algorithms and software tools to efficiently handle and analyze this data requires expertise in data management, processing, and interpretation as well as the biological domain knowledge.
 

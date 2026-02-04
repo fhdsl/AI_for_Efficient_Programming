@@ -23,7 +23,7 @@ In this chapter we will demonstrate how to:
 
 ## AI Provides New Opportunities
 
-<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g295eab4bf3f_0_2.png" title="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." alt="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g295eab4bf3f_0_2.png" alt="The dinosaur cartoon asks in a speech bubble 'Does AI mean I am going extinct?!?' as a meteor flies overhead." width="100%" style="display: block; margin: auto;" />
 
 We do not believe that AI chatbots will replace programmers, software developers, and data scientists. While AI can be powerful and useful, it is only as good as the training data behind it and the human using it. Therefore, for the time being and the foreseeable future, humans will remain at the forefront of programming innovation, with AI providing valuable support. As new code is often built on top of existing code written by humans, it is unlikely that AI will fully replace the need for human programmers.
 
@@ -62,7 +62,7 @@ The information presented in this course is meant for use with open source code 
 Err on the side of caution when interacting with them. We do **not** recommend using proprietary code or private information for prompts unless you are working with an AI that you or your company built and you know is secure.
 :::
 
-<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_77.png" title="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." alt="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_77.png" alt="The dinosaur cartoon says in a speech bubble 'Wow, there are already so many options!' as names of AI tools swirl around the dinosaur's head." width="100%" style="display: block; margin: auto;" />
 
 This is not a comprehensive list!
 
@@ -148,7 +148,7 @@ You can view and download the Google Slides [here](https://docs.google.com/prese
 
 Our first duty as programmers is to avoid causing harm to people and the world. This includes avoiding both intentional and inadvertent harm. *Intentional harm* is harm that is caused by a programmer's deliberate actions. For example, a programmer might create a virus that is designed to harm computers. *Inadvertent harm* is harm that is caused by a programmer's negligence or lack of foresight. For example, a programmer might create a program that is buggy and causes data loss, or create a program that is particularly vulnerable to being hacked.
 
-<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313b08e75a_243_0.png" title="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." alt="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/01-intro_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g2313b08e75a_243_0.png" alt="The dinosaur cartoon says in a speech bubble 'Making the ethical choice requires careful thought!' while thinking about an angel and a devil, which represent good and bad choices." width="100%" style="display: block; margin: auto;" />
 
 We must always be aware of the potential for harm and deliberately take steps to mitigate it. This includes things like:
 
