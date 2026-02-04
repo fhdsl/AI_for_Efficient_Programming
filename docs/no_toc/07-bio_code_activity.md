@@ -1,6 +1,6 @@
 
 
-# AI for Bioinformatics: Hands-On Exercise
+# AI for Bioinformatics - Hands-On Exercise
 
 Now it's your turn to try. 
 
@@ -11,7 +11,7 @@ You are working on improving an alignment algorithm. Alignments are typically us
 **Note**: This code is just an example and was written strictly for educational purposes.
 
 
-```r
+``` r
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 if (!requireNamespace("Biostrings", quietly = TRUE))

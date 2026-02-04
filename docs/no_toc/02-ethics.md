@@ -6,7 +6,7 @@
 
 The use of artificial intelligence (AI) and in particular, generative AI, in coding has raised a number of ethical concerns. We will highlight several current concerns, however please be aware that this is a dynamic field and the possible implications of this technology is continuing to develop. It is critical that we as a society continue to evaluate and predict what the consequences of the use of AI will be, so that we can mitigate harmful effects.
 
-<img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_0.png" title="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." alt="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." width="100%" style="display: block; margin: auto;" />
+<img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_0.png" alt="The dinosaur cartoon asks in a speech bubble 'How can I use AI tools responsibly'. The dinosaur is holding a scale." width="100%" style="display: block; margin: auto;" />
 
 ## Learning Objectives
 
@@ -38,7 +38,7 @@ Note that this is an incomplete list; additional ethical concerns will become ap
 :::{.ethics}
 Be transparent about what AI tools you use to write code. This help others to better understand how you created your code, as well as the possible sources that the AI tools might have used when helping you write code. It may also help with future unknown issues related to the use of these tools.
 
-Some organizations and scientific societies have created guidelines or requirements for using AI in journal articles and conference submissions, like the [International Society for Computational Biology](https://www.iscb.org/iscb-policy-statements/iscb-policy-for-acceptable-use-of-large-language-models). Be aware of the requirements/guidelines for your field.
+Some organizations and scientific societies have created guidelines or requirements for using AI in journal articles and conference submissions, like the [International Society for Computational Biology](https://www.iscb.org/about-iscb/policy-statements-bylaws-and-legal-documents/acceptable-use-of-large-language-models-policy). Be aware of the requirements/guidelines for your field.
 :::
 
 **It is essential to address these ethical concerns and ensure that the use of AI in coding is done in a responsible and transparent manner.** This could be done through ensuring the quality of the data used to train AI systems, promoting transparency in AI-generated code, and implementing safeguards against the creation of harmful or biased code. By doing so, we can harness the potential of AI to improve and transform the way we write and optimize code while maintaining ethical standards.
@@ -106,7 +106,7 @@ There is risk that those less aware of best coding practices use AI-generated co
 Can you explain what the code in line 4 is doing?
 :::
  
-<img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_13.png" title="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." alt="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." width="100%" style="display: block; margin: auto;" />
+<img src="02-ethics_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23e17ee1585_223_13.png" alt="The dinosaur cartoon says in a speech bubble 'Nifty! AI tools can somewhat help me figure out how to use them more ethically'." width="100%" style="display: block; margin: auto;" />
 
 ## Faulty or Buggy Code
 
