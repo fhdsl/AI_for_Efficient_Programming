@@ -6,7 +6,7 @@ This video discusses how AI can be useful when understanding code written by som
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1gYxHub8Vuf8uY8xI65R5HL0R31rETtxkQDLiBgb820U/edit#slide=id.g29860008570_0_387).
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e15d27e55_4_0.png" title="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." alt="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e15d27e55_4_0.png" alt="The dinosaur cartoon says in a speech bubble, 'It’s like having a paired programmer explain things to you.'." width="100%" style="display: block; margin: auto;" />
 
 While anyone can learn to understand code written by someone else, using AI language models to achieve this has three significant advantages.
 
@@ -41,7 +41,7 @@ As a programmer, you will frequently encounter situations where you need to read
 Reading unfamiliar code is like exploring an unfamiliar city without a map or a guide. Just like in a new city, you may not know where to start or how to navigate the codebase. You may encounter unfamiliar syntax, functions, and libraries that you have never seen before, just as you might encounter new streets, buildings, and landmarks. At first, you may feel disoriented and overwhelmed, and may need to spend some time getting oriented and familiarizing yourself with the environment. As you explore, you may start to see patterns and similarities, just as you might begin to recognize neighborhoods and landmarks in a new city. You may also encounter dead-ends, confusing intersections, and unexpected detours, just as you might encounter bugs and errors in the code.
 
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23a4b1a5015_0_7.png" title="The dinosaur cartoon is holding a map while looking at a forest and says in a speech bubble, 'Where am I?'." alt="The dinosaur cartoon is holding a map while looking at a forest and says in a speech bubble, 'Where am I?'." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g23a4b1a5015_0_7.png" alt="The dinosaur cartoon is holding a map while looking at a forest and says in a speech bubble, 'Where am I?'." width="100%" style="display: block; margin: auto;" />
 
 To make progress in this unfamiliar territory, you may need to rely on a combination of intuition, deduction, and experimentation. You may need to break down the code into smaller pieces, analyze the behavior of each piece, and gradually build up a mental model of how the code works. You may also need to consult documentation, online resources, or other experts who are familiar with the codebase, just as you might ask locals or consult a map in a new city.
 
@@ -83,7 +83,7 @@ We first ask [Claude-instant](https://poe.com/Claude-instant) (as implemented by
 What does this code do?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_22_0.png" title="The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data." alt="The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_22_0.png" alt="The output from Claude explains the code imports the diamond dataset, then manipulates and filters the data." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -93,7 +93,7 @@ You can ask for Claude to summarize each step in detail as well.
 Can you explain what each step does in detail?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_5.png" title="The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ." alt="The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_5.png" alt="The output from Claude explains what each step of the code does. First it loads the tidyverse collection of packages, then imports the diamonds dataset from ggplot2. After that, it selects columns from diamonds: carat, cut, color, clarity, depth, table and price and stores the result in d_sel, then filters d_sel to only keep rows where price is greater than 5000 and stores the result in d_fil. Next it uses mutate() to create a new column carat_bins which bins the carat column into 0.2 width bins and stores the result in d_bin, then uses group_by() to group d_bin by carat_bins, cut, color and clarity. Finally it uses summarize() to calculate the mean and standard deviation of price for each group and stores the result in d_summ." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -103,7 +103,7 @@ Maybe you've never worked with the tidyverse package in R - Claude can tell you 
 What is the tidyverse package?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_14.png" title="The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management." alt="The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_14.png" alt="The output from Claude explains that the tidyverse  is a collection of R packages useful for data wrangling, visualization, transformation, modeling, and workflow management." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -113,7 +113,7 @@ You might also not be familiar with the diamonds dataset (especially if you've n
 Can you tell me more about the diamonds dataset?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_20.png" title="Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes." alt="Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_20.png" alt="Claude explains the diamonds dataset is a famous R dataset that is built-in to the ggplot2 package and contains information on 50,000 diamonds and their prices. Each diamond had 539 different attributes." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -181,7 +181,7 @@ We can ask [Bard](https://bard.google.com/) to take a guess at what the coding l
 What language is this code written in?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_46.png" title="According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal." alt="According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_46.png" alt="According to Bard, this code was written in Pascal, a procedural programming language named after French mathematician Blaise Pascal." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -191,7 +191,7 @@ We can explore further to figure out what indicators tell Bard the language is P
 How do you know this is Pascal?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_50.png" title="Bard explains that many of the keywords and clauses are common to Pascal syntax." alt="Bard explains that many of the keywords and clauses are common to Pascal syntax." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_50.png" alt="Bard explains that many of the keywords and clauses are common to Pascal syntax." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -201,7 +201,7 @@ It turns out there are multiple versions of Pascal. Since you will presumably ne
 What version of Pascal is this?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_39.png" title="Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0" alt="Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0" width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_39.png" alt="Bard explains the code uses Turbo Pascal 7.0 syntax, based on the 'uses' clause, the 'Math' unit, and the 'writeln' function. These features were introduced in Turbo Pascal 7.0" width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -219,7 +219,7 @@ x = sub("/d/e","/d",x)
 What does this do?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_6_4.png" title="ChatGPT explains this code replaces the substring /d/e with the substring /d." alt="ChatGPT explains this code replaces the substring /d/e with the substring /d." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22de39942ac_6_4.png" alt="ChatGPT explains this code replaces the substring /d/e with the substring /d." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -228,7 +228,7 @@ What does this do?
 Sometimes we get handed code that includes complex architecture. Perhaps you are working with code you wrote years ago when you really liked loops, but present you finds them difficult to parse. (Be nice to past you - maybe you were a baby programmer and didn't know better.) Instead of giving yourself a headache, you could turn to [ChatGPT](https://chat.openai.com/) to explain what your old code does.
 
 
-```python
+``` python
 def my_function(x):
     result = x
     for i in range(10):
@@ -241,7 +241,7 @@ def my_function(x):
 What does this function do?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_170.png" title="ChatGPT explains the math operations being done on variable x by this complex looped function." alt="ChatGPT explains the math operations being done on variable x by this complex looped function." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_170.png" alt="ChatGPT explains the math operations being done on variable x by this complex looped function." width="100%" style="display: block; margin: auto;" />
 
 
 Well, now you have an idea what past-you might have been attempting to do with this code. You can also query AI about the potential problems from using the code as-written.
@@ -250,11 +250,11 @@ Well, now you have an idea what past-you might have been attempting to do with t
 What are some possible issues with this code?
 :::
 
-<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_176.png" title="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." alt="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." width="100%" style="display: block; margin: auto;" />
+<img src="06-understanding_other_ppl_code_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22e0106807c_0_176.png" alt="ChatGPT identifies four possible issues in the way the function was written: readability, efficiency, how the variables are named, and the use of numbers instead of variables within the function." width="100%" style="display: block; margin: auto;" />
 
 
 
-(And if you do ever run across an expression like this in your code, you can check out our chapter on [refactoring code](https://hutchdatascience.org/AI_for_software/refactoring-code.html#refactoring-code) using AI to fix it!)
+(And if you do ever run across an expression like this in your code, you can check out our chapter on [refactoring code](https://hutchdatascience.org/AI_for_Efficient_Programming/refactoring-code.html#refactoring-code) using AI to fix it!)
 
 ## Limitations 
 

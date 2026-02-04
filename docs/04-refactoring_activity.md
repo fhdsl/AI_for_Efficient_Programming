@@ -13,7 +13,7 @@ Let's say you are dusting off some code from your past (no judgment here). You w
 **Note**: This code is just an example and was written strictly for educational purposes.
 
 
-```python
+``` python
 import tweepy
 import pandas
 
