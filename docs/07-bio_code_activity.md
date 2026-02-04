@@ -1,6 +1,6 @@
 
 
-# AI for Bioinformatics: Hands-On Exercise
+# AI for Bioinformatics - Hands-On Exercise
 
 Now it's your turn to try. 
 

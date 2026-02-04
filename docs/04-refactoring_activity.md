@@ -2,7 +2,7 @@
 
 
 
-# Refactoring Code: Hands-On Exercise
+# Refactoring Code - Hands-On Exercise
 
 Now it's your turn to try. 
 

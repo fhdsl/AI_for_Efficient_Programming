@@ -32,7 +32,7 @@ Code refactoring helps to reduce [technical debt](https://en.wikipedia.org/wiki/
 
 To understand why code refactoring is important, imagine trying to cook in a disorganized and cluttered kitchen. You might be a fantastic cook, but you are spending more time searching for utensils and ingredients, and the quality of the meal could suffer as a result. Similarly, code that is disorganized and cluttered can be difficult to work with and can result in lower-quality software. Refactoring is like cleaning and organizing the kitchen - it makes the process of cooking (or coding) smoother and more efficient.
 
-<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_26.png" alt="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." width="100%" style="display: block; margin: auto;" />
+<img src="04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_26.png" alt="Refactoring code is like cleaning up a cluttered, disorganized kitchen. On the left is a jumble of cookbooks, utensils, and fruits. On the right they are nicely organized and extras have been removed." width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -156,7 +156,7 @@ c <- "carrot"
 
 Much better! This code will now look more familiar to other R programmers.
 
-<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_10.png" alt="AI can help clean up code to match commonly followed conventions by users." width="100%" style="display: block; margin: auto;" />
+<img src="04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_10.png" alt="AI can help clean up code to match commonly followed conventions by users." width="100%" style="display: block; margin: auto;" />
 
 ### Visual Styling
 
@@ -452,7 +452,7 @@ I've stored the repeated term and the uppercased term in separate variables to m
 
 Better! While the code takes up a greater number of lines, it's easier to interpret because only one action is being taken on each step.
 
-<img src="resources/images/04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_111.png" alt="Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'." width="100%" style="display: block; margin: auto;" />
+<img src="04-refactoring_files/figure-html//1MCNeSO4aOm1iESWDLOGTcx3aLEbnu8UttV0QGVAeafE_g22d6414ee48_0_111.png" alt="Use the 'Regenerate response' button in ChatGPT for a variety of refactoring styles. The button is highlighted with a callout that says 'Get more options!'." width="100%" style="display: block; margin: auto;" />
 
 ## Example Six: Keep it Brief
 
@@ -559,7 +559,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   8.189   0.000   8.188
+##   8.207   0.000   8.208
 ```
 
 :::{.query}
@@ -587,7 +587,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.765   0.571   0.650
+##   0.751   0.566   0.640
 ```
 
 The `outer()` function performs the same calculation as the nested loop in the original code, but more efficiently. It returns a matrix of all possible combinations of x and y values, with each element of the matrix being the product of the corresponding x and y values. The `rowSums()` function is then used to sum the elements of each row of the matrix, which is equivalent to summing the products of x and y for each index `i` in the original loop. This method avoids the need for the nested loop, resulting in a faster and more efficient computation.
@@ -615,7 +615,7 @@ proc.time() - start_time
 
 ```
 ##    user  system elapsed 
-##   0.319   0.317   0.273
+##   0.192   0.283   0.124
 ```
 
 One optimized way to perform the same calculation is by using the `%*%` operator to perform matrix multiplication. This can be done by converting x and y to matrices and transposing one of them so that their dimensions align for matrix multiplication. This code should be much faster than the original implementation because it takes advantage of highly optimized matrix multiplication algorithms in R.
