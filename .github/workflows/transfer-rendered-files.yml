@@ -39,7 +39,7 @@ jobs:
     container:
       image: jhudsl/ottrpal:main
     needs: [yaml-check]
-    if: ${{needs.yaml-check.outputs.toggle_coursera == 'yes' || needs.yaml-check.outputs.toggle_leanpub == 'yes'}}
+    if: ${{needs.yaml-check.outputs.toggle_coursera == 'true' || needs.yaml-check.outputs.toggle_leanpub == 'true'}}
 
     steps:
       - name: Checkout from Bookdown Repo
