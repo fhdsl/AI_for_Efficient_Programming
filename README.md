@@ -2,6 +2,8 @@
 
 [![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
 
+<a href="https://doi.org/10.5281/zenodo.23169468"><img src="https://zenodo.org/badge/621966712.svg" alt="DOI"></a>
+
 This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
 
 You can see the rendered course material [here](https://hutchdatascience.org/AI_for_Efficient_Programming/).
