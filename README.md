@@ -1,4 +1,4 @@
-# AI and Large Language Models for Software
+# AI for Efficient Programming
 
 [![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
 
